@@ -1,0 +1,656 @@
+[
+  {
+    "nom": "Collège Lucie Aubrac",
+    "type": "COLLEGE",
+    "lat": 45.771396384808845,
+    "lng": 3.1092898773722877
+  },
+  {
+    "nom": "Ecole élémentaire privée Les Cordeliers",
+    "type": "ECOLE ELEMENTAIRE PRIVEE",
+    "lat": 45.796102702304744,
+    "lng": 3.114279569506579
+  },
+  {
+    "nom": "Ecole maternelle Jules Verne",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.81038939236615,
+    "lng": 3.128169639321337
+  },
+  {
+    "nom": "Ecole maternelle Jules Vallès",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.80944446580544,
+    "lng": 3.105879512151705
+  },
+  {
+    "nom": "Collège Albert Camus",
+    "type": "COLLEGE",
+    "lat": 45.80771203821128,
+    "lng": 3.1076595294985236
+  },
+  {
+    "nom": "Ecole élémentaire Ferdinand Buisson",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.79735319168824,
+    "lng": 3.1127797983398136
+  },
+  {
+    "nom": "Ecole élémentaire Jean Butez",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.78802111575084,
+    "lng": 3.0865994173863984
+  },
+  {
+    "nom": "Ecole maternelle Daniel Fousson",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.81216067731391,
+    "lng": 3.1138698298346323
+  },
+  {
+    "nom": "Ecole maternelle Philippe Arbos",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.81210217315046,
+    "lng": 3.1015694864265906
+  },
+  {
+    "nom": "Lycée professionnel privé Saint Alyre",
+    "type": "LYCEE PROFESSIONNEL PRIVE",
+    "lat": 45.78424670323848,
+    "lng": 3.0824002528127954
+  },
+  {
+    "nom": "Ecole maternelle George Sand",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.810435164628174,
+    "lng": 3.101790475243388
+  },
+  {
+    "nom": "Ecole élémentaire Jules Ferry",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.778602410082044,
+    "lng": 3.0906500686444685
+  },
+  {
+    "nom": "Ecole Silvya Terrade Clermont-Ferrand",
+    "type": "ECOLE SILVYA TERRADE CLERMONT-FERRAND",
+    "lat": 45.777474651340526,
+    "lng": 3.088819527279224
+  },
+  {
+    "nom": "ECOLE SAINT BENILDE",
+    "type": "ECOLE ELEMENTAIRE PRIVEE",
+    "lat": 45.77533877514977,
+    "lng": 3.088710571878298
+  },
+  {
+    "nom": "Section d'enseignement général et technologique du Lycée Professionnel Gergovie",
+    "type": "SECTION ENSEIGNT GEN.ET TECHNO",
+    "lat": 45.78215821709637,
+    "lng": 3.1164193441641865
+  },
+  {
+    "nom": "Lycée général et technologique Sidoine Apollinaire - Lycée des métiers des services aux entreprises",
+    "type": "LGT LYCEE DES METIERS",
+    "lat": 45.782122911195664,
+    "lng": 3.086591459161354
+  },
+  {
+    "nom": "Lycée polyvalent La Fayette - Lycée des métiers de la digitale industrie et du plurimédia",
+    "type": "LPO LYCEE DES METIERS",
+    "lat": 45.76306434162292,
+    "lng": 3.131089759662574
+  },
+  {
+    "nom": "Lycée professionnel Roger Claustres - Lycée des métiers des réalisations industrielles et artisanales",
+    "type": "LP LYCEE DES METIERS",
+    "lat": 45.795677632219906,
+    "lng": 3.087059411953557
+  },
+  {
+    "nom": "Lycée professionnel Amédée Gasquet - Lycée des métiers des services aux entreprises",
+    "type": "LP LYCEE DES METIERS",
+    "lat": 45.777754973620915,
+    "lng": 3.074782355315417
+  },
+  {
+    "nom": "Ecole élémentaire Pierre et Marie Curie",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.793682597574275,
+    "lng": 3.0751501978492812
+  },
+  {
+    "nom": "Ecole élémentaire Jean Jaurès",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.76407311467147,
+    "lng": 3.0905194498153143
+  },
+  {
+    "nom": "Ecole élémentaire d'application Nestor Perret",
+    "type": "ECOLE ELEMENTAIRE APPLICATION",
+    "lat": 45.77551398441545,
+    "lng": 3.078279577395628
+  },
+  {
+    "nom": "Ecole maternelle Jean Butez",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.788808411421435,
+    "lng": 3.0862505418058417
+  },
+  {
+    "nom": "Ecole maternelle Jules Ferry",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.77881497400447,
+    "lng": 3.0905899314216874
+  },
+  {
+    "nom": "Ecole maternelle Albert Bayet",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.7663269939596,
+    "lng": 3.109839542777537
+  },
+  {
+    "nom": "Ecole maternelle Edgar Quinet",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.78116097625525,
+    "lng": 3.0782502556326503
+  },
+  {
+    "nom": "Lycée général Blaise Pascal",
+    "type": "LYCEE GENERAL",
+    "lat": 45.77527763699142,
+    "lng": 3.09415000234277
+  },
+  {
+    "nom": "Ecole élémentaire Anatole France",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.77873999533422,
+    "lng": 3.1119297493116553
+  },
+  {
+    "nom": "Ecole maternelle Ferdinand Buisson",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.79734713737863,
+    "lng": 3.113429906758099
+  },
+  {
+    "nom": "Ecole maternelle Edouard Herriot",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.76243862605797,
+    "lng": 3.083650432965876
+  },
+  {
+    "nom": "Ecole élémentaire Jean de La Fontaine A",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.80131912505721,
+    "lng": 3.118760426360879
+  },
+  {
+    "nom": "Lycée professionnel privé Anna Rodier - Lycée des métiers de l'industrie et des services aux entreprises",
+    "type": "LYCEE PROF PRIVE DES METIERS",
+    "lat": 45.7805371835978,
+    "lng": 3.0922297883781558
+  },
+  {
+    "nom": "Lycée général et technologique privé Saint Alyre",
+    "type": "LYCEE GEN.ET TECHNOL.PRIVE",
+    "lat": 45.78448799108015,
+    "lng": 3.082459817809683
+  },
+  {
+    "nom": "Collège privé Franc Rosier",
+    "type": "COLLEGE PRIVE",
+    "lat": 45.788840254965656,
+    "lng": 3.108800510490431
+  },
+  {
+    "nom": "Ecole maternelle Pierre Mendès France",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.76359348900824,
+    "lng": 3.1017505187063006
+  },
+  {
+    "nom": "Ecole élémentaire privée de La Salle",
+    "type": "ECOLE ELEMENTAIRE PRIVEE",
+    "lat": 45.78815931149296,
+    "lng": 3.108979370868608
+  },
+  {
+    "nom": "Ecole maternelle Alphonse Daudet",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.813675693666724,
+    "lng": 3.105109825632898
+  },
+  {
+    "nom": "Section d'enseignement général et professionnel adapté du Collège Albert Camus",
+    "type": "SEGPA",
+    "lat": 45.80757209825707,
+    "lng": 3.1080403880923457
+  },
+  {
+    "nom": "Ecole élémentaire spécialisée Chanteranne Education motrice",
+    "type": "ECOLE ELEMENTAIRE SPECIALISEE",
+    "lat": 45.79252082921035,
+    "lng": 3.096630326136667
+  },
+  {
+    "nom": "Ecole élémentaire privée Notre-Dame - Massillon",
+    "type": "ECOLE ELEMENTAIRE PRIVEE",
+    "lat": 45.77803362469551,
+    "lng": 3.0924701236154193
+  },
+  {
+    "nom": "Ecole élémentaire George Sand",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.80544100743968,
+    "lng": 3.1028203279444684
+  },
+  {
+    "nom": "Collège Roger Quilliot",
+    "type": "COLLEGE",
+    "lat": 45.7929906127036,
+    "lng": 3.07018942215026
+  },
+  {
+    "nom": "Ecole élémentaire Paul Bert",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.77353029699341,
+    "lng": 3.09673995252889
+  },
+  {
+    "nom": "Lycée général privé Massillon",
+    "type": "LYCEE GENERAL PRIVE",
+    "lat": 45.77856403786448,
+    "lng": 3.0924401250104916
+  },
+  {
+    "nom": "Lycée professionnel Gergovie",
+    "type": "LYCEE PROFESSIONNEL",
+    "lat": 45.78252992038161,
+    "lng": 3.1174806341382553
+  },
+  {
+    "nom": "Ecole élémentaire Edgar Quinet",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.78116097625525,
+    "lng": 3.0782502556326503
+  },
+  {
+    "nom": "Ecole élémentaire Edouard Herriot",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.76262932218926,
+    "lng": 3.083929904809609
+  },
+  {
+    "nom": "Ecole maternelle Victor Duruy",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.78080329932359,
+    "lng": 3.1001297283069866
+  },
+  {
+    "nom": "Ecole maternelle Pierre et Marie Curie",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.7940360959241,
+    "lng": 3.075740257603887
+  },
+  {
+    "nom": "Lycée professionnel privé René Rambaud - Coiffure",
+    "type": "LYCEE PROFESSIONNEL PRIVE",
+    "lat": 45.78428030983859,
+    "lng": 3.0868200766312888
+  },
+  {
+    "nom": "Lycée général et technologique privé Godefroy de Bouillon",
+    "type": "LYCEE GEN.ET TECHNOL.PRIVE",
+    "lat": 45.78039091847032,
+    "lng": 3.092700576094103
+  },
+  {
+    "nom": "Ecole élémentaire Mercoeur",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.81123859243395,
+    "lng": 3.1190895187109255
+  },
+  {
+    "nom": "Section d'enseignement général et professionnel adapté du Collège Lucie Aubrac",
+    "type": "SEGPA",
+    "lat": 45.77156081584169,
+    "lng": 3.109659504726332
+  },
+  {
+    "nom": "Collège Blaise Pascal",
+    "type": "COLLEGE",
+    "lat": 45.77603129654092,
+    "lng": 3.094210482596919
+  },
+  {
+    "nom": "Ecole élémentaire Jean Moulin",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.77315986094612,
+    "lng": 3.119630265041074
+  },
+  {
+    "nom": "Ecole maternelle Victor Hugo",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.76262376948052,
+    "lng": 3.1216505150064027
+  },
+  {
+    "nom": "Ecole élémentaire Jules Verne",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.810356606782015,
+    "lng": 3.127699563108467
+  },
+  {
+    "nom": "Ecole élémentaire Pierre Mendès France",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.76394439108585,
+    "lng": 3.102070238961358
+  },
+  {
+    "nom": "Ecole élémentaire Alphonse Daudet",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.81357416644458,
+    "lng": 3.105829482403475
+  },
+  {
+    "nom": "Ecole maternelle Jean Philippe Rameau",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.78370432672275,
+    "lng": 3.070880352970603
+  },
+  {
+    "nom": "Ecole élémentaire Philippe Arbos",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.81237669255581,
+    "lng": 3.1007097957480334
+  },
+  {
+    "nom": "Collège privé Fénelon Saint-Joseph - Site Poincaré",
+    "type": "COLLEGE PRIVE",
+    "lat": 45.77129530998483,
+    "lng": 3.090182568406238
+  },
+  {
+    "nom": "Lycée professionnel privé Godefroy de Bouillon",
+    "type": "LYCEE PROFESSIONNEL PRIVE",
+    "lat": 45.7806157122507,
+    "lng": 3.0930999163193666
+  },
+  {
+    "nom": "Lycée international Jeanne d'Arc",
+    "type": "LYCEE INTERNATIONAL",
+    "lat": 45.77743997678379,
+    "lng": 3.094910386297031
+  },
+  {
+    "nom": "Ecole élémentaire Victor Duruy",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.78113181974887,
+    "lng": 3.0992899193881893
+  },
+  {
+    "nom": "Ecole maternelle Michelet",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.78889817299072,
+    "lng": 3.1130894781152523
+  },
+  {
+    "nom": "Ecole maternelle Jean Macé",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.764381996031865,
+    "lng": 3.0938097907666737
+  },
+  {
+    "nom": "Ecole maternelle Jean Zay",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.78882361813837,
+    "lng": 3.0616695087805725
+  },
+  {
+    "nom": "Ecole élémentaire Diderot",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.803939223879865,
+    "lng": 3.112940025409034
+  },
+  {
+    "nom": "Ecole élémentaire Chanteranne",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.79289943781413,
+    "lng": 3.097210257205421
+  },
+  {
+    "nom": "Ecole maternelle Chanteranne",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.79258229247672,
+    "lng": 3.0974105110872348
+  },
+  {
+    "nom": "Ecole élémentaire privée Fénelon Saint-Joseph - Site Lebon",
+    "type": "ECOLE ELEMENTAIRE PRIVEE",
+    "lat": 45.77129530998483,
+    "lng": 3.090182568406238
+  },
+  {
+    "nom": "Lycée professionnel privé Les Cordeliers - Lycée des métiers de la santé et du social",
+    "type": "LYCEE PROF PRIVE DES METIERS",
+    "lat": 45.79440108176439,
+    "lng": 3.113080147965042
+  },
+  {
+    "nom": "Collège International Jeanne d'Arc",
+    "type": "COLLEGE",
+    "lat": 45.77743997678379,
+    "lng": 3.094910386297031
+  },
+  {
+    "nom": "Ecole maternelle d'application Aristide Briand",
+    "type": "ECOLE MATERNELLE D APPLICATION",
+    "lat": 45.77202160966483,
+    "lng": 3.0760497923287633
+  },
+  {
+    "nom": "Ecole maternelle Charles Perrault",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.798103218190185,
+    "lng": 3.1172794549533873
+  },
+  {
+    "nom": "Ecole élémentaire Charles Perrault",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.79782838194516,
+    "lng": 3.116590123503664
+  },
+  {
+    "nom": "Ecole maternelle Romain Rolland",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.814164360430645,
+    "lng": 3.1248598436113677
+  },
+  {
+    "nom": "Ecole élémentaire Jean Zay",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.78915299980781,
+    "lng": 3.0620302857718564
+  },
+  {
+    "nom": "Ecole sans effectifs permanents Enfants hospitalisés à domicile",
+    "type": "ECOLE SS EFFECTIFS PERMANENTS",
+    "lat": 45.78199321832279,
+    "lng": 3.0923004305567914
+  },
+  {
+    "nom": "Ecole élémentaire Jean Macé",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.76385990201299,
+    "lng": 3.0946606254344875
+  },
+  {
+    "nom": "Section d'enseignement général et technologique du Lycée Professionnel Roger Claustres",
+    "type": "SECTION ENSEIGNT GEN.ET TECHNO",
+    "lat": 45.795491356529745,
+    "lng": 3.0880580818524472
+  },
+  {
+    "nom": "Section d'enseignement professionnel du lycée La Fayette",
+    "type": "SECTION ENSEIGNT PROFESSIONNEL",
+    "lat": 45.76280333027596,
+    "lng": 3.130977209522363
+  },
+  {
+    "nom": "Hall 32, Clermont-Ferrand",
+    "type": "ECOLE TECHNOLOGIQUE PRIVEE",
+    "lat": 45.78987134163692,
+    "lng": 3.104970566199572
+  },
+  {
+    "nom": "Ecole maternelle Jean Moulin",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.77337323432594,
+    "lng": 3.1196706180868157
+  },
+  {
+    "nom": "Collège privé Massillon",
+    "type": "COLLEGE PRIVE",
+    "lat": 45.778292114507416,
+    "lng": 3.0924100708243296
+  },
+  {
+    "nom": "Lycée général et technologique privé Fénelon Saint-Joseph - Site Poincaré",
+    "type": "LYCEE GEN.ET TECHNOL.PRIVE",
+    "lat": 45.77129530998483,
+    "lng": 3.090182568406238
+  },
+  {
+    "nom": "Collège privé Saint Alyre",
+    "type": "COLLEGE PRIVE",
+    "lat": 45.784888702159705,
+    "lng": 3.082469425455108
+  },
+  {
+    "nom": "Collège privé Les Cordeliers",
+    "type": "COLLEGE PRIVE",
+    "lat": 45.79614072997914,
+    "lng": 3.11318026001517
+  },
+  {
+    "nom": "Collège Gérard Philipe",
+    "type": "COLLEGE",
+    "lat": 45.79713209171927,
+    "lng": 3.1150399561108566
+  },
+  {
+    "nom": "Ecole maternelle La Pradelle",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.77432142588411,
+    "lng": 3.102300448067586
+  },
+  {
+    "nom": "Ecole maternelle Diderot",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.80358713122201,
+    "lng": 3.112940592882309
+  },
+  {
+    "nom": "Collège La Charme",
+    "type": "COLLEGE",
+    "lat": 45.79772571210262,
+    "lng": 3.1200400766844076
+  },
+  {
+    "nom": "Ecole élémentaire Aristide Briand",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.77221587877416,
+    "lng": 3.0764000643092793
+  },
+  {
+    "nom": "Ecole élémentaire Victor Hugo",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.76459098984161,
+    "lng": 3.1194496042305624
+  },
+  {
+    "nom": "Ecole élémentaire Romain Rolland",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.81385912720597,
+    "lng": 3.124829535069706
+  },
+  {
+    "nom": "Collège Charles Baudelaire",
+    "type": "COLLEGE",
+    "lat": 45.75864662579044,
+    "lng": 3.0950697983947135
+  },
+  {
+    "nom": "Ecole élémentaire Jules Vallès",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.80944446580544,
+    "lng": 3.105879512151705
+  },
+  {
+    "nom": "Section d'enseignement général et professionnel adapté du Collège Gérard Philipe",
+    "type": "SEGPA",
+    "lat": 45.79633625320008,
+    "lng": 3.115729602482665
+  },
+  {
+    "nom": "ECOLE ITINERANTE DU SOCLE COMMUN",
+    "type": "ECOLE DE PLEIN AIR",
+    "lat": 45.77307562483763,
+    "lng": 3.1200920447951166
+  },
+  {
+    "nom": "Ecole élémentaire Albert Bayet",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.766532805369444,
+    "lng": 3.1102503931869303
+  },
+  {
+    "nom": "Ecole élémentaire privée Saint Alyre-Sainte Claire",
+    "type": "ECOLE ELEMENTAIRE PRIVEE",
+    "lat": 45.78406808010952,
+    "lng": 3.081609732891372
+  },
+  {
+    "nom": "Ecole élémentaire Michelet",
+    "type": "ECOLE ELEMENTAIRE PUBLIQUE",
+    "lat": 45.789223416416775,
+    "lng": 3.114709414610121
+  },
+  {
+    "nom": "Ecole maternelle Jean de La Fontaine",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.802343948192444,
+    "lng": 3.118699543372959
+  },
+  {
+    "nom": "Lycée général et technologique Ambroise Brugière",
+    "type": "LYCEE GENERAL ET TECHNOLOGIQUE",
+    "lat": 45.801142937523025,
+    "lng": 3.1095495845124868
+  },
+  {
+    "nom": "Ecole maternelle Anatole France",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.77873999533422,
+    "lng": 3.1119297493116553
+  },
+  {
+    "nom": "Ecole maternelle Jean Jaurès",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.764348679521134,
+    "lng": 3.090500602180419
+  },
+  {
+    "nom": "Ecole maternelle Paul Bert",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.77407711494904,
+    "lng": 3.097529733836572
+  },
+  {
+    "nom": "Ecole maternelle Nestor Perret",
+    "type": "ECOLE MATERNELLE PUBLIQUE",
+    "lat": 45.77571369796904,
+    "lng": 3.0785603965013997
+  }
+]

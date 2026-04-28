@@ -1,0 +1,297 @@
+[
+  {
+    "nom": "Crèche Lagarlaye",
+    "type": "Crèche collective",
+    "lat": 45.773765,
+    "lng": 3.084139,
+    "extra": "15 places"
+  },
+  {
+    "nom": "Crèche Tremonteix",
+    "type": "Crèche collective",
+    "lat": 45.792606,
+    "lng": 3.066398,
+    "extra": "20 places"
+  },
+  {
+    "nom": "Rpe Lafayette",
+    "type": "Relais Petite Enfance",
+    "lat": 45.768403,
+    "lng": 3.105476
+  },
+  {
+    "nom": "Multi Accueil Les Enfants Du Parc",
+    "type": "Multi-accueil",
+    "lat": 45.769288,
+    "lng": 3.129759,
+    "extra": "45 places"
+  },
+  {
+    "nom": "Récré Au Soleil",
+    "type": "Multi-accueil",
+    "lat": 45.774144,
+    "lng": 3.09816,
+    "extra": "22 places"
+  },
+  {
+    "nom": "Récré Aux Nuages",
+    "type": "Multi-accueil",
+    "lat": 45.786997,
+    "lng": 3.094866,
+    "extra": "24 places"
+  },
+  {
+    "nom": "Micro-crèche Chemins Enchantés",
+    "type": "Micro-crèche",
+    "lat": 45.762663,
+    "lng": 3.136078,
+    "extra": "12 places"
+  },
+  {
+    "nom": "Laep La Maison D'à Côté",
+    "type": "Lieux d’Accueil Enfants Parents",
+    "lat": 45.810692,
+    "lng": 3.104266
+  },
+  {
+    "nom": "Mam Les Lutins Farceurs",
+    "type": "Maison d'Assistants Maternels",
+    "lat": 45.770714,
+    "lng": 3.107867,
+    "extra": "12 places"
+  },
+  {
+    "nom": "Mam Kangroupement",
+    "type": "Maison d'Assistants Maternels",
+    "lat": 45.764474,
+    "lng": 3.102549,
+    "extra": "12 places"
+  },
+  {
+    "nom": "Crèche Barbecot",
+    "type": "Crèche collective",
+    "lat": 45.780664,
+    "lng": 3.07975,
+    "extra": "90 places"
+  },
+  {
+    "nom": "Crèche Les Vergnes",
+    "type": "Crèche collective",
+    "lat": 45.812547,
+    "lng": 3.126898,
+    "extra": "60 places"
+  },
+  {
+    "nom": "Crèche Saint-jacques 2",
+    "type": "Crèche collective",
+    "lat": 45.765486,
+    "lng": 3.08976,
+    "extra": "21 places"
+  },
+  {
+    "nom": "Crèche Croix-de-neyrat",
+    "type": "Crèche collective",
+    "lat": 45.810884,
+    "lng": 3.106432,
+    "extra": "20 places"
+  },
+  {
+    "nom": "Crèche La Gare",
+    "type": "Crèche collective",
+    "lat": 45.779356,
+    "lng": 3.099787,
+    "extra": "20 places"
+  },
+  {
+    "nom": "Crèche Neyron",
+    "type": "Crèche collective",
+    "lat": 45.779797,
+    "lng": 3.089735,
+    "extra": "21 places"
+  },
+  {
+    "nom": "Laep Le Pré Vert",
+    "type": "Lieux d’Accueil Enfants Parents",
+    "lat": 45.800541,
+    "lng": 3.118866
+  },
+  {
+    "nom": "Micro-crèche Bisous Câlins Et Trotinettes",
+    "type": "Micro-crèche",
+    "lat": 45.804843,
+    "lng": 3.115065,
+    "extra": "10 places"
+  },
+  {
+    "nom": "Multi-accueil Les Florentins",
+    "type": "Multi-accueil",
+    "lat": 45.777362,
+    "lng": 3.105367,
+    "extra": "35 places"
+  },
+  {
+    "nom": "Micro-crèche Les Guilidoux",
+    "type": "Micro-crèche",
+    "lat": 45.777572,
+    "lng": 3.08607,
+    "extra": "10 places"
+  },
+  {
+    "nom": "Crèche Parentale Les P’tits Loups",
+    "type": "Crèche parentale",
+    "lat": 45.780664,
+    "lng": 3.093923,
+    "extra": "19 places"
+  },
+  {
+    "nom": "Micro-crèche Brin D’éveil",
+    "type": "Micro-crèche",
+    "lat": 45.787507,
+    "lng": 3.084568,
+    "extra": "10 places"
+  },
+  {
+    "nom": "Récré Aux Étoiles",
+    "type": "Multi-accueil",
+    "lat": 45.774144,
+    "lng": 3.09816,
+    "extra": "60 places"
+  },
+  {
+    "nom": "Les Petits Trésors",
+    "type": "Multi-accueil",
+    "lat": 45.774057,
+    "lng": 3.098436,
+    "extra": "24 places"
+  },
+  {
+    "nom": "Micro-crèche Les Petits Zébulons",
+    "type": "Micro-crèche",
+    "lat": 45.789623,
+    "lng": 3.078892,
+    "extra": "10 places"
+  },
+  {
+    "nom": "Micro-crèche Les Titous",
+    "type": "Micro-crèche",
+    "lat": 45.78815,
+    "lng": 3.108365,
+    "extra": "9 places"
+  },
+  {
+    "nom": "Multi Accueil Du Chu",
+    "type": "Multi-accueil",
+    "lat": 45.761073,
+    "lng": 3.090762,
+    "extra": "60 places"
+  },
+  {
+    "nom": "Multi Accueil Babymoov",
+    "type": "Crèche d'entreprise",
+    "lat": 45.800818,
+    "lng": 3.145829,
+    "extra": "30 places"
+  },
+  {
+    "nom": "Laep La Maison Partagée",
+    "type": "Lieux d’Accueil Enfants Parents",
+    "lat": 45.763752,
+    "lng": 3.090258
+  },
+  {
+    "nom": "Mam L'île Ô Copains",
+    "type": "Maison d'Assistants Maternels",
+    "lat": 45.791884,
+    "lng": 3.09534,
+    "extra": "8 places"
+  },
+  {
+    "nom": "Mam Nos Premiers Pas",
+    "type": "Maison d'Assistants Maternels",
+    "lat": 45.7876,
+    "lng": 3.111926,
+    "extra": "12 places"
+  },
+  {
+    "nom": "Mam Les Minimoys",
+    "type": "Maison d'Assistants Maternels",
+    "lat": 45.804092,
+    "lng": 3.108292,
+    "extra": "12 places"
+  },
+  {
+    "nom": "Crèche \"les Petit Dômes\"",
+    "type": "Multi-accueil",
+    "lat": 45.785568,
+    "lng": 3.111264,
+    "extra": "40 places"
+  },
+  {
+    "nom": "Crèche Les Globes Trotteurs",
+    "type": "Micro-crèche",
+    "lat": 45.763217,
+    "lng": 3.133629,
+    "extra": "12 places"
+  },
+  {
+    "nom": "Crèche Montferrand",
+    "type": "Crèche collective",
+    "lat": 45.792651,
+    "lng": 3.116835,
+    "extra": "60 places"
+  },
+  {
+    "nom": "Crèche Sully",
+    "type": "Crèche collective",
+    "lat": 45.792419,
+    "lng": 3.077419,
+    "extra": "65 places"
+  },
+  {
+    "nom": "Crèche Fontaine-du-bac",
+    "type": "Crèche collective",
+    "lat": 45.765195,
+    "lng": 3.120034,
+    "extra": "16 places"
+  },
+  {
+    "nom": "Crèche La Gauthiere",
+    "type": "Crèche collective",
+    "lat": 45.800541,
+    "lng": 3.118866,
+    "extra": "39 places"
+  },
+  {
+    "nom": "Crèche Saint-jacques 1",
+    "type": "Crèche collective",
+    "lat": 45.76555,
+    "lng": 3.09185,
+    "extra": "95 places"
+  },
+  {
+    "nom": "Multi-accueil Les P’tits As",
+    "type": "Multi-accueil",
+    "lat": 45.780816,
+    "lng": 3.097462,
+    "extra": "43 places"
+  },
+  {
+    "nom": "Laep La Maison De L'île",
+    "type": "Lieux d’Accueil Enfants Parents",
+    "lat": 45.780816,
+    "lng": 3.092308
+  },
+  {
+    "nom": "Crèche Les Matelots",
+    "type": "Micro-crèche",
+    "lat": 45.763217,
+    "lng": 3.133629,
+    "extra": "12 places"
+  },
+  {
+    "nom": "Rpe - Récré Au Vent",
+    "type": "Relais Petite Enfance",
+    "lat": 45.786997,
+    "lng": 3.094866
+  }
+]

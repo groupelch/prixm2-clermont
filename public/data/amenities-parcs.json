@@ -1,0 +1,5294 @@
+[
+  {
+    "nom": "Esplanade Rue Niel",
+    "type": "Espace vert public de proximité",
+    "lat": 45.783810488929376,
+    "lng": 3.102186822718307,
+    "extra": "2948 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77479128828546,
+    "lng": 3.0809667569268284,
+    "extra": "11064 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78373362062862,
+    "lng": 3.0714360759140713,
+    "extra": "13512 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.7891614533779,
+    "lng": 3.056577670506795,
+    "extra": "8600 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77411762086408,
+    "lng": 3.07834363888137,
+    "extra": "2460 m²"
+  },
+  {
+    "nom": "Parking Philippe Lebon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.772440679524685,
+    "lng": 3.0924570266811506,
+    "extra": "1456 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Jardin collectif",
+    "lat": 45.7627573400573,
+    "lng": 3.1206019959251727,
+    "extra": "453 m²"
+  },
+  {
+    "nom": "Parc de la Muraille",
+    "type": "parc",
+    "lat": 45.76699686860462,
+    "lng": 3.0912033351739394,
+    "extra": "15698 m²"
+  },
+  {
+    "nom": "Jardin de Champratel",
+    "type": "Jardin collectif",
+    "lat": 45.81453162023912,
+    "lng": 3.1154091411306646,
+    "extra": "1516 m²"
+  },
+  {
+    "nom": "TRAVAUX - Ilôt Place Dellile",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78105646725109,
+    "lng": 3.0917559689785143,
+    "extra": "240 m²"
+  },
+  {
+    "nom": "Jardin Croix de Neyrat",
+    "type": "Jardin collectif",
+    "lat": 45.811541682101335,
+    "lng": 3.1015055752345764,
+    "extra": "264 m²"
+  },
+  {
+    "nom": "Square Salvador Allende",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77416241974303,
+    "lng": 3.119451037891287,
+    "extra": "1856 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76345891073306,
+    "lng": 3.079809482410584,
+    "extra": "13770 m²"
+  },
+  {
+    "nom": "NON SAISI- La Charme",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79875221728013,
+    "lng": 3.1229436301670415,
+    "extra": "4921 m²"
+  },
+  {
+    "nom": "Accompagnemnt de voirie Blanzat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.794673393186336,
+    "lng": 3.0848695933242136,
+    "extra": "3 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.7625659976965,
+    "lng": 3.081188000551105,
+    "extra": "2088 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76449383482261,
+    "lng": 3.0876817313225904,
+    "extra": "31232 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Place des Carmes Dechaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.782435591339414,
+    "lng": 3.0948158507616683,
+    "extra": "76 m²"
+  },
+  {
+    "nom": "Archipel des Salins Terra Preta",
+    "type": "Jardin collectif",
+    "lat": 45.77148905472185,
+    "lng": 3.081333619702567,
+    "extra": "920 m²"
+  },
+  {
+    "nom": "Passage Coubertin",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76873731385438,
+    "lng": 3.085815080717667,
+    "extra": "622 m²"
+  },
+  {
+    "nom": "Maison de Quartier - La Glacière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79328824069226,
+    "lng": 3.080458594122435,
+    "extra": "3606 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Etienne Clémentel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80390900611284,
+    "lng": 3.10989987481411,
+    "extra": "674 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7869917643644,
+    "lng": 3.06257422476759,
+    "extra": "11207 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.780567005273014,
+    "lng": 3.094139897103086,
+    "extra": "12807 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77145943457073,
+    "lng": 3.0924344579094285,
+    "extra": "6770 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77008483947185,
+    "lng": 3.1111978917615475,
+    "extra": "7033 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77177979422433,
+    "lng": 3.101819814836071,
+    "extra": "14413 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.7697577198825,
+    "lng": 3.1093576264568816,
+    "extra": "9107 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76944677954028,
+    "lng": 3.1078854696450806,
+    "extra": "7638 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80774914999556,
+    "lng": 3.1243506803755285,
+    "extra": "305 m²"
+  },
+  {
+    "nom": "Square Bompart",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78373447007553,
+    "lng": 3.0838977263944334,
+    "extra": "1285 m²"
+  },
+  {
+    "nom": "Bâtiments 25/27 Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813740334042095,
+    "lng": 3.125880848482505,
+    "extra": "5237 m²"
+  },
+  {
+    "nom": "Giratoire Boulevard Georges Pompidou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.797589424873024,
+    "lng": 3.131170864242278,
+    "extra": "1866 m²"
+  },
+  {
+    "nom": "NON SAISI - Viple",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79052825854327,
+    "lng": 3.1131316868082086,
+    "extra": "388 m²"
+  },
+  {
+    "nom": "NON SASI - Viple",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.790215930753426,
+    "lng": 3.1132583749100644,
+    "extra": "5 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard John Kennedy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79826706192273,
+    "lng": 3.122452084098529,
+    "extra": "612 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.75705592671888,
+    "lng": 3.095192657502163,
+    "extra": "4738 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Chanteranne",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78526875234446,
+    "lng": 3.0988745954395625,
+    "extra": "249 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Place Turgot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78502366392524,
+    "lng": 3.0988935161514464,
+    "extra": "210 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Courtiaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76908441435263,
+    "lng": 3.12930496646278,
+    "extra": "155 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Souvenir Français",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.783300635691546,
+    "lng": 3.094943183931525,
+    "extra": "245 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Place des Carmes Dechaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78276415415421,
+    "lng": 3.0948161294055065,
+    "extra": "80 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Place des Carmes Dechaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78226854254129,
+    "lng": 3.095024428149947,
+    "extra": "86 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76275730546044,
+    "lng": 3.120951108778493,
+    "extra": "5692 m²"
+  },
+  {
+    "nom": "CASC",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.763456141613325,
+    "lng": 3.138255370021806,
+    "extra": "1574 m²"
+  },
+  {
+    "nom": "Giratoire Daniel Mayer",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79324944743854,
+    "lng": 3.096028633866055,
+    "extra": "663 m²"
+  },
+  {
+    "nom": "Ilôt Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.787839318021476,
+    "lng": 3.122007230030829,
+    "extra": "589 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Daniel Mayer",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79333946238999,
+    "lng": 3.095535265225453,
+    "extra": "477 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76178394356762,
+    "lng": 3.12447388351201,
+    "extra": "7296 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Etienne Clémentel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8060685848965,
+    "lng": 3.109262267256161,
+    "extra": "211 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard John Kennedy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.796427202618595,
+    "lng": 3.123237890154145,
+    "extra": "60 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Etienne Clémentel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80660058229587,
+    "lng": 3.1092729076053907,
+    "extra": "68 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Daniel Mayer",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79348583709963,
+    "lng": 3.0967175983083726,
+    "extra": "802 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Gustave Flaubert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7722367668877,
+    "lng": 3.1220932411590843,
+    "extra": "1849 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Armand Fallière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.791450408796244,
+    "lng": 3.0749588191190784,
+    "extra": "17 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Armand Fallière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79147902872438,
+    "lng": 3.0747640847192788,
+    "extra": "17 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.75843652181354,
+    "lng": 3.098297326886578,
+    "extra": "1921 m²"
+  },
+  {
+    "nom": "Accompagement de voirie Rue de Serbie",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78222208579925,
+    "lng": 3.0796142444291035,
+    "extra": "16 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76436273348469,
+    "lng": 3.1027394805841193,
+    "extra": "2061 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76050168635352,
+    "lng": 3.0965821585687383,
+    "extra": "10639 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.768514918578695,
+    "lng": 3.1015859963454204,
+    "extra": "8590 m²"
+  },
+  {
+    "nom": "Giratoire Mercoeur",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.808628298879434,
+    "lng": 3.1171549816782314,
+    "extra": "28 m²"
+  },
+  {
+    "nom": "Terre plein central Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77967574142005,
+    "lng": 3.119027936809065,
+    "extra": "575 m²"
+  },
+  {
+    "nom": "NON SAISI",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81277901014162,
+    "lng": 3.100918331869507,
+    "extra": "198 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78908856120874,
+    "lng": 3.093838308270343,
+    "extra": "6817 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78352556581588,
+    "lng": 3.0654378525431847,
+    "extra": "6047 m²"
+  },
+  {
+    "nom": "Villa Clos Notre Dame",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78405819518645,
+    "lng": 3.0777588722550133,
+    "extra": "61 m²"
+  },
+  {
+    "nom": "Giratoire du Puy-Monteix",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79605863087946,
+    "lng": 3.073439098435469,
+    "extra": "99 m²"
+  },
+  {
+    "nom": "Terre plein central Rue Sous les Vignes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79905611436833,
+    "lng": 3.1050029807880426,
+    "extra": "5210 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Jardin collectif",
+    "lat": 45.78214369283882,
+    "lng": 3.0800826266631565,
+    "extra": "269 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76661017304631,
+    "lng": 3.0936068506398904,
+    "extra": "13749 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Adrien Mabrut",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813123643905705,
+    "lng": 3.1199136225374313,
+    "extra": "790 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Sous les Vignes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79852607077386,
+    "lng": 3.1052264094835516,
+    "extra": "210 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Gustave Flaubert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7719126851943,
+    "lng": 3.1225473521896894,
+    "extra": "910 m²"
+  },
+  {
+    "nom": "Créche Sully",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79219056363729,
+    "lng": 3.0774943418116534,
+    "extra": "2279 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79211306782881,
+    "lng": 3.090175147716441,
+    "extra": "144 m²"
+  },
+  {
+    "nom": "Square des Fossés Sous le Séminaire",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79464437474951,
+    "lng": 3.1139877417054644,
+    "extra": "1332 m²"
+  },
+  {
+    "nom": "Square des Liondards",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76581373901105,
+    "lng": 3.094067172314122,
+    "extra": "3975 m²"
+  },
+  {
+    "nom": "Ilôt Place Turgot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78482154769499,
+    "lng": 3.1001989680667914,
+    "extra": "189 m²"
+  },
+  {
+    "nom": "NON SAISI - accompagnement sirocco",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813384492795905,
+    "lng": 3.1066109973107756,
+    "extra": "618 m²"
+  },
+  {
+    "nom": "Accompagnement voirie Petit Chemin de la Sarre",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77273164830215,
+    "lng": 3.1206635186246725,
+    "extra": "392 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Maternelle Albert Bayet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.766477352927545,
+    "lng": 3.1101516429172076,
+    "extra": "2682 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard John Kennedy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79998823485455,
+    "lng": 3.121353087815761,
+    "extra": "130 m²"
+  },
+  {
+    "nom": "Giratoire Georges Besse",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.785315282529375,
+    "lng": 3.140348140691623,
+    "extra": "614 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Docteur Pierre Balme",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7923083033512,
+    "lng": 3.1126704187942273,
+    "extra": "19 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Docteur Pierre Balme",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7923235224928,
+    "lng": 3.1125703585342888,
+    "extra": "21 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Viviani",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80426712442953,
+    "lng": 3.11860579949587,
+    "extra": "301 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard John Kennedy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79919356203769,
+    "lng": 3.1218395591237416,
+    "extra": "269 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard John Kennedy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80322924419435,
+    "lng": 3.119432675440626,
+    "extra": "196 m²"
+  },
+  {
+    "nom": "Giratoire du Courage",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.802893490084735,
+    "lng": 3.114681409938583,
+    "extra": "29 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Adrien Mabrut",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81347633767676,
+    "lng": 3.120790273213432,
+    "extra": "71 m²"
+  },
+  {
+    "nom": "Rue des Fossés Sous la Rodade",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.794958266341304,
+    "lng": 3.1125930922213527,
+    "extra": "1601 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77447061782411,
+    "lng": 3.0893815677550363,
+    "extra": "4982 m²"
+  },
+  {
+    "nom": "Giratoire Rue Louis Rosier",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76404131897205,
+    "lng": 3.1340442977032326,
+    "extra": "196 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Jean Butez",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78846580733963,
+    "lng": 3.086312857921939,
+    "extra": "8323 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Jean Moulin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.777764389241334,
+    "lng": 3.1172671314982754,
+    "extra": "558 m²"
+  },
+  {
+    "nom": "Dépôt de Voirie Jean Moulin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77406789010868,
+    "lng": 3.119434100410222,
+    "extra": "3108 m²"
+  },
+  {
+    "nom": "NON SAISI",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81345639309783,
+    "lng": 3.1001213185795935,
+    "extra": "590 m²"
+  },
+  {
+    "nom": "NON SAISI",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81338387846203,
+    "lng": 3.0998558145112582,
+    "extra": "546 m²"
+  },
+  {
+    "nom": "Talus Bretelle Boulevard Edgar Quinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80580344842704,
+    "lng": 3.1269280291265202,
+    "extra": "2241 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76032282913393,
+    "lng": 3.099770115583524,
+    "extra": "7362 m²"
+  },
+  {
+    "nom": "Echangeur Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78715837857639,
+    "lng": 3.118651590973726,
+    "extra": "1793 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Avenue de la Margeride",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76375087217149,
+    "lng": 3.117799654153025,
+    "extra": "499 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Edgar Quinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78165029813246,
+    "lng": 3.078442704827292,
+    "extra": "2965 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77414317142652,
+    "lng": 3.081888924925961,
+    "extra": "4092 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.772998085028995,
+    "lng": 3.0795966218808166,
+    "extra": "11842 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76413413887932,
+    "lng": 3.0780892962993103,
+    "extra": "6335 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Place des Carmes Dechaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.782812125960874,
+    "lng": 3.095397913933298,
+    "extra": "223 m²"
+  },
+  {
+    "nom": "Bretelle Boulevard Jacques Bingen /Petit Chemin de la Sarre",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.772179403186705,
+    "lng": 3.120532437898998,
+    "extra": "4456 m²"
+  },
+  {
+    "nom": "Parc de l'Ecluse",
+    "type": "Parc urbain public",
+    "lat": 45.801134852180354,
+    "lng": 3.1167644409326063,
+    "extra": "15913 m²"
+  },
+  {
+    "nom": "Jardin partagé de Fontgiève",
+    "type": "Jardin collectif",
+    "lat": 45.781255497828084,
+    "lng": 3.074137580172444,
+    "extra": "1633 m²"
+  },
+  {
+    "nom": "Accompagnement Parking Auchan",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81354688533913,
+    "lng": 3.107279934990661,
+    "extra": "55 m²"
+  },
+  {
+    "nom": "Jardins familiaux de Champratel",
+    "type": "Jardin collectif",
+    "lat": 45.81767146841775,
+    "lng": 3.1222195625342133,
+    "extra": "17786 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Pierre Sémard",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77678635996458,
+    "lng": 3.0996890350157806,
+    "extra": "316 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8141211483384,
+    "lng": 3.1287820020356425,
+    "extra": "716 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Edgar Quinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.801418465757976,
+    "lng": 3.1143261568480565,
+    "extra": "4265 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Vincent Auriol",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79580228906348,
+    "lng": 3.123434587236606,
+    "extra": "60 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Vincent Auriol",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79596421700268,
+    "lng": 3.1230297922155774,
+    "extra": "155 m²"
+  },
+  {
+    "nom": "Terre plein central Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77859648293966,
+    "lng": 3.1268454242825516,
+    "extra": "984 m²"
+  },
+  {
+    "nom": "Ilôt Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77883227506743,
+    "lng": 3.126945852291627,
+    "extra": "1422 m²"
+  },
+  {
+    "nom": "Terre plein central Rue Louis Blériot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79042937834351,
+    "lng": 3.1428283690391488,
+    "extra": "347 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de la Cartoucherie",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77863886369793,
+    "lng": 3.1165544668592733,
+    "extra": "133 m²"
+  },
+  {
+    "nom": "Allée Piétonne Fernand Forest",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79092667242081,
+    "lng": 3.098564571892827,
+    "extra": "2159 m²"
+  },
+  {
+    "nom": "Terre plein central Avenue du Brézet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77976298913642,
+    "lng": 3.129630576535668,
+    "extra": "1906 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77928633156318,
+    "lng": 3.125062816084812,
+    "extra": "2479 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Petit Chemin de la Sarre",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77272084495112,
+    "lng": 3.1194251293986053,
+    "extra": "181 m²"
+  },
+  {
+    "nom": "Giratoire Rue Louis Blériot / Rue Elisée Reclus",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78812823928953,
+    "lng": 3.1394354557406836,
+    "extra": "704 m²"
+  },
+  {
+    "nom": "Terre plein central Rue Louis Blériot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78874165380768,
+    "lng": 3.1402304404307486,
+    "extra": "1147 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Allée des Rossignols",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79560742172734,
+    "lng": 3.100287433375112,
+    "extra": "60 m²"
+  },
+  {
+    "nom": "Parc'Oasis",
+    "type": "Jardin collectif",
+    "lat": 45.78529555872891,
+    "lng": 3.1174568751929845,
+    "extra": "2544 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Ambroise Brugière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.788878587163914,
+    "lng": 3.1181782293760363,
+    "extra": "489 m²"
+  },
+  {
+    "nom": "Terre plein central  Avenue Fernand Forest",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79789861533878,
+    "lng": 3.1087696681982058,
+    "extra": "8308 m²"
+  },
+  {
+    "nom": "Le jardin de Paul",
+    "type": "Jardin collectif",
+    "lat": 45.77538991513173,
+    "lng": 3.091388327416978,
+    "extra": "594 m²"
+  },
+  {
+    "nom": "Ilôt Rue du Pré la Reine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.786101275690974,
+    "lng": 3.1173942630674687,
+    "extra": "237 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Fournières",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.789404336694524,
+    "lng": 3.062604203716272,
+    "extra": "30 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Gravouses",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78345439782991,
+    "lng": 3.068772721487484,
+    "extra": "16 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de la Cartoucherie",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77530243390176,
+    "lng": 3.1050400234213313,
+    "extra": "217 m²"
+  },
+  {
+    "nom": "Stade Tremonteix",
+    "type": "Parc urbain public",
+    "lat": 45.79204194270676,
+    "lng": 3.0673536658270444,
+    "extra": "30979 m²"
+  },
+  {
+    "nom": "Ilôt Rue du Pré la Reine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.785850173408605,
+    "lng": 3.117091096801233,
+    "extra": "259 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Pré la Reine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78585038473818,
+    "lng": 3.116773049764605,
+    "extra": "919 m²"
+  },
+  {
+    "nom": "Echangeur Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78711449747022,
+    "lng": 3.1192534148855384,
+    "extra": "646 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue d'Aubrac",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.781322812140125,
+    "lng": 3.117507693483607,
+    "extra": "139 m²"
+  },
+  {
+    "nom": "Centre Commercial Fontaine du Bac",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76344572005501,
+    "lng": 3.1207497994090017,
+    "extra": "6749 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Pierre Doussinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.767077630445,
+    "lng": 3.11811648355647,
+    "extra": "61 m²"
+  },
+  {
+    "nom": "Puy de la Poix",
+    "type": "Espace naturel",
+    "lat": 45.781791556472186,
+    "lng": 3.1466630992364344,
+    "extra": "9296 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de l' Oradou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7698890639045,
+    "lng": 3.112055065845024,
+    "extra": "94 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Clos de Chanturgue",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7943306391082,
+    "lng": 3.1005419293627376,
+    "extra": "514 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Gustave Flaubert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76626960973091,
+    "lng": 3.1252034008138625,
+    "extra": "1601 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Hauts de Chanturgue",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.812170226217106,
+    "lng": 3.1011257249989974,
+    "extra": "851 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81015849286639,
+    "lng": 3.109882914544157,
+    "extra": "121 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Ambroise Brugière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79155609096003,
+    "lng": 3.1181409629469066,
+    "extra": "130 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.811354879132146,
+    "lng": 3.12898169664431,
+    "extra": "426 m²"
+  },
+  {
+    "nom": "Terrain Enherbé Rue de Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81396140724704,
+    "lng": 3.1132783443158187,
+    "extra": "1009 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie sous le Viaduc Saint-Jacques",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7664688377691,
+    "lng": 3.089196203882935,
+    "extra": "522 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.804168276642166,
+    "lng": 3.105227705538923,
+    "extra": "85254 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.79704427190587,
+    "lng": 3.119846939865853,
+    "extra": "11784 m²"
+  },
+  {
+    "nom": "Talus Avenue Léon Blum",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77106870535652,
+    "lng": 3.094585781479708,
+    "extra": "135 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Michelet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.789112939742346,
+    "lng": 3.1109155406617375,
+    "extra": "123 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81433558862043,
+    "lng": 3.127536015081194,
+    "extra": "608 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80846048426947,
+    "lng": 3.128638885689938,
+    "extra": "28 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.808291238950375,
+    "lng": 3.1289278973945356,
+    "extra": "468 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81030674475254,
+    "lng": 3.1291523728333686,
+    "extra": "225 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81138066125509,
+    "lng": 3.1291636312273137,
+    "extra": "572 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81313284642137,
+    "lng": 3.129002466710852,
+    "extra": "112 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81324817929918,
+    "lng": 3.129177820261621,
+    "extra": "334 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Impasse de Champetières",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80640061374295,
+    "lng": 3.1256678974329253,
+    "extra": "154 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81357725571831,
+    "lng": 3.1291782379661077,
+    "extra": "41 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80790409200644,
+    "lng": 3.1261082338854735,
+    "extra": "1100 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80767984752488,
+    "lng": 3.1259599685009505,
+    "extra": "1255 m²"
+  },
+  {
+    "nom": "Ilôt Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80702236692907,
+    "lng": 3.1281929961663413,
+    "extra": "219 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Pré Comtal",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80259668799551,
+    "lng": 3.131654860411815,
+    "extra": "17 m²"
+  },
+  {
+    "nom": "Bretelle Boulevad Jacques Bingen/ Petit Chemin de la Sarre",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77220240117632,
+    "lng": 3.1192330633743977,
+    "extra": "774 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Petit Chemin de la Sarre",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77273386595542,
+    "lng": 3.1201139839393077,
+    "extra": "97 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Dunkerque",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8161081869769,
+    "lng": 3.1090573424219667,
+    "extra": "79 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78105463078438,
+    "lng": 3.1177487666361476,
+    "extra": "522 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Louis Chartoire",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79745459662098,
+    "lng": 3.1316185849211817,
+    "extra": "80 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79214079679477,
+    "lng": 3.1556343980445987,
+    "extra": "1209 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Antoine Menat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77873143938697,
+    "lng": 3.0735968675526153,
+    "extra": "658 m²"
+  },
+  {
+    "nom": "Place Maréchal Fayolle",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.781338937705286,
+    "lng": 3.078855532822561,
+    "extra": "2224 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Edgar Quinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80346542447964,
+    "lng": 3.1181528519443056,
+    "extra": "546 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Avenue Edouard Michelin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78093064288436,
+    "lng": 3.1068618987176273,
+    "extra": "236 m²"
+  },
+  {
+    "nom": "Ilôt Place Turgot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78458124201623,
+    "lng": 3.0995716204439114,
+    "extra": "388 m²"
+  },
+  {
+    "nom": "Dépôt de voirie Boulevard Georges Pompidou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.795651019083934,
+    "lng": 3.1248876014069715,
+    "extra": "10631 m²"
+  },
+  {
+    "nom": "Ilôt Place Turgot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.784672680771415,
+    "lng": 3.10014540730556,
+    "extra": "653 m²"
+  },
+  {
+    "nom": "Accompagnement Parking Rue Rouvier",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80674351458423,
+    "lng": 3.1114481879767566,
+    "extra": "79 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81414702953962,
+    "lng": 3.128510061676977,
+    "extra": "139 m²"
+  },
+  {
+    "nom": "Centre Commercial des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81271473819107,
+    "lng": 3.1279020279383905,
+    "extra": "6834 m²"
+  },
+  {
+    "nom": "Giratoire Mail Kellermann",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78057389155426,
+    "lng": 3.0732416588528104,
+    "extra": "84 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78208325151749,
+    "lng": 3.0747286904592612,
+    "extra": "8295 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.7790777479436,
+    "lng": 3.0727419008192096,
+    "extra": "6877 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Alphonse Daudet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.814305011670506,
+    "lng": 3.1028042277579573,
+    "extra": "168 m²"
+  },
+  {
+    "nom": "Talus du Pont de Neyrat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81467877788894,
+    "lng": 3.108298685325181,
+    "extra": "2426 m²"
+  },
+  {
+    "nom": "Passage Rue Valentin Hauy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76277242138354,
+    "lng": 3.138252068166768,
+    "extra": "911 m²"
+  },
+  {
+    "nom": "Tremon'Terre",
+    "type": "Jardin collectif",
+    "lat": 45.79186481466372,
+    "lng": 3.0663135220613733,
+    "extra": "969 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Henri Simonnet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.776291576652625,
+    "lng": 3.1126089983377208,
+    "extra": "1711 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.763958642089804,
+    "lng": 3.122276129899756,
+    "extra": "39253 m²"
+  },
+  {
+    "nom": "Square Viviani",
+    "type": "Espace vert public de proximité",
+    "lat": 45.80944156165495,
+    "lng": 3.1204784902113913,
+    "extra": "3499 m²"
+  },
+  {
+    "nom": "Place Gambetta",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77041582670336,
+    "lng": 3.081942958203976,
+    "extra": "6207 m²"
+  },
+  {
+    "nom": "Jardin Lecoq",
+    "type": "Parc urbain public",
+    "lat": 45.772382631537354,
+    "lng": 3.0884254249802514,
+    "extra": "45957 m²"
+  },
+  {
+    "nom": "Square Beaupeyras",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79288321838785,
+    "lng": 3.0821661150504966,
+    "extra": "3010 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace naturel",
+    "lat": 45.762152682164626,
+    "lng": 3.0759452744163216,
+    "extra": "309292 m²"
+  },
+  {
+    "nom": "Remparts de Montferrand",
+    "type": "Espace vert public de proximité",
+    "lat": 45.794980250095975,
+    "lng": 3.1114156509560056,
+    "extra": "5309 m²"
+  },
+  {
+    "nom": "Puy de Crouël",
+    "type": "Espace naturel",
+    "lat": 45.77277315266998,
+    "lng": 3.1362498840547053,
+    "extra": "205000 m²"
+  },
+  {
+    "nom": "Square du Moulin",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79473786673459,
+    "lng": 3.110382641815397,
+    "extra": "1675 m²"
+  },
+  {
+    "nom": "Square Beaupeyras",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79291318090911,
+    "lng": 3.0821600579547743,
+    "extra": "2270 m²"
+  },
+  {
+    "nom": "Square des Gravouses",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78335876469244,
+    "lng": 3.0699827862025626,
+    "extra": "187 m²"
+  },
+  {
+    "nom": "Allée pietonne de Belle Ombre",
+    "type": "Espace vert public de proximité",
+    "lat": 45.784594852206205,
+    "lng": 3.094500632875051,
+    "extra": "717 m²"
+  },
+  {
+    "nom": "Passage Pablo Caliero",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77139741042407,
+    "lng": 3.112968576838281,
+    "extra": "3507 m²"
+  },
+  {
+    "nom": "Terrain Fontaine du Bac",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76295663147572,
+    "lng": 3.119928731535053,
+    "extra": "11323 m²"
+  },
+  {
+    "nom": "Allées Fleuries",
+    "type": "Espace vert public de proximité",
+    "lat": 45.7900811591447,
+    "lng": 3.1088500845593474,
+    "extra": "1794 m²"
+  },
+  {
+    "nom": "Terrain Charles Rauzier",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77398723009705,
+    "lng": 3.1119001477456245,
+    "extra": "10689 m²"
+  },
+  {
+    "nom": "Maison Abbé Prévost",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79328887140279,
+    "lng": 3.0804639275138572,
+    "extra": "3654 m²"
+  },
+  {
+    "nom": "Place Général Lazard",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77485035993096,
+    "lng": 3.112330720804482,
+    "extra": "824 m²"
+  },
+  {
+    "nom": "Jeu de boules Casabianca",
+    "type": "Espace vert public de proximité",
+    "lat": 45.808396789489684,
+    "lng": 3.1082820273552962,
+    "extra": "2253 m²"
+  },
+  {
+    "nom": "Rue Champs de Roseaux",
+    "type": "Espace vert public de proximité",
+    "lat": 45.80877375417275,
+    "lng": 3.124949649320653,
+    "extra": "2559 m²"
+  },
+  {
+    "nom": "Jardin Anaïs Guilloux",
+    "type": "Espace vert public de proximité",
+    "lat": 45.7741340338228,
+    "lng": 3.0973039851671036,
+    "extra": "282 m²"
+  },
+  {
+    "nom": "Place Lucie et Raymond Aubrac",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78432027628456,
+    "lng": 3.109559378694475,
+    "extra": "4785 m²"
+  },
+  {
+    "nom": "Stade Herbet",
+    "type": "Espace vert public de proximité",
+    "lat": 45.776537553812176,
+    "lng": 3.1209351484704495,
+    "extra": "12985 m²"
+  },
+  {
+    "nom": "Jardin botanique de la Charme",
+    "type": "Jardin botanique",
+    "lat": 45.80003636318204,
+    "lng": 3.123470209206836,
+    "extra": "9442 m²"
+  },
+  {
+    "nom": "Square des Ronzières",
+    "type": "Espace vert public de proximité",
+    "lat": 45.7973982921357,
+    "lng": 3.1176152270599173,
+    "extra": "2550 m²"
+  },
+  {
+    "nom": "Square Proudhon",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77044036420317,
+    "lng": 3.1059335998107103,
+    "extra": "535 m²"
+  },
+  {
+    "nom": "Maison des Boulistes",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78599134599293,
+    "lng": 3.0842763318168163,
+    "extra": "6875 m²"
+  },
+  {
+    "nom": "Parc Montjuzet",
+    "type": "Parc urbain public",
+    "lat": 45.78896513359945,
+    "lng": 3.0739631138439627,
+    "extra": "236011 m²"
+  },
+  {
+    "nom": "Regensburg",
+    "type": "Espace vert public de proximité",
+    "lat": 45.771242773960275,
+    "lng": 3.077227585028745,
+    "extra": "11698 m²"
+  },
+  {
+    "nom": "Parc du Creux de l'Enfer",
+    "type": "Parc urbain public",
+    "lat": 45.766114263746495,
+    "lng": 3.114526120656782,
+    "extra": "35164 m²"
+  },
+  {
+    "nom": "Square Amadeo",
+    "type": "Parc urbain public",
+    "lat": 45.77804116371985,
+    "lng": 3.0732814411161407,
+    "extra": "10465 m²"
+  },
+  {
+    "nom": "Square de la Cerisière",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79368885954502,
+    "lng": 3.112593858004234,
+    "extra": "365 m²"
+  },
+  {
+    "nom": "Place Léon Garmy",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78054489186891,
+    "lng": 3.098333509601792,
+    "extra": "1766 m²"
+  },
+  {
+    "nom": "Square des Meuniers",
+    "type": "Espace vert public de proximité",
+    "lat": 45.7669972826875,
+    "lng": 3.1042866170109167,
+    "extra": "2737 m²"
+  },
+  {
+    "nom": "Square d'Aberdeen B",
+    "type": "Espace vert public de proximité",
+    "lat": 45.809372673771854,
+    "lng": 3.0980688376957404,
+    "extra": "7650 m²"
+  },
+  {
+    "nom": "Terre plein central Esplanade",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77721266898172,
+    "lng": 3.0958400597683284,
+    "extra": "189 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Desaix",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77722969710579,
+    "lng": 3.083560289364419,
+    "extra": "162 m²"
+  },
+  {
+    "nom": "Le Rectorat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77291394959045,
+    "lng": 3.0873815414425514,
+    "extra": "5686 m²"
+  },
+  {
+    "nom": "NON SAISI - talus rue du crouzet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80487475664006,
+    "lng": 3.103092852239411,
+    "extra": "2160 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Michel de l'Hospital",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77745526762774,
+    "lng": 3.089720209130285,
+    "extra": "95 m²"
+  },
+  {
+    "nom": "NON SAISI - GS G.SAND",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80592525639989,
+    "lng": 3.1027077169385238,
+    "extra": "1777 m²"
+  },
+  {
+    "nom": "Ilôt Jean Monnet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7926843495113,
+    "lng": 3.0718872895805256,
+    "extra": "242 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Armand Fallière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.791442293876244,
+    "lng": 3.076384172952905,
+    "extra": "189 m²"
+  },
+  {
+    "nom": "Foyer Home Dome",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.770950461585166,
+    "lng": 3.0776350707082725,
+    "extra": "4767 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Lavoisier",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78229559708104,
+    "lng": 3.073019578631772,
+    "extra": "57 m²"
+  },
+  {
+    "nom": "Mail d'Allagnat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.774759499591454,
+    "lng": 3.0842443721491737,
+    "extra": "16241 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77476127606793,
+    "lng": 3.0780469253280414,
+    "extra": "1362 m²"
+  },
+  {
+    "nom": "NON SAISI - Viple",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79045432287585,
+    "lng": 3.1135498314860883,
+    "extra": "27 m²"
+  },
+  {
+    "nom": "Parc Champfleuri",
+    "type": "Parc urbain public",
+    "lat": 45.78739847131818,
+    "lng": 3.0881138120325926,
+    "extra": "8636 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Ambroise Brugière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79134214434594,
+    "lng": 3.1178580862612773,
+    "extra": "1502 m²"
+  },
+  {
+    "nom": "Place des Carmes 2",
+    "type": "Espace vert public de proximité",
+    "lat": 45.782953739185295,
+    "lng": 3.0951706139278135,
+    "extra": "6906 m²"
+  },
+  {
+    "nom": "Accompagnemnt de voirie Blanzat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79463069977115,
+    "lng": 3.084855499491143,
+    "extra": "3 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.81061879415201,
+    "lng": 3.1038042042163436,
+    "extra": "473 m²"
+  },
+  {
+    "nom": "Halte Garderie Neyron",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.779807143372885,
+    "lng": 3.0894952867752337,
+    "extra": "104 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77672921058469,
+    "lng": 3.0820483055190637,
+    "extra": "21438 m²"
+  },
+  {
+    "nom": "Centre Associatif",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78145417451161,
+    "lng": 3.0855542365905615,
+    "extra": "2032 m²"
+  },
+  {
+    "nom": "Bibliothèque (terrasse)",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77399314315693,
+    "lng": 3.088726845924345,
+    "extra": "462 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7925229327728,
+    "lng": 3.1497489579173115,
+    "extra": "1741 m²"
+  },
+  {
+    "nom": "TRAVAUX - Talus Montlosier",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78102654843155,
+    "lng": 3.087185527091162,
+    "extra": "1230 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77207488711427,
+    "lng": 3.085106443283793,
+    "extra": "50297 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76637067184166,
+    "lng": 3.078725720264843,
+    "extra": "12725 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76633517421233,
+    "lng": 3.0777215521348356,
+    "extra": "12920 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Jean Philippe Rameau",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78092291255069,
+    "lng": 3.073982334338989,
+    "extra": "3676 m²"
+  },
+  {
+    "nom": "Jardin de Braga",
+    "type": "Jardin collectif",
+    "lat": 45.78722231758205,
+    "lng": 3.1135704154480526,
+    "extra": "313 m²"
+  },
+  {
+    "nom": "NON SAISI - Musée",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79409607906625,
+    "lng": 3.115666110577464,
+    "extra": "287 m²"
+  },
+  {
+    "nom": "NON SAISI - Chappe",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78573639539615,
+    "lng": 3.1191871261819184,
+    "extra": "256 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.780648133511335,
+    "lng": 3.1174295966199286,
+    "extra": "812 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76206345058942,
+    "lng": 3.080809027131776,
+    "extra": "6982 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.763219706679905,
+    "lng": 3.0881421411171144,
+    "extra": "7619 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Jardin collectif",
+    "lat": 45.814060404049776,
+    "lng": 3.130786482257942,
+    "extra": "190 m²"
+  },
+  {
+    "nom": "Jardin Rabanesse",
+    "type": "Jardin collectif",
+    "lat": 45.76756950375124,
+    "lng": 3.0868230361398745,
+    "extra": "1074 m²"
+  },
+  {
+    "nom": "Square Anne Franck",
+    "type": "Espace vert public de proximité",
+    "lat": 45.792694313278126,
+    "lng": 3.0712916903016496,
+    "extra": "1595 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Etienne Clémentel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80229363926579,
+    "lng": 3.1107593433675835,
+    "extra": "400 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77044231684295,
+    "lng": 3.102458357054254,
+    "extra": "9278 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Lavoisier",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78238277376021,
+    "lng": 3.0732014426794887,
+    "extra": "87 m²"
+  },
+  {
+    "nom": "Mairie (patio)",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77971343167488,
+    "lng": 3.0865192475539596,
+    "extra": "373 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.766086282923105,
+    "lng": 3.085581062121236,
+    "extra": "3447 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.771921145492136,
+    "lng": 3.091495769426024,
+    "extra": "13076 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80838351566369,
+    "lng": 3.105993149462801,
+    "extra": "12805 m²"
+  },
+  {
+    "nom": "Jardins familiaux de La Pradelle",
+    "type": "Jardin collectif",
+    "lat": 45.774224489104704,
+    "lng": 3.1092363477061036,
+    "extra": "49840 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78131173803464,
+    "lng": 3.072390229404074,
+    "extra": "8953 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.79003699300213,
+    "lng": 3.1093150170691373,
+    "extra": "19575 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76210313105184,
+    "lng": 3.103025130878135,
+    "extra": "4169 m²"
+  },
+  {
+    "nom": "Giratoire Quinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80386366803172,
+    "lng": 3.1190590985313826,
+    "extra": "1413 m²"
+  },
+  {
+    "nom": "Square Gomel",
+    "type": "Espace vert public de proximité",
+    "lat": 45.80974266700666,
+    "lng": 3.099280631846567,
+    "extra": "5829 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Souvenir Français",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78321306481956,
+    "lng": 3.095654679722375,
+    "extra": "129 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Place des Carmes Dechaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78309472776739,
+    "lng": 3.0947404722686214,
+    "extra": "412 m²"
+  },
+  {
+    "nom": "NON SASI - Viple",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79034437060355,
+    "lng": 3.113580344232615,
+    "extra": "25 m²"
+  },
+  {
+    "nom": "Square de la Rodade",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79300038803157,
+    "lng": 3.108221984414125,
+    "extra": "3158 m²"
+  },
+  {
+    "nom": "Giratoire Rue Adrien Mabrut",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81323306336446,
+    "lng": 3.120492957768564,
+    "extra": "1663 m²"
+  },
+  {
+    "nom": "Quartier du Pradou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79459517460422,
+    "lng": 3.11830814344082,
+    "extra": "20232 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77945510498424,
+    "lng": 3.122783506824171,
+    "extra": "72 m²"
+  },
+  {
+    "nom": "Square de Dunkerque",
+    "type": "Espace vert public de proximité",
+    "lat": 45.816325223813564,
+    "lng": 3.1074071592869,
+    "extra": "3840 m²"
+  },
+  {
+    "nom": "Ilôt Place Turgot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.784945144698476,
+    "lng": 3.099317359868986,
+    "extra": "712 m²"
+  },
+  {
+    "nom": "Terre plein central Rue de Chanteranne",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78800834398461,
+    "lng": 3.098396794156524,
+    "extra": "466 m²"
+  },
+  {
+    "nom": "Giratoire de l'Amitié",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80405576111841,
+    "lng": 3.1101584767619275,
+    "extra": "20 m²"
+  },
+  {
+    "nom": "Talus Place des Carmes Dechaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78266692317564,
+    "lng": 3.0939113804387346,
+    "extra": "346 m²"
+  },
+  {
+    "nom": "Giratoire Mercoeur",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80875434822113,
+    "lng": 3.11600061535975,
+    "extra": "26 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.79437752214207,
+    "lng": 3.1191740550109652,
+    "extra": "5409 m²"
+  },
+  {
+    "nom": "Giratoire du Devoir",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.807926918010274,
+    "lng": 3.1170003335392873,
+    "extra": "29 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Place des Carmes Dechaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78254624322444,
+    "lng": 3.0950351745556217,
+    "extra": "241 m²"
+  },
+  {
+    "nom": "Giratoire de la Pardieu",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7611701527311,
+    "lng": 3.132195163020591,
+    "extra": "2466 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Etienne Clémentel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.812739495736636,
+    "lng": 3.109395495442698,
+    "extra": "2751 m²"
+  },
+  {
+    "nom": "Giratoire Blériot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79801036399202,
+    "lng": 3.147112399163467,
+    "extra": "1283 m²"
+  },
+  {
+    "nom": "NON SAISI",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81277008161191,
+    "lng": 3.1004868132661327,
+    "extra": "154 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Gordon Bennett",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78638801506273,
+    "lng": 3.0795766654926475,
+    "extra": "213 m²"
+  },
+  {
+    "nom": "Terre plein central  Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.789845617450204,
+    "lng": 3.0818646816372213,
+    "extra": "547 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Daniel Mayer",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79297033811747,
+    "lng": 3.093806166421451,
+    "extra": "252 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79163553310878,
+    "lng": 3.087712485798766,
+    "extra": "134 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76161701767084,
+    "lng": 3.102438069521059,
+    "extra": "4746 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Daniel Mayer",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79299526783165,
+    "lng": 3.0957582581949623,
+    "extra": "354 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.75768005072616,
+    "lng": 3.0962305271132164,
+    "extra": "11086 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79009428428822,
+    "lng": 3.083199637818465,
+    "extra": "68 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.75813923811259,
+    "lng": 3.097176776905042,
+    "extra": "6285 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Avenue Fernand Forest",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.793981666234444,
+    "lng": 3.100803579737316,
+    "extra": "224 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Courtiaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76864691789043,
+    "lng": 3.1293899355913686,
+    "extra": "48 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Chemin Floréal",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.770470319315216,
+    "lng": 3.113685746913557,
+    "extra": "1095 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.800065732370804,
+    "lng": 3.1091877972157285,
+    "extra": "9867 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80723740428465,
+    "lng": 3.126038178104283,
+    "extra": "6701 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Avenue Fernand Forest",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.793484192627204,
+    "lng": 3.100591753101036,
+    "extra": "37 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Courtiaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.768880769916755,
+    "lng": 3.1294044234919696,
+    "extra": "95 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.79445565670571,
+    "lng": 3.118482840209949,
+    "extra": "13179 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Sous les Vignes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79880954134581,
+    "lng": 3.1049201781158065,
+    "extra": "172 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.79931831831095,
+    "lng": 3.1144850015968295,
+    "extra": "8145 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Adrien Mabrut",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.812896844610314,
+    "lng": 3.1200391502391707,
+    "extra": "115 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Sous les Vignes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79493344650722,
+    "lng": 3.1013736078251952,
+    "extra": "792 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Docteur Pierre Balme",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79249351173269,
+    "lng": 3.1126008973881003,
+    "extra": "68 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.81086453580591,
+    "lng": 3.1007510209712783,
+    "extra": "12310 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80961533412902,
+    "lng": 3.119115369716003,
+    "extra": "8782 m²"
+  },
+  {
+    "nom": "Service des Eaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78060802971013,
+    "lng": 3.071313706634093,
+    "extra": "91 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Blanzat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79458906449983,
+    "lng": 3.0848407183763467,
+    "extra": "3 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Champfleuri",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79269659267099,
+    "lng": 3.0978523965073363,
+    "extra": "66 m²"
+  },
+  {
+    "nom": "Terre plein central Rue de Chanteranne",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78922598629707,
+    "lng": 3.0984599612166033,
+    "extra": "154 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.815171321222394,
+    "lng": 3.12607083012379,
+    "extra": "288 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Primaire Albert Bayet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76598141992576,
+    "lng": 3.110729884805037,
+    "extra": "3470 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Pierre et Marie Curie + Gymnase",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79389380072059,
+    "lng": 3.075232794870754,
+    "extra": "13031 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Blanzat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79461265353823,
+    "lng": 3.0849564589766874,
+    "extra": "3 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Gordon Bennett",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.786497575212465,
+    "lng": 3.0801964420199273,
+    "extra": "265 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace naturel",
+    "lat": 45.774297269048034,
+    "lng": 3.1292046848369948,
+    "extra": "38241 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77045313719513,
+    "lng": 3.0754302316223976,
+    "extra": "5402 m²"
+  },
+  {
+    "nom": "Place Malraux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79222068558881,
+    "lng": 3.1145134612248664,
+    "extra": "3230 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79221174359775,
+    "lng": 3.0902007759282397,
+    "extra": "370 m²"
+  },
+  {
+    "nom": "Laboratoire Municipal",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76347471128309,
+    "lng": 3.134976170799628,
+    "extra": "1750 m²"
+  },
+  {
+    "nom": "Jardin botanique de la Charme",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79998448502996,
+    "lng": 3.1234337839454525,
+    "extra": "8861 m²"
+  },
+  {
+    "nom": "Talus Rue Pierre Estienne",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77250403235272,
+    "lng": 3.1225183096687257,
+    "extra": "1038 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7915108909529,
+    "lng": 3.087594224777612,
+    "extra": "352 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard John Kennedy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79698837275903,
+    "lng": 3.123183952241703,
+    "extra": "241 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Edgar Quinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80177129769001,
+    "lng": 3.1146404116766715,
+    "extra": "2942 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81459020569882,
+    "lng": 3.126336475153114,
+    "extra": "838 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Léon Jouhaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79286899485383,
+    "lng": 3.1173980171947626,
+    "extra": "523 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de l'Arsenal",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7963471185189,
+    "lng": 3.1310665284515777,
+    "extra": "82 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.814541277111545,
+    "lng": 3.1283499652018842,
+    "extra": "4004 m²"
+  },
+  {
+    "nom": "Placette Kleber",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79189771599521,
+    "lng": 3.1140396265422985,
+    "extra": "148 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Jacques Bingen",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77017221376009,
+    "lng": 3.113305429712428,
+    "extra": "974 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Clos de Chanturgue",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79419786940514,
+    "lng": 3.100105207281277,
+    "extra": "717 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76617851159779,
+    "lng": 3.092427445276035,
+    "extra": "2670 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.779458727737506,
+    "lng": 3.118843635360628,
+    "extra": "467 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81393355762476,
+    "lng": 3.1278418585303713,
+    "extra": "598 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Jean Auguste Senèze",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76937029985828,
+    "lng": 3.132032439991992,
+    "extra": "78 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard John Kennedy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.801510871387265,
+    "lng": 3.1204509897464057,
+    "extra": "520 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de l'Oradou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76966673743401,
+    "lng": 3.115107327255693,
+    "extra": "101 m²"
+  },
+  {
+    "nom": "Giratoire des Pistes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80012278278854,
+    "lng": 3.1119400907821375,
+    "extra": "859 m²"
+  },
+  {
+    "nom": "Accompagnement voie bretelle Vergnes A 71",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.806207664637306,
+    "lng": 3.1271925405254546,
+    "extra": "1143 m²"
+  },
+  {
+    "nom": "Ilôt Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7790737533542,
+    "lng": 3.1266421932700283,
+    "extra": "89 m²"
+  },
+  {
+    "nom": "Bâtiment Rue du 8 Mai 1945",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77239699269011,
+    "lng": 3.077859352406695,
+    "extra": "268 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Allée des Pruniers",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79525309233402,
+    "lng": 3.103334485401592,
+    "extra": "1192 m²"
+  },
+  {
+    "nom": "Terrain Pierre Lapadu",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77426457402842,
+    "lng": 3.1061134666025936,
+    "extra": "2785 m²"
+  },
+  {
+    "nom": "Terre plein central Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7792458748861,
+    "lng": 3.1232507829780847,
+    "extra": "1058 m²"
+  },
+  {
+    "nom": "Giratoire du Brézet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.780057024101794,
+    "lng": 3.131303078983464,
+    "extra": "1452 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.779402235066655,
+    "lng": 3.123435130148215,
+    "extra": "298 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Louis Blériot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.787600229555196,
+    "lng": 3.13850335233058,
+    "extra": "4191 m²"
+  },
+  {
+    "nom": "Square des Muriers",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.798607681079226,
+    "lng": 3.0832456909877637,
+    "extra": "2560 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Rouvier",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80659752393328,
+    "lng": 3.1113518876620816,
+    "extra": "153 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Rouvier",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80665227160127,
+    "lng": 3.112173499516493,
+    "extra": "84 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Georges Besse",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78003059133248,
+    "lng": 3.136295107721926,
+    "extra": "1005 m²"
+  },
+  {
+    "nom": "Ilôt Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.787928973217504,
+    "lng": 3.122387983286898,
+    "extra": "83 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79202458576183,
+    "lng": 3.1557679305857054,
+    "extra": "303 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Rouvier",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80667381556269,
+    "lng": 3.1123572480220694,
+    "extra": "76 m²"
+  },
+  {
+    "nom": "Le Coin des Jardiniers",
+    "type": "Jardin collectif",
+    "lat": 45.80157416809309,
+    "lng": 3.1193346002451663,
+    "extra": "319 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.81354693271597,
+    "lng": 3.125664789729417,
+    "extra": "14106 m²"
+  },
+  {
+    "nom": "Les Jardinières de Pourrat",
+    "type": "Jardin collectif",
+    "lat": 45.76253471429724,
+    "lng": 3.089857872937382,
+    "extra": "208 m²"
+  },
+  {
+    "nom": "Ilôt Rue du Pré la Reine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.785908255088,
+    "lng": 3.1173987343588987,
+    "extra": "623 m²"
+  },
+  {
+    "nom": "Ilôt Rue du Pré la Reine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.785605464020975,
+    "lng": 3.116857233735732,
+    "extra": "309 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.814034981184456,
+    "lng": 3.1303944558100913,
+    "extra": "7543 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78357353872778,
+    "lng": 3.1184681253889237,
+    "extra": "650 m²"
+  },
+  {
+    "nom": "Accompagnement Parking Auchan",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813627776815025,
+    "lng": 3.107616686778189,
+    "extra": "114 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8126750186303,
+    "lng": 3.1289951633490096,
+    "extra": "142 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Jean Moulin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77836017643969,
+    "lng": 3.1167798791302967,
+    "extra": "395 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Gustave Flaubert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76117202498433,
+    "lng": 3.126516834632897,
+    "extra": "2410 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Etienne Clémentel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80065119936611,
+    "lng": 3.1119266444968825,
+    "extra": "284 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.79243847757685,
+    "lng": 3.093543992571902,
+    "extra": "3961 m²"
+  },
+  {
+    "nom": "Accompagnement Parking Auchan",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.810211185451166,
+    "lng": 3.1083431034002715,
+    "extra": "726 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Gomel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81223063128837,
+    "lng": 3.0998426001948105,
+    "extra": "118 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81028643687425,
+    "lng": 3.1102566463723402,
+    "extra": "139 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Antoinette Begon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76801178320388,
+    "lng": 3.097956380908575,
+    "extra": "131 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie sous le Viaduc Saint-Jacques",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76612791565365,
+    "lng": 3.089364041624871,
+    "extra": "156 m²"
+  },
+  {
+    "nom": "Piscine de Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8113196800746,
+    "lng": 3.1141011257501847,
+    "extra": "5381 m²"
+  },
+  {
+    "nom": "Parking Courte Paille",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.809604245486476,
+    "lng": 3.109863066873625,
+    "extra": "3405 m²"
+  },
+  {
+    "nom": "Giratoire Croix-Léonardoux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77304671547926,
+    "lng": 3.121384119173742,
+    "extra": "260 m²"
+  },
+  {
+    "nom": "Accompagnement Parking Auchan",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.812704125751836,
+    "lng": 3.108807577421904,
+    "extra": "421 m²"
+  },
+  {
+    "nom": "Accompagnement Parking Auchan",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813544903364104,
+    "lng": 3.1076826469682617,
+    "extra": "45 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.809299009657586,
+    "lng": 3.1291355397014664,
+    "extra": "527 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80970703057337,
+    "lng": 3.128957925206682,
+    "extra": "131 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81274525523624,
+    "lng": 3.1291805735241307,
+    "extra": "369 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80796095250788,
+    "lng": 3.128373290176242,
+    "extra": "130 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Impasse de Champetières",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.806102919166115,
+    "lng": 3.1256045313946386,
+    "extra": "223 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Crouzet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.803688482839995,
+    "lng": 3.1036168153194623,
+    "extra": "332 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Aulnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81135524832677,
+    "lng": 3.1257579790304644,
+    "extra": "135 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Aulnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81160250469373,
+    "lng": 3.1252876818468853,
+    "extra": "226 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Pré Comtal",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.802686325286224,
+    "lng": 3.1318080398716615,
+    "extra": "78 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Pré Comtal",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8024967403451,
+    "lng": 3.131530537449333,
+    "extra": "55 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Jean Moulin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7785313598129,
+    "lng": 3.116922846480757,
+    "extra": "93 m²"
+  },
+  {
+    "nom": "Aire de jeux des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813668702309045,
+    "lng": 3.1304006469543757,
+    "extra": "1562 m²"
+  },
+  {
+    "nom": "Dépôt de Voirie des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81273487666334,
+    "lng": 3.1302774578218626,
+    "extra": "11682 m²"
+  },
+  {
+    "nom": "Giratoire La Gauthière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.797296340621784,
+    "lng": 3.1187906487871815,
+    "extra": "756 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Busséol",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.810588186542866,
+    "lng": 3.119391198095979,
+    "extra": "190 m²"
+  },
+  {
+    "nom": "Bretelle Boulevard Jacques Bingen / Boulevard Gustave Flaubert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77158252204592,
+    "lng": 3.120103677916452,
+    "extra": "624 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Pablo Neruda",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76633266740719,
+    "lng": 3.121451559987185,
+    "extra": "408 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Georges Pompidou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79791768248418,
+    "lng": 3.1312819156197826,
+    "extra": "68 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Jean Auguste Senèze",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76934421451966,
+    "lng": 3.1314508770639167,
+    "extra": "255 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Pierre Estienne",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77003358170813,
+    "lng": 3.1301172756472937,
+    "extra": "167 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Georges Pompidou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79709613996959,
+    "lng": 3.128348615182738,
+    "extra": "690 m²"
+  },
+  {
+    "nom": "Ilôt Place Turgot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78470908754776,
+    "lng": 3.0994815084676732,
+    "extra": "88 m²"
+  },
+  {
+    "nom": "Giratoire Anatole France",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77747516073301,
+    "lng": 3.1028629079645045,
+    "extra": "95 m²"
+  },
+  {
+    "nom": "Ilôt Rue Jacques Mailhot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79567066353229,
+    "lng": 3.1266524407708784,
+    "extra": "68 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Rouvier",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80639462362144,
+    "lng": 3.115805590950622,
+    "extra": "132 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.790524079673645,
+    "lng": 3.108369856212892,
+    "extra": "1991 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Léon Jouhaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.799347631736936,
+    "lng": 3.1130653923239384,
+    "extra": "1078 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.792422380910025,
+    "lng": 3.149744215108224,
+    "extra": "623 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79240589119002,
+    "lng": 3.1480407160980763,
+    "extra": "415 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78863544000265,
+    "lng": 3.110323351998188,
+    "extra": "18342 m²"
+  },
+  {
+    "nom": "Giratoire des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813244102001164,
+    "lng": 3.1261815541082516,
+    "extra": "199 m²"
+  },
+  {
+    "nom": "Ilôt Rue Anatole France",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77961917097882,
+    "lng": 3.1166040371000387,
+    "extra": "104 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78215590907845,
+    "lng": 3.0805539083243216,
+    "extra": "9167 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78204826247287,
+    "lng": 3.0662834766758427,
+    "extra": "14385 m²"
+  },
+  {
+    "nom": "Giratoire Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81379680914065,
+    "lng": 3.1297734577333185,
+    "extra": "723 m²"
+  },
+  {
+    "nom": "Terre plein central Allée du Pont de la Sarre",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7698148761069,
+    "lng": 3.129787763636225,
+    "extra": "69 m²"
+  },
+  {
+    "nom": "Jardin de Saint Jacques",
+    "type": "Jardin collectif",
+    "lat": 45.76002349813245,
+    "lng": 3.0954680000255514,
+    "extra": "588 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Jardin collectif",
+    "lat": 45.762729114135574,
+    "lng": 3.096728934259006,
+    "extra": "213 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Jardin collectif",
+    "lat": 45.76269533254843,
+    "lng": 3.0770294201831767,
+    "extra": "14072 m²"
+  },
+  {
+    "nom": "Basilique Notre Dame du Port",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78052825031764,
+    "lng": 3.0896963768862586,
+    "extra": "1021 m²"
+  },
+  {
+    "nom": "Ilôt Maisniel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.768340139596866,
+    "lng": 3.0754648132799813,
+    "extra": "64 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Gordon Bennett",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78751383346402,
+    "lng": 3.0799360123909034,
+    "extra": "1028 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76499695221666,
+    "lng": 3.1207944589660936,
+    "extra": "16287 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.81368549245955,
+    "lng": 3.128369234052838,
+    "extra": "3649 m²"
+  },
+  {
+    "nom": "Place Paul Suss",
+    "type": "Espace vert public de proximité",
+    "lat": 45.760175147067045,
+    "lng": 3.0952356521619615,
+    "extra": "1846 m²"
+  },
+  {
+    "nom": "Parc de Champratel",
+    "type": "Parc urbain public",
+    "lat": 45.813897526474754,
+    "lng": 3.1160693232334906,
+    "extra": "39759 m²"
+  },
+  {
+    "nom": "Parc urbain et sportif P. Marcombes",
+    "type": "Parc urbain public",
+    "lat": 45.760745351138624,
+    "lng": 3.084089841018804,
+    "extra": "67252 m²"
+  },
+  {
+    "nom": "Côtes de Chanturgue",
+    "type": "Espace naturel",
+    "lat": 45.80416335349426,
+    "lng": 3.088283181707838,
+    "extra": "3050283 m²"
+  },
+  {
+    "nom": "Square Norman",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79380356605593,
+    "lng": 3.0968156370185036,
+    "extra": "8847 m²"
+  },
+  {
+    "nom": "Square des Sycomores",
+    "type": "Espace vert public de proximité",
+    "lat": 45.791660536134856,
+    "lng": 3.0902631625995776,
+    "extra": "476 m²"
+  },
+  {
+    "nom": "Square Martial Lamothe",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76849897081542,
+    "lng": 3.109013986730344,
+    "extra": "1151 m²"
+  },
+  {
+    "nom": "Square Michel de l'Hospital",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77716746701597,
+    "lng": 3.0888416273812442,
+    "extra": "1609 m²"
+  },
+  {
+    "nom": "Square Alexandre Ribot",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76359166965982,
+    "lng": 3.0932640684940043,
+    "extra": "8481 m²"
+  },
+  {
+    "nom": "Square Gabriel Pasturel",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78702833914014,
+    "lng": 3.1130957155805743,
+    "extra": "5383 m²"
+  },
+  {
+    "nom": "Square d'Assas",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77626195703022,
+    "lng": 3.083731678285528,
+    "extra": "1841 m²"
+  },
+  {
+    "nom": "Square des Landais",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76550261424688,
+    "lng": 3.11011669493094,
+    "extra": "8792 m²"
+  },
+  {
+    "nom": "Allée du Bouclier de Brenus",
+    "type": "Espace vert public de proximité",
+    "lat": 45.811147597070125,
+    "lng": 3.1028759656940585,
+    "extra": "7612 m²"
+  },
+  {
+    "nom": "Square de la Poste de l'Oradou",
+    "type": "Espace vert public de proximité",
+    "lat": 45.769350636383685,
+    "lng": 3.116373032218777,
+    "extra": "1638 m²"
+  },
+  {
+    "nom": "Square des Laminés",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79924226318555,
+    "lng": 3.1162847847226463,
+    "extra": "9408 m²"
+  },
+  {
+    "nom": "Abords maison de quartier des Vergnes",
+    "type": "Espace vert public de proximité",
+    "lat": 45.81530390985354,
+    "lng": 3.127394451939519,
+    "extra": "3548 m²"
+  },
+  {
+    "nom": "Square rue Poncillon",
+    "type": "Espace vert public de proximité",
+    "lat": 45.759400598114865,
+    "lng": 3.0864420976798383,
+    "extra": "169 m²"
+  },
+  {
+    "nom": "Terrain bouliste rue sous les vignes",
+    "type": "Espace vert public de proximité",
+    "lat": 45.80268805948893,
+    "lng": 3.1070982212669596,
+    "extra": "1291 m²"
+  },
+  {
+    "nom": "Rue du Printemps",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76682953703981,
+    "lng": 3.1184874768862407,
+    "extra": "107 m²"
+  },
+  {
+    "nom": "Square Aimé Coulaudon",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77378601670798,
+    "lng": 3.076160413944782,
+    "extra": "831 m²"
+  },
+  {
+    "nom": "Parc des Vergnes",
+    "type": "Parc urbain public",
+    "lat": 45.811445964773846,
+    "lng": 3.1269013159518106,
+    "extra": "49093 m²"
+  },
+  {
+    "nom": "Place du 1er Mai",
+    "type": "Parc urbain public",
+    "lat": 45.78599561484452,
+    "lng": 3.0999085917358693,
+    "extra": "25778 m²"
+  },
+  {
+    "nom": "Place du Sauvage",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77983401876177,
+    "lng": 3.089113761533605,
+    "extra": "457 m²"
+  },
+  {
+    "nom": "Square de l'Appel du 18 Juin",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77323600364346,
+    "lng": 3.121077377555865,
+    "extra": "540 m²"
+  },
+  {
+    "nom": "Square Viviani",
+    "type": "Espace vert public de proximité",
+    "lat": 45.80904131301267,
+    "lng": 3.1192385469031776,
+    "extra": "1760 m²"
+  },
+  {
+    "nom": "gaillard",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.780136308360156,
+    "lng": 3.082615394337715,
+    "extra": "214 m²"
+  },
+  {
+    "nom": "Square Alphonse Daudet",
+    "type": "Espace vert public de proximité",
+    "lat": 45.81432689500427,
+    "lng": 3.1002975374208925,
+    "extra": "2379 m²"
+  },
+  {
+    "nom": "DAJL",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78554841155208,
+    "lng": 3.088381491108687,
+    "extra": "5158 m²"
+  },
+  {
+    "nom": "Ilôt Place Turgot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.784871352976424,
+    "lng": 3.0997897570846895,
+    "extra": "121 m²"
+  },
+  {
+    "nom": "Maison des Sports",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78596424757617,
+    "lng": 3.0862600187400187,
+    "extra": "30006 m²"
+  },
+  {
+    "nom": "Ilôt Rue Fontgiève",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78097129755605,
+    "lng": 3.076242835638383,
+    "extra": "296 m²"
+  },
+  {
+    "nom": "Place Bergsen",
+    "type": "Espace vert public de proximité",
+    "lat": 45.765367668306006,
+    "lng": 3.0982927213826255,
+    "extra": "1949 m²"
+  },
+  {
+    "nom": "Terre plein central Berthelot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.781803897504986,
+    "lng": 3.071537638292981,
+    "extra": "583 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Pasteur",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77189873698773,
+    "lng": 3.0812582286394745,
+    "extra": "162 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Pasteur",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77154804205111,
+    "lng": 3.0824478857320314,
+    "extra": "479 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Nestor Perret",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77549501082187,
+    "lng": 3.0784474681582035,
+    "extra": "3037 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Aristide Briand",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77202240227504,
+    "lng": 3.076546657055335,
+    "extra": "7980 m²"
+  },
+  {
+    "nom": "Halte Garderie Neyron",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77995930888847,
+    "lng": 3.0895489187697156,
+    "extra": "136 m²"
+  },
+  {
+    "nom": "fongiève",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78086396773209,
+    "lng": 3.076798156955301,
+    "extra": "580 m²"
+  },
+  {
+    "nom": "Square d'Aberdeen A",
+    "type": "Espace vert public de proximité",
+    "lat": 45.81201399639845,
+    "lng": 3.098010537968327,
+    "extra": "3237 m²"
+  },
+  {
+    "nom": "Accompagnement voie A71",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80639025723531,
+    "lng": 3.128538530374776,
+    "extra": "1793 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.792202543891065,
+    "lng": 3.1516829461490734,
+    "extra": "1459 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78386287002611,
+    "lng": 3.0730475950521283,
+    "extra": "19682 m²"
+  },
+  {
+    "nom": "Place des Carmes 2",
+    "type": "Square de quartier / espace vert de proximité",
+    "lat": 45.782953739185295,
+    "lng": 3.0951706139278135,
+    "extra": "6906 m²"
+  },
+  {
+    "nom": "Maison des Associations",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77766008761419,
+    "lng": 3.0910118654781478,
+    "extra": "987 m²"
+  },
+  {
+    "nom": "NON SAISI - Viple",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.790128201229315,
+    "lng": 3.113245249270875,
+    "extra": "353 m²"
+  },
+  {
+    "nom": "Musée Roger Quillot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79418003738868,
+    "lng": 3.1165201678942953,
+    "extra": "643 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Louis Blériot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78908734910336,
+    "lng": 3.1402613287776444,
+    "extra": "3386 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81476489812651,
+    "lng": 3.1252651228126878,
+    "extra": "3110 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Edgar Quinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80459834954643,
+    "lng": 3.1220899611736113,
+    "extra": "2435 m²"
+  },
+  {
+    "nom": "Ilôt Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78797282674307,
+    "lng": 3.1217960571018906,
+    "extra": "508 m²"
+  },
+  {
+    "nom": "Echangeur Rue Sous les Vignes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79459779349979,
+    "lng": 3.100998580510345,
+    "extra": "2369 m²"
+  },
+  {
+    "nom": "Accompagnement voirie Rue Edith Piaf",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.796501093472514,
+    "lng": 3.106315167597013,
+    "extra": "1129 m²"
+  },
+  {
+    "nom": "Talus Rue de Gomel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80942318318038,
+    "lng": 3.099658320388436,
+    "extra": "1643 m²"
+  },
+  {
+    "nom": "Ecoparc Anne Frank",
+    "type": "square",
+    "lat": 45.792679239042045,
+    "lng": 3.0712953527767435,
+    "extra": "2040 m²"
+  },
+  {
+    "nom": "Parc de la Muraille",
+    "type": "Parc urbain public",
+    "lat": 45.76676102694509,
+    "lng": 3.09145638032291,
+    "extra": "36808 m²"
+  },
+  {
+    "nom": "Esplanade Annette Kellermann/ Coubertin",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76893202677005,
+    "lng": 3.0847406593806648,
+    "extra": "9452 m²"
+  },
+  {
+    "nom": "Bâtiments 31 Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813233525494226,
+    "lng": 3.124870142847015,
+    "extra": "3627 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76344507390734,
+    "lng": 3.080946596437242,
+    "extra": "6730 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Côtes Fleuries",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79670518190052,
+    "lng": 3.0847638056646716,
+    "extra": "489 m²"
+  },
+  {
+    "nom": "NON SAISI- JARDIN FAMILIAUX MONTPIED",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81760563696073,
+    "lng": 3.1223303410302345,
+    "extra": "20910 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Jardin collectif",
+    "lat": 45.79143216918405,
+    "lng": 3.0664448809017357,
+    "extra": "2245 m²"
+  },
+  {
+    "nom": "Bâtiments 21 Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81375426132337,
+    "lng": 3.1275190350754256,
+    "extra": "1403 m²"
+  },
+  {
+    "nom": "Jardin de Montferrand",
+    "type": "Jardin collectif",
+    "lat": 45.79123106459781,
+    "lng": 3.112375678678579,
+    "extra": "1517 m²"
+  },
+  {
+    "nom": "Maison des Congrès et de la Culture (patio)",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77032269400958,
+    "lng": 3.0839033513188925,
+    "extra": "202 m²"
+  },
+  {
+    "nom": "Giratoire des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813473233181675,
+    "lng": 3.127896339205459,
+    "extra": "196 m²"
+  },
+  {
+    "nom": "Bâtiment 23 Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81342905400485,
+    "lng": 3.126810421776509,
+    "extra": "4552 m²"
+  },
+  {
+    "nom": "Talus du Pont de Neyrat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81463446268242,
+    "lng": 3.1115621730264427,
+    "extra": "5742 m²"
+  },
+  {
+    "nom": "Polydôme",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78801334587068,
+    "lng": 3.0993367389912754,
+    "extra": "19773 m²"
+  },
+  {
+    "nom": "Gymnase Trémonteix",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79272739029564,
+    "lng": 3.067665194024198,
+    "extra": "12383 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78696809644895,
+    "lng": 3.0608444722825454,
+    "extra": "6109 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78793547966361,
+    "lng": 3.061424227076012,
+    "extra": "19992 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76735799211495,
+    "lng": 3.085645301315472,
+    "extra": "11972 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78216512577404,
+    "lng": 3.068240730937618,
+    "extra": "23061 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76399958445632,
+    "lng": 3.1054751420364552,
+    "extra": "3679 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80113632816302,
+    "lng": 3.116762734331566,
+    "extra": "15938 m²"
+  },
+  {
+    "nom": "La Gauthière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80001091705153,
+    "lng": 3.1179848540292494,
+    "extra": "230032 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81390843554176,
+    "lng": 3.1265067538302493,
+    "extra": "97 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Anatole France/ Edouard Michelin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77979449542367,
+    "lng": 3.115819330785052,
+    "extra": "369 m²"
+  },
+  {
+    "nom": "Terre plein central Rue de Chanteranne",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78587373960732,
+    "lng": 3.0987425257791954,
+    "extra": "607 m²"
+  },
+  {
+    "nom": "NON SASI - Viple",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79019597445672,
+    "lng": 3.1131190451027435,
+    "extra": "16 m²"
+  },
+  {
+    "nom": "Maison du Peuple",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.779517196713336,
+    "lng": 3.076999731417539,
+    "extra": "3817 m²"
+  },
+  {
+    "nom": "Arboretum de Croix Neyrat",
+    "type": "Espace vert public de proximité",
+    "lat": 45.80805717825521,
+    "lng": 3.0994080911231756,
+    "extra": "2633 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.79095431503578,
+    "lng": 3.094222820324927,
+    "extra": "3323 m²"
+  },
+  {
+    "nom": "NON SAISI",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.812667680572076,
+    "lng": 3.0995646889363866,
+    "extra": "251 m²"
+  },
+  {
+    "nom": "NON SAISI",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.812510704407565,
+    "lng": 3.1001961310571517,
+    "extra": "800 m²"
+  },
+  {
+    "nom": "Talus Place des Carmes Dechaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78300254712089,
+    "lng": 3.0941798091753183,
+    "extra": "141 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Pierre Estienne",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77015245529824,
+    "lng": 3.129840668750271,
+    "extra": "179 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.789949916544806,
+    "lng": 3.0818714254065678,
+    "extra": "199 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Blanzat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78688719021012,
+    "lng": 3.084759445792171,
+    "extra": "345 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Courtiaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76865782842068,
+    "lng": 3.131070541840455,
+    "extra": "56 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80668023339194,
+    "lng": 3.1244141053215766,
+    "extra": "2186 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Etienne Clémentel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.808786693217996,
+    "lng": 3.109317404020199,
+    "extra": "1617 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76610262758718,
+    "lng": 3.1005517284039086,
+    "extra": "8740 m²"
+  },
+  {
+    "nom": "Giratoire Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78919136666187,
+    "lng": 3.0804534800856915,
+    "extra": "776 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de la Fontaine du Large",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79276663340083,
+    "lng": 3.091959510206736,
+    "extra": "335 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Etienne Clémentel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80544756794164,
+    "lng": 3.1092895448434033,
+    "extra": "212 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76404056395745,
+    "lng": 3.108865074692277,
+    "extra": "16677 m²"
+  },
+  {
+    "nom": "Echangeur Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.787377156273365,
+    "lng": 3.1193364359512965,
+    "extra": "515 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Joseph Desaymard",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.768197834308765,
+    "lng": 3.126287476819591,
+    "extra": "578 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79092086603239,
+    "lng": 3.085201611909645,
+    "extra": "124 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7923210760007,
+    "lng": 3.090272809438298,
+    "extra": "167 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Vincent Auriol",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79364138167139,
+    "lng": 3.1210357794258177,
+    "extra": "6293 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.75954335704369,
+    "lng": 3.0985028610164673,
+    "extra": "2780 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.812847844449834,
+    "lng": 3.1007153570175436,
+    "extra": "14379 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Blanzat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.794654865730585,
+    "lng": 3.084972354794583,
+    "extra": "3 m²"
+  },
+  {
+    "nom": "Le Mille Club",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78125786444399,
+    "lng": 3.0741322871794514,
+    "extra": "1593 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.76116258929877,
+    "lng": 3.095662398848179,
+    "extra": "2954 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue d'Herbet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77923176623677,
+    "lng": 3.1163736006240756,
+    "extra": "118 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80840974147066,
+    "lng": 3.1188563040572546,
+    "extra": "10224 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80566772755763,
+    "lng": 3.1180402178391664,
+    "extra": "13548 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Bien Assis",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.790871032543905,
+    "lng": 3.095590824978173,
+    "extra": "101 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80764843407997,
+    "lng": 3.1176901333756457,
+    "extra": "7713 m²"
+  },
+  {
+    "nom": "NON SAISI",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.812284750212854,
+    "lng": 3.100956743430899,
+    "extra": "361 m²"
+  },
+  {
+    "nom": "NON SAISI",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81079622079749,
+    "lng": 3.099939030206675,
+    "extra": "801 m²"
+  },
+  {
+    "nom": "Ilôt Anatole France /  Edouard Michelin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.779769899651335,
+    "lng": 3.116337291623849,
+    "extra": "920 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Daniel Mayer",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79289699813298,
+    "lng": 3.0939020041472958,
+    "extra": "830 m²"
+  },
+  {
+    "nom": "Giratoire Besse / Brezet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77947364441918,
+    "lng": 3.1366976354161644,
+    "extra": "1651 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Champs de Roseaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8096292928334,
+    "lng": 3.1249240192655448,
+    "extra": "341 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Georges Pompidou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79910058531903,
+    "lng": 3.1306686556032832,
+    "extra": "4319 m²"
+  },
+  {
+    "nom": "Crèche Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.812789790714746,
+    "lng": 3.1253049668278825,
+    "extra": "1765 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Sous les Vignes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.798697887255486,
+    "lng": 3.105286099735296,
+    "extra": "77 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Adrien Mabrut",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81294196277164,
+    "lng": 3.1202743701496924,
+    "extra": "112 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Sous les Vignes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79863450630632,
+    "lng": 3.104887864121942,
+    "extra": "131 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Chanteranne",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.792796120230214,
+    "lng": 3.096914759304123,
+    "extra": "12627 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Primaire Victor Duruy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78107684205948,
+    "lng": 3.09903048082709,
+    "extra": "1159 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard John Kennedy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79749104170673,
+    "lng": 3.1229382870365745,
+    "extra": "70 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80876754276145,
+    "lng": 3.1289069036379,
+    "extra": "255 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.81327377623318,
+    "lng": 3.129654232445995,
+    "extra": "5041 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Maurice Pourchon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.790817862512746,
+    "lng": 3.0851742380381464,
+    "extra": "320 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77634641201438,
+    "lng": 3.1056900854540257,
+    "extra": "8807 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Salins / Drelon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.771915663810574,
+    "lng": 3.0806712427061074,
+    "extra": "70 m²"
+  },
+  {
+    "nom": "NON SAISI - accompagnement 25-27 rue des hauts de chanturgue",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.811294958455974,
+    "lng": 3.1027345589334705,
+    "extra": "9367 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard John Kennedy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79938648630352,
+    "lng": 3.121502078619272,
+    "extra": "287 m²"
+  },
+  {
+    "nom": "Bretelle Boulevard Jacques Bingen/ Boulevard Gustave Flaubert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.771726320233796,
+    "lng": 3.1207317671623427,
+    "extra": "1575 m²"
+  },
+  {
+    "nom": "Echangeur Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78784998589901,
+    "lng": 3.1206860258149196,
+    "extra": "4749 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81469845366844,
+    "lng": 3.1264903916307585,
+    "extra": "1671 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Blanzat",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.794571178704864,
+    "lng": 3.084942041465719,
+    "extra": "3 m²"
+  },
+  {
+    "nom": "Musée Bargoin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77394827324875,
+    "lng": 3.0875997877903196,
+    "extra": "714 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Busséol",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.810508993984044,
+    "lng": 3.119627040588309,
+    "extra": "147 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Fournières",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78935698709201,
+    "lng": 3.0628656591900842,
+    "extra": "41 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Adrien Mabrut",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813442205149656,
+    "lng": 3.1211059917223776,
+    "extra": "56 m²"
+  },
+  {
+    "nom": "Square Conchon-Quinette",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77526249937705,
+    "lng": 3.0824759884673,
+    "extra": "4622 m²"
+  },
+  {
+    "nom": "Mairie de Montferrand",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.791408360101364,
+    "lng": 3.1130308918480134,
+    "extra": "174 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.800750060838524,
+    "lng": 3.1190130422242506,
+    "extra": "28946 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Jean Moulin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.775266498436125,
+    "lng": 3.119075571849585,
+    "extra": "1213 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77945848373054,
+    "lng": 3.1173221330128325,
+    "extra": "507 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Vincent Auriol",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79469069195815,
+    "lng": 3.1230858348277595,
+    "extra": "4208 m²"
+  },
+  {
+    "nom": "Ilôt Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77988042370295,
+    "lng": 3.1186234242890096,
+    "extra": "376 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Edgar Quinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8046517319104,
+    "lng": 3.122564452511472,
+    "extra": "2459 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.797467858028476,
+    "lng": 3.1175578332529694,
+    "extra": "6857 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78469167110791,
+    "lng": 3.1189970913731577,
+    "extra": "1856 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77609304290315,
+    "lng": 3.076761105798135,
+    "extra": "5234 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77531156319643,
+    "lng": 3.076056484967837,
+    "extra": "4630 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Hauts de Chanturgue",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.811120982474634,
+    "lng": 3.1049717213382264,
+    "extra": "737 m²"
+  },
+  {
+    "nom": "Talus Place des Carmes Dechaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.782885976750705,
+    "lng": 3.094309831679151,
+    "extra": "834 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Edgar Quinet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80510906731891,
+    "lng": 3.123578652817651,
+    "extra": "2157 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Aulnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81094806704337,
+    "lng": 3.1262172397970627,
+    "extra": "71 m²"
+  },
+  {
+    "nom": "Bretelle Boulevard Jacques Bingen / Petit Chemin de la Sarre",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77204443682147,
+    "lng": 3.119507193254075,
+    "extra": "2705 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Jean Auguste Senèze",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.769353012454545,
+    "lng": 3.1317474343910074,
+    "extra": "154 m²"
+  },
+  {
+    "nom": "Talus Chemin du Soleliet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81310442072275,
+    "lng": 3.108611124337612,
+    "extra": "424 m²"
+  },
+  {
+    "nom": "Echangeur Herbet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7800164967875,
+    "lng": 3.1180485268842437,
+    "extra": "2144 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de la Fontaine du Bac",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76682726386902,
+    "lng": 3.1184845054413772,
+    "extra": "91 m²"
+  },
+  {
+    "nom": "Passage Fallières",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79138849730614,
+    "lng": 3.0694491566204083,
+    "extra": "1634 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Vincent Auriol",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79579608320677,
+    "lng": 3.122934456945344,
+    "extra": "159 m²"
+  },
+  {
+    "nom": "Terre plein central Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.779033946170514,
+    "lng": 3.1261032794660113,
+    "extra": "1377 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Vincent Auriol",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.795909024463235,
+    "lng": 3.1232407999942122,
+    "extra": "111 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Robert Schuman",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76424488665909,
+    "lng": 3.1261996137019565,
+    "extra": "436 m²"
+  },
+  {
+    "nom": "Giratoire Jouhaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79227936518543,
+    "lng": 3.117793509738548,
+    "extra": "265 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Jean Zay",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78891015960756,
+    "lng": 3.0619260398388057,
+    "extra": "11171 m²"
+  },
+  {
+    "nom": "Talus Bretelle Avenue Fernand Forest",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.794384263169675,
+    "lng": 3.102187574781311,
+    "extra": "1104 m²"
+  },
+  {
+    "nom": "Bâtiment Rue du 8 Mai 1945",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.771693494471265,
+    "lng": 3.077843203927287,
+    "extra": "2640 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Avenue du Brézet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.780231660163615,
+    "lng": 3.1308818344243328,
+    "extra": "1132 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Sous les Vignes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79484903627392,
+    "lng": 3.102150163768955,
+    "extra": "2208 m²"
+  },
+  {
+    "nom": "Terre plein central Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77926699260572,
+    "lng": 3.1275383605078053,
+    "extra": "1800 m²"
+  },
+  {
+    "nom": "Terre plein central Rue Louis Blériot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78485602254701,
+    "lng": 3.1360316687618734,
+    "extra": "2926 m²"
+  },
+  {
+    "nom": "Square du Moulin bis",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79459136842233,
+    "lng": 3.109954700978777,
+    "extra": "989 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Louis Blériot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78842295462081,
+    "lng": 3.1390759632101037,
+    "extra": "1568 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du 8 Mai 1945",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77108464241196,
+    "lng": 3.078279224179441,
+    "extra": "1261 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Léon Jouhaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.792743556453175,
+    "lng": 3.117715937425612,
+    "extra": "908 m²"
+  },
+  {
+    "nom": "Ilôt Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78785353965768,
+    "lng": 3.122529142093859,
+    "extra": "180 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78028163335947,
+    "lng": 3.08192754107409,
+    "extra": "43 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Léon Jouhaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.792237167675594,
+    "lng": 3.117488815517383,
+    "extra": "201 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Léon Jouhaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79205914685132,
+    "lng": 3.1175569131474683,
+    "extra": "64 m²"
+  },
+  {
+    "nom": "Echangeur Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78757247755025,
+    "lng": 3.119701934096671,
+    "extra": "410 m²"
+  },
+  {
+    "nom": "Talus Rue du Pont Saint-Jean",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.788184585170306,
+    "lng": 3.1205570897746653,
+    "extra": "1063 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Ambroise Brugière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79104360305816,
+    "lng": 3.118068738100629,
+    "extra": "61 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Ambroise Brugière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.789468886899186,
+    "lng": 3.117785939119674,
+    "extra": "122 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Gustave Flaubert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77026238981069,
+    "lng": 3.122984945787067,
+    "extra": "1064 m²"
+  },
+  {
+    "nom": "Terre plein central  Boulevard Daniel Mayer",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.793721000644545,
+    "lng": 3.098644616125302,
+    "extra": "881 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81489474822015,
+    "lng": 3.1132703006372995,
+    "extra": "56 m²"
+  },
+  {
+    "nom": "Ilôt Rue du Pré la Reine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78608130736119,
+    "lng": 3.1171737655009895,
+    "extra": "209 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Pablo Picasso",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.763676787178575,
+    "lng": 3.1181740802750664,
+    "extra": "525 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80297028701493,
+    "lng": 3.117797402442759,
+    "extra": "4306 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80120695845344,
+    "lng": 3.111925292938308,
+    "extra": "3198 m²"
+  },
+  {
+    "nom": "Ilôt Rue de l'Oradou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76957831540084,
+    "lng": 3.115618437578291,
+    "extra": "590 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.81247627958675,
+    "lng": 3.099138094588721,
+    "extra": "3722 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.80912027512767,
+    "lng": 3.10126081237976,
+    "extra": "14303 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Gustave Flaubert",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.764446584215555,
+    "lng": 3.1252963902293414,
+    "extra": "256 m²"
+  },
+  {
+    "nom": "Talus Avenue de l'Agriculture",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.779569877565606,
+    "lng": 3.1182440440775148,
+    "extra": "1255 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Champfleuri",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79375076436059,
+    "lng": 3.0997131420549904,
+    "extra": "97 m²"
+  },
+  {
+    "nom": "Ilôt Rue de la Fontaine du Bac",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.765796847898,
+    "lng": 3.1213992113787126,
+    "extra": "136 m²"
+  },
+  {
+    "nom": "Giratoire des Vergnes (Jardins Familiaux)",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.816630066692134,
+    "lng": 3.124489250357036,
+    "extra": "2458 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Allée Traversière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76823890458135,
+    "lng": 3.106220543223096,
+    "extra": "226 m²"
+  },
+  {
+    "nom": "Giratoire de l'Oradou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.769826445213,
+    "lng": 3.1122435686204812,
+    "extra": "58 m²"
+  },
+  {
+    "nom": "Giratoire Boulevard Robert Schuman",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.76433815327283,
+    "lng": 3.125723666724081,
+    "extra": "424 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Etienne Clémentel",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80076550447825,
+    "lng": 3.111581960005255,
+    "extra": "604 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Hauts de Chanturgue",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.811931710671864,
+    "lng": 3.10268153127313,
+    "extra": "750 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78980300227929,
+    "lng": 3.0966526070929206,
+    "extra": "6723 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Hauts de Chanturgue",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.811416569342704,
+    "lng": 3.1046608257205754,
+    "extra": "1824 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Hauts de Chanturgue",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81111008196616,
+    "lng": 3.106442724152378,
+    "extra": "451 m²"
+  },
+  {
+    "nom": "Accompagnement Parking But",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81385921189321,
+    "lng": 3.1077538414794197,
+    "extra": "193 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Alphonse Daudet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81395165101519,
+    "lng": 3.1018043187446485,
+    "extra": "214 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Montbeliard",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77994886037997,
+    "lng": 3.113943437585687,
+    "extra": "401 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81050332999569,
+    "lng": 3.1110581119551224,
+    "extra": "357 m²"
+  },
+  {
+    "nom": "Echangeur Herbet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77885551795906,
+    "lng": 3.1166952955847442,
+    "extra": "176 m²"
+  },
+  {
+    "nom": "Giratoire Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81006448122544,
+    "lng": 3.1104168848150335,
+    "extra": "450 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.810361900843574,
+    "lng": 3.110875417362934,
+    "extra": "1113 m²"
+  },
+  {
+    "nom": "Ilôt Rue de Flamina",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8105276169466,
+    "lng": 3.111745262100828,
+    "extra": "75 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Président Wilson",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78337373570267,
+    "lng": 3.069018105162187,
+    "extra": "30 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Jean Moulin",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77881353828485,
+    "lng": 3.116940402404484,
+    "extra": "212 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Stade Marcombe",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.809984178143125,
+    "lng": 3.1107925920116783,
+    "extra": "1149 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81406742715894,
+    "lng": 3.1265081706707956,
+    "extra": "98 m²"
+  },
+  {
+    "nom": "Abords Tour Rabanesse",
+    "type": "Espace vert public de proximité",
+    "lat": 45.768771946259506,
+    "lng": 3.0869635611558635,
+    "extra": "1446 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78778239060439,
+    "lng": 3.1167564526691094,
+    "extra": "22301 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.79009968553647,
+    "lng": 3.116629176404535,
+    "extra": "13189 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Michelet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7893446255911,
+    "lng": 3.110989731506718,
+    "extra": "268 m²"
+  },
+  {
+    "nom": "Echangeur Herbet",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.779312007057015,
+    "lng": 3.1168754689807674,
+    "extra": "2360 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.808456992304215,
+    "lng": 3.128773658532615,
+    "extra": "322 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Sous Marin Casabianca",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80820514990747,
+    "lng": 3.1089336707223603,
+    "extra": "156 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.813629300431785,
+    "lng": 3.1288502298428713,
+    "extra": "127 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79209991053968,
+    "lng": 3.1533477748726124,
+    "extra": "66 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Impasse de Champetières",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80636094333587,
+    "lng": 3.1259260725379217,
+    "extra": "43 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81225231113867,
+    "lng": 3.129177092848848,
+    "extra": "131 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81308264267111,
+    "lng": 3.125353091753298,
+    "extra": "78 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie  Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80791216532871,
+    "lng": 3.1249149401272724,
+    "extra": "1062 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.8078335266644,
+    "lng": 3.1281318639165567,
+    "extra": "350 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Château des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80755395411648,
+    "lng": 3.128478388350833,
+    "extra": "2000 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Champs de Roseaux",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.809953779642356,
+    "lng": 3.1244864275879434,
+    "extra": "286 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue des Aulnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81157991623413,
+    "lng": 3.1258459701072603,
+    "extra": "64 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue du Pré Comtal",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80235930826212,
+    "lng": 3.1317588245627594,
+    "extra": "79 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Busséol",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.810560647779816,
+    "lng": 3.119144948277687,
+    "extra": "163 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Junon",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79721325768006,
+    "lng": 3.1062228219548116,
+    "extra": "122 m²"
+  },
+  {
+    "nom": "Giratoire Tourette",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80294976568035,
+    "lng": 3.117097516226062,
+    "extra": "134 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Montbeliard",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78010189464012,
+    "lng": 3.113651259127354,
+    "extra": "86 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79195261166942,
+    "lng": 3.1570596067272563,
+    "extra": "155 m²"
+  },
+  {
+    "nom": "Place de la Morée",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78146443304469,
+    "lng": 3.0795847558188596,
+    "extra": "634 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78404007465629,
+    "lng": 3.08554804919655,
+    "extra": "10256 m²"
+  },
+  {
+    "nom": "Terre plein central Boulevard Georges Pompidou",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79684508855772,
+    "lng": 3.127144031969577,
+    "extra": "1716 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Anatole France",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77734445148549,
+    "lng": 3.1024097333183196,
+    "extra": "159 m²"
+  },
+  {
+    "nom": "Square de la Comtesse G.",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79290478404301,
+    "lng": 3.116913234841151,
+    "extra": "1196 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Jacques Mailhot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79640134785937,
+    "lng": 3.1262112482377895,
+    "extra": "82 m²"
+  },
+  {
+    "nom": "Terre plein central Avenue Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79198001169871,
+    "lng": 3.159027616861804,
+    "extra": "374 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Boulevard Youri Gagarine",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79217856864389,
+    "lng": 3.157018955227149,
+    "extra": "2027 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Impasse du Brugeron",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80689957094526,
+    "lng": 3.1270943035859986,
+    "extra": "101 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78931123775172,
+    "lng": 3.0951831236341767,
+    "extra": "6902 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.78789874416094,
+    "lng": 3.089271463615603,
+    "extra": "16011 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.77988221661771,
+    "lng": 3.0750978512934557,
+    "extra": "16223 m²"
+  },
+  {
+    "nom": "Giratoire des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81326464466568,
+    "lng": 3.1253553378798897,
+    "extra": "200 m²"
+  },
+  {
+    "nom": "Parking des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.81425361265131,
+    "lng": 3.1277933287949735,
+    "extra": "105 m²"
+  },
+  {
+    "nom": "Maison de Quartier des Vergnes",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.815188760762105,
+    "lng": 3.127483086940905,
+    "extra": "5236 m²"
+  },
+  {
+    "nom": "1153,81",
+    "type": "Espace vert public de proximité",
+    "lat": 45.764276942024004,
+    "lng": 3.091687411938331,
+    "extra": "1154 m²"
+  },
+  {
+    "nom": "Groupe Scolaire Maternelle Victor Duruy",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.780811514890075,
+    "lng": 3.1001542087117397,
+    "extra": "1872 m²"
+  },
+  {
+    "nom": "Espace vert",
+    "type": "Espace vert collectif  privé",
+    "lat": 45.7889054349881,
+    "lng": 3.08096384892602,
+    "extra": "474 m²"
+  },
+  {
+    "nom": "Square Rue Henri Tourrette",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79852620095571,
+    "lng": 3.1185535041002965,
+    "extra": "11151 m²"
+  },
+  {
+    "nom": "City stade Montalembert",
+    "type": "Espace vert public de proximité",
+    "lat": 45.75970026062581,
+    "lng": 3.0942602999198985,
+    "extra": "1294 m²"
+  },
+  {
+    "nom": "Stade Leclenché",
+    "type": "Parc urbain public",
+    "lat": 45.80861026736689,
+    "lng": 3.111528992785844,
+    "extra": "83465 m²"
+  },
+  {
+    "nom": "Square rue Henri Pourrat",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76261603376896,
+    "lng": 3.0896686345125257,
+    "extra": "1531 m²"
+  },
+  {
+    "nom": "Square Suzanne Lacore",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78232403522007,
+    "lng": 3.0848969894633966,
+    "extra": "173 m²"
+  },
+  {
+    "nom": "Passage Daudet/Chancrolle",
+    "type": "Espace vert public de proximité",
+    "lat": 45.81588762772092,
+    "lng": 3.1056956716583413,
+    "extra": "3305 m²"
+  },
+  {
+    "nom": "Square du Brugeron",
+    "type": "Espace vert public de proximité",
+    "lat": 45.80640012679062,
+    "lng": 3.1269296867863883,
+    "extra": "3052 m²"
+  },
+  {
+    "nom": "Square des Trois Ponts",
+    "type": "Espace vert public de proximité",
+    "lat": 45.782927183634456,
+    "lng": 3.0870491206398203,
+    "extra": "677 m²"
+  },
+  {
+    "nom": "Passage Rue Pablo Picasso",
+    "type": "Espace vert public de proximité",
+    "lat": 45.76332934686244,
+    "lng": 3.11897823357166,
+    "extra": "2242 m²"
+  },
+  {
+    "nom": "Place Maréchal Fayolle",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78138285591105,
+    "lng": 3.0790717703577855,
+    "extra": "1488 m²"
+  },
+  {
+    "nom": "Abords Maison de Quartier de Croix Neyrat",
+    "type": "Espace vert public de proximité",
+    "lat": 45.81165642290086,
+    "lng": 3.10078721690412,
+    "extra": "14114 m²"
+  },
+  {
+    "nom": "Square de l'Esplanade",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77595454718635,
+    "lng": 3.096468276076939,
+    "extra": "2135 m²"
+  },
+  {
+    "nom": "Squares Blaise Pascal / Louis Gemon",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78040405666733,
+    "lng": 3.0849905923231673,
+    "extra": "4823 m²"
+  },
+  {
+    "nom": "Parc du panoramic de Croix Neyrat",
+    "type": "Espace vert public de proximité",
+    "lat": 45.810396549179856,
+    "lng": 3.10634047810206,
+    "extra": "4614 m²"
+  },
+  {
+    "nom": "Square Philippe Rameaux et Mail Kellermann",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78085736117523,
+    "lng": 3.0739866585515196,
+    "extra": "7561 m²"
+  },
+  {
+    "nom": "Coeur ilot La Gauthière",
+    "type": "Espace vert public de proximité",
+    "lat": 45.80194798597175,
+    "lng": 3.118437407456173,
+    "extra": "20046 m²"
+  },
+  {
+    "nom": "Places du marché aux poissons et du Mazet",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77950168431038,
+    "lng": 3.0846840666911746,
+    "extra": "395 m²"
+  },
+  {
+    "nom": "Square Olympe de Gouges",
+    "type": "Espace vert public de proximité",
+    "lat": 45.780396359357226,
+    "lng": 3.0858513477885037,
+    "extra": "2370 m²"
+  },
+  {
+    "nom": "Place des Carmes 1",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78291416157145,
+    "lng": 3.093897003812153,
+    "extra": "5321 m²"
+  },
+  {
+    "nom": "Square Rue Général Cochet",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77923724952139,
+    "lng": 3.1106855045894637,
+    "extra": "264 m²"
+  },
+  {
+    "nom": "Terrain Grand Combaude",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79994215613163,
+    "lng": 3.1189945077623533,
+    "extra": "6017 m²"
+  },
+  {
+    "nom": "Grande Combaude",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79988647784843,
+    "lng": 3.120141605966199,
+    "extra": "2988 m²"
+  },
+  {
+    "nom": "Grande Combaude",
+    "type": "Espace vert public de proximité",
+    "lat": 45.799884880073535,
+    "lng": 3.120159775834052,
+    "extra": "2937 m²"
+  },
+  {
+    "nom": "Square Chalonnax",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79242799984423,
+    "lng": 3.0929339563562506,
+    "extra": "1078 m²"
+  },
+  {
+    "nom": "Square de Chalonnax",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79242780638951,
+    "lng": 3.0929338477377057,
+    "extra": "1076 m²"
+  },
+  {
+    "nom": "Parc des Quatre Saisons",
+    "type": "Espace vert public de proximité",
+    "lat": 45.812744323808026,
+    "lng": 3.1302226772097725,
+    "extra": "7344 m²"
+  },
+  {
+    "nom": "Coulée verte de Vallières",
+    "type": "Parc urbain public",
+    "lat": 45.75778376740364,
+    "lng": 3.083921389331815,
+    "extra": "15953 m²"
+  },
+  {
+    "nom": "Parc de la Fraternité",
+    "type": "Parc urbain public",
+    "lat": 45.81342426308841,
+    "lng": 3.1035880479218942,
+    "extra": "77901 m²"
+  },
+  {
+    "nom": "Place d'Arménie",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78280911977356,
+    "lng": 3.0785746032501917,
+    "extra": "911 m²"
+  },
+  {
+    "nom": "Square Albert Mallet",
+    "type": "Espace vert public de proximité",
+    "lat": 45.763460483520404,
+    "lng": 3.091641454393366,
+    "extra": "798 m²"
+  },
+  {
+    "nom": "Parc de l'Aventure",
+    "type": "Parc urbain public",
+    "lat": 45.76546241377699,
+    "lng": 3.1192035691856583,
+    "extra": "15075 m²"
+  },
+  {
+    "nom": "Square Maurice Pourchon",
+    "type": "Espace vert public de proximité",
+    "lat": 45.79213835512258,
+    "lng": 3.089132952075872,
+    "extra": "352 m²"
+  },
+  {
+    "nom": "Mail Pierre Besset",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78163818825578,
+    "lng": 3.0775456196260693,
+    "extra": "2394 m²"
+  },
+  {
+    "nom": "Square de la Jeune Résistance",
+    "type": "Espace vert public de proximité",
+    "lat": 45.776868609607085,
+    "lng": 3.096727493138218,
+    "extra": "5776 m²"
+  },
+  {
+    "nom": "Square Abbé Toury",
+    "type": "Espace vert public de proximité",
+    "lat": 45.77382492059951,
+    "lng": 3.1027635674087644,
+    "extra": "3817 m²"
+  },
+  {
+    "nom": "Square Pierre Besset",
+    "type": "Espace vert public de proximité",
+    "lat": 45.78287275069465,
+    "lng": 3.077628832182719,
+    "extra": "756 m²"
+  },
+  {
+    "nom": "Square Loucheur",
+    "type": "Espace vert public de proximité",
+    "lat": 45.7620013076173,
+    "lng": 3.0956015738007987,
+    "extra": "3596 m²"
+  },
+  {
+    "nom": "Square Talus d'Aberdeen",
+    "type": "Espace vert public de proximité",
+    "lat": 45.814448297854035,
+    "lng": 3.09844109262956,
+    "extra": "4348 m²"
+  },
+  {
+    "nom": "Parc Saint-Jean",
+    "type": "Parc urbain public",
+    "lat": 45.78464424421516,
+    "lng": 3.1168355856130274,
+    "extra": "23385 m²"
+  },
+  {
+    "nom": "Crèche Barbecot",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78056684528016,
+    "lng": 3.0794278145733767,
+    "extra": "1937 m²"
+  },
+  {
+    "nom": "Terre plein central Esplanade",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7774086889919,
+    "lng": 3.0966784963035314,
+    "extra": "168 m²"
+  },
+  {
+    "nom": "Ilôt Boulevard Desaix",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.776350263155514,
+    "lng": 3.0841156705922885,
+    "extra": "68 m²"
+  },
+  {
+    "nom": "Tour du Grand Pavois",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.7739194369834,
+    "lng": 3.082986003516598,
+    "extra": "1243 m²"
+  },
+  {
+    "nom": "Place de la Poterne",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.780476635020264,
+    "lng": 3.0863767492232896,
+    "extra": "1396 m²"
+  },
+  {
+    "nom": "Place des Fossés Sous le Séminaire",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79440161745478,
+    "lng": 3.115201602821845,
+    "extra": "1939 m²"
+  },
+  {
+    "nom": "NON SAISI - GS G.SAND2",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80552924899241,
+    "lng": 3.1031097219376393,
+    "extra": "283 m²"
+  },
+  {
+    "nom": "Bâtiments des Petits Fauchers",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.779856513623784,
+    "lng": 3.083913264384057,
+    "extra": "262 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue Armand Fallière",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.79129468989981,
+    "lng": 3.076681514900548,
+    "extra": "132 m²"
+  },
+  {
+    "nom": "Accompagnement de voirie Rue de Serbie",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.78206554400314,
+    "lng": 3.0797885835745675,
+    "extra": "115 m²"
+  },
+  {
+    "nom": "Palais de Justice",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.77964387728766,
+    "lng": 3.0793269328623913,
+    "extra": "1437 m²"
+  },
+  {
+    "nom": "Giratoire de la Bienfaisance",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.80357801976241,
+    "lng": 3.1105846969223903,
+    "extra": "38 m²"
+  },
+  {
+    "nom": "Place Delille",
+    "type": "Plantation d'accompagnement",
+    "lat": 45.780477672516795,
+    "lng": 3.0912710174280127,
+    "extra": "2282 m²"
+  }
+]

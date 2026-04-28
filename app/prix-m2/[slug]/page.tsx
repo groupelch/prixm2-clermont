@@ -12,6 +12,8 @@ import { QuartierMap } from "@/components/quartier/QuartierMap";
 import { ConseilsVendeur } from "@/components/quartier/ConseilsVendeur";
 import { ComparaisonVoisins } from "@/components/quartier/ComparaisonVoisins";
 import { PrixJustePedagogie } from "@/components/quartier/PrixJustePedagogie";
+import { AmenitiesBlock } from "@/components/quartier/AmenitiesBlock";
+import { getAmenitiesForQuartier } from "@/lib/amenities";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
 import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
@@ -49,6 +51,7 @@ export default function QuartierPage({ params }: { params: Params }) {
   const q = getQuartierBySlug(params.slug);
   if (!q) notFound();
   const articles = getArticlesForQuartier(q.slug).slice(0, 3);
+  const amenities = getAmenitiesForQuartier(q.coordinates.lat, q.coordinates.lng);
 
   const breadcrumb = [
     { name: "Accueil", url: SITE_URL },
@@ -84,6 +87,7 @@ export default function QuartierPage({ params }: { params: Params }) {
       <ChiffresQuartier quartier={q} />
       <AnalyseLocale quartier={q} />
       <PrixParType quartier={q} />
+      <AmenitiesBlock amenities={amenities} quartierNom={q.nom} />
 
       <section className="py-14 md:py-20 bg-cbf-ivory">
         <div className="container">
