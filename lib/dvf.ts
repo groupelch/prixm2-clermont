@@ -1,0 +1,133 @@
+import fs from "fs";
+import path from "path";
+
+export interface DvfTransaction {
+  date: string;
+  type: "Appartement" | "Maison" | string;
+  prix: number;
+  surface: number;
+  prix_m2: number;
+  pieces: number | null;
+  lat: number;
+  lng: number;
+  annee: number;
+}
+
+interface DvfFile {
+  meta: { updated: string; total: number; source?: string; commune?: string };
+  transactions: DvfTransaction[];
+}
+
+export interface DvfTypeStats {
+  prix_m2_median: number;
+  nb_transactions: number;
+  evolution_pct: number;
+  prix_m2_min: number;
+  prix_m2_max: number;
+}
+
+export interface DvfDerniereVente {
+  date: string;
+  type: string;
+  prix: number;
+  surface: number;
+  prix_m2: number;
+}
+
+export interface DvfStats {
+  appartements: DvfTypeStats | null;
+  maisons: DvfTypeStats | null;
+  dernieres_ventes: DvfDerniereVente[];
+  rayon_km: number;
+  total: number;
+  meta: { updated: string };
+}
+
+const EARTH_RADIUS_KM = 6371;
+const toRad = (deg: number) => (deg * Math.PI) / 180;
+
+function haversine(lat1: number, lng1: number, lat2: number, lng2: number): number {
+  const dLat = toRad(lat2 - lat1);
+  const dLng = toRad(lng2 - lng1);
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+  return 2 * EARTH_RADIUS_KM * Math.asin(Math.sqrt(a));
+}
+
+function median(values: number[]): number {
+  if (!values.length) return 0;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[mid] : Math.round((sorted[mid - 1] + sorted[mid]) / 2);
+}
+
+// Lecture lazy + cache module (le fichier peut faire >1 MB).
+let _cache: DvfFile | null = null;
+function loadDvf(): DvfFile {
+  if (_cache) return _cache;
+  const file = path.join(process.cwd(), "public", "data", "dvf-transactions.json");
+  const raw = fs.readFileSync(file, "utf-8");
+  _cache = JSON.parse(raw) as DvfFile;
+  return _cache;
+}
+
+function statsForType(rows: DvfTransaction[]): DvfTypeStats | null {
+  if (!rows.length) return null;
+  const prixM2 = rows.map((r) => r.prix_m2);
+  const med = median(prixM2);
+
+  // Evolution : médiane 2024 vs médiane 2022
+  const m2022 = rows.filter((r) => r.annee === 2022).map((r) => r.prix_m2);
+  const m2024 = rows.filter((r) => r.annee === 2024).map((r) => r.prix_m2);
+  const med22 = median(m2022);
+  const med24 = median(m2024);
+  const evolution =
+    med22 > 0 && med24 > 0 ? Number((((med24 - med22) / med22) * 100).toFixed(1)) : 0;
+
+  return {
+    prix_m2_median: med,
+    nb_transactions: rows.length,
+    evolution_pct: evolution,
+    prix_m2_min: Math.min(...prixM2),
+    prix_m2_max: Math.max(...prixM2),
+  };
+}
+
+/**
+ * Stats DVF agrégées sur toutes les transactions situées dans un rayon
+ * autour d'un point (centre de quartier).
+ */
+export function getDvfStatsForQuartier(
+  lat: number,
+  lng: number,
+  radiusKm = 1.0,
+): DvfStats {
+  const data = loadDvf();
+  const inRadius = data.transactions.filter(
+    (t) => haversine(lat, lng, t.lat, t.lng) <= radiusKm,
+  );
+
+  const apparts = inRadius.filter((t) => t.type === "Appartement");
+  const maisons = inRadius.filter((t) => t.type === "Maison");
+
+  const dernieres = [...inRadius]
+    .sort((a, b) => (a.date < b.date ? 1 : -1))
+    .slice(0, 5)
+    .map((t) => ({
+      date: t.date,
+      type: t.type,
+      prix: t.prix,
+      surface: t.surface,
+      prix_m2: t.prix_m2,
+    }));
+
+  return {
+    appartements: statsForType(apparts),
+    maisons: statsForType(maisons),
+    dernieres_ventes: dernieres,
+    rayon_km: radiusKm,
+    total: inRadius.length,
+    meta: { updated: data.meta.updated },
+  };
+}

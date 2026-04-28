@@ -13,7 +13,11 @@ import { ConseilsVendeur } from "@/components/quartier/ConseilsVendeur";
 import { ComparaisonVoisins } from "@/components/quartier/ComparaisonVoisins";
 import { PrixJustePedagogie } from "@/components/quartier/PrixJustePedagogie";
 import { AmenitiesBlock } from "@/components/quartier/AmenitiesBlock";
+import { DpeBlock } from "@/components/quartier/DpeBlock";
+import { DvfBlock } from "@/components/quartier/DvfBlock";
 import { getAmenitiesForQuartier } from "@/lib/amenities";
+import { getDpeStatsForQuartier } from "@/lib/dpe";
+import { getDvfStatsForQuartier } from "@/lib/dvf";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
 import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
@@ -52,6 +56,8 @@ export default function QuartierPage({ params }: { params: Params }) {
   if (!q) notFound();
   const articles = getArticlesForQuartier(q.slug).slice(0, 3);
   const amenities = getAmenitiesForQuartier(q.coordinates.lat, q.coordinates.lng);
+  const dpeStats = getDpeStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
+  const dvfStats = getDvfStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
 
   const breadcrumb = [
     { name: "Accueil", url: SITE_URL },
@@ -88,8 +94,10 @@ export default function QuartierPage({ params }: { params: Params }) {
       <AnalyseLocale quartier={q} />
       <PrixParType quartier={q} />
       <AmenitiesBlock amenities={amenities} quartierNom={q.nom} />
+      <DpeBlock stats={dpeStats} />
+      <DvfBlock stats={dvfStats} quartier={q.nom} />
 
-      <section className="py-14 md:py-20 bg-cbf-ivory">
+      <section className="py-14 md:py-20 bg-white">
         <div className="container">
           <div className="max-w-2xl mb-8">
             <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
