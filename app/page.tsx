@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/home/HeroSection";
+import { QuickLinks } from "@/components/home/QuickLinks";
 import { QuartierSearch } from "@/components/home/QuartierSearch";
 import { MapWrapper } from "@/components/home/MapWrapper";
 import { ChiffresCles } from "@/components/home/ChiffresCles";
@@ -13,6 +14,8 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+
+      <QuickLinks />
 
       <section id="carte" className="py-16 md:py-20 bg-white">
         <div className="container">
