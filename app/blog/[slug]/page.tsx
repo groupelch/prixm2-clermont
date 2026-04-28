@@ -128,7 +128,12 @@ export default function ArticlePage({ params }: { params: Params }) {
 
           <div
             className="prose-article"
-            dangerouslySetInnerHTML={{ __html: article.content }}
+            dangerouslySetInnerHTML={{
+              __html: article.content.replace(
+                /href="\/estimation"/g,
+                `href="/estimation?utm_source=article&utm_medium=blog&utm_campaign=${article.slug}"`
+              ),
+            }}
           />
 
           {/* CTA fin d'article */}

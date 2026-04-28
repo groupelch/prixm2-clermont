@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle2, AlertCircle } from "lucide-react";
@@ -28,6 +28,24 @@ export function FormEstimationCourt({
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
+  // UTMs lus depuis l'URL (ex: /estimation?utm_source=article&utm_campaign=...)
+  const [utms, setUtms] = useState<{
+    utm_source: string | null;
+    utm_medium: string | null;
+    utm_campaign: string | null;
+  }>({ utm_source: null, utm_medium: null, utm_campaign: null });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const p = new URLSearchParams(window.location.search);
+      setUtms({
+        utm_source: p.get("utm_source"),
+        utm_medium: p.get("utm_medium"),
+        utm_campaign: p.get("utm_campaign"),
+      });
+    }
+  }, []);
+
   const {
     register,
     handleSubmit,
@@ -50,7 +68,13 @@ export function FormEstimationCourt({
       const res = await fetch("/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, type: "estimation_court" }),
+        body: JSON.stringify({
+          ...data,
+          type: "estimation_court",
+          utm_source: utms.utm_source ?? data.utm_source,
+          utm_medium: utms.utm_medium ?? data.utm_medium,
+          utm_campaign: utms.utm_campaign ?? data.utm_campaign,
+        }),
       });
       if (!res.ok) {
         const err = await res.json().catch(() => ({}));
