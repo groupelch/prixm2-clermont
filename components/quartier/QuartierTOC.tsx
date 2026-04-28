@@ -1,4 +1,5 @@
 const ITEMS = [
+  { href: "#historique", label: "Historique" },
   { href: "#prix", label: "Prix & évolution" },
   { href: "#dpe", label: "Énergie" },
   { href: "#transactions", label: "Transactions DVF" },

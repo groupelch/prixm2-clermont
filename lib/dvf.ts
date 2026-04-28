@@ -34,9 +34,17 @@ export interface DvfDerniereVente {
   prix_m2: number;
 }
 
+export interface DvfStatsBySize {
+  t1: DvfTypeStats | null; // <35 m²
+  t2: DvfTypeStats | null; // 35-55 m²
+  t3: DvfTypeStats | null; // 55-80 m²
+  t4plus: DvfTypeStats | null; // >80 m²
+}
+
 export interface DvfStats {
   appartements: DvfTypeStats | null;
   maisons: DvfTypeStats | null;
+  par_taille: DvfStatsBySize;
   dernieres_ventes: DvfDerniereVente[];
   rayon_km: number;
   total: number;
@@ -122,12 +130,62 @@ export function getDvfStatsForQuartier(
       prix_m2: t.prix_m2,
     }));
 
+  // Stats par taille (uniquement appartements)
+  const statsForRows = (rows: DvfTransaction[]): DvfTypeStats | null => {
+    if (rows.length < 3) return null; // pas assez de données
+    return statsForType(rows);
+  };
+  const par_taille: DvfStatsBySize = {
+    t1: statsForRows(apparts.filter((t) => t.surface < 35)),
+    t2: statsForRows(apparts.filter((t) => t.surface >= 35 && t.surface < 55)),
+    t3: statsForRows(apparts.filter((t) => t.surface >= 55 && t.surface < 80)),
+    t4plus: statsForRows(apparts.filter((t) => t.surface >= 80)),
+  };
+
   return {
     appartements: statsForType(apparts),
     maisons: statsForType(maisons),
+    par_taille,
     dernieres_ventes: dernieres,
     rayon_km: radiusKm,
     total: inRadius.length,
     meta: { updated: data.meta.updated },
   };
+}
+
+export interface DvfAnneeStats {
+  annee: number;
+  apparts_median: number | null;
+  maisons_median: number | null;
+  nb_transactions: number;
+}
+
+/**
+ * Historique annuel (2021-2024) des prix médians appart/maison sur un rayon
+ * autour d'un point. Utilisé pour les graphiques d'évolution.
+ */
+export function getDvfHistoryForQuartier(
+  lat: number,
+  lng: number,
+  radiusKm = 1.0,
+): DvfAnneeStats[] {
+  const data = loadDvf();
+  const inRadius = data.transactions.filter(
+    (t) => haversine(lat, lng, t.lat, t.lng) <= radiusKm,
+  );
+
+  const annees = [2021, 2022, 2023, 2024];
+  return annees.map((annee) => {
+    const ofYear = inRadius.filter((t) => t.annee === annee);
+    const apparts = ofYear.filter((t) => t.type === "Appartement").map((t) => t.prix_m2);
+    const maisons = ofYear.filter((t) => t.type === "Maison").map((t) => t.prix_m2);
+    const apMed = apparts.length >= 3 ? median(apparts) : null;
+    const maMed = maisons.length >= 3 ? median(maisons) : null;
+    return {
+      annee,
+      apparts_median: apMed,
+      maisons_median: maMed,
+      nb_transactions: ofYear.length,
+    };
+  });
 }

@@ -16,17 +16,21 @@ import { PrixJustePedagogie } from "@/components/quartier/PrixJustePedagogie";
 import { AmenitiesBlock } from "@/components/quartier/AmenitiesBlock";
 import { DpeBlock } from "@/components/quartier/DpeBlock";
 import { DvfBlock } from "@/components/quartier/DvfBlock";
+import { DvfSurfaceBlock } from "@/components/quartier/DvfSurfaceBlock";
+import { PriceHistoryChart } from "@/components/quartier/PriceHistoryChart";
 import { IrisBlock } from "@/components/quartier/IrisBlock";
 import { TransportBlock } from "@/components/quartier/TransportBlock";
 import { getAmenitiesForQuartier } from "@/lib/amenities";
 import { getDpeStatsForQuartier } from "@/lib/dpe";
-import { getDvfStatsForQuartier } from "@/lib/dvf";
+import { getDvfHistoryForQuartier, getDvfStatsForQuartier } from "@/lib/dvf";
 import { getIrisStatsForQuartier } from "@/lib/iris";
 import { getTransportForQuartier } from "@/lib/transport";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
 import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
+import { StickyCtaBar } from "@/components/common/StickyCtaBar";
+import { AlertePrixForm } from "@/components/quartier/AlertePrixForm";
 import {
   FaqPageSchema,
   BreadcrumbSchema,
@@ -89,6 +93,7 @@ export default function QuartierPage({ params }: { params: Params }) {
   const amenities = getAmenitiesForQuartier(q.coordinates.lat, q.coordinates.lng);
   const dpeStats = getDpeStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
   const dvfStats = getDvfStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
+  const dvfHistory = getDvfHistoryForQuartier(q.coordinates.lat, q.coordinates.lng);
   const irisStats = getIrisStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
   const transportStats = getTransportForQuartier(q.coordinates.lat, q.coordinates.lng);
 
@@ -131,6 +136,9 @@ export default function QuartierPage({ params }: { params: Params }) {
       <QuartierHero quartier={q} />
       <ChiffresQuartier quartier={q} />
       <QuartierTOC />
+      <div id="historique" className="scroll-mt-24">
+        <PriceHistoryChart history={dvfHistory} quartierNom={q.nom} />
+      </div>
       <AnalyseLocale quartier={q} />
       <div id="prix" className="scroll-mt-24">
         <PrixParType quartier={q} />
@@ -141,6 +149,7 @@ export default function QuartierPage({ params }: { params: Params }) {
       <div id="transactions" className="scroll-mt-24">
         <DvfBlock stats={dvfStats} quartier={q.nom} />
       </div>
+      <DvfSurfaceBlock stats={dvfStats.par_taille} quartier={q.nom} />
       <div id="equipements" className="scroll-mt-24">
         <AmenitiesBlock amenities={amenities} quartierNom={q.nom} />
       </div>
@@ -271,6 +280,19 @@ export default function QuartierPage({ params }: { params: Params }) {
         </div>
       </section>
 
+      <section className="py-10 bg-cbf-ivory border-t border-cbf-gray-soft">
+        <div className="container max-w-xl">
+          <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-1">
+            Alerte prix
+          </p>
+          <p className="text-sm text-cbf-gray mb-3">
+            Suivre les prix à {q.nom}
+          </p>
+          <AlertePrixForm quartierId={q.slug} quartierNom={q.nom} />
+        </div>
+      </section>
+
+      <StickyCtaBar />
       <FinalCta />
     </>
   );

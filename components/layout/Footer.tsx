@@ -72,6 +72,9 @@ export function Footer() {
               <li><Link href="/prix-immobilier-clermont-ferrand" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Prix immobilier</Link></li>
               <li><Link href="/blog" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Blog</Link></li>
               <li><Link href="/faq" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">FAQ</Link></li>
+              <li><Link href="/calculateur-frais-notaire" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Calculateur frais notaire</Link></li>
+              <li><Link href="/comparateur-quartiers" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Comparateur quartiers</Link></li>
+              <li><Link href="/glossaire" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Glossaire immobilier</Link></li>
             </ul>
           </div>
 

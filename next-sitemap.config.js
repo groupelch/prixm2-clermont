@@ -22,6 +22,10 @@ module.exports = {
     else if (path.startsWith("/vendre/")) priority = 0.85;
     else if (path.startsWith("/blog/")) priority = 0.75;
     else if (path.startsWith("/guide/")) priority = 0.7;
+    else if (path === "/comparateur-quartiers") priority = 0.85;
+    else if (path === "/calculateur-frais-notaire") priority = 0.85;
+    else if (path === "/glossaire") priority = 0.7;
+    else if (path.startsWith("/meilleurs-")) priority = 0.8;
 
     return {
       loc: path,
