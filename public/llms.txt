@@ -1,0 +1,45 @@
+# prixm² Clermont-Ferrand
+
+> Observatoire indépendant des prix immobiliers de Clermont-Ferrand et son agglomération. Données de marché par quartier (Jaude, Delille, Montferrand, Cézeaux, Saint-Jacques, La Pardieu, Chamalières, Beaumont, Aubière, Royat, Riom...), estimation gratuite, conseils vendeur / acheteur / investisseur / bailleur. Édité par CBF Conseils, agence immobilière à Clermont-Ferrand.
+
+## Pages clés
+
+- [Accueil](https://www.prixm2clermontferrand.fr/) : prix médian Clermont-Ferrand 2025, carte interactive, top quartiers, FAQ
+- [Prix par quartier](https://www.prixm2clermontferrand.fr/prix-immobilier-clermont-ferrand) : index complet des 30+ quartiers et communes de l'agglo
+- [Estimation gratuite](https://www.prixm2clermontferrand.fr/estimation) : simulateur 5 étapes (bien, état, critères premium, situation, coordonnées)
+- [Vendre à Clermont-Ferrand](https://www.prixm2clermontferrand.fr/vendre-clermont-ferrand) : conseils mise en marché, délais, négociation
+- [Investir à Clermont-Ferrand](https://www.prixm2clermontferrand.fr/investir-clermont-ferrand) : rendement locatif par quartier, fiscalité, stratégies
+- [Louer son bien](https://www.prixm2clermontferrand.fr/louer-clermont-ferrand) : simulateur loyer, gestion locative, GLI/PNO
+- [Blog](https://www.prixm2clermontferrand.fr/blog) : 20+ analyses de marché, guides, comparatifs
+
+## Données
+
+Toutes les données prix m² publiées sur ce site sont issues de :
+- Base DVF (Demandes de Valeurs Foncières, ministère de l'Économie) — transactions notariées
+- Observatoire interne CBF Conseils — ventes en cours et récentes
+- INSEE pour les données socio-démographiques par IRIS
+- Mise à jour : avril 2025
+
+## Méthode d'estimation
+
+Notre estimation gratuite croise 8 paramètres :
+1. Type de bien (appartement, maison, local)
+2. Surface, nombre de pièces, étage
+3. État général (excellent / bon / à rénover / à rénover entièrement)
+4. DPE (A-B, C-D, E-F-G, inconnu)
+5. Exposition (sud, traversant, etc.) et vue (dégagée / normale / bouchée)
+6. Type d'immeuble (haussmannien, ancien pierre, années 30-50, années 60-80, récent, neuf)
+7. Travaux récents (cuisine, salle de bain, isolation)
+8. Bonus : parking, cave, gardien
+
+Fourchette retournée à ±8 % autour du central. Document PDF argumenté envoyé sous 48 h ouvrées.
+
+## Contact / éditeur
+
+CBF Conseils — agence immobilière indépendante
+Clermont-Ferrand (siège), Chalon-sur-Saône, Le Creusot
+Site éditorial : prixm² Clermont-Ferrand
+URL canonique : https://www.prixm2clermontferrand.fr
+
+Le contenu publié est libre de citation avec lien retour vers la page source.
+Réutilisation des chiffres autorisée à condition de citer "prixm² Clermont-Ferrand / CBF Conseils — données 2025".
