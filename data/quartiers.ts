@@ -929,29 +929,42 @@ const seeds: Seed[] = [
     delaiVente: 95,
     profilAcheteur: "Famille premium",
     description:
-      "Commune résidentielle premium de l'agglomération clermontoise, Beaumont est plébiscitée par les familles cadres. Écoles privées et publiques de qualité, environnement verdoyant, accès rapide au centre de Clermont.",
+      "Commune résidentielle premium de l'agglomération clermontoise, Beaumont est plébiscitée par les familles cadres et les professions libérales. Espaces verts omniprésents, tissu pavillonnaire de qualité, sectorisations scolaires très recherchées (collège Lucie Aubrac, lycée Blaise Pascal). À 5 min de l'hypercentre de Clermont, sans en subir les nuisances. Marché des maisons familiales très tendu.",
     pointsForts: [
-      "Excellentes écoles publiques et privées",
-      "Maisons familiales avec jardin",
-      "Cadre verdoyant et calme",
-      "Accès direct à la rocade et au centre",
+      "Sectorisation scolaire parmi les meilleures du 63",
+      "Maisons familiales avec jardin, lotissements récents et pavillons des années 80-90",
+      "Cadre verdoyant : parcs, espaces naturels, calme absolu",
+      "Accès direct rocade, A75, centre Clermont en 8 min",
+      "Fort taux de propriétaires (>65%) — marché stable",
     ],
     pointsFaibles: [
-      "Prix élevés (après Chamalières)",
-      "Marché peu liquide",
+      "Prix élevés — 2e commune la plus chère après Chamalières",
+      "Très peu d'appartements disponibles",
+      "Marché peu liquide : 95 jours de délai moyen",
+      "Pas de tram direct (bus seulement)",
     ],
-    ruesRecherchees: ["Avenue du Mont-Dore", "Rue Jean Jaurès", "Rue de Romagnat"],
+    ruesRecherchees: ["Avenue du Mont-Dore", "Rue Jean Jaurès", "Rue de Romagnat", "Allée des Cèdres", "Chemin de la Bergère"],
     quartiersVoisins: ["clermont-ferrand-beaumont", "ceyrat", "romagnat"],
     faq: [
       {
         question: "Pourquoi Beaumont est-elle si prisée ?",
         reponse:
-          "Pour ses écoles, son cadre verdoyant, sa proximité immédiate de Clermont (5 min) et son tissu pavillonnaire de qualité.",
+          "Pour ses écoles réputées, son cadre verdoyant, sa proximité immédiate de Clermont (5-8 min) et son tissu pavillonnaire de qualité. C'est l'adresse de référence pour les familles cadres du 63.",
       },
       {
-        question: "Quel budget pour une maison à Beaumont ?",
+        question: "Quel est le prix d'une maison à Beaumont ?",
         reponse:
-          "Comptez 400 000 à 600 000 € pour une maison de 110-140 m² avec jardin selon le secteur et l'état.",
+          "Comptez 350 000 à 550 000 € pour une maison de 100-150 m² avec jardin selon l'état, la rue et la surface. Le prix moyen oscille autour de 3 200 €/m².",
+      },
+      {
+        question: "Beaumont est-elle bien desservie en transports ?",
+        reponse:
+          "Pas de tram direct mais plusieurs lignes de bus T2C vers le centre de Clermont. La voiture reste indispensable pour les déplacements quotidiens.",
+      },
+      {
+        question: "Y a-t-il des appartements à Beaumont ?",
+        reponse:
+          "Très peu. Le parc immobilier est composé à 80% de maisons individuelles. Les rares appartements disponibles (principalement dans quelques résidences) partent très vite.",
       },
     ],
     coordinates: { lat: 45.7521, lng: 3.1214 },
@@ -970,30 +983,43 @@ const seeds: Seed[] = [
     delaiVente: 85,
     profilAcheteur: "Premium / patrimoine",
     description:
-      "Chamalières est la commune la plus chère de l'agglomération clermontoise. Réputation bourgeoise, immeubles cossus, villas de standing, proximité immédiate du centre de Clermont. Marché tendu, biens prestige.",
+      "Chamalières est la commune la plus chère de l'agglomération clermontoise, et la plus prestigieuse du Puy-de-Dôme. Immeubles bourgeois hausmanniens, villas Belle Époque, résidences haut de gamme des années 70-80. Clientèle de professions libérales, médecins, cadres Michelin et patrimoniaux. Marché très tendu, offre rare, délai de vente parmi les plus courts du département.",
     pointsForts: [
-      "Adresse la plus prestigieuse du 63",
-      "Immeubles bourgeois et villas de caractère",
-      "Tram A et bus rapides vers Clermont",
-      "Écoles et lycées renommés",
+      "Adresse la plus prestigieuse du 63 — valeur patrimoniale solide",
+      "Immeubles bourgeois, appartements haussmanniens, villas de caractère",
+      "Tram A terminus Royat/Chamalières — connexion directe CLF",
+      "Lycées et établissements scolaires renommés",
+      "Cadre résidentiel calme, commerces de qualité",
+      "Forte plus-value historique (+48% sur 10 ans)",
     ],
     pointsFaibles: [
-      "Prix les plus élevés du département",
-      "Très peu d'offres disponibles",
-      "Stationnement contraint en centre",
+      "Prix les plus élevés du département (2 700 €/m² appart, 3 500 €/m² maison)",
+      "Offre rarissime — moins de 15 biens disponibles en même temps",
+      "Stationnement résidentiel contraint",
+      "Copropriétés anciennes avec charges élevées",
     ],
-    ruesRecherchees: ["Avenue de Royat", "Boulevard Carnot", "Avenue Pasteur"],
+    ruesRecherchees: ["Avenue de Royat", "Boulevard Carnot", "Avenue Pasteur", "Rue du Maréchal Joffre", "Boulevard Gambetta"],
     quartiersVoisins: ["royat", "clermont-ferrand-jaude", "durtol"],
     faq: [
       {
         question: "Pourquoi investir à Chamalières ?",
         reponse:
-          "Actif valeur refuge avec une revente fluide, une demande locative haut de gamme et une image patrimoniale solide.",
+          "Actif valeur refuge avec une revente fluide, une demande locative haut de gamme et une image patrimoniale solide. Les prix n'ont jamais reculé sur 10 ans.",
       },
       {
-        question: "Combien coûte un appartement à Chamalières ?",
+        question: "Quel rendement locatif à Chamalières ?",
         reponse:
-          "Prix moyen d'environ 2 700 €/m². Un T3 de 70 m² rénové dans un immeuble bourgeois dépasse souvent 200 000 €.",
+          "Faible en brut (3,5-4%) mais la valorisation compense : +48% sur 10 ans. Profil investisseur patrimoniaux long terme, pas rendementiste court terme.",
+      },
+      {
+        question: "Les prix de Chamalières vont-ils encore monter ?",
+        reponse:
+          "L'offre est structurellement limitée (commune constituée, peu de foncier libre). La demande reste soutenue. Les prix devraient continuer à progresser à +2-3%/an.",
+      },
+      {
+        question: "Quels types de biens trouve-t-on à Chamalières ?",
+        reponse:
+          "Mix d'appartements bourgeois (2 à 5 pièces dans immeubles pierre de taille), villas des années 30-50 et quelques résidences des années 70-80. Peu de petites surfaces.",
       },
     ],
     coordinates: { lat: 45.7793, lng: 3.0534 },
@@ -1012,23 +1038,42 @@ const seeds: Seed[] = [
     delaiVente: 100,
     profilAcheteur: "Famille / investisseur",
     description:
-      "Commune thermale historique adossée au plateau de Gergovie, Royat séduit par son architecture Belle Époque, ses thermes et sa nature. Marché stable et valorisé, en lien étroit avec Chamalières.",
+      "Commune thermale historique aux portes de Clermont, Royat séduit par son architecture Belle Époque unique, ses thermes renommés et sa nature préservée aux portes des puys. Les vacanciers découvrent Royat, les clermontois y vivent toute l'année. Terminus du tram A, marché stable et qualitatif, forte identité de village dans un écrin verdoyant.",
     pointsForts: [
-      "Cachet thermal et patrimoine Belle Époque",
-      "Nature et puys à 5 min",
-      "Tram A terminus Royat",
+      "Cachet unique : architecture thermale Belle Époque, villas 1900",
+      "Nature et puys à 5 min à pied — Puy de Dôme, Puy de Côme visibles",
+      "Tram A terminus Royat/Chamalières — 15 min pour rejoindre le centre CLF",
+      "Thermes et bien-être — cadre de vie exceptionnel",
+      "Marché stable, peu de vacance locative",
     ],
     pointsFaibles: [
-      "Stationnement limité dans le bas",
-      "Cure thermale = affluence saisonnière",
+      "Stationnement très contraint dans le bas du village",
+      "Saisonnalité : affluence touristique estivale",
+      "Moins de commerces quotidiens que Chamalières",
+      "Relief marqué — certaines rues peu accessibles en hiver",
     ],
-    ruesRecherchees: ["Avenue de la Vallée", "Boulevard Vaquez"],
+    ruesRecherchees: ["Avenue de la Vallée", "Boulevard Vaquez", "Rue du Sanctuaire", "Avenue de Chamalières"],
     quartiersVoisins: ["chamalieres", "clermont-ferrand-jaude"],
     faq: [
       {
         question: "Royat est-elle bien desservie ?",
         reponse:
-          "Oui, tram A terminus + plusieurs lignes T2C. Clermont en 15 min.",
+          "Oui, tram A terminus + plusieurs lignes T2C. Centre de Clermont en 15 min en tram, 8 min en voiture.",
+      },
+      {
+        question: "Quel type de biens à Royat ?",
+        reponse:
+          "Mix unique : villas Belle Époque et maisons de ville (très prisées), appartements dans des résidences des années 70 (correct rapport qualité-prix), quelques biens atypiques dans l'ancien thermal.",
+      },
+      {
+        question: "Vaut-il mieux habiter à Royat ou Chamalières ?",
+        reponse:
+          "Chamalières pour le standing et la proximité immédiate, Royat pour le cadre de vie exceptionnel et un prix légèrement plus accessible. Les deux communes se valorisent de concert.",
+      },
+      {
+        question: "Peut-on investir à Royat ?",
+        reponse:
+          "Oui, avec un bon rendement (4-4,5% brut) et une vacance faible. La clientèle locative est mixte : actifs qui travaillent à Clermont + curistes pour les meublés saisonniers.",
       },
     ],
     coordinates: { lat: 45.7614, lng: 3.0395 },

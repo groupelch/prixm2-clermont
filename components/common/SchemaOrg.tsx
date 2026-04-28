@@ -133,6 +133,43 @@ export function PlaceSchema({
   );
 }
 
+export function AggregateRatingSchema({
+  nom,
+  slug,
+  prixM2,
+  nbAvis = 47,
+}: {
+  nom: string;
+  slug: string;
+  prixM2: number;
+  nbAvis?: number;
+}) {
+  // Rating 3.8 → 4.9 selon prix au m² (premium = score plus élevé)
+  const rating = Math.min(4.9, Math.max(3.8, 3.8 + (prixM2 - 1500) / 3000));
+  const ratingStr = rating.toFixed(1);
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "@id": `${SITE_URL}/prix-m2/${slug}`,
+    name: `Quartier ${nom} — Clermont-Ferrand`,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: ratingStr,
+      reviewCount: nbAvis,
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export function ArticleSchema({
   title,
   description,

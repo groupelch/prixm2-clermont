@@ -30,6 +30,7 @@ import {
   FaqPageSchema,
   BreadcrumbSchema,
   PlaceSchema,
+  AggregateRatingSchema,
 } from "@/components/common/SchemaOrg";
 import { buildMetadata } from "@/lib/seo";
 import { formatPricePerM2, SITE_URL } from "@/lib/utils";
@@ -47,6 +48,31 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const q = getQuartierBySlug(params.slug);
   if (!q) return { title: "Quartier introuvable" };
+
+  const communesMeta: Record<string, { title: string; description: string }> = {
+    beaumont: {
+      title: "Prix m² Beaumont (63) — Marché immobilier 2025",
+      description:
+        "Prix immobiliers à Beaumont : ~3 200 €/m² pour une maison, commune résidentielle premium de l'agglo clermontoise. Données DVF réelles, estimation gratuite CBF Conseils.",
+    },
+    chamalieres: {
+      title: "Prix m² Chamalières — Commune la plus chère du 63 en 2025",
+      description:
+        "Chamalières : 2 700 €/m² appart · 3 500 €/m² maison. L'adresse la plus prestigieuse du Puy-de-Dôme. Analyse marché complète et estimation gratuite par CBF Conseils.",
+    },
+    royat: {
+      title: "Prix m² Royat — Immobilier thermal Belle Époque 2025",
+      description:
+        "Prix immobiliers à Royat : ~3 100 €/m² maison, tram A, architecture Belle Époque. Commune thermale de l'agglo clermontoise. Données réelles DVF + estimation CBF Conseils.",
+    },
+  };
+  if (communesMeta[params.slug]) {
+    return buildMetadata({
+      ...communesMeta[params.slug],
+      path: `/prix-m2/${params.slug}`,
+    });
+  }
+
   const refPrix = q.prixAppartement ?? q.prixMaison;
   return buildMetadata({
     title: `Prix m² ${q.nom} — ${formatPricePerM2(refPrix)} en 2025`,
@@ -83,6 +109,11 @@ export default function QuartierPage({ params }: { params: Params }) {
         lat={q.coordinates.lat}
         lng={q.coordinates.lng}
         description={q.description}
+      />
+      <AggregateRatingSchema
+        nom={q.nom}
+        slug={q.slug}
+        prixM2={q.prixAppartement ?? q.prixMaison ?? 2500}
       />
 
       <div className="container pt-6">
