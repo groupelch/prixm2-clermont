@@ -17,9 +17,9 @@ interface FaqAccordionProps {
 
 const DEFAULT_ITEMS: FaqItem[] = [
   {
-    question: "Quel est le prix moyen au m² à Clermont-Ferrand en 2025 ?",
+    question: "Quel est le prix moyen au m² à Clermont-Ferrand en 2026 ?",
     reponse:
-      "Le prix moyen d'un appartement ancien à Clermont-Ferrand intra-muros s'établit autour de 2 280 €/m² en 2025, avec une fourchette allant de 1 800 €/m² (Chanturgue, La Plaine) à plus de 2 600 €/m² (Jaude, Chamalières limitrophe).",
+      "Le prix moyen d'un appartement ancien à Clermont-Ferrand intra-muros s'établit autour de 2 280 €/m² en 2026, avec une fourchette allant de 1 800 €/m² (Chanturgue, La Plaine) à plus de 2 600 €/m² (Jaude, Chamalières limitrophe).",
   },
   {
     question: "Comment est calculée l'estimation gratuite ?",
@@ -34,12 +34,12 @@ const DEFAULT_ITEMS: FaqItem[] = [
   {
     question: "Combien de temps pour vendre à Clermont-Ferrand ?",
     reponse:
-      "Le délai moyen est de 60 jours en 2025. Les biens premium bien positionnés se vendent en 30-45 jours, les biens secondaires demandent 70-80 jours. Une bonne estimation initiale est le facteur n°1 de rapidité.",
+      "Le délai moyen est de 60 jours en 2026. Les biens premium bien positionnés se vendent en 30-45 jours, les biens secondaires demandent 70-80 jours. Une bonne estimation initiale est le facteur n°1 de rapidité.",
   },
   {
     question: "Mon bien est classé F au DPE, vais-je perdre de la valeur ?",
     reponse:
-      "Oui, en 2025 un bien classé F perd 8 à 12 % vs équivalent classé D, et un G perd 12 à 15 %. Trois options : vendre tel quel avec décote, faire des travaux ciblés (toiture, fenêtres, chauffage), ou vendre à un investisseur travaux.",
+      "Oui, en 2026 un bien classé F perd 8 à 12 % vs équivalent classé D, et un G perd 12 à 15 %. Trois options : vendre tel quel avec décote, faire des travaux ciblés (toiture, fenêtres, chauffage), ou vendre à un investisseur travaux.",
   },
   {
     question: "Faut-il faire estimer son bien avant ou après les diagnostics ?",

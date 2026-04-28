@@ -8,6 +8,36 @@ export type ArticleTheme =
   | "location"
   | "marche";
 
+export type AuteurId = "equipe" | "louis" | "expert";
+
+export interface Auteur {
+  id: AuteurId;
+  nom: string;
+  titre: string;
+  initiales: string;
+}
+
+export const AUTEURS: Record<AuteurId, Auteur> = {
+  equipe: {
+    id: "equipe",
+    nom: "L'équipe CBF Conseils",
+    titre: "Experts immobiliers Clermont-Ferrand",
+    initiales: "CBF",
+  },
+  louis: {
+    id: "louis",
+    nom: "Louis Combret",
+    titre: "Directeur CBF Conseils",
+    initiales: "LC",
+  },
+  expert: {
+    id: "expert",
+    nom: "Équipe Data prixm²",
+    titre: "Analyse des données DVF & marché",
+    initiales: "PM",
+  },
+};
+
 export interface Article {
   slug: string;
   title: string;
@@ -16,8 +46,24 @@ export interface Article {
   datePublished: string; // ISO YYYY-MM-DD
   readTime: number; // minutes
   featured: boolean;
+  /** Auteur de l'article — si non précisé, fallback selon le thème. */
+  auteur?: AuteurId;
   /** HTML riche : h2/h3, p, ul/li, strong, em. Pas de <html>/<body>. */
   content: string;
+}
+
+/**
+ * Renvoie l'auteur d'un article. Si pas explicite, fallback selon le thème :
+ * - marche / investissement → Équipe Data prixm²
+ * - vendeur / location / acheteur → L'équipe CBF Conseils
+ * - articles featured "stratégiques" → Louis Combret
+ */
+export function getArticleAuteur(article: Article): Auteur {
+  if (article.auteur) return AUTEURS[article.auteur];
+  if (article.theme === "marche" || article.theme === "investissement") {
+    return AUTEURS.expert;
+  }
+  return AUTEURS.equipe;
 }
 
 const CTA = (qOuLien: string) => `
@@ -32,13 +78,14 @@ export const articles: Article[] = [
   // ---------------------------------------------------------------------------
   {
     slug: "prix-immobilier-clermont-ferrand-2025-analyse-quartier",
-    title: "Prix immobilier Clermont-Ferrand 2025 : analyse complète par quartier",
+    title: "Prix immobilier Clermont-Ferrand 2026 : analyse complète par quartier",
     description:
-      "Le panorama complet des prix m² par quartier à Clermont-Ferrand en 2025 : Jaude, Montferrand, Cézeaux, Beaumont, Chamalières. Données, écarts, dynamique.",
+      "Le panorama complet des prix m² par quartier à Clermont-Ferrand en 2026 : Jaude, Montferrand, Cézeaux, Beaumont, Chamalières. Données, écarts, dynamique.",
     theme: "marche",
     datePublished: "2025-04-12",
     readTime: 9,
     featured: true,
+    auteur: "louis",
     content: `
 <p>Le marché immobilier clermontois sort d'une année 2024 de correction. Après les hausses fortes de 2021-2022, les prix se sont stabilisés sur la majorité des quartiers, avec une légère décote (-2 à -4 %) sur les biens énergivores. Tour d'horizon des grandes lignes 2025.</p>
 
@@ -130,9 +177,9 @@ ${CTA("à Clermont-Ferrand")}
   // 3. Jaude vs Delille
   {
     slug: "vendre-jaude-delille-comparaison-2025",
-    title: "Vendre à Jaude vs Delille : quel secteur prime en 2025 ?",
+    title: "Vendre à Jaude vs Delille : quel secteur prime en 2026 ?",
     description:
-      "Jaude ou Delille à Clermont-Ferrand : quel quartier valorise le mieux votre bien en 2025 ? Comparatif prix, délai, profil acheteur.",
+      "Jaude ou Delille à Clermont-Ferrand : quel quartier valorise le mieux votre bien en 2026 ? Comparatif prix, délai, profil acheteur.",
     theme: "vendeur",
     datePublished: "2025-04-04",
     readTime: 6,
@@ -170,7 +217,7 @@ ${CTA("à Jaude ou Delille")}
     slug: "dpe-immobilier-clermont-decote-bien-classe-f",
     title: "DPE et immobilier à Clermont : combien perd-on sur un bien classé F ?",
     description:
-      "DPE F ou G à Clermont-Ferrand : décote, interdiction de louer, négociation. Les chiffres réels du marché clermontois 2025.",
+      "DPE F ou G à Clermont-Ferrand : décote, interdiction de louer, négociation. Les chiffres réels du marché clermontois 2026.",
     theme: "vendeur",
     datePublished: "2025-04-02",
     readTime: 7,
@@ -226,9 +273,9 @@ ${CTA("avec un DPE difficile")}
   // 5. Délai de vente
   {
     slug: "duree-vente-clermont-ferrand-quartier-2025",
-    title: "Durée de vente à Clermont-Ferrand par quartier : les chiffres réels 2025",
+    title: "Durée de vente à Clermont-Ferrand par quartier : les chiffres réels 2026",
     description:
-      "Combien de jours pour vendre un appartement à Clermont en 2025 ? Délais réels par quartier — Jaude, Cézeaux, Aubière, Beaumont. Méthode CBF.",
+      "Combien de jours pour vendre un appartement à Clermont en 2026 ? Délais réels par quartier — Jaude, Cézeaux, Aubière, Beaumont. Méthode CBF.",
     theme: "vendeur",
     datePublished: "2025-03-28",
     readTime: 6,
@@ -280,7 +327,7 @@ ${CTA("dans votre quartier")}
     slug: "surestimer-bien-piege-vendeurs-clermont",
     title: "Surestimer son bien : le piège n°1 des vendeurs clermontois",
     description:
-      "Pourquoi surévaluer son bien à Clermont-Ferrand fait perdre 5 à 15 % au prix final, et comment éviter ce piège classique du marché 2025.",
+      "Pourquoi surévaluer son bien à Clermont-Ferrand fait perdre 5 à 15 % au prix final, et comment éviter ce piège classique du marché 2026.",
     theme: "vendeur",
     datePublished: "2025-03-22",
     readTime: 5,
@@ -388,7 +435,7 @@ ${CTA("dans le bon cadre")}
     slug: "prix-m2-montferrand-vs-jaude-decryptage-ecart",
     title: "Prix m² Montferrand vs Jaude : décryptage de l'écart",
     description:
-      "Pourquoi Montferrand coûte 15 % de moins que Jaude alors que les biens y sont parfois plus beaux. Analyse de l'écart de prix Clermont 2025.",
+      "Pourquoi Montferrand coûte 15 % de moins que Jaude alors que les biens y sont parfois plus beaux. Analyse de l'écart de prix Clermont 2026.",
     theme: "marche",
     datePublished: "2025-03-12",
     readTime: 6,
@@ -430,13 +477,14 @@ ${CTA("à Montferrand ou Jaude")}
   // 9. Acheter par profil
   {
     slug: "acheter-clermont-ferrand-2025-quel-quartier-pour-quel-profil",
-    title: "Acheter à Clermont-Ferrand en 2025 : quel quartier pour quel profil ?",
+    title: "Acheter à Clermont-Ferrand en 2026 : quel quartier pour quel profil ?",
     description:
-      "Famille, jeune actif, retraité, investisseur : quel quartier de Clermont-Ferrand vous correspond ? Guide expert par profil acheteur 2025.",
+      "Famille, jeune actif, retraité, investisseur : quel quartier de Clermont-Ferrand vous correspond ? Guide expert par profil acheteur 2026.",
     theme: "acheteur",
     datePublished: "2025-04-10",
     readTime: 8,
     featured: true,
+    auteur: "louis",
     content: `
 <p>Acheter à Clermont-Ferrand, c'est arbitrer entre plus de 30 quartiers et communes — chacun avec son profil, son prix, son mode de vie. Voici notre guide d'orientation par profil acheteur, basé sur les données 2025.</p>
 
@@ -506,7 +554,7 @@ ${CTA("dans le bon quartier")}
     slug: "5-quartiers-qui-montent-clermont-ferrand-2025",
     title: "Les 5 quartiers qui montent à Clermont-Ferrand (et ceux à éviter)",
     description:
-      "Les 5 quartiers qui prennent de la valeur à Clermont-Ferrand en 2025, et 3 secteurs à manier avec précaution. Analyse marché.",
+      "Les 5 quartiers qui prennent de la valeur à Clermont-Ferrand en 2026, et 3 secteurs à manier avec précaution. Analyse marché.",
     theme: "acheteur",
     datePublished: "2025-04-06",
     readTime: 7,
@@ -557,7 +605,7 @@ ${CTA("dans un quartier d'avenir")}
     slug: "investir-neuf-ancien-clermont-comparatif",
     title: "Investir dans le neuf ou l'ancien à Clermont ? Comparatif complet",
     description:
-      "Neuf vs ancien à Clermont-Ferrand : prix, fiscalité, frais, rendement, plus-value. Le comparatif factuel pour décider en 2025.",
+      "Neuf vs ancien à Clermont-Ferrand : prix, fiscalité, frais, rendement, plus-value. Le comparatif factuel pour décider en 2026.",
     theme: "acheteur",
     datePublished: "2025-03-30",
     readTime: 8,
@@ -613,7 +661,7 @@ ${CTA("neuf ou ancien")}
     slug: "vivre-chamalieres-vs-clermont-analyse",
     title: "Vivre à Chamalières vs rester à Clermont : analyse prix/qualité de vie",
     description:
-      "Chamalières ou Clermont-Ferrand centre : où vivre en 2025 ? Comparaison prix m², écoles, services, mobilité, fiscalité.",
+      "Chamalières ou Clermont-Ferrand centre : où vivre en 2026 ? Comparaison prix m², écoles, services, mobilité, fiscalité.",
     theme: "acheteur",
     datePublished: "2025-03-25",
     readTime: 6,
@@ -658,7 +706,7 @@ ${CTA("à Chamalières ou Clermont centre")}
   // 13. Rendement locatif
   {
     slug: "rendement-locatif-quartier-clermont-classement-2025",
-    title: "Rendement locatif par quartier à Clermont-Ferrand : classement 2025",
+    title: "Rendement locatif par quartier à Clermont-Ferrand : classement 2026",
     description:
       "Le top 10 des quartiers les plus rentables à Clermont-Ferrand pour un investissement locatif. Rendement brut, net, vacance.",
     theme: "investissement",
@@ -732,7 +780,7 @@ ${CTA("pour un investissement locatif")}
     slug: "investir-pres-chu-clermont-bon-plan-locatif-medical",
     title: "Investir près du CHU à Clermont : le bon plan locatif étudiant et médical",
     description:
-      "Le secteur du CHU à Clermont-Ferrand : pourquoi c'est un des meilleurs spots locatifs de la ville en 2025. Profils, loyers, rendements.",
+      "Le secteur du CHU à Clermont-Ferrand : pourquoi c'est un des meilleurs spots locatifs de la ville en 2026. Profils, loyers, rendements.",
     theme: "investissement",
     datePublished: "2025-04-01",
     readTime: 6,
@@ -789,7 +837,7 @@ ${CTA("près du CHU")}
     slug: "studio-t2-clermont-investissement-locatif-rentable",
     title: "Studio vs T2 à Clermont : quel investissement locatif est plus rentable ?",
     description:
-      "Studio ou T2 à Clermont-Ferrand pour de l'investissement locatif ? Le comparatif rendement, vacance, gestion, fiscalité 2025.",
+      "Studio ou T2 à Clermont-Ferrand pour de l'investissement locatif ? Le comparatif rendement, vacance, gestion, fiscalité 2026.",
     theme: "investissement",
     datePublished: "2025-03-26",
     readTime: 6,
@@ -855,7 +903,7 @@ ${CTA("studio ou T2")}
     slug: "investir-la-pardieu-opportunite-piege",
     title: "Investir à La Pardieu : opportunité ou piège ?",
     description:
-      "La Pardieu à Clermont-Ferrand : analyse complète d'un quartier en transformation. Prix, loyers, rendement, points d'attention pour investir en 2025.",
+      "La Pardieu à Clermont-Ferrand : analyse complète d'un quartier en transformation. Prix, loyers, rendement, points d'attention pour investir en 2026.",
     theme: "investissement",
     datePublished: "2025-03-20",
     readTime: 6,
@@ -921,7 +969,7 @@ ${CTA("à La Pardieu")}
     slug: "combien-louer-appartement-clermont-ferrand-quartier",
     title: "Combien louer son appartement à Clermont-Ferrand par quartier ?",
     description:
-      "Loyers médians par quartier à Clermont-Ferrand : studio, T2, T3, maison. Données 2025 et tendances pour bien fixer votre loyer.",
+      "Loyers médians par quartier à Clermont-Ferrand : studio, T2, T3, maison. Données 2026 et tendances pour bien fixer votre loyer.",
     theme: "location",
     datePublished: "2025-04-15",
     readTime: 7,
@@ -1000,7 +1048,7 @@ ${CTA("dans votre quartier")}
     slug: "gestion-locative-clermont-soi-meme-professionnel",
     title: "Gestion locative à Clermont : faire soi-même ou confier à un professionnel ?",
     description:
-      "Gestion locative en propre ou via une agence à Clermont-Ferrand : coûts, gain de temps, sécurité juridique. Le comparatif 2025.",
+      "Gestion locative en propre ou via une agence à Clermont-Ferrand : coûts, gain de temps, sécurité juridique. Le comparatif 2026.",
     theme: "location",
     datePublished: "2025-04-09",
     readTime: 6,
@@ -1068,7 +1116,7 @@ ${CTA("pour votre gestion locative")}
     slug: "assurances-bailleur-gli-pno-clermont",
     title: "GLI, loyers impayés, PNO : quelles assurances pour un bailleur clermontois ?",
     description:
-      "Les 3 assurances essentielles d'un bailleur à Clermont-Ferrand : PNO, GLI, vacance. Couvertures, prix, conditions 2025.",
+      "Les 3 assurances essentielles d'un bailleur à Clermont-Ferrand : PNO, GLI, vacance. Couvertures, prix, conditions 2026.",
     theme: "location",
     datePublished: "2025-04-03",
     readTime: 6,
@@ -1127,7 +1175,7 @@ ${CTA("avec l'assurance adaptée")}
     slug: "bail-mobilite-meuble-nu-quel-type-location-clermont",
     title: "Bail mobilité, meublé, nu : quel type de location choisir à Clermont ?",
     description:
-      "Bail nu, meublé, mobilité, étudiant à Clermont-Ferrand : durée, fiscalité, profil locataire, rentabilité. Le guide bailleur 2025.",
+      "Bail nu, meublé, mobilité, étudiant à Clermont-Ferrand : durée, fiscalité, profil locataire, rentabilité. Le guide bailleur 2026.",
     theme: "location",
     datePublished: "2025-03-29",
     readTime: 7,
@@ -1187,9 +1235,9 @@ ${CTA("bail adapté")}
   // 21. Encadrement loyer
   {
     slug: "encadrement-loyers-clermont-ferrand-2025",
-    title: "Encadrement des loyers à Clermont-Ferrand : ce que dit la loi en 2025",
+    title: "Encadrement des loyers à Clermont-Ferrand : ce que dit la loi en 2026",
     description:
-      "Clermont-Ferrand est-elle concernée par l'encadrement des loyers ? IRL, plafonds, zones tendues. Le point réglementaire 2025.",
+      "Clermont-Ferrand est-elle concernée par l'encadrement des loyers ? IRL, plafonds, zones tendues. Le point réglementaire 2026.",
     theme: "location",
     datePublished: "2025-03-15",
     readTime: 5,

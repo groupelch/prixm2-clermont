@@ -28,7 +28,7 @@ const steps = [
     n: "02",
     icon: FileText,
     title: "Préparer les diagnostics",
-    desc: "DPE en priorité — c'est le critère n°1 de tri en 2025. Anticiper évite les surprises en négociation.",
+    desc: "DPE en priorité — c'est le critère n°1 de tri en 2026. Anticiper évite les surprises en négociation.",
   },
   {
     n: "03",
@@ -46,13 +46,13 @@ const steps = [
     n: "05",
     icon: Handshake,
     title: "Négocier sans se brader",
-    desc: "Marge de négociation 4-6 % en 2025. Mieux vaut un prix juste avec marge de discussion qu'un prix gonflé.",
+    desc: "Marge de négociation 4-6 % en 2026. Mieux vaut un prix juste avec marge de discussion qu'un prix gonflé.",
   },
 ];
 
 const faqVente = [
   {
-    question: "Combien de temps pour vendre un bien à Clermont-Ferrand en 2025 ?",
+    question: "Combien de temps pour vendre un bien à Clermont-Ferrand en 2026 ?",
     reponse:
       "60 jours en moyenne, mais cela varie de 45 jours (Centre, Jaude, Beaumont) à 80 jours (Riom, La Plaine, Chanturgue). Le facteur n°1 est le bon positionnement de prix dès le départ.",
   },

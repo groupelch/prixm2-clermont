@@ -29,7 +29,7 @@ export async function generateMetadata({
   const q = getQuartierBySlug(params.slug);
   if (!q) return { title: "Quartier introuvable" };
   return buildMetadata({
-    title: `Estimation immobilière gratuite ${q.nom} — Prix au m² 2025`,
+    title: `Estimation immobilière gratuite ${q.nom} — Prix au m² 2026`,
     description: `Estimez votre appartement ou maison à ${q.nom} en 2 minutes. Méthode CBF Conseils basée sur les prix réels (${formatPricePerM2(q.prixAppartement)}). Réponse sous 48h.`,
     path: `/estimation-quartier/${q.slug}`,
   });

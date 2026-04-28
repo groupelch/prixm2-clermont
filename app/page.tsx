@@ -6,13 +6,16 @@ import { ChiffresCles } from "@/components/home/ChiffresCles";
 import { TopQuartiers } from "@/components/home/TopQuartiers";
 import { WhyPricesVary } from "@/components/home/WhyPricesVary";
 import { EstimationCta } from "@/components/home/EstimationCta";
+import { TestimonialsBlock } from "@/components/home/TestimonialsBlock";
 import { GuideCards } from "@/components/home/GuideCards";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
+import { DatasetSchema } from "@/components/common/SchemaOrg";
 
 export default function HomePage() {
   return (
     <>
+      <DatasetSchema />
       <HeroSection />
 
       <QuickLinks />
@@ -40,6 +43,7 @@ export default function HomePage() {
       <TopQuartiers />
       <WhyPricesVary />
       <EstimationCta />
+      <TestimonialsBlock />
       <GuideCards />
       <FaqAccordion />
       <FinalCta />

@@ -12,8 +12,8 @@ import { buildMetadata } from "@/lib/seo";
 import { SITE_URL, formatPricePerM2 } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Prix immobilier à Clermont-Ferrand 2025 — Guide complet par quartier",
-  description: `Tous les prix immobiliers à Clermont-Ferrand 2025 : prix moyen ${formatPricePerM2(getPrixMoyenAppartement())} pour un appartement, analyse par quartier, communes de l'agglo. Données CBF Conseils.`,
+  title: "Prix immobilier à Clermont-Ferrand 2026 — Guide complet par quartier",
+  description: `Tous les prix immobiliers à Clermont-Ferrand 2026 : prix moyen ${formatPricePerM2(getPrixMoyenAppartement())} pour un appartement, analyse par quartier, communes de l'agglo. Données CBF Conseils.`,
   path: "/prix-immobilier-clermont-ferrand",
 });
 
@@ -39,7 +39,7 @@ export default function PrixImmoPilierPage() {
           />
           <div className="mt-8 max-w-3xl">
             <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
-              Référentiel 2025
+              Référentiel 2026
             </span>
             <h1 className="font-playfair text-display-xl text-cbf-black font-bold mt-3 mb-5">
               Prix immobilier à Clermont-Ferrand
@@ -47,7 +47,7 @@ export default function PrixImmoPilierPage() {
               <span className="text-cbf-gold">Guide complet par quartier</span>
             </h1>
             <p className="text-lg text-cbf-gray leading-relaxed">
-              Tout pour comprendre le marché immobilier de Clermont-Ferrand en 2025 :
+              Tout pour comprendre le marché immobilier de Clermont-Ferrand en 2026 :
               prix moyen au m² par quartier, communes de l'agglomération,
               tendances et facteurs de variation.
             </p>

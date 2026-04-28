@@ -24,7 +24,7 @@ const erreurs = [
     probleme:
       "Chaque mois supplémentaire sur le marché représente un coût réel : taxes foncières, charges de copropriété, crédits qui tournent, opportunités manquées.",
     consequence:
-      "Sur le marché clermontois en 2025, le délai moyen de vente est de 3 à 5 mois selon le secteur. Un bien mal pricé peut rester 12 mois ou plus — ce qui représente 12 mois de charges, et souvent une décote finale imposée par l'acheteur qui sait que le vendeur est pressé.",
+      "Sur le marché clermontois en 2026, le délai moyen de vente est de 3 à 5 mois selon le secteur. Un bien mal pricé peut rester 12 mois ou plus — ce qui représente 12 mois de charges, et souvent une décote finale imposée par l'acheteur qui sait que le vendeur est pressé.",
     chiffre: "3 à 12 mois",
     chiffreLabel: "La différence entre un bien bien pricé et un bien surévalué",
     color: "border-orange-200 bg-orange-50",

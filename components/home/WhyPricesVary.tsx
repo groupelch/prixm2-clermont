@@ -17,7 +17,7 @@ const factors = [
   {
     icon: Sparkles,
     title: "DPE",
-    desc: "Une classe E coûte -5 %, une F/G perd 10 à 15 % vs équivalent classé D. Critère n°1 en 2025.",
+    desc: "Une classe E coûte -5 %, une F/G perd 10 à 15 % vs équivalent classé D. Critère n°1 en 2026.",
   },
   {
     icon: Home,

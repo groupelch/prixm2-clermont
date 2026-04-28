@@ -18,15 +18,15 @@ import { buildMetadata } from "@/lib/seo";
 import { SITE_URL } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Combien louer son appartement à Clermont-Ferrand ? Simulateur 2025",
+  title: "Combien louer son appartement à Clermont-Ferrand ? Simulateur 2026",
   description:
-    "Estimez le loyer de votre bien à Clermont-Ferrand en moins de 2 minutes. Données marché 2025 par quartier, meublé vs nu, DPE, rendement brut. Rapport gratuit par un expert.",
+    "Estimez le loyer de votre bien à Clermont-Ferrand en moins de 2 minutes. Données marché 2026 par quartier, meublé vs nu, DPE, rendement brut. Rapport gratuit par un expert.",
   path: "/louer-clermont-ferrand",
 });
 
 const FAQ_LOYER = [
   {
-    question: "Quel est le loyer moyen à Clermont-Ferrand en 2025 ?",
+    question: "Quel est le loyer moyen à Clermont-Ferrand en 2026 ?",
     reponse:
       "Le loyer moyen à Clermont-Ferrand se situe entre 9 et 14 €/m² selon le secteur. Le centre-ville (Jaude, Délille) affiche 13-15 €/m², les quartiers intermédiaires (Saint-Jacques, Montferrand) entre 10 et 12 €/m², et les secteurs périphériques entre 8 et 10 €/m².",
   },
@@ -90,7 +90,7 @@ export default function LouerClermontFerrandPage() {
               </h1>
               <p className="text-lg text-cbf-gray max-w-2xl">
                 Estimez le loyer de votre appartement ou maison en 2 minutes.
-                Données de marché 2025 par quartier, meublé vs vide, impact DPE
+                Données de marché 2026 par quartier, meublé vs vide, impact DPE
                 et rendement brut calculé automatiquement.
               </p>
             </div>
@@ -177,7 +177,7 @@ export default function LouerClermontFerrandPage() {
       <section className="py-16 bg-cbf-ivory">
         <div className="container max-w-5xl">
           <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
-            Référentiel 2025
+            Référentiel 2026
           </span>
           <h2 className="font-playfair text-display-md text-cbf-black font-bold mt-2 mb-8">
             Loyers par secteur à Clermont-Ferrand
@@ -219,7 +219,7 @@ export default function LouerClermontFerrandPage() {
 
           <p className="text-xs text-cbf-gray-light mt-4">
             * Données indicatives basées sur les annonces actives et baux signés
-            en 2025. Source : observatoire interne CBF Conseils.
+            en 2026. Source : observatoire interne CBF Conseils.
           </p>
         </div>
       </section>
@@ -349,12 +349,12 @@ export default function LouerClermontFerrandPage() {
               {
                 href: "/blog/combien-louer-appartement-clermont-ferrand-quartier",
                 titre: "Combien louer son appartement par quartier ?",
-                desc: "Loyers médians 2025 par quartier, studio, T2, T3, maison.",
+                desc: "Loyers médians 2026 par quartier, studio, T2, T3, maison.",
               },
               {
                 href: "/blog/gestion-locative-clermont-soi-meme-professionnel",
                 titre: "Gestion locative : seul ou délégué ?",
-                desc: "Comparatif coûts, gain de temps, sécurité juridique 2025.",
+                desc: "Comparatif coûts, gain de temps, sécurité juridique 2026.",
               },
               {
                 href: "/blog/assurances-bailleur-gli-pno-clermont",
@@ -363,18 +363,18 @@ export default function LouerClermontFerrandPage() {
               },
               {
                 href: "/blog/rendement-locatif-quartier-clermont-classement-2025",
-                titre: "Rendement locatif par quartier 2025",
+                titre: "Rendement locatif par quartier 2026",
                 desc: "Le top 10 des quartiers les plus rentables à Clermont.",
               },
               {
                 href: "/blog/bail-mobilite-meuble-nu-quel-type-location-clermont",
                 titre: "Bail mobilité, meublé, nu : quel choix ?",
-                desc: "Durée, fiscalité, profil locataire : le guide bailleur 2025.",
+                desc: "Durée, fiscalité, profil locataire : le guide bailleur 2026.",
               },
               {
                 href: "/blog/encadrement-loyers-clermont-ferrand-2025",
                 titre: "Encadrement des loyers à Clermont",
-                desc: "IRL, plafonds, zones tendues. Le point réglementaire 2025.",
+                desc: "IRL, plafonds, zones tendues. Le point réglementaire 2026.",
               },
             ].map((guide, i) => (
               <Link

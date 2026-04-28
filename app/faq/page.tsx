@@ -16,7 +16,7 @@ export const metadata: Metadata = buildMetadata({
 const faq = [
   // Généralités
   {
-    question: "Quel est le prix moyen au m² à Clermont-Ferrand en 2025 ?",
+    question: "Quel est le prix moyen au m² à Clermont-Ferrand en 2026 ?",
     reponse:
       "2 280 €/m² pour un appartement ancien intra-muros, 2 800 €/m² pour une maison. Fourchette : 1 800 € à 2 700 €/m² selon le quartier.",
   },
@@ -77,7 +77,7 @@ const faq = [
   },
   // Marché
   {
-    question: "Le marché clermontois va-t-il monter en 2025 ?",
+    question: "Le marché clermontois va-t-il monter en 2026 ?",
     reponse:
       "Scénario central : +2 à 4 % avec une détente des taux à 3,5 %. Le marché redémarre après 18 mois de tension liée à la remontée des taux.",
   },

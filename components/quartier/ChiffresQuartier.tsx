@@ -21,7 +21,7 @@ export function ChiffresQuartier({ quartier }: { quartier: Quartier }) {
       icon: Clock,
       label: "Délai moyen de vente",
       value: `${quartier.delaiVente} jours`,
-      sub: "En 2025, le marché clermontois s'est allongé",
+      sub: "En 2026, le marché clermontois s'est allongé",
     },
   ];
 

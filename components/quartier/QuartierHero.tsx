@@ -48,7 +48,7 @@ export function QuartierHero({ quartier }: { quartier: Quartier }) {
             >
               Prix m² à <span className="text-cbf-gold">{quartier.nom}</span>
               <br />
-              <span className="text-cbf-anthracite text-[0.7em]">Analyse 2025</span>
+              <span className="text-cbf-anthracite text-[0.7em]">Analyse 2026</span>
             </motion.h1>
 
             <motion.p

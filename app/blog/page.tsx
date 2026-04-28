@@ -9,6 +9,7 @@ import {
   articles,
   ARTICLE_THEMES,
   getArticleImage,
+  getArticleAuteur,
   type ArticleTheme,
 } from "@/data/articles";
 import { cn } from "@/lib/utils";
@@ -107,6 +108,14 @@ export default function BlogPage() {
                     <p className="text-cbf-gray leading-relaxed mb-4">
                       {featured.description}
                     </p>
+                    <div className="flex items-center gap-2.5 mb-4">
+                      <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-cbf-black text-cbf-gold text-[0.65rem] font-bold">
+                        {getArticleAuteur(featured).initiales}
+                      </span>
+                      <span className="text-xs text-cbf-gray">
+                        Par <strong className="text-cbf-black">{getArticleAuteur(featured).nom}</strong> · {getArticleAuteur(featured).titre}
+                      </span>
+                    </div>
                     <span className="inline-flex items-center gap-1 text-sm text-cbf-gold font-semibold">
                       Lire l'article <ArrowRight className="h-4 w-4" />
                     </span>
@@ -160,6 +169,14 @@ export default function BlogPage() {
                   <p className="text-sm text-cbf-gray flex-1 mb-4 leading-relaxed">
                     {a.description}
                   </p>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-cbf-black text-cbf-gold text-[0.55rem] font-bold">
+                      {getArticleAuteur(a).initiales}
+                    </span>
+                    <span className="text-[0.7rem] text-cbf-gray-light truncate">
+                      {getArticleAuteur(a).nom}
+                    </span>
+                  </div>
                   <div className="flex items-center justify-between pt-4 border-t border-cbf-gray-soft">
                     <span className="text-[0.65rem] text-cbf-gray-light">
                       {new Date(a.datePublished).toLocaleDateString("fr-FR", {

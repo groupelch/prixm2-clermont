@@ -110,7 +110,7 @@ const seeds: Seed[] = [
           "Oui, la demande locative est forte (étudiants UCA, jeunes actifs Michelin, internes CHU). Le rendement brut tourne autour de 5 à 6 % sur des studios bien placés.",
       },
       {
-        question: "Combien de temps pour vendre au Centre-Ville en 2025 ?",
+        question: "Combien de temps pour vendre au Centre-Ville en 2026 ?",
         reponse:
           "Comptez 3 à 4 mois en moyenne pour un bien correctement positionné. Le marché clermontois s'est allongé depuis 2023 : les acheteurs prennent plus de temps et multiplient les visites. Un bien surévalué peut rester plus de 6 mois sans offre.",
       },

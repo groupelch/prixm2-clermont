@@ -8,6 +8,7 @@ import {
   getArticleBySlug,
   getRelatedArticles,
   getArticleImage,
+  getArticleAuteur,
   ARTICLE_THEMES,
 } from "@/data/articles";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
@@ -53,6 +54,7 @@ export default function ArticlePage({ params }: { params: Params }) {
 
   const themeLabel = ARTICLE_THEMES.find((t) => t.id === article.theme)?.label ?? article.theme;
   const related = getRelatedArticles(article.slug, 3);
+  const auteur = getArticleAuteur(article);
 
   const breadcrumb = [
     { name: "Accueil", url: SITE_URL },
@@ -68,6 +70,8 @@ export default function ArticlePage({ params }: { params: Params }) {
         description={article.description}
         datePublished={article.datePublished}
         url={`${SITE_URL}/blog/${article.slug}`}
+        authorName={auteur.nom}
+        authorType={auteur.id === "louis" ? "Person" : "Organization"}
       />
 
       <article className="bg-cbf-ivory pt-10 pb-16">
@@ -100,6 +104,15 @@ export default function ArticlePage({ params }: { params: Params }) {
             <p className="text-lg text-cbf-gray leading-relaxed">
               {article.description}
             </p>
+            <div className="flex items-center gap-3 mt-6 pt-5 border-t border-cbf-gray-soft">
+              <span className="inline-flex items-center justify-center h-11 w-11 rounded-full bg-cbf-black text-cbf-gold text-sm font-bold">
+                {auteur.initiales}
+              </span>
+              <div className="leading-tight">
+                <p className="text-sm font-semibold text-cbf-black">{auteur.nom}</p>
+                <p className="text-xs text-cbf-gray-light">{auteur.titre}</p>
+              </div>
+            </div>
             <div className="relative aspect-video w-full mt-8 rounded-sm overflow-hidden shadow-md">
               <Image
                 src={getArticleImage(article.theme)}

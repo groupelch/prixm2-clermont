@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   },
   description:
     "Le référentiel des prix immobiliers à Clermont-Ferrand. Données par quartier, estimation gratuite, conseils d'experts CBF Conseils.",
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "prix m2 clermont-ferrand",
     "estimation immobilière clermont-ferrand",

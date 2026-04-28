@@ -36,7 +36,7 @@ export async function generateMetadata({
   const q = getQuartierBySlug(params.quartier);
   if (!q) return { title: "Quartier introuvable" };
   return buildMetadata({
-    title: `Vendre à ${q.nom} (Clermont-Ferrand) — Stratégie & prix 2025`,
+    title: `Vendre à ${q.nom} (Clermont-Ferrand) — Stratégie & prix 2026`,
     description: `Vendre votre appartement ou maison à ${q.nom} : prix m² ${formatPricePerM2(q.prixAppartement)}, délai ${q.delaiVente} jours, conseils CBF Conseils. Estimation gratuite.`,
     path: `/vendre/${q.slug}`,
   });
@@ -55,11 +55,11 @@ export default function VendreQuartierPage({
 
   const faq = [
     {
-      question: `Combien de temps pour vendre à ${q.nom} en 2025 ?`,
+      question: `Combien de temps pour vendre à ${q.nom} en 2026 ?`,
       reponse: `Le délai médian est de ${q.delaiVente} jours pour un bien correctement valorisé. Comptez 30 à 50 % de plus pour un bien surévalué ou avec un DPE F/G non anticipé.`,
     },
     {
-      question: `Quel est le prix au m² à ${q.nom} en 2025 ?`,
+      question: `Quel est le prix au m² à ${q.nom} en 2026 ?`,
       reponse: `Le prix médian appartement à ${q.nom} est de ${formatPricePerM2(q.prixAppartement)}. Évolution sur 12 mois : ${q.evolution}. La fourchette réelle dépend de l'état, l'étage, le DPE et l'emplacement précis dans le quartier.`,
     },
     {
@@ -123,7 +123,7 @@ export default function VendreQuartierPage({
                 Vendre à <span className="text-cbf-gold">{q.nom}</span>
                 <br />
                 <span className="text-cbf-anthracite text-[0.65em]">
-                  Stratégie 2025 & prix réels
+                  Stratégie 2026 & prix réels
                 </span>
               </h1>
               <p className="text-lg text-cbf-gray mb-8 max-w-xl">

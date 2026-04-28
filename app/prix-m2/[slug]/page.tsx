@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { quartiers, getQuartierBySlug } from "@/data/quartiers";
 import { getArticlesForQuartier } from "@/data/articles";
 import { QuartierHero } from "@/components/quartier/QuartierHero";
+import { QuartierTOC } from "@/components/quartier/QuartierTOC";
 import { ChiffresQuartier } from "@/components/quartier/ChiffresQuartier";
 import { AnalyseLocale } from "@/components/quartier/AnalyseLocale";
 import { PrixParType } from "@/components/quartier/PrixParType";
@@ -51,17 +52,17 @@ export async function generateMetadata({
 
   const communesMeta: Record<string, { title: string; description: string }> = {
     beaumont: {
-      title: "Prix m² Beaumont (63) — Marché immobilier 2025",
+      title: "Prix m² Beaumont (63) — Marché immobilier 2026",
       description:
         "Prix immobiliers à Beaumont : ~3 200 €/m² pour une maison, commune résidentielle premium de l'agglo clermontoise. Données DVF réelles, estimation gratuite CBF Conseils.",
     },
     chamalieres: {
-      title: "Prix m² Chamalières — Commune la plus chère du 63 en 2025",
+      title: "Prix m² Chamalières — Commune la plus chère du 63 en 2026",
       description:
         "Chamalières : 2 700 €/m² appart · 3 500 €/m² maison. L'adresse la plus prestigieuse du Puy-de-Dôme. Analyse marché complète et estimation gratuite par CBF Conseils.",
     },
     royat: {
-      title: "Prix m² Royat — Immobilier thermal Belle Époque 2025",
+      title: "Prix m² Royat — Immobilier thermal Belle Époque 2026",
       description:
         "Prix immobiliers à Royat : ~3 100 €/m² maison, tram A, architecture Belle Époque. Commune thermale de l'agglo clermontoise. Données réelles DVF + estimation CBF Conseils.",
     },
@@ -75,7 +76,7 @@ export async function generateMetadata({
 
   const refPrix = q.prixAppartement ?? q.prixMaison;
   return buildMetadata({
-    title: `Prix m² ${q.nom} — ${formatPricePerM2(refPrix)} en 2025`,
+    title: `Prix m² ${q.nom} — ${formatPricePerM2(refPrix)} en 2026`,
     description: `Prix immobiliers à ${q.nom} : ${formatPricePerM2(q.prixAppartement)} pour un appartement, évolution ${q.evolution}, délai de vente ${q.delaiVente} jours. Analyse complète et estimation gratuite par CBF Conseils.`,
     path: `/prix-m2/${q.slug}`,
   });
@@ -128,13 +129,24 @@ export default function QuartierPage({ params }: { params: Params }) {
 
       <QuartierHero quartier={q} />
       <ChiffresQuartier quartier={q} />
+      <QuartierTOC />
       <AnalyseLocale quartier={q} />
-      <PrixParType quartier={q} />
-      <DpeBlock stats={dpeStats} />
-      <DvfBlock stats={dvfStats} quartier={q.nom} />
-      <AmenitiesBlock amenities={amenities} quartierNom={q.nom} />
+      <div id="prix" className="scroll-mt-24">
+        <PrixParType quartier={q} />
+      </div>
+      <div id="dpe" className="scroll-mt-24">
+        <DpeBlock stats={dpeStats} />
+      </div>
+      <div id="transactions" className="scroll-mt-24">
+        <DvfBlock stats={dvfStats} quartier={q.nom} />
+      </div>
+      <div id="equipements" className="scroll-mt-24">
+        <AmenitiesBlock amenities={amenities} quartierNom={q.nom} />
+      </div>
       <IrisBlock stats={irisStats} quartierNom={q.nom} />
-      <TransportBlock stats={transportStats} quartierNom={q.nom} />
+      <div id="transport" className="scroll-mt-24">
+        <TransportBlock stats={transportStats} quartierNom={q.nom} />
+      </div>
 
       <section className="py-14 md:py-20 bg-white">
         <div className="container">
@@ -160,7 +172,7 @@ export default function QuartierPage({ params }: { params: Params }) {
       <ComparaisonVoisins quartier={q} />
 
       {/* Estimation form inline */}
-      <section className="py-14 md:py-20 bg-white">
+      <section id="estimation" className="scroll-mt-24 py-14 md:py-20 bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div>
@@ -220,7 +232,7 @@ export default function QuartierPage({ params }: { params: Params }) {
                 Vendre
               </span>
               <h3 className="font-playfair text-xl font-bold text-cbf-black mt-2 mb-3 group-hover:text-cbf-gold transition-colors">
-                Vendre à {q.nom} — stratégie 2025
+                Vendre à {q.nom} — stratégie 2026
               </h3>
               <p className="text-sm text-cbf-gray mb-4">
                 Délais, prix juste, mise en marché, pièges à éviter spécifiques

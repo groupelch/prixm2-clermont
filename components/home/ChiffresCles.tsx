@@ -38,14 +38,14 @@ export function ChiffresCles() {
       <div className="container">
         <div className="max-w-3xl mb-12">
           <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
-            Marché clermontois 2025
+            Marché clermontois 2026
           </span>
           <h2 className="font-playfair text-display-md font-bold mt-3 mb-4">
             Le marché immobilier de Clermont-Ferrand en chiffres
           </h2>
           <p className="text-cbf-gray-light max-w-2xl">
             Des données croisées des notaires, de la base DVF et de l'expertise terrain
-            de CBF Conseils — mises à jour 2025.
+            de CBF Conseils — mises à jour 2026.
           </p>
         </div>
 

@@ -12,7 +12,7 @@ import { buildMetadata } from "@/lib/seo";
 import { SITE_URL } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Investir dans l'immobilier à Clermont-Ferrand 2025 — Stratégies & rendements",
+  title: "Investir dans l'immobilier à Clermont-Ferrand 2026 — Stratégies & rendements",
   description:
     "Guide complet pour investir dans l'immobilier locatif à Clermont-Ferrand : quartiers cibles, rendements 4,5-6,5 %, stratégies étudiant / jeune actif / patrimoine.",
   path: "/investir-clermont-ferrand",
@@ -55,7 +55,7 @@ const faqInvestir = [
       "Entre 4 % (résidentiel premium Beaumont/Chamalières) et 6,5 % (studio étudiant Cézeaux). Les rendements bruts sont supérieurs à Lyon ou Bordeaux à profil équivalent.",
   },
   {
-    question: "Quel quartier choisir pour investir en 2025 ?",
+    question: "Quel quartier choisir pour investir en 2026 ?",
     reponse:
       "Cézeaux pour le rendement, Centre-Ville pour la stabilité, La Gare pour le pari de valorisation post-PEM 2027. Le choix dépend de votre profil investisseur et horizon.",
   },
@@ -92,7 +92,7 @@ export default function InvestirPage() {
               <h1 className="font-playfair text-display-xl text-cbf-black font-bold mt-3 mb-5">
                 Investir à Clermont-Ferrand
                 <br />
-                <span className="text-cbf-gold">Stratégies & rendements 2025</span>
+                <span className="text-cbf-gold">Stratégies & rendements 2026</span>
               </h1>
               <p className="text-lg text-cbf-gray leading-relaxed mb-8">
                 Bassin universitaire de 39 000 étudiants, demande locative

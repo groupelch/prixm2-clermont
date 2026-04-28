@@ -101,7 +101,7 @@ export default function PolitiqueConfidentialitePage() {
           </p>
 
           <p className="text-sm text-cbf-gray-light italic mt-10">
-            Dernière mise à jour : 2025
+            Dernière mise à jour : 2026
           </p>
         </div>
       </div>

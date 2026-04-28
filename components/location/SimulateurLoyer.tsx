@@ -121,7 +121,7 @@ export function SimulateurLoyer() {
         </h3>
       </div>
       <p className="text-sm text-cbf-gray mb-6">
-        Estimation indicative basée sur le marché clermontois 2025.
+        Estimation indicative basée sur le marché clermontois 2026.
       </p>
 
       <form onSubmit={onSubmit} className="space-y-5">

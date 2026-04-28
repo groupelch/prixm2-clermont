@@ -175,11 +175,15 @@ export function ArticleSchema({
   description,
   datePublished,
   url,
+  authorName,
+  authorType = "Organization",
 }: {
   title: string;
   description: string;
   datePublished: string;
   url: string;
+  authorName?: string;
+  authorType?: "Organization" | "Person";
 }) {
   const data = {
     "@context": "https://schema.org",
@@ -188,8 +192,8 @@ export function ArticleSchema({
     description,
     datePublished,
     author: {
-      "@type": "Organization",
-      name: "CBF Conseils",
+      "@type": authorType,
+      name: authorName ?? "CBF Conseils",
     },
     publisher: {
       "@type": "Organization",
@@ -202,6 +206,51 @@ export function ArticleSchema({
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export function DatasetSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "Prix immobiliers Clermont-Ferrand par quartier",
+    description:
+      "Base de données des prix au m² à Clermont-Ferrand et communes de l'agglomération. Données issues des Demandes de Valeurs Foncières (DVF) du gouvernement français, enrichies par les experts CBF Conseils.",
+    url: SITE_URL,
+    creator: {
+      "@type": "Organization",
+      name: "CBF Conseils",
+      url: "https://www.cbfconseils.com",
+    },
+    license: "https://www.data.gouv.fr/fr/licences/licence-ouverte-open-licence/",
+    temporalCoverage: "2021/2024",
+    spatialCoverage: {
+      "@type": "Place",
+      name: "Clermont-Ferrand, Puy-de-Dôme, France",
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 45.7797,
+        longitude: 3.0863,
+      },
+    },
+    variableMeasured: [
+      { "@type": "PropertyValue", name: "Prix médian au m²", unitCode: "EUR" },
+      { "@type": "PropertyValue", name: "Nombre de transactions", unitCode: "C62" },
+      { "@type": "PropertyValue", name: "Évolution annuelle", unitCode: "P1" },
+    ],
+    keywords: [
+      "prix immobilier",
+      "Clermont-Ferrand",
+      "DVF",
+      "prix m²",
+      "immobilier Auvergne",
+    ],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   );
 }
