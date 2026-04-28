@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -15,9 +16,17 @@ export function FinalCta() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="max-w-4xl mx-auto bg-cbf-black text-white rounded-sm p-10 md:p-16 text-center relative overflow-hidden"
+          className="max-w-4xl mx-auto text-white rounded-sm p-10 md:p-16 text-center relative overflow-hidden"
         >
-          <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <Image
+            src="https://images.unsplash.com/photo-1639736161901-a3da485ebe59?w=1600&q=80&auto=format&fit=crop"
+            alt="Clermont-Ferrand vue de nuit"
+            fill
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover -z-10"
+          />
+          <div className="absolute inset-0 bg-cbf-black/80 -z-10" />
+          <div className="absolute inset-0 opacity-30 pointer-events-none">
             <div className="absolute top-1/4 -right-10 w-72 h-72 bg-cbf-gold rounded-full blur-3xl" />
             <div className="absolute bottom-0 -left-10 w-72 h-72 bg-cbf-navy rounded-full blur-3xl" />
           </div>
@@ -50,6 +59,7 @@ export function FinalCta() {
             </div>
           </div>
         </motion.div>
+        <p className="max-w-4xl mx-auto text-[0.65rem] text-cbf-gray-light/50 mt-2 text-right">Photo : Unsplash</p>
       </div>
     </section>
   );

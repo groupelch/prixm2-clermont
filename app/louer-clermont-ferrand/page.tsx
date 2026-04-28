@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   TrendingUp,
   Shield,
@@ -73,14 +74,14 @@ export default function LouerClermontFerrandPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-cbf-ivory">
         <div className="container">
-          <div className="max-w-3xl">
-            <BreadcrumbNav
-              items={[
-                { name: "Accueil", href: "/" },
-                { name: "Louer son bien à Clermont-Ferrand" },
-              ]}
-            />
-            <div className="mt-8">
+          <BreadcrumbNav
+            items={[
+              { name: "Accueil", href: "/" },
+              { name: "Louer son bien à Clermont-Ferrand" },
+            ]}
+          />
+          <div className="mt-8 grid lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-7">
               <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
                 Bailleurs · Location & Gestion
               </span>
@@ -92,6 +93,19 @@ export default function LouerClermontFerrandPage() {
                 Données de marché 2025 par quartier, meublé vs vide, impact DPE
                 et rendement brut calculé automatiquement.
               </p>
+            </div>
+            <div className="hidden lg:block lg:col-span-5">
+              <div className="relative aspect-[4/5] rounded-sm overflow-hidden shadow-xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1650056221902-3972989f2d19?w=1200&q=80&auto=format&fit=crop"
+                  alt="Rue de Clermont-Ferrand — quartier résidentiel"
+                  fill
+                  sizes="(max-width: 1024px) 0px, 40vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-cbf-black/40 via-transparent to-transparent" />
+              </div>
+              <p className="text-[0.65rem] text-cbf-gray-light/50 mt-2 text-right">Photo : Unsplash</p>
             </div>
           </div>
         </div>

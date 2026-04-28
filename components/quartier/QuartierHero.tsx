@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, MapPin, TrendingUp, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -12,6 +13,18 @@ export function QuartierHero({ quartier }: { quartier: Quartier }) {
   const refPrix = quartier.prixAppartement ?? quartier.prixMaison;
   return (
     <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 bg-cbf-ivory overflow-hidden">
+      {/* Image de fond subtile (rue Clermont-Ferrand) */}
+      <div className="absolute inset-0 pointer-events-none opacity-[0.12]">
+        <Image
+          src="https://images.unsplash.com/photo-1650056221902-3972989f2d19?w=1600&q=80&auto=format&fit=crop"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+          aria-hidden="true"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-cbf-ivory/60 via-cbf-ivory/40 to-cbf-ivory pointer-events-none" />
       <div className="absolute top-1/3 -right-20 w-96 h-96 bg-cbf-gold rounded-full opacity-10 blur-3xl pointer-events-none" />
       <div className="container relative">
         <div className="grid lg:grid-cols-12 gap-10 items-end">

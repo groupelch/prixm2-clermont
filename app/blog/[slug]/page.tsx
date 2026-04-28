@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, Calendar, ArrowRight, Tag } from "lucide-react";
 import {
   articles,
   getArticleBySlug,
   getRelatedArticles,
+  getArticleImage,
   ARTICLE_THEMES,
 } from "@/data/articles";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
@@ -98,6 +100,17 @@ export default function ArticlePage({ params }: { params: Params }) {
             <p className="text-lg text-cbf-gray leading-relaxed">
               {article.description}
             </p>
+            <div className="relative aspect-video w-full mt-8 rounded-sm overflow-hidden shadow-md">
+              <Image
+                src={getArticleImage(article.theme)}
+                alt={article.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="object-cover"
+                priority
+              />
+            </div>
+            <p className="text-[0.65rem] text-cbf-gray-light/50 mt-1.5 text-right">Photo : Unsplash</p>
           </header>
 
           <div
@@ -137,17 +150,28 @@ export default function ArticlePage({ params }: { params: Params }) {
                   <Link
                     key={r.slug}
                     href={`/blog/${r.slug}`}
-                    className="group flex flex-col bg-white p-5 border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm"
+                    className="group flex flex-col bg-white border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm overflow-hidden"
                   >
-                    <span className="inline-flex items-center px-2 py-0.5 bg-cbf-ivory text-[0.55rem] uppercase tracking-wider text-cbf-gold font-bold rounded-sm border border-cbf-gold/30 mb-3 self-start">
-                      {ARTICLE_THEMES.find((t) => t.id === r.theme)?.label ?? r.theme}
-                    </span>
-                    <h4 className="font-playfair text-base font-bold text-cbf-black leading-snug group-hover:text-cbf-gold transition-colors mb-2">
-                      {r.title}
-                    </h4>
-                    <p className="text-xs text-cbf-gray-light mt-auto">
-                      {r.readTime} min · {formatDate(r.datePublished)}
-                    </p>
+                    <div className="relative aspect-video overflow-hidden">
+                      <Image
+                        src={getArticleImage(r.theme)}
+                        alt={r.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="flex flex-col flex-1 p-5">
+                      <span className="inline-flex items-center px-2 py-0.5 bg-cbf-ivory text-[0.55rem] uppercase tracking-wider text-cbf-gold font-bold rounded-sm border border-cbf-gold/30 mb-3 self-start">
+                        {ARTICLE_THEMES.find((t) => t.id === r.theme)?.label ?? r.theme}
+                      </span>
+                      <h4 className="font-playfair text-base font-bold text-cbf-black leading-snug group-hover:text-cbf-gold transition-colors mb-2">
+                        {r.title}
+                      </h4>
+                      <p className="text-xs text-cbf-gray-light mt-auto">
+                        {r.readTime} min · {formatDate(r.datePublished)}
+                      </p>
+                    </div>
                   </Link>
                 ))}
               </div>

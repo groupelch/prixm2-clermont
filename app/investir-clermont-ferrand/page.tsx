@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { TrendingUp, GraduationCap, Briefcase, Home as HomeIcon } from "lucide-react";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import { BreadcrumbSchema } from "@/components/common/SchemaOrg";
@@ -81,27 +82,42 @@ export default function InvestirPage() {
       />
 
       <section className="bg-cbf-ivory pt-10 pb-12 md:pt-14 md:pb-16">
-        <div className="container max-w-5xl">
+        <div className="container max-w-6xl">
           <BreadcrumbNav items={[{ name: "Accueil", href: "/" }, { name: "Investir" }]} />
-          <div className="mt-8 max-w-3xl">
-            <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
-              Guide investisseur
-            </span>
-            <h1 className="font-playfair text-display-xl text-cbf-black font-bold mt-3 mb-5">
-              Investir à Clermont-Ferrand
-              <br />
-              <span className="text-cbf-gold">Stratégies & rendements 2025</span>
-            </h1>
-            <p className="text-lg text-cbf-gray leading-relaxed mb-8">
-              Bassin universitaire de 39 000 étudiants, demande locative
-              soutenue, prix d'entrée raisonnables : Clermont-Ferrand reste un
-              terrain solide pour l'investissement locatif.
-            </p>
-            <Link href="/estimation">
-              <Button variant="primary" size="lg">
-                Étudier mon projet d'investissement
-              </Button>
-            </Link>
+          <div className="mt-8 grid lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-7">
+              <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
+                Guide investisseur
+              </span>
+              <h1 className="font-playfair text-display-xl text-cbf-black font-bold mt-3 mb-5">
+                Investir à Clermont-Ferrand
+                <br />
+                <span className="text-cbf-gold">Stratégies & rendements 2025</span>
+              </h1>
+              <p className="text-lg text-cbf-gray leading-relaxed mb-8">
+                Bassin universitaire de 39 000 étudiants, demande locative
+                soutenue, prix d'entrée raisonnables : Clermont-Ferrand reste un
+                terrain solide pour l'investissement locatif.
+              </p>
+              <Link href="/estimation">
+                <Button variant="primary" size="lg">
+                  Étudier mon projet d'investissement
+                </Button>
+              </Link>
+            </div>
+            <div className="hidden lg:block lg:col-span-5">
+              <div className="relative aspect-[4/5] rounded-sm overflow-hidden shadow-xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1493339424841-c97be3525f8f?w=1200&q=80&auto=format&fit=crop"
+                  alt="Puy de Dôme — Auvergne, vue depuis Clermont-Ferrand"
+                  fill
+                  sizes="(max-width: 1024px) 0px, 40vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-cbf-black/40 via-transparent to-transparent" />
+              </div>
+              <p className="text-[0.65rem] text-cbf-gray-light/50 mt-2 text-right">Photo : Unsplash</p>
+            </div>
           </div>
         </div>
       </section>

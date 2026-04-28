@@ -2,11 +2,13 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, ArrowRight } from "lucide-react";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import {
   articles,
   ARTICLE_THEMES,
+  getArticleImage,
   type ArticleTheme,
 } from "@/data/articles";
 import { cn } from "@/lib/utils";
@@ -110,10 +112,15 @@ export default function BlogPage() {
                     </span>
                   </div>
                   <div className="md:col-span-2 hidden md:block">
-                    <div className="aspect-[4/3] bg-gradient-to-br from-cbf-black to-cbf-anthracite rounded-sm flex items-center justify-center">
-                      <span className="font-playfair text-6xl font-bold text-cbf-gold opacity-40">
-                        prixm²
-                      </span>
+                    <div className="relative aspect-[4/3] rounded-sm overflow-hidden">
+                      <Image
+                        src={getArticleImage(featured.theme)}
+                        alt={featured.title}
+                        fill
+                        sizes="(max-width: 768px) 0px, 40vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-cbf-black/40 via-transparent to-transparent" />
                     </div>
                   </div>
                 </div>
@@ -126,8 +133,18 @@ export default function BlogPage() {
                 <Link
                   key={a.slug}
                   href={`/blog/${a.slug}`}
-                  className="group flex flex-col bg-white p-6 border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm"
+                  className="group flex flex-col bg-white border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm overflow-hidden"
                 >
+                  <div className="relative aspect-video overflow-hidden">
+                    <Image
+                      src={getArticleImage(a.theme)}
+                      alt={a.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex flex-col flex-1 p-6">
                   <div className="flex items-center justify-between mb-4">
                     <span className="inline-flex items-center px-2.5 py-1 bg-cbf-ivory text-[0.6rem] uppercase tracking-wider text-cbf-gold font-bold rounded-sm border border-cbf-gold/30">
                       {ARTICLE_THEMES.find((t) => t.id === a.theme)?.label}
@@ -154,6 +171,7 @@ export default function BlogPage() {
                     <span className="inline-flex items-center gap-1 text-xs text-cbf-gold font-semibold">
                       Lire <ArrowRight className="h-3 w-3" />
                     </span>
+                  </div>
                   </div>
                 </Link>
               ))}

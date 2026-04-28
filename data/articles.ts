@@ -1308,3 +1308,36 @@ export const ARTICLE_THEMES: { id: ArticleTheme; label: string }[] = [
   { id: "location", label: "Location & Gestion" },
   { id: "marche", label: "Marché" },
 ];
+
+/**
+ * Image de couverture par thème — photos libres de droit (Unsplash).
+ * Utilisée sur les cards blog et l'article featured. Taille optimisée pour
+ * un rendu en aspect-video (rapport 16/9).
+ */
+const ARTICLE_FALLBACK_IMAGES: Record<ArticleTheme, string> = {
+  // Vue de nuit (analyse marché)
+  marche:
+    "https://images.unsplash.com/photo-1639736161901-a3da485ebe59?w=1200&q=80&auto=format&fit=crop",
+  // Rue de Clermont (acheteur — pratique du quotidien)
+  acheteur:
+    "https://images.unsplash.com/photo-1650056221902-3972989f2d19?w=1200&q=80&auto=format&fit=crop",
+  // Rue de Clermont (vendeur — pratique du quotidien)
+  vendeur:
+    "https://images.unsplash.com/photo-1650056221902-3972989f2d19?w=1200&q=80&auto=format&fit=crop",
+  // Rue de Clermont (location — pratique du quotidien)
+  location:
+    "https://images.unsplash.com/photo-1650056221902-3972989f2d19?w=1200&q=80&auto=format&fit=crop",
+  // Puy de Dôme (investissement — territoire/horizon long)
+  investissement:
+    "https://images.unsplash.com/photo-1493339424841-c97be3525f8f?w=1200&q=80&auto=format&fit=crop",
+};
+
+const ARTICLE_DEFAULT_IMAGE =
+  "https://images.unsplash.com/photo-1692098075085-a459c8331df5?w=1200&q=80&auto=format&fit=crop";
+
+/** Renvoie l'URL de la thumbnail pour un article (selon son thème). */
+export function getArticleImage(theme: ArticleTheme | string): string {
+  return (
+    ARTICLE_FALLBACK_IMAGES[theme as ArticleTheme] ?? ARTICLE_DEFAULT_IMAGE
+  );
+}

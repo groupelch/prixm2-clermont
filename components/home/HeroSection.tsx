@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MapPin, TrendingUp } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { formatPricePerM2 } from "@/lib/utils";
 import { getPrixMoyenAppartement } from "@/data/quartiers";
@@ -121,43 +122,57 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="lg:col-span-5"
+            className="lg:col-span-5 relative"
           >
-            <div className="relative bg-white border border-cbf-gray-soft rounded-sm p-8 shadow-2xl">
-              <div className="absolute -top-4 left-8 inline-flex items-center gap-1.5 bg-cbf-black text-white px-3 py-1.5 rounded-sm text-[0.65rem] uppercase tracking-[0.18em] font-semibold">
+            <div className="relative rounded-sm overflow-hidden aspect-[4/5] shadow-2xl">
+              <Image
+                src="https://images.unsplash.com/photo-1692098075085-a459c8331df5?w=1200&q=80&auto=format&fit=crop"
+                alt="Clermont-Ferrand — Cathédrale Notre-Dame-de-l'Assomption"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-cbf-black/85 via-cbf-black/30 to-transparent" />
+
+              <div className="absolute -top-0 left-6 mt-6 inline-flex items-center gap-1.5 bg-cbf-black text-white px-3 py-1.5 rounded-sm text-[0.65rem] uppercase tracking-[0.18em] font-semibold">
                 <TrendingUp className="h-3 w-3 text-cbf-gold" />
                 Indicateur clé
               </div>
-              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gray-light font-semibold mb-3">
-                Prix moyen appartement
-              </p>
-              <p className="font-playfair text-display-lg text-cbf-black font-bold leading-none">
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
-                >
-                  {formatPricePerM2(prixMoyen)}
-                </motion.span>
-              </p>
-              <p className="text-sm text-cbf-gray mt-3">
-                à Clermont-Ferrand intra-muros · {DATE_MAJ}
-              </p>
-              <div className="grid grid-cols-2 gap-3 mt-8 pt-6 border-t border-cbf-gray-soft">
-                <div>
-                  <p className="text-[0.6rem] uppercase tracking-[0.18em] text-cbf-gray-light font-semibold mb-1">
-                    Évolution 12 mois
-                  </p>
-                  <p className="font-playfair text-xl text-cbf-success font-bold">+3,2 %</p>
-                </div>
-                <div>
-                  <p className="text-[0.6rem] uppercase tracking-[0.18em] text-cbf-gray-light font-semibold mb-1">
-                    Délai moyen
-                  </p>
-                  <p className="font-playfair text-xl text-cbf-black font-bold">60 j</p>
+
+              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-sm p-6 border border-white/40">
+                <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gray-light font-semibold mb-3">
+                  Prix moyen appartement
+                </p>
+                <p className="font-playfair text-display-lg text-cbf-black font-bold leading-none">
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 0.6 }}
+                  >
+                    {formatPricePerM2(prixMoyen)}
+                  </motion.span>
+                </p>
+                <p className="text-sm text-cbf-gray mt-3">
+                  à Clermont-Ferrand intra-muros · {DATE_MAJ}
+                </p>
+                <div className="grid grid-cols-2 gap-3 mt-6 pt-5 border-t border-cbf-gray-soft">
+                  <div>
+                    <p className="text-[0.6rem] uppercase tracking-[0.18em] text-cbf-gray-light font-semibold mb-1">
+                      Évolution 12 mois
+                    </p>
+                    <p className="font-playfair text-xl text-cbf-success font-bold">+3,2 %</p>
+                  </div>
+                  <div>
+                    <p className="text-[0.6rem] uppercase tracking-[0.18em] text-cbf-gray-light font-semibold mb-1">
+                      Délai moyen
+                    </p>
+                    <p className="font-playfair text-xl text-cbf-black font-bold">60 j</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <p className="text-[0.65rem] text-cbf-gray-light/60 mt-2 text-right">Photo : Unsplash</p>
           </motion.div>
         </div>
       </div>
