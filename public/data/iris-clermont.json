@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "updated": "2026-04-28",
+    "source": "Opendatasoft (georef-france-iris) — INSEE",
+    "commune": "Clermont-Ferrand (63113)",
+    "total": 42
+  },
+  "zones": [
+    {
+      "code": "631131404",
+      "nom": "A. Duclos",
+      "type": "iris d'habitat",
+      "lat": 45.76325855791416,
+      "lng": 3.0942035949767104
+    },
+    {
+      "code": "631130901",
+      "nom": "Anatole France",
+      "type": "iris d'habitat",
+      "lat": 45.77806596363166,
+      "lng": 3.1090697317462
+    },
+    {
+      "code": "631131502",
+      "nom": "André Theuriet",
+      "type": "iris d'habitat",
+      "lat": 45.76321732889717,
+      "lng": 3.0778619767126307
+    },
+    {
+      "code": "631130403",
+      "nom": "Ballainvilliers",
+      "type": "iris d'habitat",
+      "lat": 45.77482097331622,
+      "lng": 3.0863920309044746
+    },
+    {
+      "code": "631131802",
+      "nom": "Bergougnan",
+      "type": "iris d'habitat",
+      "lat": 45.785095992627575,
+      "lng": 3.067732298422601
+    },
+    {
+      "code": "631130602",
+      "nom": "Bien Assis",
+      "type": "iris d'habitat",
+      "lat": 45.79002734558191,
+      "lng": 3.0947746512331458
+    },
+    {
+      "code": "631131702",
+      "nom": "Bonnabaud",
+      "type": "iris d'habitat",
+      "lat": 45.7746167858987,
+      "lng": 3.0786286662127926
+    },
+    {
+      "code": "631131903",
+      "nom": "Champfleuri",
+      "type": "iris d'habitat",
+      "lat": 45.789217545559815,
+      "lng": 3.086031297107388
+    },
+    {
+      "code": "631132201",
+      "nom": "Champratel",
+      "type": "iris d'habitat",
+      "lat": 45.814613922326146,
+      "lng": 3.1160381317544563
+    },
+    {
+      "code": "631131902",
+      "nom": "Channelles",
+      "type": "iris d'habitat",
+      "lat": 45.794818378458345,
+      "lng": 3.0718654572689275
+    },
+    {
+      "code": "631130601",
+      "nom": "Chanturgue",
+      "type": "iris d'habitat",
+      "lat": 45.79900442928231,
+      "lng": 3.098773863314873
+    },
+    {
+      "code": "631130202",
+      "nom": "Charras",
+      "type": "iris d'habitat",
+      "lat": 45.78030706555154,
+      "lng": 3.0976305182523167
+    },
+    {
+      "code": "631131401",
+      "nom": "Dolet",
+      "type": "iris d'habitat",
+      "lat": 45.7635708907921,
+      "lng": 3.0880245046122683
+    },
+    {
+      "code": "631131701",
+      "nom": "Gabriel Péri",
+      "type": "iris d'habitat",
+      "lat": 45.77909798071235,
+      "lng": 3.074627646703619
+    },
+    {
+      "code": "631130102",
+      "nom": "Îlot 1er Mai",
+      "type": "iris d'activité",
+      "lat": 45.78880934663085,
+      "lng": 3.0998725113973067
+    },
+    {
+      "code": "631130401",
+      "nom": "Jaude",
+      "type": "iris d'habitat",
+      "lat": 45.77850489847731,
+      "lng": 3.081869788778738
+    },
+    {
+      "code": "631131801",
+      "nom": "Jean Zay",
+      "type": "iris d'habitat",
+      "lat": 45.78913997390395,
+      "lng": 3.0604526698760868
+    },
+    {
+      "code": "631131001",
+      "nom": "L'Oradou",
+      "type": "iris d'habitat",
+      "lat": 45.77119280012669,
+      "lng": 3.107461799285581
+    },
+    {
+      "code": "631132001",
+      "nom": "La Boucle",
+      "type": "iris d'habitat",
+      "lat": 45.81312980984261,
+      "lng": 3.0999123539718685
+    },
+    {
+      "code": "631131101",
+      "nom": "La Fontaine du Bac",
+      "type": "iris d'habitat",
+      "lat": 45.76509630335204,
+      "lng": 3.120538657533145
+    },
+    {
+      "code": "631132301",
+      "nom": "La Gauthière",
+      "type": "iris d'habitat",
+      "lat": 45.79830445113785,
+      "lng": 3.1184859958307714
+    },
+    {
+      "code": "631132501",
+      "nom": "La Pardieu",
+      "type": "iris d'activité",
+      "lat": 45.769425579911584,
+      "lng": 3.144910113906049
+    },
+    {
+      "code": "631132101",
+      "nom": "La Plaine",
+      "type": "iris d'habitat",
+      "lat": 45.8071993687327,
+      "lng": 3.1161230000493005
+    },
+    {
+      "code": "631131405",
+      "nom": "La Rotonde",
+      "type": "iris d'habitat",
+      "lat": 45.76645989319875,
+      "lng": 3.092101342809667
+    },
+    {
+      "code": "631132401",
+      "nom": "Le Brézet",
+      "type": "iris d'activité",
+      "lat": 45.793513535146225,
+      "lng": 3.139753271291067
+    },
+    {
+      "code": "631130402",
+      "nom": "Le Port",
+      "type": "iris d'habitat",
+      "lat": 45.77874337746681,
+      "lng": 3.0879552926502
+    },
+    {
+      "code": "631130302",
+      "nom": "Lecoq",
+      "type": "iris d'habitat",
+      "lat": 45.77103360003864,
+      "lng": 3.0888827399636125
+    },
+    {
+      "code": "631131201",
+      "nom": "Léon Blum-La Raye Dieu",
+      "type": "iris d'habitat",
+      "lat": 45.76815758702098,
+      "lng": 3.099539752654603
+    },
+    {
+      "code": "631131901",
+      "nom": "Les Côtes",
+      "type": "iris d'habitat",
+      "lat": 45.799371195986176,
+      "lng": 3.083015701906381
+    },
+    {
+      "code": "631131601",
+      "nom": "Les Salins",
+      "type": "iris d'habitat",
+      "lat": 45.770208502585994,
+      "lng": 3.080404969270632
+    },
+    {
+      "code": "631132202",
+      "nom": "Les Vergnes",
+      "type": "iris d'habitat",
+      "lat": 45.81113820063211,
+      "lng": 3.1266695582641786
+    },
+    {
+      "code": "631130701",
+      "nom": "Montferrand",
+      "type": "iris d'habitat",
+      "lat": 45.79340491761751,
+      "lng": 3.1155268106857017
+    },
+    {
+      "code": "631131803",
+      "nom": "Parc de Montjuzet",
+      "type": "iris d'habitat",
+      "lat": 45.78784003169478,
+      "lng": 3.0739830764876137
+    },
+    {
+      "code": "631130201",
+      "nom": "Pélissier",
+      "type": "iris d'habitat",
+      "lat": 45.781772654020465,
+      "lng": 3.102985106225239
+    },
+    {
+      "code": "631131501",
+      "nom": "Poncillon",
+      "type": "iris d'habitat",
+      "lat": 45.76210447661448,
+      "lng": 3.0844507865075155
+    },
+    {
+      "code": "631130802",
+      "nom": "République",
+      "type": "iris d'habitat",
+      "lat": 45.788316345522645,
+      "lng": 3.1105971241031014
+    },
+    {
+      "code": "631130501",
+      "nom": "Saint-Alyre",
+      "type": "iris d'habitat",
+      "lat": 45.78367056534567,
+      "lng": 3.082196623582562
+    },
+    {
+      "code": "631130902",
+      "nom": "Simonnet",
+      "type": "iris d'habitat",
+      "lat": 45.77497832999341,
+      "lng": 3.110124220413786
+    },
+    {
+      "code": "631132003",
+      "nom": "Sous Les Vignes",
+      "type": "iris d'habitat",
+      "lat": 45.80809631646618,
+      "lng": 3.0966918759839395
+    },
+    {
+      "code": "631131301",
+      "nom": "Sud-Saint-Jacques",
+      "type": "iris d'habitat",
+      "lat": 45.76084892032605,
+      "lng": 3.09897257718542
+    },
+    {
+      "code": "631132002",
+      "nom": "Torpilleur Sirocco",
+      "type": "iris d'habitat",
+      "lat": 45.812432240671804,
+      "lng": 3.1058805983994975
+    },
+    {
+      "code": "631130301",
+      "nom": "Trudaine",
+      "type": "iris d'habitat",
+      "lat": 45.777306278507204,
+      "lng": 3.0934229977068735
+    }
+  ]
+}

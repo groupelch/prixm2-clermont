@@ -15,9 +15,13 @@ import { PrixJustePedagogie } from "@/components/quartier/PrixJustePedagogie";
 import { AmenitiesBlock } from "@/components/quartier/AmenitiesBlock";
 import { DpeBlock } from "@/components/quartier/DpeBlock";
 import { DvfBlock } from "@/components/quartier/DvfBlock";
+import { IrisBlock } from "@/components/quartier/IrisBlock";
+import { TransportBlock } from "@/components/quartier/TransportBlock";
 import { getAmenitiesForQuartier } from "@/lib/amenities";
 import { getDpeStatsForQuartier } from "@/lib/dpe";
 import { getDvfStatsForQuartier } from "@/lib/dvf";
+import { getIrisStatsForQuartier } from "@/lib/iris";
+import { getTransportForQuartier } from "@/lib/transport";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
 import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
@@ -58,6 +62,8 @@ export default function QuartierPage({ params }: { params: Params }) {
   const amenities = getAmenitiesForQuartier(q.coordinates.lat, q.coordinates.lng);
   const dpeStats = getDpeStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
   const dvfStats = getDvfStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
+  const irisStats = getIrisStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
+  const transportStats = getTransportForQuartier(q.coordinates.lat, q.coordinates.lng);
 
   const breadcrumb = [
     { name: "Accueil", url: SITE_URL },
@@ -93,9 +99,11 @@ export default function QuartierPage({ params }: { params: Params }) {
       <ChiffresQuartier quartier={q} />
       <AnalyseLocale quartier={q} />
       <PrixParType quartier={q} />
-      <AmenitiesBlock amenities={amenities} quartierNom={q.nom} />
       <DpeBlock stats={dpeStats} />
       <DvfBlock stats={dvfStats} quartier={q.nom} />
+      <AmenitiesBlock amenities={amenities} quartierNom={q.nom} />
+      <IrisBlock stats={irisStats} quartierNom={q.nom} />
+      <TransportBlock stats={transportStats} quartierNom={q.nom} />
 
       <section className="py-14 md:py-20 bg-white">
         <div className="container">

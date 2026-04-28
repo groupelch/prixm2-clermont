@@ -24,5 +24,5 @@ export function formatNumber(value: number): string {
 
 export const SITE_NAME = "prixm² Clermont-Ferrand";
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.prixm2clermontferrand.fr";
-export const PHONE = process.env.NEXT_PUBLIC_PHONE || "+33473000000";
-export const PHONE_DISPLAY = "04 73 00 00 00"; // placeholder à remplacer
+export const PHONE = process.env.NEXT_PUBLIC_PHONE || "+33473869953";
+export const PHONE_DISPLAY = "04 73 86 99 53";

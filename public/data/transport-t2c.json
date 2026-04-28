@@ -1,0 +1,2891 @@
+{
+  "meta": {
+    "updated": "2026-04-28",
+    "source": "OpenStreetMap contributors (Overpass API)",
+    "total": 480,
+    "total_bus": 480,
+    "total_tram": 34
+  },
+  "arrets": [
+    {
+      "nom": "1er Mai",
+      "type": "bus+tram",
+      "lat": 45.7853664,
+      "lng": 3.1014921
+    },
+    {
+      "nom": "8 Mai",
+      "type": "bus",
+      "lat": 45.7703594,
+      "lng": 3.0787992
+    },
+    {
+      "nom": "Abbé Prévost",
+      "type": "bus",
+      "lat": 45.7929246,
+      "lng": 3.0843228
+    },
+    {
+      "nom": "Aéroport",
+      "type": "bus",
+      "lat": 45.7917517,
+      "lng": 3.1612234
+    },
+    {
+      "nom": "Agriculture",
+      "type": "bus",
+      "lat": 45.779667,
+      "lng": 3.1288096
+    },
+    {
+      "nom": "Agrippa d'Aubigné",
+      "type": "bus",
+      "lat": 45.7782312,
+      "lng": 3.1085443
+    },
+    {
+      "nom": "AIA",
+      "type": "bus",
+      "lat": 45.7777672,
+      "lng": 3.1666371
+    },
+    {
+      "nom": "Albert Evaux",
+      "type": "bus",
+      "lat": 45.8427038,
+      "lng": 3.1128657
+    },
+    {
+      "nom": "Alexandre Varenne",
+      "type": "bus",
+      "lat": 45.7767428,
+      "lng": 3.0778667
+    },
+    {
+      "nom": "Alexis de Tocqueville",
+      "type": "bus",
+      "lat": 45.7345245,
+      "lng": 3.0987165
+    },
+    {
+      "nom": "Alouettes",
+      "type": "bus",
+      "lat": 45.7377648,
+      "lng": 3.1774838
+    },
+    {
+      "nom": "Alphonse Daudet",
+      "type": "bus",
+      "lat": 45.8146853,
+      "lng": 3.1032557
+    },
+    {
+      "nom": "Ampère",
+      "type": "bus",
+      "lat": 45.7349392,
+      "lng": 3.196049
+    },
+    {
+      "nom": "Anatole France",
+      "type": "bus",
+      "lat": 45.7789282,
+      "lng": 3.1127257
+    },
+    {
+      "nom": "André Theuriet",
+      "type": "bus",
+      "lat": 45.7663549,
+      "lng": 3.0781472
+    },
+    {
+      "nom": "Anne-Marie Menut",
+      "type": "bus",
+      "lat": 45.746476,
+      "lng": 3.1736023
+    },
+    {
+      "nom": "Anzelle",
+      "type": "bus",
+      "lat": 45.7420889,
+      "lng": 3.1815049
+    },
+    {
+      "nom": "Arago",
+      "type": "bus",
+      "lat": 45.774888,
+      "lng": 3.1039079
+    },
+    {
+      "nom": "Armand Fallières",
+      "type": "bus",
+      "lat": 45.7906301,
+      "lng": 3.0663174
+    },
+    {
+      "nom": "Arsenal",
+      "type": "bus",
+      "lat": 45.7981796,
+      "lng": 3.1312735
+    },
+    {
+      "nom": "Artière",
+      "type": "bus",
+      "lat": 45.753112,
+      "lng": 3.1174437
+    },
+    {
+      "nom": "Aubiat",
+      "type": "bus",
+      "lat": 45.8320654,
+      "lng": 3.0966066
+    },
+    {
+      "nom": "Aubière Place des Ramacles",
+      "type": "bus",
+      "lat": 45.7496447,
+      "lng": 3.1121926
+    },
+    {
+      "nom": "AUBIÈRE Quartier Chambon",
+      "type": "bus",
+      "lat": 45.7525273,
+      "lng": 3.1298189
+    },
+    {
+      "nom": "Augustin Thierry",
+      "type": "bus",
+      "lat": 45.7893078,
+      "lng": 3.0842547
+    },
+    {
+      "nom": "AULNAT Les Chapelles",
+      "type": "bus",
+      "lat": 45.7972528,
+      "lng": 3.1670042
+    },
+    {
+      "nom": "Aulnat Mairie",
+      "type": "bus",
+      "lat": 45.7951333,
+      "lng": 3.1653103
+    },
+    {
+      "nom": "Aulnat Village",
+      "type": "bus",
+      "lat": 45.7953046,
+      "lng": 3.1594853
+    },
+    {
+      "nom": "Auzon",
+      "type": "bus",
+      "lat": 45.7253422,
+      "lng": 3.1971014
+    },
+    {
+      "nom": "Avenue Thermale",
+      "type": "bus",
+      "lat": 45.7715623,
+      "lng": 3.0594565
+    },
+    {
+      "nom": "Aviation",
+      "type": "bus",
+      "lat": 45.7939003,
+      "lng": 3.1586898
+    },
+    {
+      "nom": "Ballainvilliers",
+      "type": "bus",
+      "lat": 45.7757671,
+      "lng": 3.0857507
+    },
+    {
+      "nom": "Bargoin",
+      "type": "bus",
+      "lat": 45.7640148,
+      "lng": 3.0600396
+    },
+    {
+      "nom": "Barrière d'Issoire",
+      "type": "bus",
+      "lat": 45.7734841,
+      "lng": 3.0912215
+    },
+    {
+      "nom": "Barrieu",
+      "type": "bus",
+      "lat": 45.7645817,
+      "lng": 3.0545248
+    },
+    {
+      "nom": "Bas Champflour",
+      "type": "bus",
+      "lat": 45.7870975,
+      "lng": 3.0923174
+    },
+    {
+      "nom": "Beaumes",
+      "type": "bus",
+      "lat": 45.781329,
+      "lng": 3.0631321
+    },
+    {
+      "nom": "BEAUMONT Collège Molière",
+      "type": "bus",
+      "lat": 45.7509275,
+      "lng": 3.0964212
+    },
+    {
+      "nom": "Beaumont Mairie",
+      "type": "bus",
+      "lat": 45.7539726,
+      "lng": 3.0852828
+    },
+    {
+      "nom": "Beaumont Place d'Armes",
+      "type": "bus",
+      "lat": 45.7516263,
+      "lng": 3.0883807
+    },
+    {
+      "nom": "BEAUMONT Pont de Boisséjour",
+      "type": "bus",
+      "lat": 45.7474179,
+      "lng": 3.0720842
+    },
+    {
+      "nom": "Beaupeyras",
+      "type": "bus",
+      "lat": 45.7946706,
+      "lng": 3.082872
+    },
+    {
+      "nom": "Beaurepaire",
+      "type": "bus",
+      "lat": 45.774972,
+      "lng": 3.0738235
+    },
+    {
+      "nom": "Bel Horizon",
+      "type": "bus",
+      "lat": 45.7134651,
+      "lng": 3.1879748
+    },
+    {
+      "nom": "Bellevue",
+      "type": "bus",
+      "lat": 45.7340004,
+      "lng": 3.1068858
+    },
+    {
+      "nom": "Berceaux",
+      "type": "bus",
+      "lat": 45.7644061,
+      "lng": 3.0527428
+    },
+    {
+      "nom": "Bernard Maître",
+      "type": "bus",
+      "lat": 45.7470448,
+      "lng": 3.0817261
+    },
+    {
+      "nom": "Berthelot",
+      "type": "bus",
+      "lat": 45.7808096,
+      "lng": 3.0691557
+    },
+    {
+      "nom": "Bezance",
+      "type": "bus",
+      "lat": 45.7314933,
+      "lng": 3.0997764
+    },
+    {
+      "nom": "Bibliothèque de l'Hôtel-Dieu",
+      "type": "bus+tram",
+      "lat": 45.7733019,
+      "lng": 3.0825929
+    },
+    {
+      "nom": "Bien Assis",
+      "type": "bus",
+      "lat": 45.7880768,
+      "lng": 3.0947693
+    },
+    {
+      "nom": "Biopôle 1",
+      "type": "bus",
+      "lat": 45.847725,
+      "lng": 3.1668161
+    },
+    {
+      "nom": "Blaise Pascal",
+      "type": "bus",
+      "lat": 45.7947822,
+      "lng": 3.1628283
+    },
+    {
+      "nom": "BLANZAT Clos St Vincent",
+      "type": "bus",
+      "lat": 45.823385,
+      "lng": 3.0700672
+    },
+    {
+      "nom": "Blanzat La Grotte",
+      "type": "bus",
+      "lat": 45.826891,
+      "lng": 3.0697589
+    },
+    {
+      "nom": "Blanzat Puy de l'Orme",
+      "type": "bus",
+      "lat": 45.8272547,
+      "lng": 3.0656472
+    },
+    {
+      "nom": "Boisbeaumont",
+      "type": "bus",
+      "lat": 45.7544495,
+      "lng": 3.0936559
+    },
+    {
+      "nom": "Boisséjour Monument",
+      "type": "bus",
+      "lat": 45.7436423,
+      "lng": 3.058986
+    },
+    {
+      "nom": "Boisséjour Place",
+      "type": "bus",
+      "lat": 45.7439683,
+      "lng": 3.0622884
+    },
+    {
+      "nom": "Boisvallon",
+      "type": "bus",
+      "lat": 45.7468798,
+      "lng": 3.0634016
+    },
+    {
+      "nom": "Bonneval",
+      "type": "bus",
+      "lat": 45.7303224,
+      "lng": 3.1440342
+    },
+    {
+      "nom": "Bourly",
+      "type": "bus",
+      "lat": 45.8290473,
+      "lng": 3.1455918
+    },
+    {
+      "nom": "Boussadet",
+      "type": "bus",
+      "lat": 45.8326006,
+      "lng": 3.1053268
+    },
+    {
+      "nom": "Boutons d'Or",
+      "type": "bus",
+      "lat": 45.7314294,
+      "lng": 3.1854357
+    },
+    {
+      "nom": "Bouys",
+      "type": "bus",
+      "lat": 45.793704,
+      "lng": 3.0624582
+    },
+    {
+      "nom": "Brennus",
+      "type": "bus",
+      "lat": 45.8118571,
+      "lng": 3.1031868
+    },
+    {
+      "nom": "Brézet",
+      "type": "bus",
+      "lat": 45.7798412,
+      "lng": 3.132488
+    },
+    {
+      "nom": "Brugeron",
+      "type": "bus",
+      "lat": 45.8086585,
+      "lng": 3.1294111
+    },
+    {
+      "nom": "Camille et Edmond Leclanché",
+      "type": "bus",
+      "lat": 45.8064994,
+      "lng": 3.1110032
+    },
+    {
+      "nom": "Campus RDI",
+      "type": "bus",
+      "lat": 45.8440686,
+      "lng": 3.1233178
+    },
+    {
+      "nom": "Carnot",
+      "type": "bus",
+      "lat": 45.776244,
+      "lng": 3.095076
+    },
+    {
+      "nom": "Cartoucherie",
+      "type": "bus",
+      "lat": 45.7761051,
+      "lng": 3.0987
+    },
+    {
+      "nom": "Casati",
+      "type": "bus",
+      "lat": 45.7523842,
+      "lng": 3.1077711
+    },
+    {
+      "nom": "Cataroux",
+      "type": "bus",
+      "lat": 45.7891161,
+      "lng": 3.0983913
+    },
+    {
+      "nom": "Catherine de Médicis",
+      "type": "bus",
+      "lat": 45.7697425,
+      "lng": 3.111192
+    },
+    {
+      "nom": "CÉBAZAT Porte de Troyes",
+      "type": "bus",
+      "lat": 45.8412574,
+      "lng": 3.1289346
+    },
+    {
+      "nom": "Cévennes",
+      "type": "bus",
+      "lat": 45.7272932,
+      "lng": 3.1894037
+    },
+    {
+      "nom": "CEYRAT Arténium",
+      "type": "bus",
+      "lat": 45.7339559,
+      "lng": 3.0683418
+    },
+    {
+      "nom": "CEYRAT Fontimbert",
+      "type": "bus",
+      "lat": 45.7340169,
+      "lng": 3.0756767
+    },
+    {
+      "nom": "CEYRAT La Beaumière",
+      "type": "bus",
+      "lat": 45.744989,
+      "lng": 3.069981
+    },
+    {
+      "nom": "CEYRAT Libération",
+      "type": "bus",
+      "lat": 45.7200453,
+      "lng": 3.0680112
+    },
+    {
+      "nom": "CEYRAT Mairie",
+      "type": "bus",
+      "lat": 45.7337875,
+      "lng": 3.0640309
+    },
+    {
+      "nom": "CEYRAT Robinson",
+      "type": "bus",
+      "lat": 45.7257928,
+      "lng": 3.0635038
+    },
+    {
+      "nom": "Ceyre",
+      "type": "bus",
+      "lat": 45.8309521,
+      "lng": 3.0850784
+    },
+    {
+      "nom": "Cézeaux Pellez",
+      "type": "bus+tram",
+      "lat": 45.7611342,
+      "lng": 3.1088528
+    },
+    {
+      "nom": "Chabesses",
+      "type": "bus",
+      "lat": 45.8179626,
+      "lng": 3.1432061
+    },
+    {
+      "nom": "Chalonnax",
+      "type": "bus",
+      "lat": 45.7917873,
+      "lng": 3.0913847
+    },
+    {
+      "nom": "CHAMALIÈRES Aristide Briand",
+      "type": "bus",
+      "lat": 45.7739016,
+      "lng": 3.0639411
+    },
+    {
+      "nom": "Chamalières Mairie",
+      "type": "bus",
+      "lat": 45.7754373,
+      "lng": 3.0681682
+    },
+    {
+      "nom": "Champ Madame",
+      "type": "bus",
+      "lat": 45.7485426,
+      "lng": 3.0849385
+    },
+    {
+      "nom": "Champcourt",
+      "type": "bus",
+      "lat": 45.8158219,
+      "lng": 3.0572681
+    },
+    {
+      "nom": "Champcros",
+      "type": "bus",
+      "lat": 45.8215417,
+      "lng": 3.1069533
+    },
+    {
+      "nom": "Champfleuri",
+      "type": "bus",
+      "lat": 45.793204,
+      "lng": 3.0993324
+    },
+    {
+      "nom": "Champfleuri Forest",
+      "type": "bus",
+      "lat": 45.7932773,
+      "lng": 3.1005626
+    },
+    {
+      "nom": "Champradet",
+      "type": "bus",
+      "lat": 45.7876904,
+      "lng": 3.0595522
+    },
+    {
+      "nom": "Champratel",
+      "type": "bus+tram",
+      "lat": 45.8148965,
+      "lng": 3.1122337
+    },
+    {
+      "nom": "Champvoisin",
+      "type": "bus",
+      "lat": 45.7523299,
+      "lng": 3.1102182
+    },
+    {
+      "nom": "Chanelles",
+      "type": "bus",
+      "lat": 45.7895044,
+      "lng": 3.0802659
+    },
+    {
+      "nom": "Chantemerle",
+      "type": "bus",
+      "lat": 45.7377563,
+      "lng": 3.0607314
+    },
+    {
+      "nom": "Chanteranne",
+      "type": "bus",
+      "lat": 45.7914221,
+      "lng": 3.0959149
+    },
+    {
+      "nom": "Chapelle de l'Agneau",
+      "type": "bus",
+      "lat": 45.7502576,
+      "lng": 3.0794108
+    },
+    {
+      "nom": "Chaptal",
+      "type": "bus",
+      "lat": 45.7583041,
+      "lng": 3.102054
+    },
+    {
+      "nom": "Charcot Fontaine du Large",
+      "type": "bus",
+      "lat": 45.793912,
+      "lng": 3.0910427
+    },
+    {
+      "nom": "Charles Tillon",
+      "type": "bus",
+      "lat": 45.7749304,
+      "lng": 3.1272237
+    },
+    {
+      "nom": "Châtaigneraie",
+      "type": "bus",
+      "lat": 45.7512976,
+      "lng": 3.0742836
+    },
+    {
+      "nom": "Chateaubriand",
+      "type": "bus",
+      "lat": 45.7864022,
+      "lng": 3.080385
+    },
+    {
+      "nom": "Châteaugay Mairie",
+      "type": "bus",
+      "lat": 45.8498767,
+      "lng": 3.0841152
+    },
+    {
+      "nom": "Chaussades",
+      "type": "bus",
+      "lat": 45.7508807,
+      "lng": 3.0764054
+    },
+    {
+      "nom": "Chaux Blanche",
+      "type": "bus",
+      "lat": 45.7388372,
+      "lng": 3.1725019
+    },
+    {
+      "nom": "Chavaroche",
+      "type": "bus",
+      "lat": 45.8471672,
+      "lng": 3.0870743
+    },
+    {
+      "nom": "Chazots",
+      "type": "bus",
+      "lat": 45.7532315,
+      "lng": 3.1362612
+    },
+    {
+      "nom": "CHU Estaing",
+      "type": "bus",
+      "lat": 45.784139,
+      "lng": 3.1095774
+    },
+    {
+      "nom": "CHU Gabriel Montpied",
+      "type": "bus+tram",
+      "lat": 45.7613651,
+      "lng": 3.0895601
+    },
+    {
+      "nom": "Cité Centre Enfance",
+      "type": "bus",
+      "lat": 45.7683768,
+      "lng": 3.0718628
+    },
+    {
+      "nom": "Cladenas",
+      "type": "bus",
+      "lat": 45.8302404,
+      "lng": 3.1042438
+    },
+    {
+      "nom": "Clémensat",
+      "type": "bus",
+      "lat": 45.7223498,
+      "lng": 3.0802371
+    },
+    {
+      "nom": "Clément Ader",
+      "type": "bus",
+      "lat": 45.8158521,
+      "lng": 3.1521015
+    },
+    {
+      "nom": "Clermont-Sud-Aubière",
+      "type": "bus",
+      "lat": 45.7587958,
+      "lng": 3.1449276
+    },
+    {
+      "nom": "Clos des Vignes",
+      "type": "bus",
+      "lat": 45.792649,
+      "lng": 3.0925957
+    },
+    {
+      "nom": "Clos Four",
+      "type": "bus",
+      "lat": 45.7869002,
+      "lng": 3.0982988
+    },
+    {
+      "nom": "Clovis Hugues",
+      "type": "bus",
+      "lat": 45.7727508,
+      "lng": 3.1106082
+    },
+    {
+      "nom": "Collège Albert Camus",
+      "type": "bus+tram",
+      "lat": 45.807454,
+      "lng": 3.1067308
+    },
+    {
+      "nom": "Colombier",
+      "type": "bus",
+      "lat": 45.7803451,
+      "lng": 3.0480744
+    },
+    {
+      "nom": "Combes",
+      "type": "bus",
+      "lat": 45.7665766,
+      "lng": 3.0669274
+    },
+    {
+      "nom": "Condamine",
+      "type": "bus",
+      "lat": 45.7769746,
+      "lng": 3.1126204
+    },
+    {
+      "nom": "Condorcet",
+      "type": "bus",
+      "lat": 45.7398036,
+      "lng": 3.1920371
+    },
+    {
+      "nom": "Côte Blatin",
+      "type": "bus",
+      "lat": 45.7710597,
+      "lng": 3.0944207
+    },
+    {
+      "nom": "Côtes Fleuries",
+      "type": "bus",
+      "lat": 45.7945229,
+      "lng": 3.084417
+    },
+    {
+      "nom": "Coumes",
+      "type": "bus",
+      "lat": 45.8314251,
+      "lng": 3.0916913
+    },
+    {
+      "nom": "COURNON Le Gergovie",
+      "type": "bus",
+      "lat": 45.7317448,
+      "lng": 3.1962014
+    },
+    {
+      "nom": "Coutils",
+      "type": "bus",
+      "lat": 45.8250128,
+      "lng": 3.1051037
+    },
+    {
+      "nom": "Croix de Frun",
+      "type": "bus",
+      "lat": 45.7584771,
+      "lng": 3.0631106
+    },
+    {
+      "nom": "Croix de Neyrat",
+      "type": "bus+tram",
+      "lat": 45.8143464,
+      "lng": 3.1068748
+    },
+    {
+      "nom": "Croix Léonardoux",
+      "type": "bus",
+      "lat": 45.7734875,
+      "lng": 3.1231594
+    },
+    {
+      "nom": "Croix Neuve",
+      "type": "bus",
+      "lat": 45.7543833,
+      "lng": 3.0877197
+    },
+    {
+      "nom": "Croix Notre-Dame",
+      "type": "bus",
+      "lat": 45.7334017,
+      "lng": 3.1425223
+    },
+    {
+      "nom": "Cugnot",
+      "type": "bus",
+      "lat": 45.7826312,
+      "lng": 3.1232339
+    },
+    {
+      "nom": "Daguerre",
+      "type": "bus",
+      "lat": 45.7592231,
+      "lng": 3.0961792
+    },
+    {
+      "nom": "Debussy",
+      "type": "bus",
+      "lat": 45.8176892,
+      "lng": 3.1070543
+    },
+    {
+      "nom": "Delille Montlosier",
+      "type": "bus+tram",
+      "lat": 45.7812036,
+      "lng": 3.0904616
+    },
+    {
+      "nom": "Delille Salford",
+      "type": "bus",
+      "lat": 45.7794995,
+      "lng": 3.0921872
+    },
+    {
+      "nom": "Delille Trudaine",
+      "type": "bus",
+      "lat": 45.7796596,
+      "lng": 3.0909185
+    },
+    {
+      "nom": "Diderot",
+      "type": "bus",
+      "lat": 45.804695,
+      "lng": 3.1092381
+    },
+    {
+      "nom": "Docteur Hospital",
+      "type": "bus",
+      "lat": 45.794196,
+      "lng": 3.0876572
+    },
+    {
+      "nom": "Docteur Jay",
+      "type": "bus",
+      "lat": 45.8277158,
+      "lng": 3.0514958
+    },
+    {
+      "nom": "Docteur Mally",
+      "type": "bus",
+      "lat": 45.7885039,
+      "lng": 3.1254588
+    },
+    {
+      "nom": "Dômes",
+      "type": "bus",
+      "lat": 45.7320063,
+      "lng": 3.1934193
+    },
+    {
+      "nom": "Dr Vigenaud",
+      "type": "bus",
+      "lat": 45.7636535,
+      "lng": 3.0986763
+    },
+    {
+      "nom": "Drelon",
+      "type": "bus",
+      "lat": 45.7702092,
+      "lng": 3.0801973
+    },
+    {
+      "nom": "Duclaux",
+      "type": "bus",
+      "lat": 45.7762066,
+      "lng": 3.0720057
+    },
+    {
+      "nom": "DURTOL Clinique",
+      "type": "bus",
+      "lat": 45.7937908,
+      "lng": 3.0532056
+    },
+    {
+      "nom": "Edgar Quinet",
+      "type": "bus",
+      "lat": 45.8049991,
+      "lng": 3.1188437
+    },
+    {
+      "nom": "Edmond Rostand",
+      "type": "bus",
+      "lat": 45.7984989,
+      "lng": 3.1698558
+    },
+    {
+      "nom": "Égalité",
+      "type": "bus",
+      "lat": 45.7463227,
+      "lng": 3.0603671
+    },
+    {
+      "nom": "Église d'Argnat",
+      "type": "bus",
+      "lat": 45.8449352,
+      "lng": 3.0309203
+    },
+    {
+      "nom": "Église de Pérignat",
+      "type": "bus",
+      "lat": 45.7366401,
+      "lng": 3.1411851
+    },
+    {
+      "nom": "Élie Jaloustre",
+      "type": "bus",
+      "lat": 45.8226124,
+      "lng": 3.1454144
+    },
+    {
+      "nom": "Élisée Reclus",
+      "type": "bus",
+      "lat": 45.7905245,
+      "lng": 3.1355317
+    },
+    {
+      "nom": "Émile Coulaudon",
+      "type": "bus",
+      "lat": 45.7549465,
+      "lng": 3.1572711
+    },
+    {
+      "nom": "Émile Zola",
+      "type": "bus",
+      "lat": 45.7945312,
+      "lng": 3.1622966
+    },
+    {
+      "nom": "Estaing",
+      "type": "bus",
+      "lat": 45.786388,
+      "lng": 3.1057813
+    },
+    {
+      "nom": "Étienne Dolet",
+      "type": "bus",
+      "lat": 45.7650571,
+      "lng": 3.086478
+    },
+    {
+      "nom": "Europe",
+      "type": "bus",
+      "lat": 45.774358,
+      "lng": 3.0631353
+    },
+    {
+      "nom": "Europe V.G.E.",
+      "type": "bus",
+      "lat": 45.7753045,
+      "lng": 3.0629097
+    },
+    {
+      "nom": "Évariste Galois",
+      "type": "bus",
+      "lat": 45.7589424,
+      "lng": 3.1346613
+    },
+    {
+      "nom": "Faculté",
+      "type": "bus",
+      "lat": 45.7762962,
+      "lng": 3.09112
+    },
+    {
+      "nom": "Fernand Forest",
+      "type": "bus",
+      "lat": 45.7431294,
+      "lng": 3.0954381
+    },
+    {
+      "nom": "Fernand Raynaud",
+      "type": "bus",
+      "lat": 45.7714632,
+      "lng": 3.1010266
+    },
+    {
+      "nom": "Fontaine du Bac",
+      "type": "bus+tram",
+      "lat": 45.7623088,
+      "lng": 3.1219554
+    },
+    {
+      "nom": "Fontchenille",
+      "type": "bus",
+      "lat": 45.8208584,
+      "lng": 3.1553178
+    },
+    {
+      "nom": "Fontcimagne",
+      "type": "bus",
+      "lat": 45.7978465,
+      "lng": 3.1046467
+    },
+    {
+      "nom": "Fournières",
+      "type": "bus",
+      "lat": 45.7894484,
+      "lng": 3.0616254
+    },
+    {
+      "nom": "Fradière",
+      "type": "bus",
+      "lat": 45.8292469,
+      "lng": 3.077638
+    },
+    {
+      "nom": "Franklin Roosevelt",
+      "type": "bus",
+      "lat": 45.7771672,
+      "lng": 3.0734702
+    },
+    {
+      "nom": "Frédéric Brunmurol",
+      "type": "bus",
+      "lat": 45.7329904,
+      "lng": 3.0643355
+    },
+    {
+      "nom": "Frères Lumière",
+      "type": "bus",
+      "lat": 45.7893241,
+      "lng": 3.1351855
+    },
+    {
+      "nom": "Gabriel Péri",
+      "type": "bus",
+      "lat": 45.7807883,
+      "lng": 3.0764145
+    },
+    {
+      "nom": "Gagarine",
+      "type": "bus",
+      "lat": 45.7926683,
+      "lng": 3.1448392
+    },
+    {
+      "nom": "Gaillard",
+      "type": "bus+tram",
+      "lat": 45.7802776,
+      "lng": 3.0818258
+    },
+    {
+      "nom": "Galaxie",
+      "type": "bus",
+      "lat": 45.7818147,
+      "lng": 3.0736685
+    },
+    {
+      "nom": "Galoubies",
+      "type": "bus",
+      "lat": 45.7674519,
+      "lng": 3.0692404
+    },
+    {
+      "nom": "Gamay",
+      "type": "bus",
+      "lat": 45.7486815,
+      "lng": 3.1345253
+    },
+    {
+      "nom": "Gambetta",
+      "type": "bus",
+      "lat": 45.8151742,
+      "lng": 3.1438769
+    },
+    {
+      "nom": "Gandaillat",
+      "type": "bus",
+      "lat": 45.7787086,
+      "lng": 3.156131
+    },
+    {
+      "nom": "Gare de Cournon",
+      "type": "bus",
+      "lat": 45.7386852,
+      "lng": 3.1701008
+    },
+    {
+      "nom": "Gare SNCF",
+      "type": "bus",
+      "lat": 45.7786535,
+      "lng": 3.099377
+    },
+    {
+      "nom": "Garnaudes",
+      "type": "bus",
+      "lat": 45.7728527,
+      "lng": 3.0605569
+    },
+    {
+      "nom": "Gay Lussac",
+      "type": "bus",
+      "lat": 45.7901003,
+      "lng": 3.1305108
+    },
+    {
+      "nom": "Georges Besse",
+      "type": "bus",
+      "lat": 45.7841535,
+      "lng": 3.1390958
+    },
+    {
+      "nom": "Georges Couthon",
+      "type": "bus",
+      "lat": 45.7357734,
+      "lng": 3.1019872
+    },
+    {
+      "nom": "GERZAT Champfleuri",
+      "type": "bus",
+      "lat": 45.8353909,
+      "lng": 3.1477273
+    },
+    {
+      "nom": "Gerzat Rochefort",
+      "type": "bus",
+      "lat": 45.8307139,
+      "lng": 3.1512764
+    },
+    {
+      "nom": "Gisèle Halimi",
+      "type": "bus",
+      "lat": 45.7863265,
+      "lng": 3.1135954
+    },
+    {
+      "nom": "Glacière",
+      "type": "bus",
+      "lat": 45.7922175,
+      "lng": 3.0793248
+    },
+    {
+      "nom": "Gomel",
+      "type": "bus",
+      "lat": 45.8124867,
+      "lng": 3.0998013
+    },
+    {
+      "nom": "Gourgat",
+      "type": "bus",
+      "lat": 45.7538285,
+      "lng": 3.1392034
+    },
+    {
+      "nom": "Grand Rue / Mairie de Malintrat",
+      "type": "bus",
+      "lat": 45.8153116,
+      "lng": 3.1866152
+    },
+    {
+      "nom": "Grande Halle Zénith",
+      "type": "bus",
+      "lat": 45.7392323,
+      "lng": 3.1595701
+    },
+    {
+      "nom": "Gravanches",
+      "type": "bus",
+      "lat": 45.7893689,
+      "lng": 3.1181158
+    },
+    {
+      "nom": "Gravenoire",
+      "type": "bus",
+      "lat": 45.7531637,
+      "lng": 3.0623446
+    },
+    {
+      "nom": "Gravière",
+      "type": "bus+tram",
+      "lat": 45.7896142,
+      "lng": 3.1101253
+    },
+    {
+      "nom": "Graviers",
+      "type": "bus",
+      "lat": 45.8458269,
+      "lng": 3.1095025
+    },
+    {
+      "nom": "Grenier",
+      "type": "bus",
+      "lat": 45.7690933,
+      "lng": 3.1239736
+    },
+    {
+      "nom": "Grolière",
+      "type": "bus",
+      "lat": 45.7887196,
+      "lng": 3.1024602
+    },
+    {
+      "nom": "Gustave Flaubert",
+      "type": "bus",
+      "lat": 45.7565595,
+      "lng": 3.1280552
+    },
+    {
+      "nom": "Hauts de CHAMALIÈRES",
+      "type": "bus",
+      "lat": 45.7820046,
+      "lng": 3.0532028
+    },
+    {
+      "nom": "Hauts de Chanturgue",
+      "type": "bus+tram",
+      "lat": 45.8107374,
+      "lng": 3.1071202
+    },
+    {
+      "nom": "Henri Barbusse",
+      "type": "bus",
+      "lat": 45.7834904,
+      "lng": 3.0843479
+    },
+    {
+      "nom": "Herbet",
+      "type": "bus",
+      "lat": 45.7794571,
+      "lng": 3.1153317
+    },
+    {
+      "nom": "Hôtel de Ville",
+      "type": "bus+tram",
+      "lat": 45.7805853,
+      "lng": 3.0849984
+    },
+    {
+      "nom": "Iliane",
+      "type": "bus",
+      "lat": 45.807824,
+      "lng": 3.1260274
+    },
+    {
+      "nom": "Industrie",
+      "type": "bus",
+      "lat": 45.7500947,
+      "lng": 3.1595566
+    },
+    {
+      "nom": "INSPÉ Chamalières",
+      "type": "bus",
+      "lat": 45.7739642,
+      "lng": 3.0725011
+    },
+    {
+      "nom": "Jacques Brel",
+      "type": "bus",
+      "lat": 45.7937141,
+      "lng": 3.0729854
+    },
+    {
+      "nom": "Jacques Prévert",
+      "type": "bus",
+      "lat": 45.7323775,
+      "lng": 3.0637052
+    },
+    {
+      "nom": "Janolle",
+      "type": "bus",
+      "lat": 45.7314387,
+      "lng": 3.0720413
+    },
+    {
+      "nom": "Jardiniers",
+      "type": "bus",
+      "lat": 45.8025753,
+      "lng": 3.1196798
+    },
+    {
+      "nom": "Jarzy",
+      "type": "bus",
+      "lat": 45.830016,
+      "lng": 3.0809612
+    },
+    {
+      "nom": "Jaude",
+      "type": "bus+tram",
+      "lat": 45.7767584,
+      "lng": 3.0817865
+    },
+    {
+      "nom": "Jean Auchatraire",
+      "type": "bus",
+      "lat": 45.7978381,
+      "lng": 3.1418933
+    },
+    {
+      "nom": "Jean Jaurès",
+      "type": "bus",
+      "lat": 45.7680595,
+      "lng": 3.0830839
+    },
+    {
+      "nom": "Jean Mermoz",
+      "type": "bus",
+      "lat": 45.791449,
+      "lng": 3.1391319
+    },
+    {
+      "nom": "Jean Moulin",
+      "type": "bus",
+      "lat": 45.7765289,
+      "lng": 3.1168184
+    },
+    {
+      "nom": "Jean-Baptiste Dumas",
+      "type": "bus",
+      "lat": 45.7836106,
+      "lng": 3.0943539
+    },
+    {
+      "nom": "Jean-Marie Bellime",
+      "type": "bus",
+      "lat": 45.8358561,
+      "lng": 3.095092
+    },
+    {
+      "nom": "Joliot Curie",
+      "type": "bus",
+      "lat": 45.7515998,
+      "lng": 3.1167673
+    },
+    {
+      "nom": "Joseph Claussat",
+      "type": "bus",
+      "lat": 45.7787052,
+      "lng": 3.0636084
+    },
+    {
+      "nom": "Jules Ferry",
+      "type": "bus",
+      "lat": 45.8204611,
+      "lng": 3.1444144
+    },
+    {
+      "nom": "Jules Verne",
+      "type": "bus",
+      "lat": 45.7816522,
+      "lng": 3.1201386
+    },
+    {
+      "nom": "Kennedy",
+      "type": "bus",
+      "lat": 45.8001724,
+      "lng": 3.121104
+    },
+    {
+      "nom": "Kepler",
+      "type": "bus",
+      "lat": 45.7795176,
+      "lng": 3.1216346
+    },
+    {
+      "nom": "l'Hermitage",
+      "type": "bus",
+      "lat": 45.7652821,
+      "lng": 3.125556
+    },
+    {
+      "nom": "La Bezou",
+      "type": "bus",
+      "lat": 45.7439247,
+      "lng": 3.1078842
+    },
+    {
+      "nom": "La Brune",
+      "type": "bus",
+      "lat": 45.7508008,
+      "lng": 3.0619935
+    },
+    {
+      "nom": "La Charme",
+      "type": "bus",
+      "lat": 45.7978076,
+      "lng": 3.1193387
+    },
+    {
+      "nom": "La Chaux",
+      "type": "bus+tram",
+      "lat": 45.7607586,
+      "lng": 3.1041294
+    },
+    {
+      "nom": "La Cheyre",
+      "type": "bus",
+      "lat": 45.8037827,
+      "lng": 3.0561246
+    },
+    {
+      "nom": "La Commandante",
+      "type": "bus",
+      "lat": 45.8491452,
+      "lng": 3.0892878
+    },
+    {
+      "nom": "La Grave",
+      "type": "bus",
+      "lat": 45.796678,
+      "lng": 3.0599425
+    },
+    {
+      "nom": "La Montorière",
+      "type": "bus",
+      "lat": 45.7118367,
+      "lng": 3.1911729
+    },
+    {
+      "nom": "La Pardieu",
+      "type": "bus",
+      "lat": 45.7618977,
+      "lng": 3.1326476
+    },
+    {
+      "nom": "La Pardieu Gare",
+      "type": "bus+tram",
+      "lat": 45.7667881,
+      "lng": 3.1342104
+    },
+    {
+      "nom": "La Plaine",
+      "type": "bus+tram",
+      "lat": 45.8116647,
+      "lng": 3.1142173
+    },
+    {
+      "nom": "La Poélade",
+      "type": "bus",
+      "lat": 45.7383798,
+      "lng": 3.180184
+    },
+    {
+      "nom": "La Sarre",
+      "type": "bus",
+      "lat": 45.7694319,
+      "lng": 3.1156989
+    },
+    {
+      "nom": "La Saunière",
+      "type": "bus",
+      "lat": 45.7173054,
+      "lng": 3.1881778
+    },
+    {
+      "nom": "La Serve",
+      "type": "bus",
+      "lat": 45.7275365,
+      "lng": 3.0917223
+    },
+    {
+      "nom": "Lac",
+      "type": "bus",
+      "lat": 45.7316999,
+      "lng": 3.1910643
+    },
+    {
+      "nom": "Lacheix",
+      "type": "bus",
+      "lat": 45.7236306,
+      "lng": 3.083394
+    },
+    {
+      "nom": "Ladoux Ouest",
+      "type": "bus",
+      "lat": 45.8409398,
+      "lng": 3.1208791
+    },
+    {
+      "nom": "Landais",
+      "type": "bus",
+      "lat": 45.7638922,
+      "lng": 3.1167406
+    },
+    {
+      "nom": "Layat",
+      "type": "bus",
+      "lat": 45.791194,
+      "lng": 3.0535244
+    },
+    {
+      "nom": "LE CENDRE Pandières",
+      "type": "bus",
+      "lat": 45.7122894,
+      "lng": 3.1846914
+    },
+    {
+      "nom": "Le Château",
+      "type": "bus",
+      "lat": 45.7700641,
+      "lng": 3.1079059
+    },
+    {
+      "nom": "Le Maillot",
+      "type": "bus",
+      "lat": 45.8492358,
+      "lng": 3.1017323
+    },
+    {
+      "nom": "Le Mas",
+      "type": "bus",
+      "lat": 45.75522,
+      "lng": 3.1042217
+    },
+    {
+      "nom": "Le Parc",
+      "type": "bus",
+      "lat": 45.7538221,
+      "lng": 3.0968544
+    },
+    {
+      "nom": "Le Pont",
+      "type": "bus",
+      "lat": 45.7735451,
+      "lng": 3.1204982
+    },
+    {
+      "nom": "Lecoq",
+      "type": "bus",
+      "lat": 45.7714199,
+      "lng": 3.0868521
+    },
+    {
+      "nom": "Léon Blum",
+      "type": "bus+tram",
+      "lat": 45.7627945,
+      "lng": 3.0984352
+    },
+    {
+      "nom": "Léon Maniez",
+      "type": "bus",
+      "lat": 45.7967418,
+      "lng": 3.1648561
+    },
+    {
+      "nom": "Léonard de Vinci",
+      "type": "bus",
+      "lat": 45.7604413,
+      "lng": 3.135786
+    },
+    {
+      "nom": "Les Allées d'Aussandra",
+      "type": "bus",
+      "lat": 45.7137751,
+      "lng": 3.1940059
+    },
+    {
+      "nom": "Les Balladoux",
+      "type": "bus",
+      "lat": 45.8429221,
+      "lng": 3.1187137
+    },
+    {
+      "nom": "Les Carmes",
+      "type": "bus+tram",
+      "lat": 45.7824334,
+      "lng": 3.0942536
+    },
+    {
+      "nom": "Les Caves",
+      "type": "bus",
+      "lat": 45.7325429,
+      "lng": 3.1052222
+    },
+    {
+      "nom": "Les Chabades",
+      "type": "bus",
+      "lat": 45.7528167,
+      "lng": 3.0838102
+    },
+    {
+      "nom": "Les Chambérys",
+      "type": "bus",
+      "lat": 45.8476346,
+      "lng": 3.091912
+    },
+    {
+      "nom": "Les Côtes",
+      "type": "bus",
+      "lat": 45.7997197,
+      "lng": 3.084539
+    },
+    {
+      "nom": "Les Lierres",
+      "type": "bus",
+      "lat": 45.7952237,
+      "lng": 3.076255
+    },
+    {
+      "nom": "Les Littes",
+      "type": "bus",
+      "lat": 45.8217909,
+      "lng": 3.0528199
+    },
+    {
+      "nom": "Les Pègues",
+      "type": "bus",
+      "lat": 45.8240747,
+      "lng": 3.1496521
+    },
+    {
+      "nom": "Les Perches",
+      "type": "bus",
+      "lat": 45.8303021,
+      "lng": 3.0992485
+    },
+    {
+      "nom": "Les Pistes",
+      "type": "bus+tram",
+      "lat": 45.7989505,
+      "lng": 3.1133753
+    },
+    {
+      "nom": "Les Plats",
+      "type": "bus",
+      "lat": 45.7646771,
+      "lng": 3.0928136
+    },
+    {
+      "nom": "Les Roches",
+      "type": "bus",
+      "lat": 45.7482045,
+      "lng": 3.0765286
+    },
+    {
+      "nom": "Les Sauzes",
+      "type": "bus",
+      "lat": 45.756684,
+      "lng": 3.1372765
+    },
+    {
+      "nom": "Les Sureaux",
+      "type": "bus",
+      "lat": 45.773056,
+      "lng": 3.1139188
+    },
+    {
+      "nom": "Les Teytos",
+      "type": "bus",
+      "lat": 45.7249226,
+      "lng": 3.0855398
+    },
+    {
+      "nom": "Les Tonnelles",
+      "type": "bus",
+      "lat": 45.7287314,
+      "lng": 3.1009085
+    },
+    {
+      "nom": "Les Trois Fées",
+      "type": "bus",
+      "lat": 45.8370336,
+      "lng": 3.1049491
+    },
+    {
+      "nom": "Les Vergnes",
+      "type": "bus+tram",
+      "lat": 45.8127472,
+      "lng": 3.1276011
+    },
+    {
+      "nom": "Les Vignes",
+      "type": "bus+tram",
+      "lat": 45.802619,
+      "lng": 3.1066979
+    },
+    {
+      "nom": "Letrade",
+      "type": "bus",
+      "lat": 45.8253214,
+      "lng": 3.0502794
+    },
+    {
+      "nom": "Limagne",
+      "type": "bus",
+      "lat": 45.8315566,
+      "lng": 3.1452203
+    },
+    {
+      "nom": "Limousin",
+      "type": "bus",
+      "lat": 45.7873866,
+      "lng": 3.0652902
+    },
+    {
+      "nom": "Liondards",
+      "type": "bus",
+      "lat": 45.7590379,
+      "lng": 3.0866503
+    },
+    {
+      "nom": "Littré",
+      "type": "bus",
+      "lat": 45.7684636,
+      "lng": 3.0795405
+    },
+    {
+      "nom": "Louis Chartoire",
+      "type": "bus",
+      "lat": 45.7971894,
+      "lng": 3.136227
+    },
+    {
+      "nom": "Louis Pasteur",
+      "type": "bus",
+      "lat": 45.7643318,
+      "lng": 3.0446345
+    },
+    {
+      "nom": "Lycée Ambroise Brugière",
+      "type": "bus+tram",
+      "lat": 45.8016745,
+      "lng": 3.1104554
+    },
+    {
+      "nom": "Lycée Gergovie",
+      "type": "bus",
+      "lat": 45.7823749,
+      "lng": 3.1181193
+    },
+    {
+      "nom": "Lycée La Fayette",
+      "type": "bus+tram",
+      "lat": 45.7635361,
+      "lng": 3.1296412
+    },
+    {
+      "nom": "Lycée Lafayette",
+      "type": "bus",
+      "lat": 45.7643529,
+      "lng": 3.1279841
+    },
+    {
+      "nom": "Lycée Sidoine Apollinaire",
+      "type": "bus",
+      "lat": 45.7818418,
+      "lng": 3.0863353
+    },
+    {
+      "nom": "Lycée Valéry Giscard d'Estaing",
+      "type": "bus",
+      "lat": 45.776627,
+      "lng": 3.0512128
+    },
+    {
+      "nom": "Maison de la Culture",
+      "type": "bus+tram",
+      "lat": 45.7708778,
+      "lng": 3.0849375
+    },
+    {
+      "nom": "Maison des Sports",
+      "type": "bus",
+      "lat": 45.786857,
+      "lng": 3.0845914
+    },
+    {
+      "nom": "Malintrat",
+      "type": "bus",
+      "lat": 45.7952305,
+      "lng": 3.1232701
+    },
+    {
+      "nom": "MALINTRAT Charrots",
+      "type": "bus",
+      "lat": 45.8163795,
+      "lng": 3.1888629
+    },
+    {
+      "nom": "Malintrat La Joselle",
+      "type": "bus",
+      "lat": 45.812218,
+      "lng": 3.1878403
+    },
+    {
+      "nom": "Manzats",
+      "type": "bus",
+      "lat": 45.7437902,
+      "lng": 3.1667231
+    },
+    {
+      "nom": "Marcel Michelin",
+      "type": "bus",
+      "lat": 45.7537299,
+      "lng": 3.1133947
+    },
+    {
+      "nom": "Margeride",
+      "type": "bus+tram",
+      "lat": 45.7608782,
+      "lng": 3.1199754
+    },
+    {
+      "nom": "Maronne",
+      "type": "bus",
+      "lat": 45.7111811,
+      "lng": 3.188653
+    },
+    {
+      "nom": "Martyrs",
+      "type": "bus",
+      "lat": 45.8230791,
+      "lng": 3.1462518
+    },
+    {
+      "nom": "Massenet",
+      "type": "bus",
+      "lat": 45.7703934,
+      "lng": 3.0642348
+    },
+    {
+      "nom": "Matharet",
+      "type": "bus",
+      "lat": 45.747851,
+      "lng": 3.0691102
+    },
+    {
+      "nom": "Matussat Châtaigneraie",
+      "type": "bus",
+      "lat": 45.7489196,
+      "lng": 3.0693288
+    },
+    {
+      "nom": "Maurice Pourchon",
+      "type": "bus",
+      "lat": 45.7912202,
+      "lng": 3.0867746
+    },
+    {
+      "nom": "Mercoeur",
+      "type": "bus",
+      "lat": 45.8096095,
+      "lng": 3.1197998
+    },
+    {
+      "nom": "Meuniers",
+      "type": "bus",
+      "lat": 45.7660365,
+      "lng": 3.1045779
+    },
+    {
+      "nom": "Michel Ange",
+      "type": "bus",
+      "lat": 45.7604164,
+      "lng": 3.1317327
+    },
+    {
+      "nom": "Michel de l'Hospital",
+      "type": "bus",
+      "lat": 45.7777371,
+      "lng": 3.0902614
+    },
+    {
+      "nom": "Midi",
+      "type": "bus",
+      "lat": 45.7330736,
+      "lng": 3.1880294
+    },
+    {
+      "nom": "Montagnards",
+      "type": "bus",
+      "lat": 45.7599361,
+      "lng": 3.0623183
+    },
+    {
+      "nom": "Montalembert",
+      "type": "bus",
+      "lat": 45.7564013,
+      "lng": 3.0954596
+    },
+    {
+      "nom": "Montcharvais",
+      "type": "bus",
+      "lat": 45.788711,
+      "lng": 3.0562803
+    },
+    {
+      "nom": "Montferrand La Fontaine",
+      "type": "bus+tram",
+      "lat": 45.7914974,
+      "lng": 3.1145484
+    },
+    {
+      "nom": "Montjoly",
+      "type": "bus",
+      "lat": 45.7734436,
+      "lng": 3.0662128
+    },
+    {
+      "nom": "Montpoly",
+      "type": "bus",
+      "lat": 45.7518219,
+      "lng": 3.0809261
+    },
+    {
+      "nom": "Montrognon",
+      "type": "bus",
+      "lat": 45.7321,
+      "lng": 3.0670958
+    },
+    {
+      "nom": "Musée d'Art Roger Quilliot",
+      "type": "bus+tram",
+      "lat": 45.7938012,
+      "lng": 3.117387
+    },
+    {
+      "nom": "Narvik",
+      "type": "bus",
+      "lat": 45.814886,
+      "lng": 3.1057935
+    },
+    {
+      "nom": "Neuf Soleils",
+      "type": "bus",
+      "lat": 45.7672656,
+      "lng": 3.0959231
+    },
+    {
+      "nom": "Neyrat",
+      "type": "bus",
+      "lat": 45.8148105,
+      "lng": 3.1077333
+    },
+    {
+      "nom": "Oradou Gantière",
+      "type": "bus",
+      "lat": 45.7646415,
+      "lng": 3.1246153
+    },
+    {
+      "nom": "Pablo Neruda",
+      "type": "bus",
+      "lat": 45.766612,
+      "lng": 3.1208718
+    },
+    {
+      "nom": "Paillards",
+      "type": "bus",
+      "lat": 45.7261603,
+      "lng": 3.0907674
+    },
+    {
+      "nom": "Parc SNCF",
+      "type": "bus",
+      "lat": 45.7770974,
+      "lng": 3.1012982
+    },
+    {
+      "nom": "Parlette",
+      "type": "bus",
+      "lat": 45.7765371,
+      "lng": 3.1181584
+    },
+    {
+      "nom": "Pascal",
+      "type": "bus",
+      "lat": 45.8288,
+      "lng": 3.1485858
+    },
+    {
+      "nom": "Pasteur Curie",
+      "type": "bus",
+      "lat": 45.793648,
+      "lng": 3.1650293
+    },
+    {
+      "nom": "Pasteur Gilbert",
+      "type": "bus",
+      "lat": 45.7732468,
+      "lng": 3.0763243
+    },
+    {
+      "nom": "Patinoire",
+      "type": "bus",
+      "lat": 45.7615547,
+      "lng": 3.1263573
+    },
+    {
+      "nom": "Patural",
+      "type": "bus",
+      "lat": 45.8280261,
+      "lng": 3.1509164
+    },
+    {
+      "nom": "Paul Bert",
+      "type": "bus",
+      "lat": 45.7716498,
+      "lng": 3.0654827
+    },
+    {
+      "nom": "Paul Cézanne",
+      "type": "bus",
+      "lat": 45.7802321,
+      "lng": 3.0514165
+    },
+    {
+      "nom": "Paul Diomède",
+      "type": "bus",
+      "lat": 45.7843938,
+      "lng": 3.0784658
+    },
+    {
+      "nom": "Paulines",
+      "type": "bus",
+      "lat": 45.7750083,
+      "lng": 3.0952858
+    },
+    {
+      "nom": "Percières",
+      "type": "bus",
+      "lat": 45.7571053,
+      "lng": 3.0869346
+    },
+    {
+      "nom": "PÉRIGNAT-LÈS-SARLIÈVE Les Horts",
+      "type": "bus",
+      "lat": 45.7248484,
+      "lng": 3.147104
+    },
+    {
+      "nom": "Pérouses",
+      "type": "bus",
+      "lat": 45.7351712,
+      "lng": 3.1049768
+    },
+    {
+      "nom": "Pervenches",
+      "type": "bus",
+      "lat": 45.7390867,
+      "lng": 3.1875648
+    },
+    {
+      "nom": "Peuplier",
+      "type": "bus",
+      "lat": 45.748512,
+      "lng": 3.1105959
+    },
+    {
+      "nom": "Pierre Boulanger",
+      "type": "bus",
+      "lat": 45.7803439,
+      "lng": 3.1363422
+    },
+    {
+      "nom": "Pierre Montgroux",
+      "type": "bus",
+      "lat": 45.831488,
+      "lng": 3.0964599
+    },
+    {
+      "nom": "Pierre Puget",
+      "type": "bus",
+      "lat": 45.7610376,
+      "lng": 3.1004331
+    },
+    {
+      "nom": "Pierre-Joseph Proudhon",
+      "type": "bus",
+      "lat": 45.7735165,
+      "lng": 3.0979285
+    },
+    {
+      "nom": "Pionniers",
+      "type": "bus",
+      "lat": 45.746805,
+      "lng": 3.1630829
+    },
+    {
+      "nom": "Pl. de la Farge",
+      "type": "bus",
+      "lat": 45.8090414,
+      "lng": 3.0562161
+    },
+    {
+      "nom": "Pl. de la République",
+      "type": "bus",
+      "lat": 45.7390264,
+      "lng": 3.1970094
+    },
+    {
+      "nom": "Pl. du Montel",
+      "type": "bus",
+      "lat": 45.8270477,
+      "lng": 3.0745943
+    },
+    {
+      "nom": "Pl. F. Rougeyron",
+      "type": "bus",
+      "lat": 45.8495156,
+      "lng": 3.0860399
+    },
+    {
+      "nom": "Place de la Farge",
+      "type": "bus",
+      "lat": 45.808727,
+      "lng": 3.0560519
+    },
+    {
+      "nom": "Place de Verdun",
+      "type": "bus",
+      "lat": 45.7655255,
+      "lng": 3.0829535
+    },
+    {
+      "nom": "Place du Montel",
+      "type": "bus",
+      "lat": 45.827049,
+      "lng": 3.0743093
+    },
+    {
+      "nom": "Place François Mitterrand",
+      "type": "bus",
+      "lat": 45.7299344,
+      "lng": 3.1004693
+    },
+    {
+      "nom": "Place François Rougeyron",
+      "type": "bus",
+      "lat": 45.849472,
+      "lng": 3.0859648
+    },
+    {
+      "nom": "Plaine des Sports",
+      "type": "bus",
+      "lat": 45.7363668,
+      "lng": 3.0658429
+    },
+    {
+      "nom": "Poëlade",
+      "type": "bus",
+      "lat": 45.7436699,
+      "lng": 3.178186
+    },
+    {
+      "nom": "Pointilloux",
+      "type": "bus",
+      "lat": 45.7283223,
+      "lng": 3.1876324
+    },
+    {
+      "nom": "Pommeraie",
+      "type": "bus",
+      "lat": 45.7270691,
+      "lng": 3.145873
+    },
+    {
+      "nom": "Poncillon",
+      "type": "bus",
+      "lat": 45.7612855,
+      "lng": 3.0856844
+    },
+    {
+      "nom": "Pont de Naud",
+      "type": "bus",
+      "lat": 45.7735239,
+      "lng": 3.0952792
+    },
+    {
+      "nom": "Pont de Sarliève",
+      "type": "bus",
+      "lat": 45.7569063,
+      "lng": 3.1495316
+    },
+    {
+      "nom": "Pont de Vallières",
+      "type": "bus",
+      "lat": 45.75817,
+      "lng": 3.0809122
+    },
+    {
+      "nom": "Pont Neuf",
+      "type": "bus",
+      "lat": 45.7910784,
+      "lng": 3.0593846
+    },
+    {
+      "nom": "Pont Saint-Jean",
+      "type": "bus",
+      "lat": 45.7865348,
+      "lng": 3.1182819
+    },
+    {
+      "nom": "Pont St Jean",
+      "type": "bus",
+      "lat": 45.7865247,
+      "lng": 3.1181908
+    },
+    {
+      "nom": "Port Royal",
+      "type": "bus",
+      "lat": 45.7701421,
+      "lng": 3.1018841
+    },
+    {
+      "nom": "Porte de Turin",
+      "type": "bus",
+      "lat": 45.8408107,
+      "lng": 3.1250421
+    },
+    {
+      "nom": "Portefort",
+      "type": "bus",
+      "lat": 45.798903,
+      "lng": 3.1176798
+    },
+    {
+      "nom": "Poste",
+      "type": "bus",
+      "lat": 45.7659405,
+      "lng": 3.0564617
+    },
+    {
+      "nom": "Pourliat",
+      "type": "bus",
+      "lat": 45.7462597,
+      "lng": 3.0940541
+    },
+    {
+      "nom": "Pradeaux",
+      "type": "bus",
+      "lat": 45.7206782,
+      "lng": 3.0680482
+    },
+    {
+      "nom": "Prat",
+      "type": "bus",
+      "lat": 45.7457597,
+      "lng": 3.1090058
+    },
+    {
+      "nom": "Préguille",
+      "type": "bus",
+      "lat": 45.7391447,
+      "lng": 3.0600036
+    },
+    {
+      "nom": "Prés Hauts",
+      "type": "bus",
+      "lat": 45.7474847,
+      "lng": 3.0777225
+    },
+    {
+      "nom": "Pruniers",
+      "type": "bus",
+      "lat": 45.7952589,
+      "lng": 3.1020242
+    },
+    {
+      "nom": "Puyou",
+      "type": "bus",
+      "lat": 45.7950189,
+      "lng": 3.0790593
+    },
+    {
+      "nom": "Quartières",
+      "type": "bus",
+      "lat": 45.8405128,
+      "lng": 3.1053181
+    },
+    {
+      "nom": "Quatre Routes",
+      "type": "bus",
+      "lat": 45.7858189,
+      "lng": 3.0649888
+    },
+    {
+      "nom": "Québec",
+      "type": "bus",
+      "lat": 45.8032977,
+      "lng": 3.1331909
+    },
+    {
+      "nom": "Rabanesse",
+      "type": "bus",
+      "lat": 45.7675648,
+      "lng": 3.0870411
+    },
+    {
+      "nom": "Raye Dieu",
+      "type": "bus",
+      "lat": 45.7686462,
+      "lng": 3.1043761
+    },
+    {
+      "nom": "Redon",
+      "type": "bus",
+      "lat": 45.7229408,
+      "lng": 3.0673437
+    },
+    {
+      "nom": "Regensburg",
+      "type": "bus",
+      "lat": 45.7705812,
+      "lng": 3.0775794
+    },
+    {
+      "nom": "René Bonhomme",
+      "type": "bus",
+      "lat": 45.7992883,
+      "lng": 3.1675047
+    },
+    {
+      "nom": "René Brut",
+      "type": "bus",
+      "lat": 45.7526612,
+      "lng": 3.0881059
+    },
+    {
+      "nom": "René Soulet",
+      "type": "bus",
+      "lat": 45.7764923,
+      "lng": 3.1092409
+    },
+    {
+      "nom": "Renoux",
+      "type": "bus",
+      "lat": 45.7645276,
+      "lng": 3.0552782
+    },
+    {
+      "nom": "République",
+      "type": "bus",
+      "lat": 45.7941955,
+      "lng": 3.1621776
+    },
+    {
+      "nom": "Résidence Pasteur",
+      "type": "bus",
+      "lat": 45.7575772,
+      "lng": 3.1111163
+    },
+    {
+      "nom": "Résidence St Jean",
+      "type": "bus",
+      "lat": 45.7876187,
+      "lng": 3.117654
+    },
+    {
+      "nom": "Résistance",
+      "type": "bus",
+      "lat": 45.7508233,
+      "lng": 3.09117
+    },
+    {
+      "nom": "Rhonez",
+      "type": "bus",
+      "lat": 45.8141207,
+      "lng": 3.1404944
+    },
+    {
+      "nom": "Richelieu",
+      "type": "bus",
+      "lat": 45.7791252,
+      "lng": 3.06687
+    },
+    {
+      "nom": "Rivière",
+      "type": "bus",
+      "lat": 45.7683247,
+      "lng": 3.0780772
+    },
+    {
+      "nom": "Roche Demie",
+      "type": "bus",
+      "lat": 45.8280121,
+      "lng": 3.0544589
+    },
+    {
+      "nom": "Rochefeuille",
+      "type": "bus",
+      "lat": 45.7657932,
+      "lng": 3.1086513
+    },
+    {
+      "nom": "Roches Brunes",
+      "type": "bus",
+      "lat": 45.7562774,
+      "lng": 3.0843641
+    },
+    {
+      "nom": "Rodade",
+      "type": "bus",
+      "lat": 45.7919926,
+      "lng": 3.1064741
+    },
+    {
+      "nom": "Rodolphe Diesel",
+      "type": "bus",
+      "lat": 45.7793848,
+      "lng": 3.1376599
+    },
+    {
+      "nom": "Roger Maerte",
+      "type": "bus",
+      "lat": 45.7595181,
+      "lng": 3.1234136
+    },
+    {
+      "nom": "Romagnat Gergovia",
+      "type": "bus",
+      "lat": 45.7263914,
+      "lng": 3.1012613
+    },
+    {
+      "nom": "Romagnat La Gazelle",
+      "type": "bus",
+      "lat": 45.7380385,
+      "lng": 3.10496
+    },
+    {
+      "nom": "ROMAGNAT Les Sports",
+      "type": "bus",
+      "lat": 45.7348573,
+      "lng": 3.1026895
+    },
+    {
+      "nom": "Romagnat Mairie",
+      "type": "bus",
+      "lat": 45.7303876,
+      "lng": 3.1036105
+    },
+    {
+      "nom": "ROMAGNAT Opme",
+      "type": "bus",
+      "lat": 45.7108999,
+      "lng": 3.0898394
+    },
+    {
+      "nom": "Ronzières",
+      "type": "bus",
+      "lat": 45.7789838,
+      "lng": 3.126814
+    },
+    {
+      "nom": "Rosa Bonheur",
+      "type": "bus",
+      "lat": 45.7343712,
+      "lng": 3.1831956
+    },
+    {
+      "nom": "Roseraie",
+      "type": "bus",
+      "lat": 45.7360687,
+      "lng": 3.0990485
+    },
+    {
+      "nom": "Rossignol",
+      "type": "bus",
+      "lat": 45.7851219,
+      "lng": 3.0707699
+    },
+    {
+      "nom": "Roussillon",
+      "type": "bus",
+      "lat": 45.7530055,
+      "lng": 3.1311486
+    },
+    {
+      "nom": "Route de Berzet",
+      "type": "bus",
+      "lat": 45.7279094,
+      "lng": 3.063927
+    },
+    {
+      "nom": "Rouvier",
+      "type": "bus",
+      "lat": 45.8064567,
+      "lng": 3.1145087
+    },
+    {
+      "nom": "ROYAT AvanC-Breuil",
+      "type": "bus",
+      "lat": 45.7656696,
+      "lng": 3.0417668
+    },
+    {
+      "nom": "ROYAT Pl. Allard",
+      "type": "bus",
+      "lat": 45.7679734,
+      "lng": 3.0561912
+    },
+    {
+      "nom": "Sable d'Étampes",
+      "type": "bus",
+      "lat": 45.7677,
+      "lng": 3.0644589
+    },
+    {
+      "nom": "Sablon Carnot",
+      "type": "bus",
+      "lat": 45.7759694,
+      "lng": 3.0901343
+    },
+    {
+      "nom": "Sablon Lafayette",
+      "type": "bus",
+      "lat": 45.7726608,
+      "lng": 3.0899822
+    },
+    {
+      "nom": "Sacré Cœur",
+      "type": "bus",
+      "lat": 45.7718684,
+      "lng": 3.099012
+    },
+    {
+      "nom": "Saint-Jacques",
+      "type": "bus",
+      "lat": 45.757172,
+      "lng": 3.0966988
+    },
+    {
+      "nom": "Saint-Jacques Dolet",
+      "type": "bus+tram",
+      "lat": 45.7648802,
+      "lng": 3.0890325
+    },
+    {
+      "nom": "Saint-Jacques Loucheur",
+      "type": "bus+tram",
+      "lat": 45.7613301,
+      "lng": 3.0945711
+    },
+    {
+      "nom": "Saint-Rames",
+      "type": "bus",
+      "lat": 45.7729723,
+      "lng": 3.1024017
+    },
+    {
+      "nom": "Saint-Verny",
+      "type": "bus",
+      "lat": 45.7397654,
+      "lng": 3.1064212
+    },
+    {
+      "nom": "Salins Pasteur",
+      "type": "bus",
+      "lat": 45.7716531,
+      "lng": 3.0818595
+    },
+    {
+      "nom": "Salins Pierre de Coubertin",
+      "type": "bus",
+      "lat": 45.76974,
+      "lng": 3.0831594
+    },
+    {
+      "nom": "Salvador Allende",
+      "type": "bus",
+      "lat": 45.772964,
+      "lng": 3.1173043
+    },
+    {
+      "nom": "Samuel Paty",
+      "type": "bus",
+      "lat": 45.7355861,
+      "lng": 3.1922244
+    },
+    {
+      "nom": "Sarliève",
+      "type": "bus",
+      "lat": 45.7453764,
+      "lng": 3.1534961
+    },
+    {
+      "nom": "Saulzet Le Chaud",
+      "type": "bus",
+      "lat": 45.714441,
+      "lng": 3.0702583
+    },
+    {
+      "nom": "Sauzettes",
+      "type": "bus",
+      "lat": 45.7507334,
+      "lng": 3.123274
+    },
+    {
+      "nom": "Savarounes",
+      "type": "bus",
+      "lat": 45.7790384,
+      "lng": 3.062392
+    },
+    {
+      "nom": "SAYAT Bel'Air",
+      "type": "bus",
+      "lat": 45.8314358,
+      "lng": 3.054542
+    },
+    {
+      "nom": "SAYAT Pierre Combe",
+      "type": "bus",
+      "lat": 45.8345597,
+      "lng": 3.047829
+    },
+    {
+      "nom": "Solayer",
+      "type": "bus",
+      "lat": 45.8103674,
+      "lng": 3.1114086
+    },
+    {
+      "nom": "Sounely Gravins",
+      "type": "bus",
+      "lat": 45.7395353,
+      "lng": 3.140342
+    },
+    {
+      "nom": "Square Sabourin",
+      "type": "bus",
+      "lat": 45.794514,
+      "lng": 3.0527402
+    },
+    {
+      "nom": "St Beauzire Lilas",
+      "type": "bus",
+      "lat": 45.8488763,
+      "lng": 3.1745788
+    },
+    {
+      "nom": "St Jacques",
+      "type": "bus",
+      "lat": 45.7572037,
+      "lng": 3.0966343
+    },
+    {
+      "nom": "St Martin",
+      "type": "bus",
+      "lat": 45.7502529,
+      "lng": 3.1213968
+    },
+    {
+      "nom": "St Rames",
+      "type": "bus",
+      "lat": 45.7729081,
+      "lng": 3.1024545
+    },
+    {
+      "nom": "Stade de Durtol",
+      "type": "bus",
+      "lat": 45.7975195,
+      "lng": 3.053258
+    },
+    {
+      "nom": "Stade de l'Artière",
+      "type": "bus",
+      "lat": 45.7447441,
+      "lng": 3.0755617
+    },
+    {
+      "nom": "Stade Gabriel Montpied",
+      "type": "bus+tram",
+      "lat": 45.8130641,
+      "lng": 3.1210852
+    },
+    {
+      "nom": "Stade Gravanches",
+      "type": "bus",
+      "lat": 45.8020362,
+      "lng": 3.1319547
+    },
+    {
+      "nom": "Stade Marcel Michelin",
+      "type": "bus+tram",
+      "lat": 45.7877185,
+      "lng": 3.1063202
+    },
+    {
+      "nom": "Stade Philippe Marcombes",
+      "type": "bus",
+      "lat": 45.7613433,
+      "lng": 3.082246
+    },
+    {
+      "nom": "Sully",
+      "type": "bus",
+      "lat": 45.7924691,
+      "lng": 3.0742596
+    },
+    {
+      "nom": "Tamaris",
+      "type": "bus",
+      "lat": 45.7882128,
+      "lng": 3.062959
+    },
+    {
+      "nom": "Teilhard de Chardin",
+      "type": "bus",
+      "lat": 45.7759961,
+      "lng": 3.0613285
+    },
+    {
+      "nom": "Theix Grand Champ",
+      "type": "bus",
+      "lat": 45.7048733,
+      "lng": 3.0417062
+    },
+    {
+      "nom": "Thermes",
+      "type": "bus",
+      "lat": 45.7700944,
+      "lng": 3.0582043
+    },
+    {
+      "nom": "Thévenot Thibaud",
+      "type": "bus",
+      "lat": 45.7883769,
+      "lng": 3.0899625
+    },
+    {
+      "nom": "Tilleuls",
+      "type": "bus",
+      "lat": 45.7254001,
+      "lng": 3.0882327
+    },
+    {
+      "nom": "Traversin",
+      "type": "bus",
+      "lat": 45.7834464,
+      "lng": 3.0632034
+    },
+    {
+      "nom": "Trémonteix Charcot",
+      "type": "bus",
+      "lat": 45.7930645,
+      "lng": 3.0697255
+    },
+    {
+      "nom": "Trémonteix Paul Eychart",
+      "type": "bus",
+      "lat": 45.7930866,
+      "lng": 3.0659097
+    },
+    {
+      "nom": "Trioux",
+      "type": "bus",
+      "lat": 45.8022352,
+      "lng": 3.1172221
+    },
+    {
+      "nom": "Troènes",
+      "type": "bus",
+      "lat": 45.7374623,
+      "lng": 3.1755555
+    },
+    {
+      "nom": "Trois Résistants",
+      "type": "bus",
+      "lat": 45.7937099,
+      "lng": 3.0773996
+    },
+    {
+      "nom": "UCA - Campus Centre",
+      "type": "bus+tram",
+      "lat": 45.7711976,
+      "lng": 3.0889669
+    },
+    {
+      "nom": "UCA - Campus Cézeaux",
+      "type": "bus+tram",
+      "lat": 45.7589121,
+      "lng": 3.1138008
+    },
+    {
+      "nom": "Vallières",
+      "type": "bus",
+      "lat": 45.7592364,
+      "lng": 3.0838388
+    },
+    {
+      "nom": "Vallon",
+      "type": "bus",
+      "lat": 45.7870943,
+      "lng": 3.069009
+    },
+    {
+      "nom": "Verger du Caire",
+      "type": "bus",
+      "lat": 45.7181216,
+      "lng": 3.1871125
+    },
+    {
+      "nom": "Vergers",
+      "type": "bus",
+      "lat": 45.7560831,
+      "lng": 3.0641968
+    },
+    {
+      "nom": "Vernière",
+      "type": "bus",
+      "lat": 45.7959175,
+      "lng": 3.0854608
+    },
+    {
+      "nom": "Vertaizon",
+      "type": "bus",
+      "lat": 45.7746773,
+      "lng": 3.1012579
+    },
+    {
+      "nom": "Victor Charreton",
+      "type": "bus",
+      "lat": 45.7941993,
+      "lng": 3.063995
+    },
+    {
+      "nom": "Victorien Sardou",
+      "type": "bus",
+      "lat": 45.8077586,
+      "lng": 3.1227491
+    },
+    {
+      "nom": "Viviani",
+      "type": "bus",
+      "lat": 45.8071536,
+      "lng": 3.1182615
+    },
+    {
+      "nom": "Voie Romaine",
+      "type": "bus",
+      "lat": 45.7753913,
+      "lng": 3.0547428
+    },
+    {
+      "nom": "Volney",
+      "type": "bus",
+      "lat": 45.7636843,
+      "lng": 3.0800044
+    },
+    {
+      "nom": "Voltaire INSPÉ",
+      "type": "bus",
+      "lat": 45.7682194,
+      "lng": 3.0745978
+    },
+    {
+      "nom": "Wilson",
+      "type": "bus",
+      "lat": 45.7300224,
+      "lng": 3.0642857
+    },
+    {
+      "nom": "Zone des Gravanches",
+      "type": "bus",
+      "lat": 45.8056411,
+      "lng": 3.1372826
+    }
+  ]
+}
