@@ -176,7 +176,17 @@ export function DvfBlock({ stats, quartier }: DvfBlockProps) {
               </table>
             </div>
             <p className="mt-4 text-[0.65rem] uppercase tracking-wider text-cbf-gray-light">
-              Source&nbsp;: DGFiP — DVF (mise à jour {stats.meta.updated})
+              Source&nbsp;:{" "}
+              <a
+                href="https://files.data.gouv.fr/geo-dvf/latest/csv/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-cbf-gold transition-colors"
+              >
+                DGFiP — Demandes de Valeurs Foncières (data.gouv.fr)
+              </a>{" "}
+              — mise à jour{" "}
+              <time dateTime={stats.meta.updated}>{stats.meta.updated}</time>
             </p>
           </div>
         )}

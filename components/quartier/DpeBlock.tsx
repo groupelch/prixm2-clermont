@@ -132,7 +132,17 @@ export function DpeBlock({ stats }: DpeBlockProps) {
             })}
           </div>
           <p className="mt-5 pt-4 border-t border-cbf-gray-soft text-[0.65rem] uppercase tracking-wider text-cbf-gray-light">
-            Source&nbsp;: ADEME (data.ademe.fr) — mise à jour {stats.meta.updated}
+            Source&nbsp;:{" "}
+            <a
+              href="https://data.ademe.fr/datasets/dpe-france"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-cbf-gold transition-colors"
+            >
+              ADEME — Base nationale des DPE (data.ademe.fr)
+            </a>{" "}
+            — mise à jour{" "}
+            <time dateTime={stats.meta.updated}>{stats.meta.updated}</time>
           </p>
         </div>
       </div>

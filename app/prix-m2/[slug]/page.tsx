@@ -110,6 +110,7 @@ export default function QuartierPage({ params }: { params: Params }) {
         lat={q.coordinates.lat}
         lng={q.coordinates.lng}
         description={q.description}
+        slug={q.slug}
       />
       <AggregateRatingSchema
         nom={q.nom}

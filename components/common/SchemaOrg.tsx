@@ -4,6 +4,7 @@ export function RealEstateAgentSchema() {
   const data = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
+    "@id": `${SITE_URL}/#organization`,
     name: "CBF Conseils — prixm² Clermont-Ferrand",
     url: SITE_URL,
     description:
@@ -11,6 +12,7 @@ export function RealEstateAgentSchema() {
     telephone: PHONE,
     address: {
       "@type": "PostalAddress",
+      streetAddress: "2 Rue des Grandes Chapelles",
       addressLocality: "Clermont-Ferrand",
       addressRegion: "Auvergne-Rhône-Alpes",
       postalCode: "63000",
@@ -21,8 +23,22 @@ export function RealEstateAgentSchema() {
       latitude: 45.7797,
       longitude: 3.0863,
     },
-    areaServed: ["Clermont-Ferrand", "Chamalières", "Beaumont", "Aubière", "Riom"],
+    areaServed: ["Clermont-Ferrand", "Chamalières", "Beaumont", "Aubière", "Riom", "Cournon-d'Auvergne", "Royat"],
     priceRange: "€€",
+    sameAs: [
+      "https://www.cbfconseils.com",
+      "https://www.pagesjaunes.fr/pros/cbf-conseils",
+      "https://www.linkedin.com/company/cbf-conseils",
+      "https://www.google.com/maps/search/CBF+Conseils+Clermont-Ferrand",
+      "https://files.data.gouv.fr/geo-dvf/latest/csv/",
+    ],
+    knowsAbout: [
+      "Prix immobilier Clermont-Ferrand",
+      "Estimation immobilière Puy-de-Dôme",
+      "Marché immobilier Auvergne",
+      "DVF transactions foncières",
+      "DPE performance énergétique",
+    ],
   };
   return (
     <script
@@ -36,12 +52,20 @@ export function WebSiteSchema() {
   const data = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "prixm² Clermont-Ferrand",
+    "@id": `${SITE_URL}/#website`,
+    name: "prixm² Clermont-Fermont",
+    alternateName: "prixm2clermontferrand.fr",
     url: SITE_URL,
+    description:
+      "Référentiel des prix immobiliers à Clermont-Ferrand par quartier — données DVF, DPE, transport, estimation gratuite.",
+    inLanguage: "fr-FR",
     potentialAction: {
       "@type": "SearchAction",
       target: `${SITE_URL}/?q={search_term_string}`,
       "query-input": "required name=search_term_string",
+    },
+    publisher: {
+      "@id": `${SITE_URL}/#organization`,
     },
   };
   return (
@@ -106,24 +130,33 @@ export function PlaceSchema({
   lat,
   lng,
   description,
+  slug,
 }: {
   name: string;
   lat: number;
   lng: number;
   description: string;
+  slug?: string;
 }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Place",
-    name,
+    "@id": slug ? `${SITE_URL}/prix-m2/${slug}#place` : undefined,
+    name: `${name} — Clermont-Ferrand`,
     description,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Clermont-Ferrand",
       addressRegion: "Auvergne-Rhône-Alpes",
+      postalCode: "63000",
       addressCountry: "FR",
     },
     geo: { "@type": "GeoCoordinates", latitude: lat, longitude: lng },
+    containedInPlace: {
+      "@type": "City",
+      name: "Clermont-Ferrand",
+      sameAs: "https://www.wikidata.org/wiki/Q33486",
+    },
   };
   return (
     <script
@@ -174,6 +207,7 @@ export function ArticleSchema({
   title,
   description,
   datePublished,
+  dateModified,
   url,
   authorName,
   authorType = "Organization",
@@ -181,6 +215,7 @@ export function ArticleSchema({
   title: string;
   description: string;
   datePublished: string;
+  dateModified?: string;
   url: string;
   authorName?: string;
   authorType?: "Organization" | "Person";
@@ -191,16 +226,24 @@ export function ArticleSchema({
     headline: title,
     description,
     datePublished,
+    dateModified: dateModified ?? datePublished,
     author: {
       "@type": authorType,
       name: authorName ?? "CBF Conseils",
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
       name: "CBF Conseils",
       url: SITE_URL,
     },
     mainEntityOfPage: url,
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      name: "prixm² Clermont-Ferrand",
+      url: SITE_URL,
+    },
   };
   return (
     <script

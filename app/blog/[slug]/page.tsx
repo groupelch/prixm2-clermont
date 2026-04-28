@@ -91,7 +91,7 @@ export default function ArticlePage({ params }: { params: Params }) {
               </span>
               <span className="inline-flex items-center gap-1.5 text-cbf-gray-light">
                 <Calendar className="h-3 w-3" />
-                {formatDate(article.datePublished)}
+                <time dateTime={article.datePublished}>{formatDate(article.datePublished)}</time>
               </span>
               <span className="inline-flex items-center gap-1.5 text-cbf-gray-light">
                 <Clock className="h-3 w-3" />

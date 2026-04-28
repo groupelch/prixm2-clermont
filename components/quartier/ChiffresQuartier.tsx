@@ -44,9 +44,20 @@ export function ChiffresQuartier({ quartier }: { quartier: Quartier }) {
           <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
             Données clés
           </span>
-          <h2 className="font-playfair text-display-md text-cbf-black font-bold mt-2">
+          <h2 className="font-playfair text-display-md text-cbf-black font-bold mt-2 mb-4">
             Le marché de {quartier.nom} en chiffres
           </h2>
+          <p className="text-cbf-gray leading-relaxed">
+            En{" "}
+            <time dateTime="2026-01-01">2026</time>
+            , le prix moyen au m² à {quartier.nom} est de{" "}
+            <strong>{quartier.prixAppartement ? `${quartier.prixAppartement.toLocaleString("fr-FR")} €/m²` : "—"} pour un appartement</strong>
+            {quartier.prixMaison ? ` et ${quartier.prixMaison.toLocaleString("fr-FR")} €/m² pour une maison` : ""}.
+            L&apos;évolution sur 12 mois est de{" "}
+            <strong>{quartier.evolution12m}</strong>, pour un délai de vente moyen de{" "}
+            <strong>{quartier.delaiVente} jours</strong>.
+            Données issues des Demandes de Valeurs Foncières (DVF) et de l&apos;expertise terrain CBF Conseils.
+          </p>
         </div>
 
         {/* Prix principaux */}
