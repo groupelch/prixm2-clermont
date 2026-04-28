@@ -54,8 +54,6 @@ const nextConfig = {
       { source: "/prix-m2-paris",                   destination: "/prix-m2/clermont-ferrand-jaude",         permanent: true },
       // Pages génériques Wix
       { source: "/estimation-immobiliere",          destination: "/estimation",                              permanent: true },
-      { source: "/estimation",                      destination: "/estimation",                              permanent: false },
-      { source: "/blog",                            destination: "/blog",                                    permanent: false },
     ];
   },
 
