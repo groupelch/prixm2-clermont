@@ -285,6 +285,41 @@ export default function VendreQuartierPage({
         </div>
       </section>
 
+      {/* Analyse spécifique au quartier */}
+      {q.contenu_vendre && (
+        <section className="py-14 md:py-20 bg-cbf-ivory">
+          <div className="container max-w-5xl">
+            <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
+              Analyse spécifique
+            </span>
+            <h2 className="font-playfair text-display-md text-cbf-black font-bold mt-2 mb-8">
+              Vendre à {q.nom} — ce qui change tout
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="md:col-span-2 bg-white border-l-4 border-cbf-gold p-6 rounded-sm">
+                <p className="text-cbf-gray leading-relaxed">{q.contenu_vendre.intro}</p>
+              </div>
+              <div className="border border-cbf-gray-soft rounded-sm p-6 bg-white">
+                <p className="text-[0.65rem] uppercase tracking-wider text-cbf-gold font-bold mb-2">Profil vendeur</p>
+                <p className="text-sm text-cbf-gray leading-relaxed">{q.contenu_vendre.profil_vendeur}</p>
+              </div>
+              <div className="border border-cbf-gray-soft rounded-sm p-6 bg-white">
+                <p className="text-[0.65rem] uppercase tracking-wider text-cbf-gold font-bold mb-2">Quand vendre ?</p>
+                <p className="text-sm text-cbf-gray leading-relaxed">{q.contenu_vendre.timing_conseil}</p>
+              </div>
+              <div className="border border-cbf-gold/30 bg-cbf-gold/5 rounded-sm p-6">
+                <p className="text-[0.65rem] uppercase tracking-wider text-cbf-gold font-bold mb-2">Argument vendeur clé</p>
+                <p className="text-sm text-cbf-gray leading-relaxed">{q.contenu_vendre.argument_cle}</p>
+              </div>
+              <div className="border border-amber-400/30 bg-amber-50 rounded-sm p-6">
+                <p className="text-[0.65rem] uppercase tracking-wider text-amber-700 font-bold mb-2">Piège local à éviter</p>
+                <p className="text-sm text-cbf-gray leading-relaxed">{q.contenu_vendre.piege_local}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Liens internes */}
       <section className="py-14 md:py-20 bg-cbf-ivory">
         <div className="container max-w-5xl">

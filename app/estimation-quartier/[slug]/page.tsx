@@ -214,6 +214,39 @@ export default function EstimationQuartierPage({
         </div>
       </section>
 
+      {/* Estimation locale spécifique */}
+      {q.contenu_estimation && (
+        <section className="py-14 md:py-20 bg-cbf-ivory">
+          <div className="container max-w-5xl">
+            <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
+              Estimation locale
+            </span>
+            <h2 className="font-playfair text-display-md text-cbf-black font-bold mt-2 mb-8">
+              Estimer à {q.nom} — les spécificités locales
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-white border-l-4 border-cbf-gold p-6 rounded-sm">
+                <p className="text-cbf-gray leading-relaxed">{q.contenu_estimation.intro}</p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="border border-cbf-gray-soft rounded-sm p-6 bg-white">
+                  <p className="text-[0.65rem] uppercase tracking-wider text-cbf-gold font-bold mb-2">Complexité locale</p>
+                  <p className="text-sm text-cbf-gray leading-relaxed">{q.contenu_estimation.methode_locale}</p>
+                </div>
+                <div className="border border-cbf-gray-soft rounded-sm p-6 bg-white">
+                  <p className="text-[0.65rem] uppercase tracking-wider text-cbf-gold font-bold mb-2">Cas concret</p>
+                  <p className="text-sm text-cbf-gray leading-relaxed">{q.contenu_estimation.cas_concret}</p>
+                </div>
+                <div className="border border-cbf-gold/30 bg-cbf-gold/5 rounded-sm p-6">
+                  <p className="text-[0.65rem] uppercase tracking-wider text-cbf-gold font-bold mb-2">Facteur décisif</p>
+                  <p className="text-sm text-cbf-gray leading-relaxed">{q.contenu_estimation.facteur_prix}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Liens internes */}
       <section className="py-14 md:py-20 bg-cbf-ivory">
         <div className="container max-w-5xl">

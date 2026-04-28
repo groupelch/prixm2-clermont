@@ -3,6 +3,21 @@ export interface FaqItem {
   reponse: string;
 }
 
+export interface ContenuVendre {
+  intro: string;
+  profil_vendeur: string;
+  timing_conseil: string;
+  argument_cle: string;
+  piege_local: string;
+}
+
+export interface ContenuEstimation {
+  intro: string;
+  methode_locale: string;
+  cas_concret: string;
+  facteur_prix: string;
+}
+
 export interface Quartier {
   slug: string;
   nom: string;
@@ -27,6 +42,10 @@ export interface Quartier {
   faq: FaqItem[];
   coordinates: { lat: number; lng: number };
   superficie?: number;
+  /** Contenu unique pour la page /vendre/[slug] */
+  contenu_vendre?: ContenuVendre;
+  /** Contenu unique pour la page /estimation-quartier/[slug] */
+  contenu_estimation?: ContenuEstimation;
 }
 
 const ECART_PCT = 0.18;
@@ -67,6 +86,8 @@ interface Seed {
   faq: FaqItem[];
   coordinates: { lat: number; lng: number };
   superficie?: number;
+  contenu_vendre?: ContenuVendre;
+  contenu_estimation?: ContenuEstimation;
 }
 
 const seeds: Seed[] = [
@@ -116,6 +137,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7793, lng: 3.0877 },
+    contenu_vendre: {
+      intro:
+        "Vendre au Centre-Ville de Clermont, c'est composer avec un patchwork de micro-marchés qui ne se ressemblent pas : une vente rue Pascal n'a rien à voir avec une vente avenue de la Libération. La rue, l'étage, et surtout l'orientation pèsent davantage que le m² brut. Le centre attire les acheteurs les plus divers — investisseurs, primo-accédants, retraites mutées — chacun avec ses critères propres. Conséquence : un même bien peut séduire trois profils très différents, et l'agent doit savoir lequel cibler en priorité selon les caractéristiques précises du logement.",
+      profil_vendeur:
+        "Profils mixtes : retraites qui quittent un grand T4 devenu trop encombrant, mutations professionnelles vers Lyon ou Paris, héritiers en succession (hôtels particuliers du XIXe). Chaque profil a son urgence — succession = délai serré, mutation = négociation rapide, retraite = patience.",
+      timing_conseil:
+        "Privilégier la mise en marché entre fin février et juin : les acheteurs centre-ville sont surtout actifs au printemps. Éviter juillet-août (centre vidé par les vacances) et décembre. Les locations courte durée étant désormais encadrées par la mairie, vérifier le règlement de copropriété AVANT mise en ligne.",
+      argument_cle:
+        "Pouvoir tout faire à pied — courses, transports, restaurants, services. À l'heure où le coût de la voiture explose, ce critère pèse lourd, surtout pour les retraites et jeunes actifs sans permis. À mettre en avant photos à l'appui (rue commerçante à 2 min, tram à 4 min).",
+      piege_local:
+        "Confondre Centre-Ville et Jaude. Un bien rue Blatin (pourtant à 200 m de Jaude) se négocie 200 €/m² de moins qu'un bien avenue Maréchal Foch. Annoncer 'Jaude' un bien qui n'y est pas crée une déception en visite et tue la négociation. Restez précis sur la rue.",
+    },
+    contenu_estimation: {
+      intro:
+        "L'estimation au Centre-Ville exige une lecture rue par rue plus qu'au m². Trois facteurs font basculer le prix de 15-20 % : l'étage (un 5e sans ascenseur perd 8-12 % vs un 2e), l'exposition (côté cour calme vs avenue passante = +/- 200 €/m²), et l'état de la copropriété. Sur les biens récemment refaits, attention à ne pas surestimer la plus-value des travaux : un acheteur centre-ville achète d'abord une adresse, ensuite un état.",
+      methode_locale:
+        "La complexité tient au mille-feuille du bâti : immeubles haussmanniens 1880-1910 mêlés à des reconstructions années 60. Un appartement de 70 m² dans un immeuble en pierre vaut mécaniquement 250 €/m² de plus qu'un même 70 m² dans une copropriété béton 1965. La hauteur sous plafond change tout — 3,20 m vs 2,50 m = écart de 10-15 %.",
+      cas_concret:
+        "T3 de 68 m², 3e étage avec ascenseur, immeuble 1900 rénové en 2018, balcon côté rue Pascal, DPE D, charges 165 €/mois. Estimation : 175 000 € à 192 000 €. Prix probable de signature : 182 000 €, après une négociation de 4-5 % depuis l'annonce à 192 000 €.",
+      facteur_prix:
+        "L'ascenseur. Sur les immeubles centre-ville (souvent 5-6 étages), un appartement aux étages élevés sans ascenseur perd jusqu'à 18 % de sa valeur par rapport au même bien avec. C'est le facteur n°1 de variation, devant l'état et le DPE.",
+    },
   },
   {
     slug: "clermont-ferrand-jaude",
@@ -157,6 +200,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7779, lng: 3.0838 },
+    contenu_vendre: {
+      intro:
+        "Sur Jaude, le marché est mécanique : la demande dépasse structurellement l'offre, les acheteurs sont solvables, peu de négociation aboutit en dessous de 4 % du prix annoncé. Mais ce confort vendeur a une contrepartie. Le moindre faux pas — prix trop ambitieux, photos médiocres, mandat dispersé — paralyse le bien. À Jaude, on ne récupère pas un mauvais lancement : les acquéreurs premium repèrent les biens qui traînent et concluent qu'il y a un problème caché. Le bien doit être lancé parfaitement positionné dès la première semaine.",
+      profil_vendeur:
+        "Cadres dirigeants mutés en région parisienne, professions libérales qui agrandissent (du T3 vers le T5 dans le même immeuble), héritages d'appartements bourgeois transmis par des grands-parents. Profil rare : l'investisseur — Jaude se vend en résidence principale.",
+      timing_conseil:
+        "Deux fenêtres optimales : mars-mai (acheteurs en préparation rentrée scolaire pour leurs enfants) et septembre-octobre (mutations Michelin/CHU). Éviter absolument fin novembre à mi-janvier — le marché s'évapore et un bien lancé en décembre traîne jusqu'au printemps.",
+      argument_cle:
+        "L'adresse comme valeur refuge. Un appartement Jaude n'a jamais reculé sur 10 ans, +44 % cumulés. À expliquer aux acheteurs avec les chiffres précis — c'est ce qui transforme un visiteur en acquéreur sérieux.",
+      piege_local:
+        "Surestimer au-delà de 3 200 €/m². Au-dessus de ce plafond psychologique, même un haussmannien rénové à neuf reste sans visite pendant 6-8 semaines. La fourchette 2 600-3 100 €/m² couvre 90 % des transactions réelles ; au-delà, le bien doit avoir une vraie singularité (terrasse, atypique, vue exceptionnelle).",
+    },
+    contenu_estimation: {
+      intro:
+        "Estimer à Jaude, ce n'est pas appliquer un prix au m² mais ajuster un prix de référence selon une dizaine de critères. Le m² 'standard' est de 2 600 €, mais l'écart entre un T2 mansardé au 6e et un T3 bourgeois au 2e dépasse 800 €/m². L'enjeu est de hiérarchiser ce qui fait grimper (hauteur sous plafond > 3 m, parquet point de Hongrie, cheminées d'origine) et ce qui plafonne (DPE F, charges > 200 €/mois, copropriété en travaux non votés).",
+      methode_locale:
+        "La spécificité Jaude : les biens haussmanniens dont le DPE médiocre n'effraie pas les acheteurs CSP+. Sur d'autres quartiers, un DPE F bloque ; ici il décote seulement 5-8 %. Inversement, un parquet d'origine ou une cheminée Belle Époque ajoute 100-150 €/m². Les critères de valorisation suivent une logique patrimoniale, pas thermique.",
+      cas_concret:
+        "T3 de 75 m², 2e étage immeuble 1895, parquet d'origine, deux cheminées non fonctionnelles, hauteur sous plafond 3,40 m, DPE E, charges 195 €/mois, balcon filant rue du 11 Novembre. Estimation : 215 000 € à 245 000 €. Prix probable signature : 232 000 €.",
+      facteur_prix:
+        "L'authenticité du bâti. Plus les éléments d'origine sont préservés (moulures, parquet, cheminées, ferronneries), plus le prix grimpe. Une rénovation moderne uniformisée, même soignée, peut paradoxalement faire perdre 5-10 % par rapport à un bien 'dans son jus' bien entretenu.",
+    },
   },
   {
     slug: "clermont-ferrand-montferrand",
@@ -198,6 +263,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7889, lng: 3.1080 },
+    contenu_vendre: {
+      intro:
+        "Montferrand est le quartier qui mute le plus discrètement de Clermont. Pendant trente ans il fut sous-évalué — image de cité ouvrière vieillissante, façades grises, ruelles oubliées. Depuis 2020, des familles parisiennes achètent ici des hôtels particuliers du XVe pour y vivre toute l'année, et la mairie restaure le secteur sauvegardé pierre par pierre. Vendre à Montferrand en 2026, c'est raconter une histoire : celle d'un bourg médiéval qui se réveille, à dix minutes de Place de Jaude. Les acheteurs qui comprennent cette histoire signent. Les autres pensent encore que c'est l'ancienne banlieue ouvrière.",
+      profil_vendeur:
+        "Propriétaires de très longue date — souvent 25-40 ans dans le même bien — qui réalisent une plus-value historique. Aussi : héritages, et quelques familles franciliennes arrivées en 2020-2022 qui repartent après un essai concluant mais courte durée.",
+      timing_conseil:
+        "Le marché Montferrand est moins saisonnier que le centre. Les acheteurs viennent de loin (Paris, Lyon, Bordeaux) pour des biens de caractère, sans calendrier scolaire serré. Un beau bien se lance toute l'année, sauf décembre-janvier. Compter 3 à 4 mois minimum sur les biens > 300 000 €.",
+      argument_cle:
+        "Le secteur sauvegardé. Statut administratif rare en Auvergne, qui garantit que la rue ne sera jamais défigurée. Argument peu valorisé par les vendeurs amateurs, alors qu'il rassure énormément les acheteurs venus de grandes villes habitués au patrimoine protégé.",
+      piege_local:
+        "Négliger la question du parking. Les ruelles médiévales rendent le stationnement quasi impossible. Vendre une maison à 350 000 € sans solution garage/cour fermée, c'est exclure 60 % des acheteurs potentiels. Si le bien n'a pas de parking, il faut documenter dès l'annonce les solutions d'abonnement résidentiel ou les places privées louables à proximité.",
+    },
+    contenu_estimation: {
+      intro:
+        "Montferrand est le quartier le plus difficile à estimer de Clermont, car la base DVF y est trompeuse : trois ventes du même mois peuvent afficher 1 600, 2 200 et 3 100 €/m² selon l'état réel du bien. Une maison médiévale 'dans son jus' ne se compare pas à une maison voisine refaite à neuf en pierre apparente, et pourtant DVF les met côte à côte. Il faut absolument visiter avant d'annoncer un prix, ou s'appuyer sur un connaisseur du bâti ancien.",
+      methode_locale:
+        "Trois variables explosent l'écart de prix : (1) état des charpentes et planchers anciens (les vrais coûts cachés), (2) présence d'une cour intérieure ou jardinet (rare = +20 % minimum), (3) qualité de la rénovation (une rénovation respectueuse du bâti vaut 30 % de plus qu'une rénovation 'standard'). Le m² annoncé n'a aucun sens sans ces trois infos.",
+      cas_concret:
+        "Maison de ville 1610 (façade classée), 110 m² sur 3 niveaux, refaite intégralement en 2019 dans les règles ABF (architecte bâtiments de France), petite cour pavée 12 m², DPE D, rue piétonne secteur sauvegardé. Estimation : 285 000 € à 320 000 €. Prix probable signature : 305 000 €.",
+      facteur_prix:
+        "Les travaux à venir. Sur un bien non rénové, un acheteur intelligent fait chiffrer charpente + couverture + isolation par un artisan AVANT signature, et déduit ce montant. Un vendeur qui n'anticipe pas ce calcul (en fournissant ses propres devis) subit toute la décote du diagnostic acheteur.",
+    },
   },
   {
     slug: "clermont-ferrand-salins",
@@ -300,6 +387,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7701, lng: 3.0713 },
+    contenu_vendre: {
+      intro:
+        "À La Glacière, on ne vend pas un coup de cœur, on vend une feuille de calcul. Les acheteurs qui s'intéressent à ce secteur sont quasi-exclusivement des investisseurs locatifs prudents : ils achètent au rendement, négocient au rendement, signent au rendement. Si le bien affiche 5,5 % brut, il part vite ; à 4,5 %, il reste. Toute la stratégie tient là. L'erreur du vendeur amateur, c'est d'attirer des acheteurs résidence principale séduits par le prix d'entrée, qui finissent par se rétracter au moment de la promesse — perte de 6 semaines minimum.",
+      profil_vendeur:
+        "Bailleurs vieillissants qui sortent du locatif (fatigue de gestion, fin de défiscalisation), arbitrages de portefeuille SCI, ventes contraintes après divorce. Très rares résidences principales — la plupart des biens sont déjà loués au moment de la vente.",
+      timing_conseil:
+        "Hors saisons fiscales. Éviter mai-juin (déclaration revenus, investisseurs distraits) et décembre (clôture comptable des SCI). Privilégier septembre-octobre et février-avril : les investisseurs ont leur trésorerie disponible et leurs comptables actifs.",
+      argument_cle:
+        "Le rendement brut chiffré et démontré. Pas un 'rendement potentiel' théorique, mais le loyer réel encaissé sur les 12 derniers mois, justifié par les avis d'imposition fonciers. Un investisseur achète des chiffres prouvés, pas des promesses.",
+      piege_local:
+        "Cibler les acheteurs résidence principale parce que les prix sont bas. Ils visitent, signent une offre, puis se rétractent face aux charges de copropriété élevées (300-400 €/mois sur certains immeubles), aux DPE F-G fréquents et à l'image perçue du quartier. Restez sur la cible investisseur du début à la fin.",
+    },
+    contenu_estimation: {
+      intro:
+        "L'estimation à La Glacière fonctionne à l'envers des autres quartiers : on ne part pas du prix au m² pour calculer le loyer, on part du loyer pour calculer le prix maximum acceptable par un investisseur rationnel. Si le bien se loue 550 €/mois charges comprises, un investisseur visant 6 % brut paiera maximum 110 000 €. Tout prix au-dessus rend le bien invendable, peu importe son état. C'est l'unique secteur de Clermont où la logique locative dicte la valeur, pas la logique résidentielle.",
+      methode_locale:
+        "Les charges de copropriété sont le piège n°1. Sur des immeubles années 70-80 souvent fragiles (ravalement non voté, ascenseur en fin de vie, chauffage collectif énergivore), les charges peuvent atteindre 50 % du loyer. Un bien à 600 € de loyer avec 280 € de charges = revenu net 320 €, qui ne justifie plus le prix annoncé. Vérifier obligatoirement les 3 derniers PV d'AG.",
+      cas_concret:
+        "T2 de 48 m², 4e étage avec ascenseur, copropriété années 75, DPE E, charges 165 €/mois, loyer encaissé 545 € HC, taxe foncière 720 €. Estimation : 89 000 € à 96 000 €. Prix probable signature : 92 000 €, soit un rendement brut de 7,1 % qui rassure l'investisseur.",
+      facteur_prix:
+        "Le DPE. Avec l'interdiction progressive de location des passoires thermiques (G en 2025, F en 2028, E en 2034), un bien noté F ou G perd 15-25 % de sa valeur — pas par esthétique, mais par contrainte légale future. C'est le facteur qui décale le plus le prix entre deux biens jumeaux.",
+    },
   },
   {
     slug: "clermont-ferrand-les-cezeaux",
@@ -334,6 +443,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7592, lng: 3.1093 },
+    contenu_vendre: {
+      intro:
+        "Les Cézeaux, c'est un marché à un seul moteur : la rentrée universitaire. Tout l'écosystème immobilier ici tourne autour de septembre. Un bien lancé en mars trouve preneur en juin auprès d'un parent qui anticipe la rentrée de son enfant ; un bien lancé en novembre attend juin de l'année suivante. Cette saisonnalité brutale est ignorée par les vendeurs amateurs qui mettent en ligne au mauvais moment et finissent par baisser leur prix par lassitude. Ce n'est pas une question de prix, c'est une question de calendrier.",
+      profil_vendeur:
+        "Anciens étudiants devenus parents qui revendent le studio acheté à leur enfant il y a dix ans. Investisseurs en transmission patrimoniale (départ à la retraite, donation aux enfants). Quelques arbitrages SCI familiales.",
+      timing_conseil:
+        "Lancer entre février et mai pour profiter du pic d'activité parents/futurs étudiants (visites + inscription Parcoursup en parallèle). Éviter juin-août (acheteurs en vacances, étudiants partis), et surtout octobre à janvier — le marché est mort pendant 4 mois.",
+      argument_cle:
+        "Le rendement chiffré et la liquidité locative. Donner un loyer médian (460-510 € pour un studio), un taux d'occupation prouvé (95 % minimum aux Cézeaux), et le coût de gestion réel (gestion locative à 7-8 %, ou en direct via plateforme étudiante).",
+      piege_local:
+        "Vendre pendant les vacances scolaires ou pendant les périodes de partiels. La rotation acheteurs s'effondre. Pire : les biens visibles trop longtemps en ligne sans offre voient leur prix décoter mécaniquement aux yeux des investisseurs, qui flairent un problème.",
+    },
+    contenu_estimation: {
+      intro:
+        "Aux Cézeaux, l'estimation ne raisonne ni en m² ni en pièces, mais en 'rapport loyer mensuel/prix de vente'. Un bon studio doit afficher un loyer = 1 % du prix d'achat (ex : 90 000 € = 900 € impossible, donc rendement plus modeste 5,5-6,5 %). Au-delà du rendement, deux facteurs spécifiques pèsent : l'état de la copropriété (les résidences étudiantes des années 80 ont souvent des ravalements à voter) et la distance pied-à-fac (chaque 100 m supplémentaire = -50 €/m²).",
+      methode_locale:
+        "L'extension prévue du tram va recomposer la valorisation. Les biens situés sur le tracé futur prennent déjà 5-8 % d'avance, ceux situés à plus de 400 m perdent en attractivité. Vérifier le tracé exact sur le site SMTC avant d'estimer.",
+      cas_concret:
+        "Studio de 22 m², 2e étage sans ascenseur, résidence étudiante 1985, à 250 m de la fac de sciences, DPE D, charges 95 €/mois, loyer encaissé 470 € meublé. Estimation : 78 000 € à 86 000 €. Prix probable signature : 82 000 €, soit 6,9 % brut — argument décisif.",
+      facteur_prix:
+        "La distance à pied jusqu'à l'amphi principal. Un studio à 5 minutes à pied vaut 12-15 % de plus qu'un studio jumeau à 12 minutes. Les parents acheteurs visitent toujours en faisant le trajet : si l'enfant arrive essoufflé, l'offre tombe.",
+    },
   },
   {
     slug: "clermont-ferrand-saint-jacques",
@@ -368,6 +499,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7695, lng: 3.0955 },
+    contenu_vendre: {
+      intro:
+        "Saint-Jacques fonctionne comme deux marchés superposés. D'un côté, les studios et T2 captés par les internes en médecine, les infirmiers et les jeunes praticiens du CHU — rotation rapide, demande permanente. De l'autre, les T3, T4 et maisons familiales achetées par les médecins installés et les familles cherchant la proximité hôpital pour des raisons personnelles. Les deux mondes ne se chevauchent pas et n'utilisent pas les mêmes critères. Vendre ici, c'est d'abord choisir lequel des deux marchés on cible, puis adapter prix, photos, argumentaire en conséquence.",
+      profil_vendeur:
+        "Investisseurs qui arbitrent leur portefeuille (rotation studios), médecins partis en libéral dans une autre région, familles qui agrandissent et quittent le T3 pour acheter une maison à Beaumont ou Ceyrat.",
+      timing_conseil:
+        "Pour les studios/T2 cible internes : viser avril-juin (avant la rentrée des choix de stage en novembre). Pour les biens familiaux : printemps classique. Spécificité : la rentrée des internes en novembre crée un mini-pic de demande sur les petites surfaces.",
+      argument_cle:
+        "La proximité CHU mesurée à pied. Pas en voiture : les jeunes médecins en garde n'ont souvent pas de place de parking et préfèrent rentrer à pied à 3 h du matin. Donner le temps de marche jusqu'à l'entrée principale CHU Estaing.",
+      piege_local:
+        "Sous-estimer l'impact du DPE F-G sur les T3-T4. Sur les grandes surfaces, les acheteurs familles font systématiquement chiffrer les travaux d'isolation. Un T4 de 90 m² classé F décote de 20 000 à 30 000 € face à un même T4 classé D. Refaire le DPE après isolation simple (combles, fenêtres) peut récupérer 80 % de cette décote.",
+    },
+    contenu_estimation: {
+      intro:
+        "À Saint-Jacques, l'estimation se fait en deux temps : on définit d'abord la cible acheteur (investisseur petit logement vs famille grand logement), ensuite on applique la grille de référence. Un T2 de 45 m² destiné à un interne se valorise sur le rendement (6,5 % brut atteignable). Un T4 de 95 m² destiné à une famille se valorise sur la sectorisation scolaire et l'état du bien. Les deux grilles donnent des écarts pouvant aller jusqu'à 400 €/m² sur des biens dans le même immeuble.",
+      methode_locale:
+        "Spécificité : la rotation CHU crée une 'prime garde'. Les biens à moins de 400 m de l'entrée des urgences se louent 8-12 % plus cher que les biens à 800 m, ce qui se répercute mécaniquement sur le prix d'achat investisseur. Cette prime n'existe pas ailleurs à Clermont — elle est unique à Saint-Jacques.",
+      cas_concret:
+        "T3 de 68 m², 1er étage sans ascenseur, immeuble années 60 ravalé en 2020, DPE D, charges 145 €/mois, à 350 m du CHU Estaing. Estimation : 142 000 € à 158 000 €. Prix probable signature : 152 000 €. Profil acheteur attendu : couple jeunes médecins en CDI hospitalier.",
+      facteur_prix:
+        "L'étage et l'ascenseur. Sur les biens cible internes (rotation rapide, gardes nocturnes), un appartement au 4e sans ascenseur perd 15-20 % vs le même bien en RDC ou avec ascenseur. Pour les familles, c'est l'inverse : le RDC sur rue passante perd 10 %.",
+    },
   },
   {
     slug: "clermont-ferrand-la-gare",
@@ -469,6 +622,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7856, lng: 3.1021 },
+    contenu_vendre: {
+      intro:
+        "Blaise-Pascal a un visage double que les vendeurs sous-estiment souvent. Le long de l'avenue Blaise Pascal et de la République, le bâti est commercial et passant — bruyant, animé, avec une décote sensible pour les RDC et étages bas. À deux rues de là, dans les ruelles résidentielles, le calme est total et les biens se vendent au prix d'un secteur familial premium. L'écart entre 'rue passante' et 'rue calme' atteint 18-22 % sur Blaise-Pascal, un des plus élevés de Clermont. Le vendeur qui n'identifie pas dans quelle catégorie tombe son bien part avec un prix à côté.",
+      profil_vendeur:
+        "Population vieillissante qui transmet ou part en EHPAD : plus d'un tiers des biens en vente proviennent de successions ou de déménagements en maison médicalisée. Quelques familles qui ont agrandi et partent vers Beaumont ou Romagnat.",
+      timing_conseil:
+        "Mars-mai pour profiter de la dynamique familiale (visites avec enfants, projection rentrée scolaire). Sur les biens issus de succession, anticiper 60 jours minimum pour finaliser les actes notariaux avant la mise en vente — annoncer un bien encore en succession ouverte casse la confiance acheteur.",
+      argument_cle:
+        "Le tram à pied et le parc Blaise Pascal. Combinaison rare à Clermont : transport rapide centre-ville + espace vert pour enfants + écoles primaires réputées. Argument central pour les familles avec un ou deux enfants en bas âge.",
+      piege_local:
+        "Vendre un RDC sur voie passante au prix des étages élevés. Sur l'avenue Blaise Pascal, un RDC ou 1er étage subit -15 à -20 % de décote vs le même bien aux étages supérieurs. Inversement, un 4e étage sans ascenseur côté cour calme peut surprendre par son attractivité auprès de jeunes familles.",
+    },
+    contenu_estimation: {
+      intro:
+        "Estimer à Blaise-Pascal demande de cartographier la rue précisément. L'algorithme grille les yeux sur ce quartier car deux biens à 80 mètres de distance, dans le même type d'immeuble, peuvent valoir 200 €/m² d'écart à cause d'un simple changement de rue. Notre méthode : visiter d'abord, mesurer le niveau sonore à 18 h en semaine, repérer le flux piétonnier, et seulement après appliquer une grille de prix. Trop de vendeurs s'appuient sur la moyenne quartier (2 150 €/m²) qui n'a aucun sens local.",
+      methode_locale:
+        "Le diagnostic acoustique informel : si on entend distinctement une conversation à 5 mètres dans la rue à 19 h, c'est rue calme. Si le bruit de la circulation couvre les conversations, c'est rue passante. Les acheteurs font ce test sans le dire, et adaptent leur offre.",
+      cas_concret:
+        "T3 de 72 m², 2e étage avec ascenseur, immeuble 1985, dans une rue résidentielle perpendiculaire à l'avenue Blaise Pascal, balcon plein sud, DPE D, charges 130 €/mois. Estimation : 158 000 € à 172 000 €. Prix probable signature : 165 000 €.",
+      facteur_prix:
+        "Le bruit. Plus que le DPE, plus que l'étage, c'est l'exposition sonore qui fait varier le prix de 15-20 % entre deux biens jumeaux. Un acheteur famille refuse souvent les rues passantes même à prix décoté — il préfère monter le budget pour le calme.",
+    },
   },
   {
     slug: "clermont-ferrand-oradou",
@@ -537,6 +712,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7952, lng: 3.0748 },
+    contenu_vendre: {
+      intro:
+        "Fontgieve est en train de basculer. Ancien quartier ouvrier, il bénéficie depuis 2020 d'un effet de capillarité depuis Ballainvilliers et le centre — les acheteurs primo qui ne peuvent plus se payer l'hyper-centre découvrent Fontgieve à 15 minutes à pied. Cette dynamique fait monter les prix d'environ 1,5 % par an, mais elle est inégale : certaines rues (proches du parc, du tram, des écoles) suivent le mouvement, d'autres restent à la traîne. Vendre à Fontgieve, c'est positionner son bien dans le bon segment de cette gentrification progressive — ni trop bas (sous-vente regrettable), ni trop haut (paralysie sur le marché).",
+      profil_vendeur:
+        "Propriétaires depuis 20-30 ans qui réalisent enfin une plus-value substantielle après des années de stagnation. Quelques investisseurs petits portefeuilles qui sortent (rendement insuffisant face aux nouveaux prix). Très peu de jeunes vendeurs.",
+      timing_conseil:
+        "Mai-juin et septembre. La cible primo-accédants jeunes actifs visite les week-ends de printemps et démarre les démarches bancaires en septembre pour acheter avant fin d'année (PTZ, primes employeur). Mettre en ligne en avril maximum pour profiter de cette fenêtre.",
+      argument_cle:
+        "La trajectoire de quartier. À Fontgieve, le bien acheté en 2026 vaudra mécaniquement plus en 2030 : la dynamique est lancée, le tram potentiel à venir, le parc rénové. Un argument que les jeunes acheteurs entendent volontiers.",
+      piege_local:
+        "Estimation à la moyenne quartier. La rue change tout : rue Niepce calme = 2 150 €/m², avenue principale bruyante = 1 850 €/m². Faire des comparables précis sur la rue exacte, pas sur le quartier global. Demander à un négociateur les 5 dernières ventes dans un rayon de 200 m, pas dans Fontgieve entier.",
+    },
+    contenu_estimation: {
+      intro:
+        "Le challenge à Fontgieve, c'est l'instabilité du marché. Les prix montent, mais inégalement, et la base DVF retarde de 12-18 mois sur la réalité des prix de signature. Une estimation basée sur des transactions de 2024 sous-évalue souvent le bien de 5-8 % par rapport au marché 2026. Inversement, projeter la hausse récente sur les rues à la traîne survalorise. Méthode : croiser DVF récente + offres en cours sur les portails + retours des notaires sur les actes des 60 derniers jours.",
+      methode_locale:
+        "L'écart entre prix d'annonce et prix de signature reste marqué (-7 à -10 %), supérieur à la moyenne clermontoise (-4 à -6 %). Conséquence : les prix annoncés sur Leboncoin/SeLoger ne sont pas un bon repère. Travailler sur la base DVF actualisée seulement.",
+      cas_concret:
+        "T3 de 65 m², 3e étage sans ascenseur, immeuble 1975 ravalé en 2019, balcon plein ouest, DPE E, à 8 minutes à pied du tram. Estimation : 122 000 € à 138 000 €. Prix probable signature : 130 000 €. Argument vendeur : possibilité de PTZ pour primo-accédant.",
+      facteur_prix:
+        "La rue elle-même. À Fontgieve plus qu'ailleurs, la grille de prix doit être faite rue par rue, pas quartier par quartier. Écart possible : jusqu'à 18 % entre deux rues parallèles distantes de 150 mètres. Une estimation 'à la louche quartier' est mécaniquement fausse de 10-15 %.",
+    },
   },
   {
     slug: "clermont-ferrand-la-plaine",
@@ -673,6 +870,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7756, lng: 3.0862 },
+    contenu_vendre: {
+      intro:
+        "Delille est l'illustration parfaite d'un quartier 'tier 1.5' à Clermont : pas tout à fait Jaude (qui plafonne à 3 200 €/m²), mais clairement au-dessus de la moyenne ville. Les acheteurs sont des familles aisées et des cadres supérieurs qui ont calculé qu'un appartement à Delille leur offre 80 % du prestige Jaude pour 75 % du prix. C'est un calcul rationnel qu'il faut savoir confirmer dans la mise en marché : photos premium, descriptif sérieux, mise en avant du parquet, des moulures, de la place Delille rénovée comme atout patrimonial.",
+      profil_vendeur:
+        "Couples cadres CSP+ qui agrandissent et passent du T3 au T5 dans un autre secteur (souvent Beaumont ou Chamalières), retraites qui downsizent vers les communes thermales (Royat), héritages d'appartements bourgeois.",
+      timing_conseil:
+        "Le marché Delille est saisonnalisé : pic février-mai et second pic septembre-octobre. Hors ces deux fenêtres, le délai s'allonge de 30 jours minimum. La rénovation récente de la place a aussi attiré une clientèle parisienne en quête de pied-à-terre — bien visible aux dimanches de visite.",
+      argument_cle:
+        "La place Delille rénovée comme nouvel atout. Avant 2022, Delille était 'le quartier à côté de Jaude'. Depuis la rénovation, c'est un lieu de vie, avec terrasses, événements, marché. Les acheteurs qui visitent un dimanche tombent sous le charme — proposer des visites le week-end.",
+      piege_local:
+        "Charges de copropriété élevées sur les beaux immeubles. Les bâtiments fin XIXe ont souvent des ascenseurs anciens, des chauffages collectifs énergivores, des ravalements à voter. Anticiper en obtenant les 3 derniers PV d'AG et le carnet d'entretien dès la mise en vente. Un acheteur qui découvre 280 €/mois de charges au compromis tente de renégocier 8-10 %.",
+    },
+    contenu_estimation: {
+      intro:
+        "À Delille, le prix dépend moins de la rue (toutes correctes) que de l'immeuble lui-même. Trois immeubles voisins peuvent afficher des écarts de 15-20 % selon leur état, leurs charges, et la qualité de leur copropriété. La méthode CBF passe systématiquement par l'analyse du carnet d'entretien et des résolutions d'AG des 5 dernières années — un immeuble qui a tout voté (ravalement, ascenseur, chaudière) vaut 8-12 % de plus qu'un immeuble qui repousse les travaux.",
+      methode_locale:
+        "Tous les biens ne sont pas égaux face à la place rénovée. Les biens donnant directement sur la place ont pris 8-12 % en deux ans. Ceux des rues adjacentes ont pris 4-6 %. Au-delà de 200 m, la valorisation 'effet place' s'estompe.",
+      cas_concret:
+        "T4 de 92 m², 3e étage avec ascenseur, immeuble 1905 ravalé en 2021, deux chambres sur cour, salon double sur place Delille, parquet d'origine, DPE D, charges 215 €/mois. Estimation : 215 000 € à 240 000 €. Prix probable signature : 228 000 €.",
+      facteur_prix:
+        "L'orientation. Un appartement plein sud à Delille vaut 200 €/m² de plus qu'un même appartement plein nord. La luminosité dans les immeubles haussmanniens (souvent 4 m de hauteur sous plafond) change radicalement l'expérience visite, et donc le prix de signature.",
+    },
   },
   {
     slug: "clermont-ferrand-cote-blatin",
@@ -741,6 +960,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7975, lng: 3.0952 },
+    contenu_vendre: {
+      intro:
+        "Vallières est un quartier de propriétaires fidèles. Les acheteurs s'y installent pour 15-20 ans en moyenne, attirés par le pavillonnaire calme, l'accès rapide à l'A71 et la proximité Cataroux. Le marché est donc structurellement peu liquide : peu de biens en vente simultanée, peu de comparables récents, peu de pression à la baisse mais peu de bouche-à-oreille pour faire monter les prix. Vendre à Vallières demande de la patience et un ciblage précis : familles d'ingénieurs Michelin, retraites qui downsizent depuis Beaumont, jeunes couples qui privilégient surface vs centralité.",
+      profil_vendeur:
+        "Retraites qui partent en commune plus calme ou en EHPAD, déménagements professionnels (mutation Michelin, gendarmerie, fonction publique), succession de la génération qui a acheté dans les années 70-80.",
+      timing_conseil:
+        "Le marché Vallières s'active particulièrement en fin d'année scolaire (mai-juillet) — les familles ingénieurs Michelin organisent leurs mutations sur le calendrier scolaire. Sept-oct fonctionne aussi. Les acheteurs se déplacent peu en plein hiver.",
+      argument_cle:
+        "Les transports oubliés : l'A71 directe est à 4 minutes en voiture, et les bus T2C desservent l'avenue de Royat fréquemment. Aussi, accès Cataroux en 8 minutes hors heures de pointe — argument décisif pour les acheteurs Michelin qui font 220 trajets/an vers l'usine.",
+      piege_local:
+        "Vendre sans plaquette des temps de trajet. Les acheteurs jugent Vallières 'loin de tout' sur la carte, alors que c'est faux. Documenter avec un graphique précis : Cataroux 8 min, Jaude 12 min, A71 4 min, école primaire à pied, supermarché 5 min. Cette dataviz transforme l'image du quartier en visite.",
+    },
+    contenu_estimation: {
+      intro:
+        "Estimer à Vallières est difficile par défaut de comparables : le quartier voit 25-35 transactions par an seulement, contre 150+ pour Centre-Ville. Les estimations algorithmiques (DVF + portails) donnent ici des résultats peu fiables. La méthode CBF passe par croisement avec Montferrand voisin (similaire en bâti, plus liquide) et application d'un coefficient correctif spécifique Vallières (-5 à -8 % vs Montferrand selon la rue).",
+      methode_locale:
+        "Spécificité : la majorité des biens ont un terrain (jardin ou cour). Le m² habitable vu seul ne reflète pas la valeur — il faut intégrer la surface terrain, l'orientation du jardin, et la présence d'un garage. Un pavillon 100 m² avec jardin 400 m² + garage vaut 80 000 € de plus que le même 100 m² en appartement.",
+      cas_concret:
+        "Pavillon de 105 m² sur terrain 380 m², construit en 1982, garage 18 m², jardin sud, chaudière 2018, fenêtres double vitrage 2020, DPE D, à 8 minutes de Cataroux en voiture. Estimation : 245 000 € à 270 000 €. Prix probable signature : 258 000 €.",
+      facteur_prix:
+        "La présence d'un garage fermé. À Vallières, un pavillon avec garage vaut 18 000 à 25 000 € de plus qu'un pavillon identique sans garage. C'est le critère n°1 pour les familles ingénieurs avec deux voitures, beaucoup plus différenciant que la surface ou l'état général.",
+    },
   },
   {
     slug: "clermont-ferrand-beaumont",
@@ -811,6 +1052,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7818, lng: 3.1198 },
+    contenu_vendre: {
+      intro:
+        "La Pardieu est le quartier où le marché se transforme le plus vite à Clermont. Pôle économique majeur (Michelin R&D, Limagrain, sièges sociaux, centre commercial), il attire en flux constant des cadres mutés du grand Ouest et du grand Est. Ces acheteurs ne connaissent pas Clermont — ils achètent sur dossier, en visite éclair de 48 h. La conséquence : à La Pardieu, plus que partout ailleurs, l'annonce doit être professionnelle, photographiée par un pro, virtuellement visitable. Un mauvais shooting et le cadre relocalisé qui décide en 2 jours passe son chemin.",
+      profil_vendeur:
+        "Primo-accédants 30-35 ans qui revendent 3-5 ans après l'achat (PTZ remboursé, agrandissement famille, mutation), investisseurs qui sortent suite à fin de défiscalisation Pinel, propriétaires retraites qui suivent leurs enfants à Lyon ou Bordeaux.",
+      timing_conseil:
+        "Caler la mise en marché sur les vagues de mutations Michelin (mars et septembre) et Limagrain (mai et octobre). Les groupes annoncent leurs mouvements 60 jours à l'avance — un bien lancé au bon moment trouve preneur en 4-6 semaines. Hors ces fenêtres : compter 90-120 jours.",
+      argument_cle:
+        "Le 'travail à pied'. Pour un cadre Michelin ou Limagrain habitant La Pardieu, le trajet domicile-bureau peut être réduit à 10 minutes à pied. À l'heure où les politiques RH valorisent ce critère, c'est un argument concret pour les jeunes cadres qui calculent aussi leur empreinte carbone.",
+      piege_local:
+        "Sous-estimer le DPE sur les biens des années 1990-2000. Beaucoup d'immeubles La Pardieu construits dans cette période affichent des DPE D-E médiocres avec des chaudières individuelles vieillissantes. Faire faire un diagnostic complet AVANT mise en vente, et anticiper devis isolation/chauffage à fournir aux acheteurs.",
+    },
+    contenu_estimation: {
+      intro:
+        "Estimer à La Pardieu, c'est arbitrer entre deux logiques : la valeur résidentielle (sectorisation, calme, transports) et la valeur 'employeur' (proximité Michelin/Limagrain). Selon le profil de l'acheteur potentiel, le même bien peut justifier deux fourchettes différentes. La méthode CBF passe par identification du segment dominant sur la rue précise — certaines rues attirent surtout des cadres entreprises (prime employeur), d'autres surtout des familles classiques (prime sectorisation).",
+      methode_locale:
+        "L'extension du tram A est déjà capitalisée dans les prix. La hausse de +18 % sur 5 ans est en grande partie due à l'arrivée du terminus tram. Aujourd'hui, le bonus 'à venir' n'existe plus — les nouveaux acheteurs paient déjà le prix du tram livré.",
+      cas_concret:
+        "T3 de 70 m², 4e étage avec ascenseur, immeuble 1998, balcon plein sud, parking en sous-sol, DPE D, charges 145 €/mois, à 6 minutes à pied du tram et 10 minutes du Michelin Centre Recherche. Estimation : 142 000 € à 158 000 €. Prix probable signature : 152 000 €.",
+      facteur_prix:
+        "La place de parking. À La Pardieu, où la concentration de cadres deux voitures est élevée, un appartement avec une place de parking sécurisée vaut 12 000 à 18 000 € de plus que le même bien sans parking. Plus discriminant qu'à Jaude ou Centre-Ville où on accepte plus volontiers de stationner dans la rue.",
+    },
   },
   {
     slug: "clermont-ferrand-croix-de-neyrat",
@@ -913,6 +1176,28 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7879, lng: 3.1365 },
+    contenu_vendre: {
+      intro:
+        "Au Brézet, la franchise paie. Les acheteurs viennent en sachant qu'ils achètent dans un quartier mixte résidentiel/logistique, à proximité aéroport. Ce qui les agace, c'est quand un vendeur essaie de masquer ces réalités — une ligne 'cadre verdoyant' sur une annonce alors qu'on entend un avion toutes les 18 minutes ruine la confiance dès la visite. Inversement, un vendeur qui annonce sans détour 'classement sonore aéroport zone C, plan d'exposition au bruit consultable dès la visite, accès aéroport en 4 min' rassure et accélère la décision.",
+      profil_vendeur:
+        "Propriétaires de pavillons construits dans les années 70-80, qui partent à la retraite ou en EHPAD. Quelques investisseurs locatifs qui revendent après fin de défiscalisation. Très rares jeunes vendeurs.",
+      timing_conseil:
+        "Marché plat toute l'année, sans pic saisonnier marqué. Mais éviter mi-juin à mi-août : les nuisances aéroport sont plus perceptibles l'été (fenêtres ouvertes), les visites du week-end coïncident avec les rotations charters. Privilégier visites en semaine 11h-12h, heures creuses aéroport.",
+      argument_cle:
+        "Les 4 minutes pour rejoindre l'aéroport — argument paradoxalement oublié. Pour un acheteur qui voyage 2 fois/mois (commercial, consultant, cadre groupe international), gagner 30 minutes de trajet sur chaque voyage = 12 h/an récupérées. Calcul concret à mettre en visite.",
+      piege_local:
+        "Ne pas fournir le PEB (Plan d'Exposition au Bruit) avant la visite. Document obligatoire, mais surtout argument décisif : sortir le PEB avec la zone du bien clairement identifiée transforme le bruit perçu en information maîtrisée. À l'inverse, l'acheteur qui découvre la classe sonore au compromis recule de 8-10 % de prix.",
+    },
+    contenu_estimation: {
+      intro:
+        "Le Brézet souffre d'estimations algorithmiques systématiquement faussées. La base DVF mélange biens en zone PEB A (très exposés) et biens à l'écart (peu exposés), créant une moyenne de 1 950 €/m² qui ne correspond à aucune réalité concrète. Sur le terrain, l'écart entre un pavillon zone C et un pavillon hors zone PEB peut atteindre 500 €/m². L'estimation sérieuse exige obligatoirement le repérage cartographique précis et la classe sonore exacte.",
+      methode_locale:
+        "Le PEB segmente le quartier en zones A (>74 dB), B, C (>56 dB) et D. Décote moyenne : -25 % en A, -15 % en B, -5 % en C, 0 en D. Le diagnostic acoustique est aussi structurant qu'un DPE — ignorer le PEB dans l'estimation, c'est annoncer un prix faux à 15-25 %.",
+      cas_concret:
+        "Pavillon de 95 m² sur 350 m² de terrain, construit en 1978, garage et sous-sol, hors zone PEB stricte (zone D), refait toiture 2015 et chaudière 2021, DPE E. Estimation : 178 000 € à 198 000 €. Prix probable signature : 188 000 €. Note : le même bien en zone PEB B se vendrait 20 000 € de moins.",
+      facteur_prix:
+        "Le Plan d'Exposition au Bruit. Aucun autre facteur ne fait varier le prix de cette amplitude au Brézet. Deux pavillons jumeaux distants de 600 m peuvent valoir 50 000 € d'écart selon leur classe PEB, indépendamment de l'état ou de la surface. À documenter dès la première étape de l'estimation.",
+    },
   },
 
   // ===== COMMUNES AGGLO =====
@@ -969,6 +1254,28 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7521, lng: 3.1214 },
     superficie: 5.2,
+    contenu_vendre: {
+      intro:
+        "Beaumont est la commune où le délai de vente est le plus dépendant du prix de départ. Ici, le marché est à la fois solvable (familles cadres CSP+) et patient (peu d'urgence acheteur). Conséquence : un prix de départ ambitieux ne provoque pas une décote rapide, il provoque un silence radio de 8-12 semaines avant la première vraie offre. Beaucoup de propriétaires interprètent ce silence comme un manque de demande et baissent leur prix au mauvais moment, alors qu'il aurait suffi de bien positionner dès le lancement. La courbe d'opportunité à Beaumont est très plate — pas le droit à l'erreur initiale.",
+      profil_vendeur:
+        "Familles cadres dont les enfants quittent la maison (passage du 150 m² au 110 m² à Chamalières), retraites qui downsizent vers Royat ou centre Clermont, mutations professionnelles vers Lyon (cadres Michelin / Limagrain).",
+      timing_conseil:
+        "Pic absolu mars-mai. Les familles acheteuses calent leurs visites et signatures sur la rentrée scolaire de septembre. Un bien lancé en mars peut signer en juin pour livraison août — calendrier idéal. Lancement en septembre = fenêtre 4 mois jusqu'au gel hivernal.",
+      argument_cle:
+        "La sectorisation scolaire. Collège Lucie Aubrac et lycée Blaise Pascal sont des arguments concrets que les familles vérifient en mairie avant offre. Documenter précisément l'adresse du bien dans les cartes scolaires actuelles (les zones changent) et fournir le contact du service scolarité.",
+      piege_local:
+        "Le 'prix d'oreiller' inspiré du voisin. Beaucoup de propriétaires basent leur prix sur la rumeur de la rue ('mon voisin a vendu 580 000 € l'an dernier'), sans connaître les détails du bien voisin (état, surface, jardin, garage). C'est l'erreur n°1 — produit des départs trop hauts qui paralysent la vente pour 2-3 mois minimum.",
+    },
+    contenu_estimation: {
+      intro:
+        "L'estimation à Beaumont demande une grille très fine basée sur la rue, la sectorisation scolaire et les caractéristiques précises du jardin. Les écarts entre deux maisons jumelles distantes de 200 mètres peuvent atteindre 80 000 € selon le collège de rattachement et la qualité du terrain. La base DVF est utile mais insuffisante : Beaumont étant une commune relativement homogène, les comparables algorithmiques sont vite trompeurs si on ne corrige pas finement la sectorisation, l'orientation et la pente du terrain.",
+      methode_locale:
+        "Trois facteurs propres à Beaumont multiplient ou réduisent le prix : (1) collège de rattachement (Lucie Aubrac vs autres), (2) orientation et pente du jardin (terrain plat ensoleillé vs terrain en pente nord), (3) qualité de la rue (impasse calme vs avenue passante). Chaque facteur peut décaler le prix de 5-10 %.",
+      cas_concret:
+        "Maison familiale de 130 m² sur 700 m² de terrain plat, construite en 1985, refaite en 2020 (cuisine, sdb, fenêtres), 4 chambres, garage 2 voitures, secteur Lucie Aubrac, rue calme. Estimation : 445 000 € à 485 000 €. Prix probable signature : 465 000 €.",
+      facteur_prix:
+        "Le terrain. À Beaumont, ce n'est pas la maison qui valorise le bien mais le terrain (taille, orientation, plat ou en pente). Une maison récente sur 400 m² de terrain en pente vaut moins qu'une maison plus ancienne sur 800 m² de terrain plat. Les acheteurs familles projettent piscine, jardin enfants, terrasse — sans terrain adéquat, l'offre tombe.",
+    },
   },
   {
     slug: "chamalieres",
@@ -1024,6 +1331,28 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7793, lng: 3.0534 },
     superficie: 4.0,
+    contenu_vendre: {
+      intro:
+        "À Chamalières, l'adresse vend toute seule — c'est presque vrai. La demande structurelle est telle que même un bien moyennement présenté trouve preneur. Mais 'preneur' ne signifie pas 'au bon prix'. Le piège classique : un vendeur sur-confiant en l'adresse Chamalières fixe un prix élevé, attend, finit par baisser, et signe à un prix qu'il aurait pu obtenir 3 mois plus tôt avec une mise en marché professionnelle. La règle locale : la prime Chamalières existe (+15 % vs Clermont), mais elle est plafonnée. Au-delà de 4 000 €/m² sur des appartements et 3 800 €/m² sur des maisons, même la magie de l'adresse ne fonctionne plus.",
+      profil_vendeur:
+        "Successions de notables locaux (médecins, avocats, dirigeants) générant des hôtels particuliers et villas Belle Époque, départs en retraite vers la côte ou la résidence secondaire, déménagements professionnels de cadres dirigeants Michelin vers Paris ou international.",
+      timing_conseil:
+        "Le marché Chamalières est moins saisonnier que Clermont ville — les acheteurs viennent de loin (Paris, Lyon, Bordeaux, Suisse) toute l'année. Néanmoins, mai-juin est optimal pour les biens familiaux. Pour les pied-à-terre / résidences secondaires, septembre-novembre fonctionne très bien (curistes, retraites en réflexion).",
+      argument_cle:
+        "L'effet 'jamais reculé'. Les prix Chamalières n'ont pas baissé en 2008 ni en 2023. Sur 10 ans : +48 %. Cet argument transforme un acheteur hésitant en acheteur convaincu — Chamalières n'est pas qu'un lieu de vie, c'est un placement patrimonial dont la performance est documentée.",
+      piege_local:
+        "Sous-estimer l'importance du parc/jardin sur les villas. À Chamalières, un acheteur villa demande SYSTÉMATIQUEMENT à voir le jardin avant la maison. Une villa avec 50 m² de cour cimentée vaut 200 000 € de moins qu'une villa avec 600 m² de jardin paysagé arboré. Investir 5 000 € dans un paysagiste avant photos peut justifier 30 000 € de plus à la signature.",
+    },
+    contenu_estimation: {
+      intro:
+        "L'estimation à Chamalières exige de distinguer trois sous-marchés très différents : (1) les villas Belle Époque et hôtels particuliers (3 800-4 500 €/m², peu de comparables), (2) les appartements bourgeois en immeubles pierre de taille (2 800-3 200 €/m²), (3) les résidences années 70-80 modernisées (2 200-2 600 €/m²). Mélanger ces trois marchés dans une moyenne donne une estimation totalement fausse. La méthode CBF segmente d'abord, estime ensuite.",
+      methode_locale:
+        "L'offre rarissime fausse la base DVF — il y a parfois 2-3 ventes par an sur les biens premium, insuffisant pour faire des moyennes statistiques. La méthode locale s'appuie sur les ventes des 24 derniers mois sur Chamalières + Royat + Durtol (3 communes voisines homogènes), pour obtenir une base de 30-40 transactions exploitables.",
+      cas_concret:
+        "Villa de 1925, 200 m² habitables sur 850 m² de terrain paysagé, 3 niveaux, refaite cuisine et 2 sdb en 2018, parquets et moulures d'origine conservés, garage 2 voitures, DPE D. Estimation : 720 000 € à 810 000 €. Prix probable signature : 765 000 €. Acheteur attendu : profession libérale ou cadre dirigeant Michelin.",
+      facteur_prix:
+        "L'année et le style de construction. Une villa Belle Époque (1900-1930) en bon état est valorisée 30-40 % de plus qu'une villa de qualité comparable des années 60-70. Le cachet patrimonial est l'argument central de Chamalières — les biens sans charme architectural plafonnent rapidement, même bien rénovés.",
+    },
   },
   {
     slug: "royat",
@@ -1078,6 +1407,28 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7614, lng: 3.0395 },
     superficie: 6.6,
+    contenu_vendre: {
+      intro:
+        "Royat se vend à deux clientèles très différentes : les Auvergnats qui en font leur résidence principale (familles, retraites, professions libérales) et les vacanciers nationaux qui ont découvert la commune en cure ou en week-end et achètent un pied-à-terre. Cette double cible est une force commerciale, à condition d'orienter la communication selon le bien. Une villa Belle Époque familiale s'adresse aux uns ; un appartement de plain-pied dans un immeuble thermal s'adresse aux autres. Le vendeur qui mélange les codes (photos amateur sur un bien Belle Époque, descriptif chaleureux sur un investissement) perd les deux marchés à la fois.",
+      profil_vendeur:
+        "Héritages familiaux multigénérationnels (les villas restent souvent 50+ ans dans la même famille), retraites parisiennes qui revendent leur résidence secondaire pour rentrer en famille, investisseurs courte durée fatigués de la gestion saisonnière.",
+      timing_conseil:
+        "Mars-juin pour cibler les acheteurs résidence principale (calendrier scolaire), août-octobre pour cibler les vacanciers ayant découvert Royat pendant l'été (effet coup de cœur post-vacances). Les hivers sont plus calmes, sauf pour les biens proches des thermes qui restent demandés toute l'année.",
+      argument_cle:
+        "Le cadre photogénique. Royat se vend en photos plus que par descriptif — l'architecture Belle Époque, la nature, le panorama puys. Un shooting professionnel par drone, en lumière dorée fin d'après-midi, transforme une annonce ordinaire en coup de cœur. Investissement 600-1 200 € qui rapporte 15 000-30 000 € à la signature.",
+      piege_local:
+        "Vendre un bien classé ABF sans documenter les contraintes de travaux. Royat compte de nombreux biens en zone protégée Bâtiments de France — toute modification de façade nécessite autorisation préalable. Un acheteur qui découvre les contraintes au compromis peut se rétracter ou exiger -10 %. À documenter clairement dès l'annonce.",
+    },
+    contenu_estimation: {
+      intro:
+        "Royat est l'une des communes les plus complexes à estimer du département parce qu'elle mélange dans un périmètre de 6 km² des biens à vocations très différentes : résidences principales familiales, pied-à-terre de retraites, investissements meublés saisonniers, biens de caractère atypiques. Chaque sous-marché a ses propres prix de référence. Une grille unique 'Royat 2 400 €/m²' est mécaniquement fausse à 15-20 % selon le bien estimé.",
+      methode_locale:
+        "Le relief joue un rôle inattendu. Les biens situés dans le bas (proches des thermes) valent 5-8 % de plus que les biens en hauteur (rues du Sanctuaire, Vaquez), même de qualité comparable. La raison : accessibilité piétonne, services, et parking plus simple. Les acheteurs retraites, fortement représentés, refusent les rues à fort dénivelé.",
+      cas_concret:
+        "Appartement T3 de 78 m² dans une ancienne villa Belle Époque divisée en copropriété, 1er étage, parquet d'origine, terrasse 14 m² vue puys, DPE D, charges 165 €/mois, à 5 minutes à pied du tram terminus. Estimation : 195 000 € à 218 000 €. Prix probable signature : 207 000 €.",
+      facteur_prix:
+        "L'accessibilité piétonne. À Royat, plus que partout ailleurs, l'absence de relief et la proximité services se paient cher. Un même bien dans le bas de Royat (relief plat, services à 3 min à pied) vaut 8-12 % de plus que le même bien dans le haut (relief marqué, voiture indispensable).",
+    },
   },
   {
     slug: "aubiere",
