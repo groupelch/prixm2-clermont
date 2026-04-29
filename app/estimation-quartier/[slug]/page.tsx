@@ -6,6 +6,8 @@ import { quartiers, getQuartierBySlug } from "@/data/quartiers";
 import { getArticlesForQuartier } from "@/data/articles";
 import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
+import { getQuartierFacts } from "@/lib/quartier-facts";
+import { VieLocaleBlock } from "@/components/quartier/VieLocaleBlock";
 import {
   BreadcrumbSchema,
   FaqPageSchema,
@@ -45,6 +47,7 @@ export default function EstimationQuartierPage({
 
   const articles = getArticlesForQuartier(q.slug).slice(0, 3);
   const refPrix = q.prixAppartement ?? q.prixMaison;
+  const facts = getQuartierFacts(q.coordinates.lat, q.coordinates.lng);
 
   const faq = [
     {
@@ -213,6 +216,9 @@ export default function EstimationQuartierPage({
           </div>
         </div>
       </section>
+
+      {/* Vie locale - équipements réels */}
+      <VieLocaleBlock facts={facts} quartierNom={q.nom} />
 
       {/* Estimation locale spécifique */}
       {q.contenu_estimation && (

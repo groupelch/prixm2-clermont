@@ -8,11 +8,14 @@ import {
   TrendingUp,
   Home as HomeIcon,
   AlertTriangle,
+  MapPin,
 } from "lucide-react";
 import { quartiers, getQuartierBySlug } from "@/data/quartiers";
 import { getArticlesForQuartier } from "@/data/articles";
 import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
+import { getQuartierFacts } from "@/lib/quartier-facts";
+import { VieLocaleBlock } from "@/components/quartier/VieLocaleBlock";
 import {
   BreadcrumbSchema,
   FaqPageSchema,
@@ -52,6 +55,7 @@ export default function VendreQuartierPage({
 
   const articles = getArticlesForQuartier(q.slug).slice(0, 3);
   const refPrix = q.prixAppartement ?? q.prixMaison;
+  const facts = getQuartierFacts(q.coordinates.lat, q.coordinates.lng);
 
   const faq = [
     {
@@ -126,11 +130,18 @@ export default function VendreQuartierPage({
                   Stratégie 2026 & prix réels
                 </span>
               </h1>
-              <p className="text-lg text-cbf-gray mb-8 max-w-xl">
+              <p className="text-lg text-cbf-gray mb-6 max-w-xl">
                 Tout ce qu'il faut savoir pour vendre votre bien à {q.nom} au
                 bon prix, dans le bon délai. Prix médian, durée de vente,
                 profil acheteur, pièges à éviter — par les experts CBF Conseils.
               </p>
+
+              {q.point_essentiel && (
+                <div className="inline-flex items-start gap-3 bg-white border-l-4 border-cbf-gold p-4 rounded-sm max-w-xl mb-6">
+                  <MapPin className="h-4 w-4 text-cbf-gold flex-shrink-0 mt-0.5" />
+                  <p className="text-sm text-cbf-gray leading-relaxed">{q.point_essentiel}</p>
+                </div>
+              )}
 
               <div className="grid sm:grid-cols-3 gap-3 mb-8">
                 <div className="bg-white border border-cbf-gray-soft rounded-sm p-4">
@@ -284,6 +295,9 @@ export default function VendreQuartierPage({
           </div>
         </div>
       </section>
+
+      {/* Vie locale - équipements réels */}
+      <VieLocaleBlock facts={facts} quartierNom={q.nom} />
 
       {/* Analyse spécifique au quartier */}
       {q.contenu_vendre && (

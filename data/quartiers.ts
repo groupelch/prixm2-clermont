@@ -46,6 +46,8 @@ export interface Quartier {
   contenu_vendre?: ContenuVendre;
   /** Contenu unique pour la page /estimation-quartier/[slug] */
   contenu_estimation?: ContenuEstimation;
+  /** Point factuel essentiel (1-2 phrases, vrai et vérifiable) à afficher dans le hero */
+  point_essentiel?: string;
 }
 
 const ECART_PCT = 0.18;
@@ -88,6 +90,7 @@ interface Seed {
   superficie?: number;
   contenu_vendre?: ContenuVendre;
   contenu_estimation?: ContenuEstimation;
+  point_essentiel?: string;
 }
 
 const seeds: Seed[] = [
@@ -159,6 +162,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "L'ascenseur. Sur les immeubles centre-ville (souvent 5-6 étages), un appartement aux étages élevés sans ascenseur perd jusqu'à 18 % de sa valeur par rapport au même bien avec. C'est le facteur n°1 de variation, devant l'état et le DPE.",
     },
+    point_essentiel: `À 300 m de la cathédrale Notre-Dame-de-l'Assomption et de la place de Jaude. Tramway ligne A à 150 m. Immeubles haussmanniens des XIXe-XXe siècles, commerces de proximité à pied.`,
   },
   {
     slug: "clermont-ferrand-jaude",
@@ -222,6 +226,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "L'authenticité du bâti. Plus les éléments d'origine sont préservés (moulures, parquet, cheminées, ferronneries), plus le prix grimpe. Une rénovation moderne uniformisée, même soignée, peut paradoxalement faire perdre 5-10 % par rapport à un bien 'dans son jus' bien entretenu.",
     },
+    point_essentiel: `Sur la place de Jaude, cœur commercial de Clermont-Ferrand. Desserte directe tramway ligne A et B. Marché le plus liquide de l'agglomération (délai médian < 80 jours).`,
   },
   {
     slug: "clermont-ferrand-montferrand",
@@ -285,6 +290,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "Les travaux à venir. Sur un bien non rénové, un acheteur intelligent fait chiffrer charpente + couverture + isolation par un artisan AVANT signature, et déduit ce montant. Un vendeur qui n'anticipe pas ce calcul (en fournissant ses propres devis) subit toute la décote du diagnostic acheteur.",
     },
+    point_essentiel: `Quartier médiéval classé, maisons à pans de bois des XVe-XVIe siècles. À 4 km du centre-ville. Marché de plein air hebdomadaire sur la place Louis-Deteix.`,
   },
   {
     slug: "clermont-ferrand-salins",
@@ -319,6 +325,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7868, lng: 3.0738 },
+    contenu_vendre: {
+      intro: `Les Salins occupent une position est intermédiaire entre le centre de Clermont et La Pardieu. Le marché y est discret — peu de mises en vente simultanées, acheteurs de proximité. La base nautique du lac des Salins à 400 m attire les familles avec enfants, un argument vendeur sous-exploité sur ce secteur.`,
+      profil_vendeur: `Propriétaires d'appartements des années 1970-1990 qui arbitrent au profit d'une maison en périphérie ou d'un déménagement en dehors du département.`,
+      timing_conseil: `Privilégier mars-avril et septembre-octobre. Le quartier souffre des vacances scolaires — les familles (cible principale) ne visitent pas en juillet-août.`,
+      argument_cle: `Calme résidentiel avec accès rapide à la zone tertiaire La Pardieu et au tramway ligne A. Rapport qualité-prix solide sans la décote des quartiers nord.`,
+      piege_local: `Éviter de confondre Les Salins avec La Pardieu dans le pitch vendeur — les acheteurs ciblant la zone tertiaire iront directement sur La Pardieu. Ici on vend la résidence, pas la proximité bureau.`,
+    },
+    contenu_estimation: {
+      intro: `Estimer aux Salins demande de distinguer les deux générations de bâti : les tours des années 1970 (prix tirés vers le bas par les charges et le DPE) et les petits collectifs des années 1990-2000 (plus valorisés). L'écart peut atteindre 15 % pour une surface identique.`,
+      methode_locale: `Le vrai référentiel est le sous-quartier : les rues proches du parc des Salins se négocient significativement au-dessus des rues longeant la rocade. Notre analyse distingue ces micro-marchés.`,
+      cas_concret: `T3 de 68 m², 2e étage sans ascenseur, DPE D, vue parc — fourchette estimée entre 148 000 et 162 000 € selon état général et qualité des parties communes.`,
+      facteur_prix: `La proximité immédiate du parc des Salins (vue directe depuis les étages supérieurs) constitue la prime la plus déterminante sur ce secteur — jusqu'à 8 % d'écart.`,
+    },
+    point_essentiel: `Quartier résidentiel est, à 2 km de la place de Jaude. Parc des Salins et base nautique à 400 m. Tramway ligne A (arrêt Triozon) à 600 m.`,
   },
   {
     slug: "clermont-ferrand-chanturgue",
@@ -353,6 +373,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.8059, lng: 3.0902 },
+    contenu_vendre: {
+      intro: `Chanturgue occupe les hauteurs nord de Clermont avec une vue dégagée sur la chaîne des Puys que peu de quartiers urbains peuvent revendiquer. Ce positionnement attire une clientèle spécifique — cadres retraités, familles avec voiture, personnes cherchant le calme à 15 minutes du centre. Mais cette même spécificité restreint le bassin d'acheteurs.`,
+      profil_vendeur: `Propriétaires de longue date (20+ ans) qui ont acheté pour la vue et la tranquillité, souvent en fin de vie professionnelle.`,
+      timing_conseil: `Le printemps est décisif à Chanturgue : la vue sur les Puys sans feuillage obstructeur, les journées longues — les visites sont meilleures d'avril à juin.`,
+      argument_cle: `Vue panoramique sur la chaîne des Puys classée UNESCO et la plaine de Limagne — un attribut rare en secteur urbain clermontois, impossible à reproduire dans les quartiers bas.`,
+      piege_local: `L'absence de ligne de tramway est le point de friction no.1 des acheteurs. Anticipez-le dans l'argumentaire plutôt que d'espérer que l'acheteur ne le soulève pas.`,
+    },
+    contenu_estimation: {
+      intro: `L'estimation à Chanturgue repose presque entièrement sur deux variables : l'orientation (vue Puys ou vue plaine vs vue bâtiments) et le type de bien. Les appartements avec terrasse orientée ouest se négocient 12 à 18 % au-dessus des équivalents sans vue. C'est le facteur dominant, devant le DPE.`,
+      methode_locale: `Les références DVF locales sont rares — peu de transactions par an. Nos estimations croisent les données Chanturgue avec les ventes des quartiers en hauteur comparables (La Pradelle, partie haute de Fontgiève).`,
+      cas_concret: `T4 de 82 m², dernier étage, terrasse 18 m² vue Puys, DPE E (chauffage électrique), parking : fourchette estimée entre 172 000 et 192 000 € selon état des finitions.`,
+      facteur_prix: `L'orientation et la vue constituent le facteur no.1 à Chanturgue. Un appartement identique face à la plaine ou face aux bâtiments voisins peut se vendre 15 % moins cher.`,
+    },
+    point_essentiel: `Quartier sur les hauteurs nord, vue panoramique sur la chaîne des Puys et la plaine de la Limagne. À 2,5 km du centre. Parc des Vergnes à 700 m.`,
   },
   {
     slug: "clermont-ferrand-la-glaciere",
@@ -409,6 +443,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "Le DPE. Avec l'interdiction progressive de location des passoires thermiques (G en 2025, F en 2028, E en 2034), un bien noté F ou G perd 15-25 % de sa valeur — pas par esthétique, mais par contrainte légale future. C'est le facteur qui décale le plus le prix entre deux biens jumeaux.",
     },
+    point_essentiel: `Quartier ouest à 1 km de la place de Jaude, limitrophe de Chamalières. Piscine municipale Camille-Claudel à 400 m. Bus ligne 3 et 14 desservant le centre directement.`,
   },
   {
     slug: "clermont-ferrand-les-cezeaux",
@@ -465,6 +500,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "La distance à pied jusqu'à l'amphi principal. Un studio à 5 minutes à pied vaut 12-15 % de plus qu'un studio jumeau à 12 minutes. Les parents acheteurs visitent toujours en faisant le trajet : si l'enfant arrive essoufflé, l'offre tombe.",
     },
+    point_essentiel: `Campus universitaire Paul-Sabatier (UCA) et IUT à 200 m. Tramway ligne B direct vers le centre-ville (arrêt Cézeaux-Pellez). Forte demande locative étudiante toute l'année.`,
   },
   {
     slug: "clermont-ferrand-saint-jacques",
@@ -521,6 +557,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "L'étage et l'ascenseur. Sur les biens cible internes (rotation rapide, gardes nocturnes), un appartement au 4e sans ascenseur perd 15-20 % vs le même bien en RDC ou avec ascenseur. Pour les familles, c'est l'inverse : le RDC sur rue passante perd 10 %.",
     },
+    point_essentiel: `À 600 m du CHU Gabriel-Montpied. Tramway ligne B (arrêt Saint-Jacques) et bus nombreux. Marché de niche porté par les internes, soignants et personnels hospitaliers.`,
   },
   {
     slug: "clermont-ferrand-la-gare",
@@ -555,6 +592,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7760, lng: 3.0925 },
+    contenu_vendre: {
+      intro: `Le quartier de la Gare concentre une demande locative et d'achat portée par la mobilité professionnelle. Les cadres qui font régulièrement Paris ou Lyon en train, les soignants du CHU, les professionnels détachés en mission à Clermont : tous cherchent cette accessibilité. Le marché répond bien aux biens bien entretenus dans des copropriétés saines.`,
+      profil_vendeur: `Investisseurs qui arbitrent leur portefeuille locatif, propriétaires occupants mutés dans d'autres villes, parfois successions.`,
+      timing_conseil: `Pas de saisonnalité marquée — la demande est continue. La rentrée de septembre génère un pic locatif qui peut booster les acquéreurs-investisseurs.`,
+      argument_cle: `Accès direct Lyon en 1h45 et Paris en 3h sans voiture — un argument massif pour les profils bi-résidents et les couples dont un conjoint travaille ailleurs.`,
+      piege_local: `Ne pas négliger le bruit : les appartements côté voies ferrées subissent une décote réelle (5 à 10 %). Être transparent sur l'exposition avant la visite, pas après.`,
+    },
+    contenu_estimation: {
+      intro: `Estimer un bien à La Gare nécessite d'évaluer précisément l'impact du bruit ferroviaire. Côté voies : décote structurelle de 7 à 12 %. Côté rue perpendiculaire ou en retrait : prix standards du secteur. Cette distinction est souvent mal anticipée par les propriétaires.`,
+      methode_locale: `Notre méthode intègre systématiquement l'exposition sonore dans la grille d'analyse. Nous consultons le classement préfectoral des infrastructures bruyantes avant toute estimation dans ce périmètre.`,
+      cas_concret: `T2 de 42 m², 3e étage côté cour, DPE D, ascenseur, pas de parking : fourchette estimée entre 82 000 et 92 000 €. Même bien côté voies : 75 000 à 83 000 €.`,
+      facteur_prix: `L'orientation par rapport aux voies ferrées est le facteur différenciateur principal à La Gare — plus que le DPE ou l'étage.`,
+    },
+    point_essentiel: `Quartier structuré autour de la gare SNCF Clermont-Ferrand — liaison Lyon (1h45), Paris (3h). À 1,2 km de la place de Jaude. Bus lignes 5, 6, 10 et navettes gare.`,
   },
   {
     slug: "clermont-ferrand-carmes",
@@ -589,6 +640,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7815, lng: 3.0814 },
+    contenu_vendre: {
+      intro: `Les Carmes forment avec le quartier Saint-Pierre le cœur historique le plus authentique de Clermont. Ruelles pavées, architecture des XVIIIe-XIXe siècles, quelques maisons de ville à cachet exceptionnel — le potentiel est réel mais le marché reste confidentiel. Les biens y changent peu de mains, et chaque vente fait référence durablement.`,
+      profil_vendeur: `Succession, transmission intergénérationnelle, ou propriétaires qui avaient acheté pour le cachet mais découvrent que les travaux de rénovation d'un bâti ancien sont lourds.`,
+      timing_conseil: `Profiter du printemps et des journées longues — les ruelles étroites, sombres en hiver, sont bien plus attrayantes sous le soleil de mai-juin.`,
+      argument_cle: `Adresse historique irremplaçable à 400 m de la place de Jaude et 100 m de la cathédrale. Biens rares, qui ne se trouvent nulle part ailleurs dans l'agglomération.`,
+      piege_local: `Les immeubles anciens ont souvent des parties communes vieillissantes et des copropriétés avec peu de fonds de travaux. Un audit complet (AG, carnet d'entretien, charges) est indispensable avant mise en marché.`,
+    },
+    contenu_estimation: {
+      intro: `Estimer aux Carmes est un exercice complexe pour une raison simple : les ventes sont rares et les biens sont souvent atypiques (duplex, maisons de ville, appartements dans des hôtels particuliers). Les références DVF sont limitées. Notre méthode combine analyse DVF sur un périmètre élargi et expertise de biens similaires dans d'autres villes universitaires françaises.`,
+      methode_locale: `Nous analysons systématiquement l'état des parties communes, le ravalement, la chaudière collective. À surface égale, une copropriété bien entretenue se vend 15 à 20 % au-dessus d'une copropriété en difficulté.`,
+      cas_concret: `Appartement de 65 m² dans un immeuble XVIIIe rénové, 2e étage, poutres apparentes, DPE C après rénovation énergétique, sans parking : fourchette estimée entre 155 000 et 178 000 €.`,
+      facteur_prix: `L'état de la copropriété (et non du seul appartement) est le facteur n°1 d'écart de prix aux Carmes. Un immeuble rénové vs un immeuble dégradé peut représenter 20 % d'écart sur la même rue.`,
+    },
+    point_essentiel: `Adossé à la cathédrale et au quartier Saint-Pierre. Place des Carmes à 100 m. Ruelles piétonnes historiques, architecture des XVIIIe-XIXe siècles. À 400 m de la place de Jaude.`,
   },
   {
     slug: "clermont-ferrand-blaise-pascal",
@@ -644,6 +709,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "Le bruit. Plus que le DPE, plus que l'étage, c'est l'exposition sonore qui fait varier le prix de 15-20 % entre deux biens jumeaux. Un acheteur famille refuse souvent les rues passantes même à prix décoté — il préfère monter le budget pour le calme.",
     },
+    point_essentiel: `Rue Blaise-Pascal commerçante, entre le centre et la gare. À 500 m de la place de Jaude. Bus lignes 4 et 16. Lycée Sidoine-Apollinaire à 300 m.`,
   },
   {
     slug: "clermont-ferrand-oradou",
@@ -678,6 +744,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7651, lng: 3.1155 },
+    contenu_vendre: {
+      intro: `L'Oradou est le quartier "village dans la ville" de Clermont : résidentiel, légèrement en hauteur sur le rebord du plateau, avec vue dégagée et peu de trafic. Le Stade Gabriel-Montpied (Clermont Foot 63) à 500 m est connu des sportifs. Le marché est stable, porté par des familles qui ne veulent pas partir en communes mais cherchent la tranquillité.`,
+      profil_vendeur: `Propriétaires retraités qui libèrent de grands appartements ou pavillons, parfois des familles qui grandissent vers les communes sud.`,
+      timing_conseil: `Mars à juin — la luminosité et les espaces verts de l'Oradou sont mis en valeur. Éviter les jours de match (affluence et stationnement difficile proche du stade).`,
+      argument_cle: `Calme résidentiel et vue dégagée à 10 minutes du centre à pied — une combinaison rare à ce prix sur Clermont.`,
+      piege_local: `Les matchs du Clermont Foot génèrent des week-ends difficiles en termes de stationnement et de bruit sur les rues voisines du stade. À mentionner proactivement pour éviter une découverte post-compromis.`,
+    },
+    contenu_estimation: {
+      intro: `L'Oradou présente une segmentation forte entre les petits collectifs des années 1960-1970 (à rénover, DPE souvent F-G) et les constructions plus récentes bien isolées. L'écart peut atteindre 20 % pour une surface identique. Une estimation sérieuse ici ne peut pas ignorer le millésime de la construction.`,
+      methode_locale: `Nous analysons le millésime du bâtiment, l'isolation (plancher, combles, fenêtres), le mode de chauffage. Un immeuble des années 1990 avec double vitrage se compare très différemment d'une tour de 1968.`,
+      cas_concret: `T3 de 72 m², 4e étage avec ascenseur, vue dégagée, DPE D (isolation 2015), parking en sous-sol : fourchette estimée entre 148 000 et 165 000 €.`,
+      facteur_prix: `Le millésime et l'isolation du bâtiment constituent le premier facteur de prix à l'Oradou, avant l'étage ou l'exposition.`,
+    },
+    point_essentiel: `Quartier résidentiel au sud-est, à 2,7 km du centre. Stade Gabriel-Montpied (Clermont Foot 63) à 500 m. Vue dégagée sur le plateau, pavillons et petits collectifs des années 1960-1980.`,
   },
   {
     slug: "clermont-ferrand-fontgieve",
@@ -734,6 +814,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "La rue elle-même. À Fontgieve plus qu'ailleurs, la grille de prix doit être faite rue par rue, pas quartier par quartier. Écart possible : jusqu'à 18 % entre deux rues parallèles distantes de 150 mètres. Une estimation 'à la louche quartier' est mécaniquement fausse de 10-15 %.",
     },
+    point_essentiel: `Rue Fontgieve commerçante, marché hebdomadaire. À 900 m de la place de Jaude, limitrophe de Chamalières. Bus ligne 3 direct centre-ville. Gentrification progressive depuis 2015.`,
   },
   {
     slug: "clermont-ferrand-la-plaine",
@@ -768,6 +849,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7571, lng: 3.0845 },
+    contenu_vendre: {
+      intro: `La Plaine est l'un des quartiers les plus calmes du sud clermontois. Son bâti mêle petits collectifs des années 1980 et maisons de ville. La proximité de Beaumont et Aubière en fait un quartier de passage pour les familles qui hésite entre Clermont (prix) et les communes (espace). Ce profil intermédiaire joue en faveur du vendeur bien positionné.`,
+      profil_vendeur: `Primo-propriétaires qui revendent 5 à 8 ans après achat pour accéder à une maison en commune, parfois des retraités qui se rapprochent du centre.`,
+      timing_conseil: `La rentrée de septembre active les familles avec enfants. C'est la meilleure fenêtre pour ce quartier familial.`,
+      argument_cle: `Prix inférieurs de 10 à 15 % à Beaumont pour une qualité de vie similaire — argument percutant pour les primo-accédants.`,
+      piege_local: `Le manque de transports collectifs directs vers le centre est le frein no.1. Préparer un argumentaire sur les alternatives (bus, vélo, proximité voie rapide) avant les visites.`,
+    },
+    contenu_estimation: {
+      intro: `La Plaine est un marché de compromis — ni le prestige de Beaumont, ni la décote des quartiers nord. Les estimations doivent intégrer la concurrence directe des communes limitrophes : un acheteur qui regarde La Plaine regarde aussi Beaumont et Aubière.`,
+      methode_locale: `Nous croisent les données DVF de La Plaine avec celles de Beaumont et Aubière pour valider la cohérence de prix. L'écart structurel entre ces zones (10-15 %) est notre repère.`,
+      cas_concret: `Maison de 95 m² avec garage et jardin 250 m², DPE C, 3 chambres : fourchette estimée entre 242 000 et 268 000 €.`,
+      facteur_prix: `La présence d'un jardin ou d'une terrasse privative est le facteur prix no.1 à La Plaine — plus que la surface intérieure ou l'étage.`,
+    },
+    point_essentiel: `Zone résidentielle tranquille au sud-ouest, 1,4 km du centre. Bus ligne 9. École primaire dans le secteur. Limitrophe de Beaumont et Aubière.`,
   },
   {
     slug: "clermont-ferrand-la-pradelle",
@@ -802,6 +897,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7513, lng: 3.0878 },
+    contenu_vendre: {
+      intro: `La Pradelle est le quartier résidentiel tranquille du sud clermontois, souvent confondu avec La Plaine. Son bâti des années 1970-1980 — correct mais vieillissant — demande une présentation soignée et un prix ajusté. L'avantage : peu de concurrence simultanée, et une demande constante de familles cherchant calme et écoles de proximité.`,
+      profil_vendeur: `Propriétaires de la génération des années 1980-1990 qui ont acheté jeunes et revendent au moment de la retraite ou d'une succession.`,
+      timing_conseil: `Eviter l'été — très peu de visites juillet-août. Préférer septembre-novembre ou février-mars pour capter les familles.`,
+      argument_cle: `Calme absolu, école élémentaire à 300 m, bus vers les Cézeaux — un bon package pour les familles avec enfants et les étudiants-parents.`,
+      piege_local: `Les biens des années 1975-1985 avec chauffage électrique ont souvent un DPE E ou F. Préparer un devis de rénovation avant la mise en vente permet de justifier le prix et d'éviter les renégociations.`,
+    },
+    contenu_estimation: {
+      intro: `À La Pradelle, le DPE est devenu le premier sujet d'estimation. La proportion de biens classés E et F est supérieure à la moyenne clermontoise (construction des années 1970-1980 avec chauffage tout-électrique). Chaque dossier doit intégrer l'impact DVF des passoires énergétiques sur ce secteur.`,
+      methode_locale: `Nous calculons systématiquement la décote DPE selon les données ADEME locales. Un F sur ce secteur peut représenter une décote de 8 à 12 % par rapport à un C équivalent.`,
+      cas_concret: `T4 de 85 m², rez-de-chaussée avec jardin privatif 80 m², DPE E, chauffage électrique, garage : fourchette 158 000 à 176 000 €.`,
+      facteur_prix: `Le DPE est le facteur no.1 d'écart de prix à La Pradelle — plus que l'étage ou la surface.`,
+    },
+    point_essentiel: `Quartier calme au sud, 1,2 km du centre. Bus lignes 8 et 9 vers les Cézeaux (campus) et le centre. École élémentaire à 300 m.`,
   },
   {
     slug: "clermont-ferrand-trudaine",
@@ -836,6 +945,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7843, lng: 3.0859 },
+    contenu_vendre: {
+      intro: `Trudaine se situe dans l'angle mort des quartiers clermontois — ni assez central pour capter les acheteurs premium de Jaude, ni assez abordable pour attirer les primo-accédants qui regardent les quartiers nord. Son positionnement juste entre les deux en fait un marché équilibré, avec des délais de vente raisonnables pour les biens bien présentés.`,
+      profil_vendeur: `Propriétaires en fin de vie active qui libèrent de grands appartements pour se rapprocher de leur famille ou intégrer une résidence services.`,
+      timing_conseil: `Pas de saisonnalité marquée. La proximité du lycée Blaise-Pascal génère une demande de familles en avance sur la rentrée scolaire (mars-mai).`,
+      argument_cle: `À 500 m de la place de Jaude, square Louis-Ducher à 200 m, lycée Blaise-Pascal à 400 m — un triptyque qui intéresse les familles avec lycéens.`,
+      piege_local: `Le quartier est peu connu par son nom chez les acheteurs — ils diront "proche Jaude" ou "côté Fontgiève". Utiliser cette géographie dans les annonces plutôt que le nom de quartier officiel.`,
+    },
+    contenu_estimation: {
+      intro: `Estimer à Trudaine implique de bien situer le bien dans la micro-géographie : les rues proches du square et du lycée se négocient mieux que les rues sur axes passants. L'amplitude peut atteindre 10 % pour des biens de même surface.`,
+      methode_locale: `Nous travaillons rue par rue pour ce secteur. La tranquillité de la rue est un argument vendeur mesurable — nos références DVF le confirment.`,
+      cas_concret: `T3 de 66 m², 3e étage avec ascenseur, DPE D, cave, pas de parking : fourchette entre 138 000 et 152 000 €.`,
+      facteur_prix: `La situation précise dans la rue (côté quiet vs côté passant) est le premier facteur de prix à Trudaine.`,
+    },
+    point_essentiel: `Entre centre et Fontgiève, 500 m de la place de Jaude. Lycée Blaise-Pascal à 400 m. Square Louis-Ducher à 200 m. Bus lignes 4 et 14.`,
   },
   {
     slug: "clermont-ferrand-delille",
@@ -892,6 +1015,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "L'orientation. Un appartement plein sud à Delille vaut 200 €/m² de plus qu'un même appartement plein nord. La luminosité dans les immeubles haussmanniens (souvent 4 m de hauteur sous plafond) change radicalement l'expérience visite, et donc le prix de signature.",
     },
+    point_essentiel: `Quartier bourgeois résidentiel, rues arborées. Parc Vercingétorix à 300 m. À 650 m de la place de Jaude. Clientèle familiale CSP+, quasi absence de maisons.`,
   },
   {
     slug: "clermont-ferrand-cote-blatin",
@@ -926,6 +1050,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7699, lng: 3.0989 },
+    contenu_vendre: {
+      intro: `Côte-Blatin est en cours de transformation profonde — requalification du boulevard, nouveaux programmes mixtes, amélioration de l'espace public. Vendre ici aujourd'hui, c'est anticiper une revalorisation sur 3 à 5 ans. Les acheteurs avisés le savent. Le positionnement est donc à double lecture : prix présents modérés + potentiel futur tangible.`,
+      profil_vendeur: `Investisseurs locatifs qui ont réalisé leur plus-value sur d'autres secteurs et arbitrent ici, ou propriétaires occupants qui anticipent les travaux de copropriété liés à la rénovation du quartier.`,
+      timing_conseil: `Le tramway A à 200 m est un argument de vente à valoriser dans les annonces. Présenter la carte de la ligne dans les photos.`,
+      argument_cle: `Tramway ligne A à 200 m, 550 m de la place de Jaude, et un quartier dont la valeur patrimoniale progresse avec la requalification urbaine en cours.`,
+      piege_local: `Certaines copropriétés du boulevard ont des travaux importants à voter (ravalement, isolation). Vérifier le carnet d'entretien et les PV d'AG avant de fixer un prix — un immeuble avec gros travaux à venir se négocie différemment.`,
+    },
+    contenu_estimation: {
+      intro: `Côte-Blatin est difficile à estimer précisément car deux dynamiques coexistent : la décote liée aux copropriétés vieillissantes non rénovées, et la prime liée à la proximité du tramway et du centre. Le bon estimation intègre les deux.`,
+      methode_locale: `Nous comparons systématiquement les DVF du boulevard avec ceux des rues parallèles plus calmes. L'écart boulevard/rues peut atteindre 8 % selon l'exposition au bruit.`,
+      cas_concret: `T2 de 48 m², 2e étage, DPE E, vue sur rue calme perpendiculaire, pas de parking : fourchette entre 88 000 et 98 000 €.`,
+      facteur_prix: `L'état de la copropriété et la présence ou non de travaux votés est le facteur le plus déterminant à Côte-Blatin — avant l'étage ou le DPE.`,
+    },
+    point_essentiel: `Boulevard Côte-Blatin en requalification urbaine. À 550 m de la place de Jaude. Tramway ligne A à 200 m. Mixité commerciale et résidentielle en mutation.`,
   },
   {
     slug: "clermont-ferrand-vallieres",
@@ -982,6 +1120,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "La présence d'un garage fermé. À Vallières, un pavillon avec garage vaut 18 000 à 25 000 € de plus qu'un pavillon identique sans garage. C'est le critère n°1 pour les familles ingénieurs avec deux voitures, beaucoup plus différenciant que la surface ou l'état général.",
     },
+    point_essentiel: `Quartier résidentiel entre Saint-Jacques et La Gare. Parc de Vallières (aire de jeux, terrain de boules) à 200 m. À 800 m du centre. Bus lignes 5 et 16.`,
   },
   {
     slug: "clermont-ferrand-beaumont",
@@ -1016,6 +1155,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7619, lng: 3.1049 },
+    contenu_vendre: {
+      intro: `Ce secteur clermontois limitrophe de la commune de Beaumont bénéficie d'une adresse hybride : les prix de Clermont-Ferrand avec la qualité de vie proche des communes. Les acheteurs qui ne peuvent pas s'offrir Beaumont commune se rabattent ici. C'est un marché de recours qui fonctionne bien quand les prix sont cohérents.`,
+      profil_vendeur: `Familles qui agrandissent vers les communes du sud.`,
+      timing_conseil: `Eviter les périodes de fortes baisses de marché communes — ici la liquidité est étroitement liée aux prix de Beaumont. Si Beaumont baisse, ce secteur suit.`,
+      argument_cle: `Accès tramway ligne B à 700 m, lycée Blaise-Pascal proche, calme résidentiel — au prix de Clermont et non de Beaumont.`,
+      piege_local: `Les acheteurs testent systématiquement les prix commune de Beaumont avant de visiter ici. Si l'écart est trop faible, ils iront sur la commune.`,
+    },
+    contenu_estimation: {
+      intro: `Ce secteur est évalué en permanence en regard de Beaumont commune. Notre estimation intègre toujours la comparaison avec les biens équivalents côté commune — c'est ce que font les acheteurs.`,
+      methode_locale: `Nous appliquons une décote structurelle de 8 à 12 % par rapport à Beaumont commune (code postal 63110) pour les biens de type et état comparables.`,
+      cas_concret: `Maison de 90 m² avec jardin 200 m², DPE D, 3 chambres, garage : fourchette 225 000 à 248 000 € (vs 245 000-275 000 € côté commune).`,
+      facteur_prix: `Le différentiel avec la commune de Beaumont est le premier repère de prix — c'est la logique de l'acheteur sur ce secteur.`,
+    },
+    point_essentiel: `Limitrophe de la commune de Beaumont, au sud. Lycée Blaise-Pascal à 600 m. Tramway ligne B (arrêt Les Gravanches) à 700 m. Quartier pavillonnaire à faible densité.`,
   },
 
   // ===== NOUVEAUX QUARTIERS =====
@@ -1074,6 +1227,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "La place de parking. À La Pardieu, où la concentration de cadres deux voitures est élevée, un appartement avec une place de parking sécurisée vaut 12 000 à 18 000 € de plus que le même bien sans parking. Plus discriminant qu'à Jaude ou Centre-Ville où on accepte plus volontiers de stationner dans la rue.",
     },
+    point_essentiel: `Zone tertiaire de Clermont — siège social Michelin à 800 m, Limagrain et Groupama présents. Tramway ligne A (arrêt La Pardieu) à 200 m. Forte demande de cadres en résidence principale.`,
   },
   {
     slug: "clermont-ferrand-croix-de-neyrat",
@@ -1108,6 +1262,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.8113, lng: 3.0870 },
+    contenu_vendre: {
+      intro: `Croix-de-Neyrat est en mutation. Le quartier bénéficie de programmes ANRU de rénovation urbaine, d'investissements publics dans les espaces communs, et d'une dynamique démographique qui change lentement le profil des habitants. Vendre ici demande de cibler les acheteurs investisseurs (rendement) plutôt que les résidents premium.`,
+      profil_vendeur: `Bailleurs privés qui sortent du locatif social, propriétaires occupants qui partent suite à un changement de situation.`,
+      timing_conseil: `Ce marché est moins saisonnier — les acquéreurs investisseurs actifs toute l'année. La fin d'année (octobre-décembre) peut être opportune pour les ventes rapides.`,
+      argument_cle: `Tramway ligne A (arrêt Croix-de-Neyrat) à 500 m. Rénovation ANRU en cours qui améliore l'image et la valeur à terme. Prix d'entrée les plus bas sur des produits en bon état.`,
+      piege_local: `L'image du quartier reste un frein psychologique pour les acheteurs résidents. Cibler explicitement les investisseurs dans les annonces — ne pas "vendre du rêve" à des résidents qui visiteront et déchanteront.`,
+    },
+    contenu_estimation: {
+      intro: `L'estimation à Croix-de-Neyrat est complexifiée par la coexistence d'immeubles rénovés ANRU et d'immeubles non rénovés aux charges lourdes. Un T3 rénové avec DPE C peut valoir deux fois plus qu'un T3 des années 1970 non rénové sur la même rue.`,
+      methode_locale: `Nous classifions chaque bien selon son programme de rénovation (avant/après ANRU) avant toute estimation. Les références de prix doivent impérativement distinguer ces deux catégories.`,
+      cas_concret: `T3 de 65 m², programme rénové post-ANRU, DPE C, 4e étage avec ascenseur : fourchette entre 98 000 et 112 000 €. Même bien non rénové, DPE E : 72 000 à 85 000 €.`,
+      facteur_prix: `L'appartenance à un immeuble rénové (programme ANRU ou non) est le facteur prix no.1 à Croix-de-Neyrat.`,
+    },
+    point_essentiel: `Quartier nord en politique de la ville (ANRU). Tramway ligne A terminus nord (Champratel) à 800 m. Marché alimentaire hebdomadaire. À 2,7 km du centre, bus lignes 2 et 30.`,
   },
   {
     slug: "clermont-ferrand-champratel",
@@ -1142,6 +1310,20 @@ const seeds: Seed[] = [
       },
     ],
     coordinates: { lat: 45.7960, lng: 3.0823 },
+    contenu_vendre: {
+      intro: `Champratel est la porte nord de Clermont, terminus de la ligne A du tramway. Ce positionnement lui confère une liquidité relative — les utilisateurs du tram qui cherchent à se loger en bout de ligne. Mais le marché reste calme, avec peu de transactions annuelles et une clientèle de propriétaires occupants.`,
+      profil_vendeur: `Propriétaires de longue date, souvent retraités, qui ont acheté quand le tramway était en projet.`,
+      timing_conseil: `Le tramway est l'argument no.1. Mettre en avant l'arrêt Champratel dans le titre de l'annonce.`,
+      argument_cle: `Terminus tramway ligne A à 200 m — connexion directe centre-ville en 20 minutes. Parc des Vergnes à 300 m pour les familles.`,
+      piege_local: `Le terminus de tramway génère des nuisances sonores en heures de pointe pour les immeubles les plus proches. À vérifier et à mentionner pour les lots exposés.`,
+    },
+    contenu_estimation: {
+      intro: `L'estimation à Champratel repose sur l'accessibilité tramway comme principal déterminant — sans cette infrastructure, les prix rejoindraient ceux de Croix-de-Neyrat. La distance précise à l'arrêt conditionne directement la valeur.`,
+      methode_locale: `Nous calculons systématiquement la distance à l'arrêt Champratel. Entre 0 et 300 m : prime de 5 %. Au-delà de 600 m : alignement sur Croix-de-Neyrat.`,
+      cas_concret: `T3 de 68 m², 3e étage, DPE D, 200 m tramway, vue parc : fourchette entre 118 000 et 132 000 €.`,
+      facteur_prix: `La distance à l'arrêt tramway est le facteur no.1 à Champratel — avant le DPE, l'étage ou la vue.`,
+    },
+    point_essentiel: `Terminus tramway ligne A (arrêt Champratel) sur le quartier. Parc des Vergnes à 300 m. Vue sur la plaine de Limagne. À 3,3 km du centre, marché calme et propriétaires-occupants.`,
   },
   {
     slug: "clermont-ferrand-brezet",
@@ -1198,6 +1380,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "Le Plan d'Exposition au Bruit. Aucun autre facteur ne fait varier le prix de cette amplitude au Brézet. Deux pavillons jumeaux distants de 600 m peuvent valoir 50 000 € d'écart selon leur classe PEB, indépendamment de l'état ou de la surface. À documenter dès la première étape de l'estimation.",
     },
+    point_essentiel: `À 1,5 km de l'aéroport Clermont-Ferrand Auvergne. Zone de servitudes aéronautiques à vérifier lors de la vente. Bus ligne 16 direct centre-ville. Marché mixte industriel-résidentiel.`,
   },
 
   // ===== COMMUNES AGGLO =====
@@ -1276,6 +1459,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "Le terrain. À Beaumont, ce n'est pas la maison qui valorise le bien mais le terrain (taille, orientation, plat ou en pente). Une maison récente sur 400 m² de terrain en pente vaut moins qu'une maison plus ancienne sur 800 m² de terrain plat. Les acheteurs familles projettent piscine, jardin enfants, terrasse — sans terrain adéquat, l'offre tombe.",
     },
+    point_essentiel: `Commune résidentielle de 10 000 habitants au sud immédiat de Clermont. Tramway ligne B (arrêt Les Gravanches, limite nord) à 800 m. Lycée Blaise-Pascal sur la commune. Quasi absence d'appartements.`,
   },
   {
     slug: "chamalieres",
@@ -1353,6 +1537,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "L'année et le style de construction. Une villa Belle Époque (1900-1930) en bon état est valorisée 30-40 % de plus qu'une villa de qualité comparable des années 60-70. Le cachet patrimonial est l'argument central de Chamalières — les biens sans charme architectural plafonnent rapidement, même bien rénovés.",
     },
+    point_essentiel: `Commune la plus chère du Puy-de-Dôme — 16 000 habitants. Tramway ligne A traversant la commune (arrêts Royat-Chamalières et Fontgiève). Parc Bargoin (7 ha, animaux en liberté) au cœur de la commune.`,
   },
   {
     slug: "royat",
@@ -1429,6 +1614,7 @@ const seeds: Seed[] = [
       facteur_prix:
         "L'accessibilité piétonne. À Royat, plus que partout ailleurs, l'absence de relief et la proximité services se paient cher. Un même bien dans le bas de Royat (relief plat, services à 3 min à pied) vaut 8-12 % de plus que le même bien dans le haut (relief marqué, voiture indispensable).",
     },
+    point_essentiel: `Station thermale classée, thermes de Royat-Chamalières à 200 m. Tramway ligne A (arrêt Royat-Chamalières). Architecture Belle Époque des villas de la fin XIXe siècle. À 6 km de Clermont.`,
   },
   {
     slug: "aubiere",
@@ -1464,6 +1650,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7399, lng: 3.1045 },
     superficie: 8.7,
+    contenu_vendre: {
+      intro: `Aubière est la commune universitaire par excellence de l'agglomération — tramway ligne B terminus sur la commune, Polytech' Clermont et IUT à 300 m du centre. Ce positionnement génère une demande locative étudiante permanente, mais aussi une demande d'achat de cadres et d'enseignants-chercheurs. Les studios et T2 s'y vendent vite, les grandes surfaces moins.`,
+      profil_vendeur: `Investisseurs locatifs qui arbitrent leur portefeuille, salariés des grandes entreprises de la ZA des Béalières qui déménagent.`,
+      timing_conseil: `Janvier-mars est la fenêtre idéale : les parents d'étudiants commencent à chercher pour la rentrée suivante, les acquéreurs investisseurs préparent leurs achats.`,
+      argument_cle: `Tramway ligne B terminus, campus universitaire à pied — rendement locatif parmi les plus stables de l'agglomération (demande étudiante continue 9 mois/an).`,
+      piege_local: `Les vacances d'été créent une vacance locative de 2 à 3 mois sur les petites surfaces étudiantes. Intégrer ce point dans le calcul de rentabilité pour les acheteurs investisseurs.`,
+    },
+    contenu_estimation: {
+      intro: `Estimer à Aubière demande de distinguer deux marchés dans la même commune : le locatif étudiant (T1/T2 proches du tram et du campus) et le résidentiel familial (T3/T4 en retrait). Les prix au m² y sont significativement différents — jusqu'à 20 % d'écart.`,
+      methode_locale: `Nos références DVF distinguent systématiquement les deux segments. Un T1 de 25 m² proche tram n'a pas la même valeur au m² qu'un T4 de 90 m² en pavillon.`,
+      cas_concret: `T2 de 38 m², 2e étage, DPE D, 200 m du tramway, cuisine équipée : fourchette entre 72 000 et 82 000 €.`,
+      facteur_prix: `La distance à l'arrêt de tramway est le facteur no.1 sur les petites surfaces à Aubière — chaque 100 m supplémentaire représente environ 2 % de valeur en moins.`,
+    },
+    point_essentiel: `Tramway ligne B terminus (arrêt Université). Campus Polytech' Clermont et IUT à 300 m. 10 000 habitants. Zone d'activités Les Béalières. Bon rapport qualité-prix pour les investisseurs locatifs.`,
   },
   {
     slug: "ceyrat",
@@ -1499,6 +1699,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7388, lng: 3.0672 },
     superficie: 11.6,
+    contenu_vendre: {
+      intro: `Ceyrat est la commune de la "carte postale" de Clermont : vue sur le puy de Dôme, paysage volcanique préservé, calme absolu, maisons avec terrain. L'acheteur type est un cadre supérieur ou chef d'entreprise qui assume de faire 15 minutes de voiture vers Clermont. Ce marché fonctionne bien sur les biens de qualité et médiocrement sur les produits standard.`,
+      profil_vendeur: `Propriétaires retraités qui partent vers le centre ou les services, ou couples dont les enfants ont grandi.`,
+      timing_conseil: `Printemps indispensable — la vue sur les Puys sans brume est l'argument no.1. Une vente en hiver brumeux sous-valorise systématiquement les biens avec vue.`,
+      argument_cle: `Vue sur la chaîne des Puys classée UNESCO, tranquillité absolue, terrain arboré — attributs impossibles à trouver en milieu urbain.`,
+      piege_local: `L'absence totale de transport collectif est rédhibitoire pour les non-automobilistes. Cibler exclusivement les acquéreurs avec deux voitures — pas la peine de faire visiter à des personnes dépendantes des transports.`,
+    },
+    contenu_estimation: {
+      intro: `La vue détermine tout à Ceyrat. Deux maisons identiques en surface et état peuvent varier de 20 à 35 % selon que l'on voit le puy de Dôme ou le bâtiment voisin. Aucune estimation sérieuse ne peut faire l'impasse sur cet audit visuel préalable.`,
+      methode_locale: `Nous visitons systématiquement en journée, par beau temps, pour évaluer la qualité de la vue depuis chaque pièce principale. C'est le premier poste de notre grille d'analyse à Ceyrat.`,
+      cas_concret: `Maison de 125 m², terrain 600 m², vue Puys dégagée, DPE D, garage double : fourchette entre 368 000 et 415 000 €.`,
+      facteur_prix: `La vue sur la chaîne des Puys est le facteur no.1 absolu à Ceyrat — avant la surface, l'état ou le DPE.`,
+    },
+    point_essentiel: `Village résidentiel perché dans les Puys, à 8 km de Clermont. Vue sur la chaîne des volcans et la plaine. Pas de transport en commun — voiture indispensable. Maisons avec terrain uniquement.`,
   },
   {
     slug: "lempdes",
@@ -1534,6 +1748,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7706, lng: 3.1471 },
     superficie: 11.6,
+    contenu_vendre: {
+      intro: `Lempdes offre le meilleur ratio prix/accès de l'est clermontois. À 8 km de Clermont-Ferrand, avec la zone d'activités Les Portes de Thiers et un tissu résidentiel principalement pavillonnaire, la commune attire des familles à budget contraint qui refusent les quartiers nord de Clermont. Vendre ici, c'est vendre de l'espace à prix raisonnable.`,
+      profil_vendeur: `Propriétaires qui partent vers Clermont (rapprochement du travail) ou qui "montent" vers une maison plus grande en commune plus verte.`,
+      timing_conseil: `Pas de saisonnalité marquée. Les mutations professionnelles vers la zone d'activités alimentent une demande continue.`,
+      argument_cle: `Prix 20 à 30 % inférieurs à Clermont pour des maisons avec terrain — rapport espace/prix imbattable dans l'agglomération.`,
+      piege_local: `L'absence de tramway est perçue comme un handicap. Préparer un calcul du temps de trajet domicile-travail en voiture pour relativiser ce point.`,
+    },
+    contenu_estimation: {
+      intro: `Lempdes est un marché pavillonnaire où le jardin et le garage font la différence. Les appartements (rares) se valorisent peu — c'est un marché de maisons.`,
+      methode_locale: `Nous croisons les DVF lempdinois avec ceux de Pont-du-Château (comparable proche) pour valider les fourchettes.`,
+      cas_concret: `Maison de 100 m², terrain 400 m², DPE D, 4 pièces, garage : fourchette entre 198 000 et 222 000 €.`,
+      facteur_prix: `La surface du terrain est le premier facteur de prix à Lempdes — un jardin de 600 m² vs 200 m² peut valoir 15 000 à 25 000 € de différence.`,
+    },
+    point_essentiel: `Commune de 9 000 habitants à l'est, bords de l'Allier. Zone d'activités Les Portes de Thiers. Bus lignes vers Clermont. Pas de tramway. Prix inférieurs de 20-30% à Clermont pour qualité équivalente.`,
   },
   {
     slug: "romagnat",
@@ -1569,6 +1797,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7266, lng: 3.0990 },
     superficie: 13.7,
+    contenu_vendre: {
+      intro: `Romagnat est le village "verdure" du sud clermontois. Ses 4 000 habitants ont choisi la campagne à 10 minutes de Clermont. Maisons avec terrain, quelques lotissements récents, vue sur les Puys pour les orientations ouest. Un marché calme, avec des acheteurs qui ont fait le choix conscient du véhicule quotidien.`,
+      profil_vendeur: `Familles qui grandissent et cherchent plus d'espace, retraités qui quittent le village pour se rapprocher des services.`,
+      timing_conseil: `Printemps-été — le cadre verdoyant est mis en valeur. Les photos de jardin en avril-mai sont décisives.`,
+      argument_cle: `Calme de village à 10 km du centre de Clermont, maisons avec terrain, école primaire et maternelle sur la commune.`,
+      piege_local: `Voiture indispensable — à signaler clairement dans les annonces pour éviter les visites non qualifiées.`,
+    },
+    contenu_estimation: {
+      intro: `À Romagnat, le terrain fait le prix bien plus que la maison elle-même. Un bungalow sur 800 m² peut valoir plus qu'une villa sans jardin.`,
+      methode_locale: `Nos DVF locaux sont peu nombreux (village de 4 000 habitants). Nous croisons avec les communes comparables du même secteur (Pérignat-les-Sarliève, La Roche-Blanche).`,
+      cas_concret: `Maison de 110 m², terrain 500 m², DPE D, 4 chambres, vue dégagée : fourchette entre 248 000 et 278 000 €.`,
+      facteur_prix: `La taille et l'orientation du terrain sont les premiers facteurs de valorisation à Romagnat.`,
+    },
+    point_essentiel: `Village de 4 000 habitants au sud verdoyant. Accès route de la Baraque (D978). Écoles primaire et maternelle dans le village. Maisons avec terrain, vue sur la plaine de Limagne.`,
   },
   {
     slug: "cebazat",
@@ -1604,6 +1846,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.8218, lng: 3.0894 },
     superficie: 11.3,
+    contenu_vendre: {
+      intro: `Cébazat est la commune pavillonnaire du nord clermontois — 6 000 habitants, tissu résidentiel dense, peu de faste mais beaucoup de pragmatisme. Son marché est stable et alimenté par les salariés de la zone nord (logistique, industrie) et les familles qui veulent leur jardin à prix accessible.`,
+      profil_vendeur: `Primo-propriétaires qui revendent après 8 à 12 ans pour accéder à une maison plus grande, retraités qui libèrent du foncier.`,
+      timing_conseil: `Mars-mai pour les familles. L'accès bus ligne 2 vers Clermont est un argument à faire figurer dans l'annonce.`,
+      argument_cle: `Prix parmi les plus abordables de l'agglomération pour une maison avec jardin, à 15 minutes de voiture du centre de Clermont.`,
+      piege_local: `Les maisons des années 1970-1980 ont souvent un DPE E ou F (chauffage fuel ou électrique). Anticiper le sujet avec un devis de rénovation avant mise en vente.`,
+    },
+    contenu_estimation: {
+      intro: `Cébazat est un marché homogène — peu de biens d'exception, peu de biens catastrophiques. Les estimations sont relativement stables et les délais de vente raisonnables sur les biens bien pricés.`,
+      methode_locale: `Les références DVF de Cébazat sont suffisantes pour valider une fourchette précise. La commune a assez de transactions annuelles pour des comparables fiables.`,
+      cas_concret: `Maison de 95 m², terrain 350 m², DPE E, 3 chambres, garage : fourchette entre 188 000 et 210 000 €.`,
+      facteur_prix: `Le DPE est le premier facteur de valorisation à Cébazat — le bâti homogène des années 1970-1990 concentre beaucoup de passoires énergétiques qui pèsent sur les prix.`,
+    },
+    point_essentiel: `Commune pavillonnaire nord de 6 000 habitants. À 5 km du centre de Clermont. Bus ligne 2 vers le centre. Marché calme majoritairement propriétaires-occupants. Pas de tramway.`,
   },
   {
     slug: "gerzat",
@@ -1639,6 +1895,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.8162, lng: 3.1072 },
     superficie: 9.5,
+    contenu_vendre: {
+      intro: `Gerzat bénéficie depuis 2023 du terminus tramway ligne A (arrêt Gerzat), ce qui a modifié le profil des acheteurs. La commune mixte industrie-résidentiel attire désormais des actifs cherchant un accès direct au centre de Clermont sans voiture. L'impact sur les prix a été sensible : +6 à +9 % sur les biens proches du terminus entre 2021 et 2024.`,
+      profil_vendeur: `Propriétaires de longue date qui profitent de la revalorisation post-tramway pour arbitrer.`,
+      timing_conseil: `L'argument tramway est neuf — l'utiliser systématiquement en premier dans les annonces et les visites.`,
+      argument_cle: `Tramway ligne A terminus Gerzat — connexion directe centre-ville de Clermont en 25 minutes. Plus besoin de voiture pour le quotidien.`,
+      piege_local: `Les biens éloignés du terminus (plus de 800 m) ne bénéficient pas de la prime tramway et restent sur les prix pré-tramway. Ne pas les sur-valoriser par amalgame.`,
+    },
+    contenu_estimation: {
+      intro: `L'arrivée du tramway à Gerzat crée deux marchés dans la même commune : les biens proches du terminus (prime de 6 à 9 %) et les biens en retrait (valorisation habituelle). Toute estimation doit situer précisément le bien par rapport à l'arrêt.`,
+      methode_locale: `Nous calculons la distance exacte à l'arrêt Gerzat et appliquons une grille de prime décroissante selon la distance.`,
+      cas_concret: `T3 de 70 m², 300 m du terminus tramway, DPE D, parking : fourchette entre 138 000 et 152 000 €.`,
+      facteur_prix: `La proximité du terminus tramway est le premier facteur de valorisation à Gerzat depuis 2023.`,
+    },
+    point_essentiel: `Commune nord-est de 8 000 habitants. Zone d'activités, présence industrielle. Bus lignes directes Clermont. Tramway ligne A (arrêt terminus Gerzat) sur la commune depuis 2023.`,
   },
   {
     slug: "riom",
@@ -1674,6 +1944,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.8938, lng: 3.1132 },
     superficie: 31.5,
+    contenu_vendre: {
+      intro: `Riom est une ville à part dans l'agglomération : sous-préfecture de 20 000 habitants avec un centre-ville en pierre noire de Volvic d'une richesse architecturale rare, gare SNCF en centre avec ligne directe vers Clermont-Ferrand (15 à 20 minutes). Les acheteurs qui découvrent Riom après avoir cherché à Clermont sont souvent séduits par les prix et le cachet.`,
+      profil_vendeur: `Propriétaires de bâtiment ancien qui n'ont plus les moyens d'entretenir, successions, ou actifs qui se rapprochent de Clermont.`,
+      timing_conseil: `Le patrimoine architectural de Riom est mis en valeur par beau temps — éviter les visites en période brumeuse ou pluvieuse.`,
+      argument_cle: `Centre historique classé en pierre de Volvic, gare SNCF directe Clermont (15-20 min), prix 35 à 45 % inférieurs à Clermont-Ferrand pour surface et état comparables.`,
+      piege_local: `Le bâti ancien (XVe-XVIIIe siècles) en centre-ville cache souvent des travaux importants : charpente, humidité, électricité ancienne. Un audit technique avant estimation est fortement recommandé.`,
+    },
+    contenu_estimation: {
+      intro: `Estimer à Riom demande de distinguer le centre ancien (bâti en pierre noire, cachet exceptionnel mais travaux lourds potentiels) de la périphérie pavillonnaire (constructions récentes, état courant). Les prix au m² peuvent varier du simple au double entre ces deux segments.`,
+      methode_locale: `Nous distinguons systématiquement les deux segments. Pour le centre ancien, nous appliquons une grille travaux spécifique basée sur les coûts de rénovation de bâti en pierre de Volvic.`,
+      cas_concret: `Maison de ville de 130 m² en centre ancien, pierre noire, à rénover (DPE F), jardin 80 m² : fourchette entre 142 000 et 168 000 €.`,
+      facteur_prix: `L'état structurel du bâti est le facteur no.1 à Riom pour le centre ancien — avant la surface ou l'emplacement.`,
+    },
+    point_essentiel: `Sous-préfecture du Puy-de-Dôme, 20 000 habitants à 15 km nord de Clermont. Gare SNCF en centre-ville (ligne Clermont-Vichy). Patrimoine architectural exceptionnel en pierre noire de Volvic.`,
   },
   {
     slug: "chatel-guyon",
@@ -1709,6 +1993,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.9163, lng: 3.0635 },
     superficie: 25.8,
+    contenu_vendre: {
+      intro: `Châtel-Guyon est une station thermale à double visage : les résidents permanents (6 000 habitants) et les curistes-résidents secondaires. Ces deux marchés coexistent et l'acheteur peut être très différent d'une vente à l'autre. Les biens d'architecte de la Belle Époque proches des thermes se vendent à des budgets parisiens ou lyonnais — les pavillons périphériques restent sur un marché local.`,
+      profil_vendeur: `Retraités qui quittent la station pour des raisons de santé ou de famille, ou propriétaires de résidences secondaires qui arbitrent.`,
+      timing_conseil: `Printemps et été — la saison thermale (mai-septembre) active la demande de résidences secondaires. La clientèle extra-locale est présente à cette période.`,
+      argument_cle: `Route nationale D2009 directe Clermont-Ferrand (30 min), thermes réputés, architecture Belle Époque — pour les retraités cherchant qualité de vie et santé.`,
+      piege_local: `Hors saison thermale, la vie commerciale est réduite. Certains commerces ferment l'hiver. À mentionner proactivement aux acheteurs résidents permanents.`,
+    },
+    contenu_estimation: {
+      intro: `Deux marchés à Châtel-Guyon : les villas Belle Époque (marché atypique, acheteurs patrimoniaux) et le résidentiel courant (marché local comparable à Riom). L'estimation d'une villa de caractère exige une méthodologie spécifique.`,
+      methode_locale: `Pour les villas Belle Époque, nous utilisons une approche hédoniste qui valorise séparément le foncier, le bâti et le cachet architectural. Pour le résidentiel courant, référentiel DVF standard.`,
+      cas_concret: `Villa Belle Époque de 180 m², terrain 800 m², rénovée, vue thermes : fourchette entre 285 000 et 335 000 €.`,
+      facteur_prix: `Le cachet architectural (Belle Époque vs courant) est le premier déterminant de valeur pour les villas de Châtel-Guyon.`,
+    },
+    point_essentiel: `Station thermale à 20 km de Clermont. Thermes de Châtel-Guyon (groupe Valvital). Route nationale D2009 directe vers Clermont (30 min). Architecture Belle Époque, résidences secondaires fréquentes.`,
   },
   {
     slug: "perignat-les-sarlieves",
@@ -1744,6 +2042,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7255, lng: 3.1182 },
     superficie: 12.4,
+    contenu_vendre: {
+      intro: `Pérignat-lès-Sarliève est la commune premium discrète du sud-est clermontois. Ses 2 500 habitants ont une adresse résidentielle de qualité, avec vue sur les volcans, accès autoroute A75 à 2 km, et calme absolu. Une clientèle de cadres et de professions libérales en fait sa clientèle type. Les biens de qualité partent vite et bien.`,
+      profil_vendeur: `Cadres qui déménagent suite à mutation professionnelle, couples dont les enfants ont quitté le foyer.`,
+      timing_conseil: `Printemps — les jardins et la vue sur les Puys sont en pleine forme. Les acheteurs de ce profil visitent surtout le samedi matin.`,
+      argument_cle: `Accès autoroute A75 à 2 km, vue sur les volcans, calme absolu, maisons avec terrain — le profil idéal pour les cadres avec famille.`,
+      piege_local: `Pas de transports collectifs — à mentionner dès le premier contact pour qualifier les acheteurs réellement autonomes en voiture.`,
+    },
+    contenu_estimation: {
+      intro: `Pérignat-lès-Sarliève est un marché premium de niche. Les DVF locaux sont rares (peu de transactions par an) et peuvent mal représenter la fourchette réelle. Nous élargissons nos références à Ceyrat et Romagnat pour valider les estimations.`,
+      methode_locale: `Nous appliquons une prime "vue volcans" et une prime "autoroute proche" dans notre grille. Ces deux attributs sont mesurables et vérifiables.`,
+      cas_concret: `Maison de 140 m², terrain 700 m², DPE C (construction 2008), vue volcans, garage double : fourchette entre 348 000 et 395 000 €.`,
+      facteur_prix: `La qualité et l'ampleur de la vue sur les volcans est le premier facteur de valorisation à Pérignat — un bien sans vue se valorise comme Romagnat.`,
+    },
+    point_essentiel: `Commune de 2 500 habitants au sud-est. Site archéologique gaulois du Puy de Sarliève. Accès autoroute A75 à 2 km. Environnement calme, maisons avec jardin, vue sur les volcans.`,
   },
   {
     slug: "durtol",
@@ -1779,6 +2091,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7808, lng: 3.0419 },
     superficie: 3.8,
+    contenu_vendre: {
+      intro: `Durtol est le village "perché et panoramique" de l'ouest clermontois. Ses 2 000 habitants ont fait le choix radical du calme et de la vue — sur la plaine de Limagne et les Puys — en échange d'une dépendance totale à la voiture. Le marché est confidentiel, les mutations rares, et chaque vente est un événement. Les biens avec vue se valorisent exceptionnellement.`,
+      profil_vendeur: `Retraités qui descendent vers la plaine pour se rapprocher des services médicaux, ou propriétaires de résidences secondaires.`,
+      timing_conseil: `Été indispensable — la vue panoramique sur la plaine par beau temps est l'argument no.1. Ne jamais faire visiter par temps de brouillard.`,
+      argument_cle: `Vue panoramique exceptionnelle sur la plaine de Limagne et les Puys. Forêt domaniale à 500 m. Calme absolu — le village le plus tranquille de l'agglomération.`,
+      piege_local: `La route d'accès est en lacets — non accessible pour des personnes à mobilité réduite. Un acheteur senior doit être prévenu de cette contrainte physique avant de faire le déplacement.`,
+    },
+    contenu_estimation: {
+      intro: `Estimer à Durtol est particulièrement complexe : les transactions sont rares (moins de 10 par an), les biens tous différents, et la vue fait une différence abyssale. Nous utilisons des références comparatives nationales (villages perchés avec vue, Cantal, Puy-de-Dôme voisin) quand les DVF locaux sont insuffisants.`,
+      methode_locale: `La vue est évaluée sur 3 niveaux : vue totale Puys + plaine (prime max), vue partielle (prime modérée), vue obstruée (prix standard). Ce seul critère peut représenter 40 000 à 80 000 € d'écart.`,
+      cas_concret: `Maison de 120 m², terrain 900 m², vue panoramique totale, DPE D, garage : fourchette entre 295 000 et 345 000 €.`,
+      facteur_prix: `La vue panoramique est le facteur de valorisation absolu à Durtol — sans vue, le bien se valorise comme un bien rural ordinaire.`,
+    },
+    point_essentiel: `Village perché à l'ouest de Clermont (2 000 habitants). Vue panoramique sur la plaine et les Puys. Forêt domaniale à 500 m. Pas de transport collectif — voiture obligatoire.`,
   },
   {
     slug: "pont-du-chateau",
@@ -1814,6 +2140,20 @@ const seeds: Seed[] = [
     ],
     coordinates: { lat: 45.7950, lng: 3.2490 },
     superficie: 22.5,
+    contenu_vendre: {
+      intro: `Pont-du-Château bénéficie d'une double attractivité : la gare SNCF en centre-ville (ligne Clermont-Thiers, 15 minutes pour Clermont) et les bords de l'Allier pour les amateurs de nature et de loisirs nautiques. Ses 11 000 habitants font de la commune un marché intermédiaire dynamique, ni trop calme ni trop dense. Les maisons avec jardin partent bien.`,
+      profil_vendeur: `Actifs qui se rapprochent de Clermont suite à une mutation ou un changement de situation familiale.`,
+      timing_conseil: `Mars-juin — les bords de l'Allier et les jardins sont à leur avantage. La gare est un argument toute l'année.`,
+      argument_cle: `Gare SNCF en centre-ville — 15 minutes pour Clermont en train. Marché hebdomadaire le vendredi. Bords de l'Allier pour les loisirs.`,
+      piege_local: `Le risque inondation sur les bords de l'Allier est une contrainte réglementaire (PPRI) pour certains biens. Vérifier le zonage avant de positionner le prix.`,
+    },
+    contenu_estimation: {
+      intro: `L'estimation à Pont-du-Château intègre deux variables importantes : la proximité de la gare (prime de 5 à 8 % dans un rayon de 500 m) et le zonage PPRI pour les biens proches de l'Allier (décote potentielle de 8 à 15 % en zone rouge).`,
+      methode_locale: `Nous consultons le Plan de Prévention du Risque Inondation (PPRI) systématiquement pour les biens à moins de 800 m de l'Allier.`,
+      cas_concret: `Maison de 105 m², terrain 350 m², hors PPRI, DPE D, 500 m gare : fourchette entre 218 000 et 242 000 €.`,
+      facteur_prix: `La distance à la gare SNCF et le zonage PPRI sont les deux premiers facteurs de valorisation à Pont-du-Château.`,
+    },
+    point_essentiel: `Commune de 11 000 habitants sur les bords de l'Allier, à 10 km est de Clermont. Gare SNCF (ligne Clermont-Thiers, 15 min en train). Centre historique, marché hebdomadaire le vendredi.`,
   },
 ];
 
