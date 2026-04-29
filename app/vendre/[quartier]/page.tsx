@@ -16,6 +16,7 @@ import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import { getQuartierFacts } from "@/lib/quartier-facts";
 import { VieLocaleBlock } from "@/components/quartier/VieLocaleBlock";
+import { getDvfStatsForQuartier } from "@/lib/dvf";
 import {
   BreadcrumbSchema,
   FaqPageSchema,
@@ -56,6 +57,7 @@ export default function VendreQuartierPage({
   const articles = getArticlesForQuartier(q.slug).slice(0, 3);
   const refPrix = q.prixAppartement ?? q.prixMaison;
   const facts = getQuartierFacts(q.coordinates.lat, q.coordinates.lng);
+  const dvfStats = getDvfStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
 
   const faq = [
     {
@@ -292,6 +294,39 @@ export default function VendreQuartierPage({
                 </ul>
               </div>
             </div>
+
+            {/* Prix DVF réels */}
+            {(dvfStats.appartements || dvfStats.maisons) && (
+              <div className="mt-5 pt-5 border-t border-cbf-gray-soft">
+                <p className="text-[0.6rem] uppercase tracking-wider text-cbf-gray-light font-semibold mb-3">
+                  Prix DVF réels — {dvfStats.total} transactions enregistrées
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  {dvfStats.appartements && (
+                    <div className="bg-white rounded-sm p-3 border border-cbf-gray-soft text-center">
+                      <p className="text-[0.6rem] uppercase tracking-wider text-cbf-gray-light mb-1">Appartement</p>
+                      <p className="font-playfair text-lg font-bold text-cbf-black">
+                        {dvfStats.appartements.prix_m2_median.toLocaleString("fr-FR")} €/m²
+                      </p>
+                      <p className="text-[0.65rem] text-cbf-gray-light">
+                        {dvfStats.appartements.nb_transactions} ventes · source DGFiP
+                      </p>
+                    </div>
+                  )}
+                  {dvfStats.maisons && (
+                    <div className="bg-white rounded-sm p-3 border border-cbf-gray-soft text-center">
+                      <p className="text-[0.6rem] uppercase tracking-wider text-cbf-gray-light mb-1">Maison</p>
+                      <p className="font-playfair text-lg font-bold text-cbf-black">
+                        {dvfStats.maisons.prix_m2_median.toLocaleString("fr-FR")} €/m²
+                      </p>
+                      <p className="text-[0.65rem] text-cbf-gray-light">
+                        {dvfStats.maisons.nb_transactions} ventes · source DGFiP
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>

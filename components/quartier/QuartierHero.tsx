@@ -57,12 +57,26 @@ export function QuartierHero({ quartier }: { quartier: Quartier }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.18 }}
-              className="text-lg text-cbf-gray max-w-2xl mb-8 leading-relaxed"
+              className="text-lg text-cbf-gray max-w-2xl mb-5 leading-relaxed"
             >
               Appartements, maisons, investissement : tout ce qu'il faut savoir
               sur le marché immobilier à {quartier.nom} — données chiffrées et
               expertise CBF Conseils.
             </motion.p>
+
+            {quartier.point_essentiel && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.22 }}
+                className="flex items-start gap-3 bg-white border-l-4 border-cbf-gold px-4 py-3 rounded-sm max-w-xl mb-8"
+              >
+                <MapPin className="h-4 w-4 text-cbf-gold flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-cbf-gray leading-relaxed">
+                  {quartier.point_essentiel}
+                </p>
+              </motion.div>
+            )}
 
             <motion.div
               initial={{ opacity: 0 }}

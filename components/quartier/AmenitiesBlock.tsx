@@ -31,14 +31,23 @@ function Column({ icon, label, items }: ColumnProps) {
         {visible.map((item, i) => (
           <li
             key={`${item.nom}-${i}`}
-            className="text-sm text-cbf-gray leading-snug"
+            className="text-sm text-cbf-gray leading-snug flex items-start justify-between gap-2"
           >
-            <span className="block font-medium text-cbf-black">
-              {item.nom}
-            </span>
-            {(item.type || item.extra) && (
-              <span className="block text-xs text-cbf-gray-light">
-                {[item.type, item.extra].filter(Boolean).join(" • ")}
+            <div>
+              <span className="block font-medium text-cbf-black">
+                {item.nom}
+              </span>
+              {(item.type || item.extra) && (
+                <span className="block text-xs text-cbf-gray-light">
+                  {[item.type, item.extra].filter(Boolean).join(" • ")}
+                </span>
+              )}
+            </div>
+            {item.distanceKm !== undefined && (
+              <span className="flex-shrink-0 text-xs font-bold text-cbf-gold bg-cbf-ivory px-2 py-0.5 rounded-sm">
+                {item.distanceKm < 1
+                  ? `${Math.round(item.distanceKm * 1000)} m`
+                  : `${item.distanceKm.toFixed(1)} km`}
               </span>
             )}
           </li>

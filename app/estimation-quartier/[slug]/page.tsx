@@ -14,6 +14,7 @@ import {
   PlaceSchema,
 } from "@/components/common/SchemaOrg";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
+import { getDvfStatsForQuartier } from "@/lib/dvf";
 import { buildMetadata } from "@/lib/seo";
 import { formatPricePerM2, SITE_URL } from "@/lib/utils";
 
@@ -48,6 +49,7 @@ export default function EstimationQuartierPage({
   const articles = getArticlesForQuartier(q.slug).slice(0, 3);
   const refPrix = q.prixAppartement ?? q.prixMaison;
   const facts = getQuartierFacts(q.coordinates.lat, q.coordinates.lng);
+  const dvfStats = getDvfStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
 
   const faq = [
     {
@@ -214,6 +216,52 @@ export default function EstimationQuartierPage({
               </p>
             </div>
           </div>
+
+          {/* Repères DVF réels */}
+          {(dvfStats.appartements || dvfStats.maisons) && (
+            <div className="mt-8 pt-6 border-t border-cbf-gray-soft">
+              <p className="text-[0.6rem] uppercase tracking-wider text-cbf-gray-light font-semibold mb-4">
+                Repères marché DVF — {dvfStats.total} transactions notariées
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                {dvfStats.appartements && (
+                  <>
+                    <div className="bg-cbf-ivory rounded-sm p-3 text-center">
+                      <p className="text-[0.6rem] uppercase tracking-wider text-cbf-gray-light mb-1">Appart. médian</p>
+                      <p className="font-playfair text-xl font-bold text-cbf-black">
+                        {dvfStats.appartements.prix_m2_median.toLocaleString("fr-FR")} €/m²
+                      </p>
+                    </div>
+                    <div className="bg-cbf-ivory rounded-sm p-3 text-center">
+                      <p className="text-[0.6rem] uppercase tracking-wider text-cbf-gray-light mb-1">Fourchette appart.</p>
+                      <p className="text-sm font-semibold text-cbf-black">
+                        {dvfStats.appartements.prix_m2_min.toLocaleString("fr-FR")} — {dvfStats.appartements.prix_m2_max.toLocaleString("fr-FR")} €
+                      </p>
+                    </div>
+                  </>
+                )}
+                {dvfStats.maisons && (
+                  <>
+                    <div className="bg-cbf-ivory rounded-sm p-3 text-center">
+                      <p className="text-[0.6rem] uppercase tracking-wider text-cbf-gray-light mb-1">Maison médiane</p>
+                      <p className="font-playfair text-xl font-bold text-cbf-black">
+                        {dvfStats.maisons.prix_m2_median.toLocaleString("fr-FR")} €/m²
+                      </p>
+                    </div>
+                    <div className="bg-cbf-ivory rounded-sm p-3 text-center">
+                      <p className="text-[0.6rem] uppercase tracking-wider text-cbf-gray-light mb-1">Fourchette maison</p>
+                      <p className="text-sm font-semibold text-cbf-black">
+                        {dvfStats.maisons.prix_m2_min.toLocaleString("fr-FR")} — {dvfStats.maisons.prix_m2_max.toLocaleString("fr-FR")} €
+                      </p>
+                    </div>
+                  </>
+                )}
+              </div>
+              <p className="mt-2 text-[0.6rem] text-cbf-gray-light">
+                Source : DGFiP — DVF open data · données transactions notariées
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
