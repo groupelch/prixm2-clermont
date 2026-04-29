@@ -48,6 +48,12 @@ export interface Article {
   featured: boolean;
   /** Auteur de l'article — si non précisé, fallback selon le thème. */
   auteur?: AuteurId;
+  /**
+   * Slugs des quartiers spécifiquement couverts par cet article.
+   * Utilisé pour le maillage interne (getArticlesForQuartier).
+   * Si vide/absent, l'article est généraliste.
+   */
+  quartiers?: string[];
   /** HTML riche : h2/h3, p, ul/li, strong, em. Pas de <html>/<body>. */
   content: string;
 }
@@ -1326,27 +1332,63 @@ export function getRelatedArticles(currentSlug: string, n = 3): Article[] {
 }
 
 /** Renvoie 3 articles pertinents pour une page quartier (heuristique simple). */
+/**
+ * Mapping slug quartier → slugs articles prioritaires.
+ * Permet d'afficher des articles vraiment liés au quartier (pas les mêmes 3 partout).
+ */
+const QUARTIER_ARTICLES: Record<string, string[]> = {
+  // Centre premium
+  "clermont-ferrand-jaude": ["vendre-jaude-delille-comparaison-2025", "prix-m2-montferrand-vs-jaude-decryptage-ecart", "surestimer-bien-piege-vendeurs-clermont"],
+  "clermont-ferrand-delille": ["vendre-jaude-delille-comparaison-2025", "prix-immobilier-clermont-ferrand-2025-analyse-quartier", "estimer-appartement-clermont-ferrand-5-criteres"],
+  // Montferrand / historique
+  "clermont-ferrand-montferrand": ["prix-m2-montferrand-vs-jaude-decryptage-ecart", "5-quartiers-qui-montent-clermont-ferrand-2025", "estimer-appartement-clermont-ferrand-5-criteres"],
+  // Communes premium
+  "chamalieres": ["vivre-chamalieres-vs-clermont-analyse", "prix-immobilier-clermont-ferrand-2025-analyse-quartier", "vendre-exclusivite-multi-mandat-clermont"],
+  "beaumont": ["vivre-chamalieres-vs-clermont-analyse", "prix-immobilier-clermont-ferrand-2025-analyse-quartier", "acheter-clermont-ferrand-2025-quel-quartier-pour-quel-profil"],
+  "royat": ["vivre-chamalieres-vs-clermont-analyse", "prix-immobilier-clermont-ferrand-2025-analyse-quartier", "investir-neuf-ancien-clermont-comparatif"],
+  // Secteurs étudiants / hospitaliers
+  "clermont-ferrand-cezeaux": ["studio-t2-clermont-investissement-locatif-rentable", "rendement-locatif-quartier-clermont-classement-2025", "investir-pres-chu-clermont-bon-plan-locatif-medical"],
+  "clermont-ferrand-saint-jacques": ["investir-pres-chu-clermont-bon-plan-locatif-medical", "studio-t2-clermont-investissement-locatif-rentable", "combien-louer-appartement-clermont-ferrand-quartier"],
+  // Gare / transition
+  "clermont-ferrand-gare": ["5-quartiers-qui-montent-clermont-ferrand-2025", "acheter-clermont-ferrand-2025-quel-quartier-pour-quel-profil", "dpe-immobilier-clermont-decote-bien-classe-f"],
+  // La Pardieu
+  "clermont-ferrand-la-pardieu": ["investir-la-pardieu-opportunite-piege", "5-quartiers-qui-montent-clermont-ferrand-2025", "rendement-locatif-quartier-clermont-classement-2025"],
+  // Communes agglo
+  "aubiere": ["acheter-clermont-ferrand-2025-quel-quartier-pour-quel-profil", "rendement-locatif-quartier-clermont-classement-2025", "investir-neuf-ancien-clermont-comparatif"],
+  "cournon-dauvergne": ["acheter-clermont-ferrand-2025-quel-quartier-pour-quel-profil", "investir-neuf-ancien-clermont-comparatif", "dpe-immobilier-clermont-decote-bien-classe-f"],
+  "riom": ["prix-immobilier-clermont-ferrand-2025-analyse-quartier", "acheter-clermont-ferrand-2025-quel-quartier-pour-quel-profil", "investir-neuf-ancien-clermont-comparatif"],
+};
+
 export function getArticlesForQuartier(slug: string): Article[] {
-  // Heuristique : on prend des articles vendeur + marché + investissement.
-  const buckets: ArticleTheme[] = ["vendeur", "marche", "investissement"];
-  const picks: Article[] = [];
-  for (const theme of buckets) {
-    const found = articles.find(
-      (a) => a.theme === theme && !picks.includes(a)
+  const result: Article[] = [];
+
+  // 1. Articles spécifiques au quartier (mapping direct)
+  const prioritySlugsList = QUARTIER_ARTICLES[slug] ?? [];
+  for (const articleSlug of prioritySlugsList) {
+    const found = articles.find((a) => a.slug === articleSlug);
+    if (found && !result.includes(found)) result.push(found);
+  }
+
+  // 2. Articles matchant le nom du quartier dans leur slug
+  const quartierKeywords = slug.replace("clermont-ferrand-", "").split("-").filter(Boolean);
+  for (const a of articles) {
+    if (result.length >= 3) break;
+    if (result.includes(a)) continue;
+    const matches = quartierKeywords.some(
+      (kw) => kw.length > 3 && (a.slug.includes(kw) || a.title.toLowerCase().includes(kw))
     );
-    if (found) picks.push(found);
+    if (matches) result.push(a);
   }
-  // Si on a moins de 3 articles, complète.
-  if (picks.length < 3) {
-    for (const a of articles) {
-      if (!picks.includes(a)) picks.push(a);
-      if (picks.length === 3) break;
-    }
+
+  // 3. Fallback généraliste par thème si pas assez de résultats
+  const fallbackThemes: ArticleTheme[] = ["marche", "vendeur", "investissement", "acheteur", "location"];
+  for (const theme of fallbackThemes) {
+    if (result.length >= 3) break;
+    const found = articles.find((a) => a.theme === theme && !result.includes(a));
+    if (found) result.push(found);
   }
-  // Note : le `slug` est passé pour permettre une amélioration future
-  // (ex : choix d'articles spécifiques selon le quartier).
-  void slug;
-  return picks;
+
+  return result.slice(0, 3);
 }
 
 export const ARTICLE_THEMES: { id: ArticleTheme; label: string }[] = [

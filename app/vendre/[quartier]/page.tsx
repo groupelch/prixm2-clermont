@@ -16,7 +16,8 @@ import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import { getQuartierFacts } from "@/lib/quartier-facts";
 import { VieLocaleBlock } from "@/components/quartier/VieLocaleBlock";
-import { getDvfStatsForQuartier } from "@/lib/dvf";
+import { getDvfStatsForQuartier, getDvfHistoryForQuartier } from "@/lib/dvf";
+import { PriceHistoryChart } from "@/components/quartier/PriceHistoryChart";
 import {
   BreadcrumbSchema,
   FaqPageSchema,
@@ -58,6 +59,7 @@ export default function VendreQuartierPage({
   const refPrix = q.prixAppartement ?? q.prixMaison;
   const facts = getQuartierFacts(q.coordinates.lat, q.coordinates.lng);
   const dvfStats = getDvfStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
+  const dvfHistory = getDvfHistoryForQuartier(q.coordinates.lat, q.coordinates.lng);
 
   const faq = [
     {
@@ -196,6 +198,11 @@ export default function VendreQuartierPage({
           </div>
         </div>
       </section>
+
+      {/* Historique des prix DVF */}
+      {dvfHistory.length >= 2 && (
+        <PriceHistoryChart history={dvfHistory} quartierNom={q.nom} />
+      )}
 
       {/* Conseils mise en marché */}
       <section className="py-14 md:py-20 bg-white">
