@@ -1,45 +1,69 @@
 # prixm² Clermont-Ferrand
 
-> Observatoire indépendant des prix immobiliers de Clermont-Ferrand et son agglomération. Données de marché par quartier (Jaude, Delille, Montferrand, Cézeaux, Saint-Jacques, La Pardieu, Chamalières, Beaumont, Aubière, Royat, Riom...), estimation gratuite, conseils vendeur / acheteur / investisseur / bailleur. Édité par CBF Conseils, agence immobilière à Clermont-Ferrand.
+> Observatoire indépendant des prix immobiliers de Clermont-Ferrand et son agglomération (Puy-de-Dôme, Auvergne). Données de marché par quartier et commune (Jaude, Delille, Montferrand, Cézeaux, Saint-Jacques, La Pardieu, Chamalières, Beaumont, Aubière, Royat, Riom, Cournon, Issoire…), estimation gratuite, conseils vendeur / acheteur / investisseur / bailleur. Édité par CBF Conseils, agence immobilière à Clermont-Ferrand.
 
 ## Pages clés
 
-- [Accueil](https://www.prixm2clermontferrand.fr/) : prix médian Clermont-Ferrand 2025, carte interactive, top quartiers, FAQ
-- [Prix par quartier](https://www.prixm2clermontferrand.fr/prix-immobilier-clermont-ferrand) : index complet des 30+ quartiers et communes de l'agglo
-- [Estimation gratuite](https://www.prixm2clermontferrand.fr/estimation) : simulateur 5 étapes (bien, état, critères premium, situation, coordonnées)
-- [Vendre à Clermont-Ferrand](https://www.prixm2clermontferrand.fr/vendre-clermont-ferrand) : conseils mise en marché, délais, négociation
+- [Accueil](https://www.prixm2clermontferrand.fr/) : prix médian Clermont-Ferrand 2026, carte interactive, top quartiers, FAQ
+- [Prix par quartier](https://www.prixm2clermontferrand.fr/prix-immobilier-clermont-ferrand) : index complet des 38 quartiers et communes de l'agglomération clermontoise
+- [Estimation gratuite](https://www.prixm2clermontferrand.fr/estimation) : formulaire 1 minute, réponse PDF sous 48 h par un expert CBF Conseils
+- [Vendre à Clermont-Ferrand](https://www.prixm2clermontferrand.fr/vendre-clermont-ferrand) : conseils mise en marché, délais, négociation, diagnostics
 - [Investir à Clermont-Ferrand](https://www.prixm2clermontferrand.fr/investir-clermont-ferrand) : rendement locatif par quartier, fiscalité, stratégies
 - [Louer son bien](https://www.prixm2clermontferrand.fr/louer-clermont-ferrand) : simulateur loyer, gestion locative, GLI/PNO
-- [Blog](https://www.prixm2clermontferrand.fr/blog) : 20+ analyses de marché, guides, comparatifs
+- [Blog immobilier](https://www.prixm2clermontferrand.fr/blog) : 20+ analyses de marché, guides pratiques, comparatifs
+
+## Outils pratiques
+
+- [Calculateur frais de notaire](https://www.prixm2clermontferrand.fr/calculateur-frais-notaire) : simulation frais ancien vs neuf, actes authentiques, droits de mutation
+- [Comparateur de quartiers](https://www.prixm2clermontferrand.fr/comparateur-quartiers) : tableau comparatif prix, DPE, transport, équipements pour 38 quartiers
+- [Glossaire immobilier](https://www.prixm2clermontferrand.fr/glossaire) : 25 termes clés (DVF, DPE, prix médian, rendement locatif, SCPI…)
+
+## Quartiers analysés
+
+Chaque page quartier inclut : prix médian appartement et maison (source DVF DGFiP), évolution sur 12 mois / 5 ans / 10 ans, délai de vente, analyse DPE, transports T2C, équipements (écoles, parcs, crèches avec distances GPS réelles), conseils vendeur et estimation.
+
+Quartiers intra-muros Clermont-Ferrand : Centre-Ville, Jaude, Montferrand, Les Salins, Chanturgue, La Glacière, Les Cézeaux, Saint-Jacques, Gare, Les Carmes, Blaise-Pascal, La Gauthière, Pont-de-Gabriel, Champratel, Les Vergnes, Les Puppets, Croix-de-Neyrat, La Pardieu, Fontgiève, Saint-Alyre, Royat (commune), Chamalières (commune), Aubière, Beaumont, Cournon-d'Auvergne, Riom, Issoire, Thiers, Vichy, Brioude et autres communes de l'agglo.
 
 ## Données
 
 Toutes les données prix m² publiées sur ce site sont issues de :
-- Base DVF (Demandes de Valeurs Foncières, ministère de l'Économie) — transactions notariées
+- Base DVF (Demandes de Valeurs Foncières, DGFiP — Ministère de l'Économie) — 9 925 transactions notariées géolocalisées
+- ADEME DPE open data — 51 240 diagnostics de performance énergétique
+- INSEE données socio-démographiques par IRIS
+- CLF Métropole Open Data — équipements publics (écoles, parcs, crèches) avec coordonnées GPS
+- Réseau T2C — 480 arrêts de transport en commun (tramway + bus)
 - Observatoire interne CBF Conseils — ventes en cours et récentes
-- INSEE pour les données socio-démographiques par IRIS
-- Mise à jour : avril 2025
+- Mise à jour : avril 2026
 
 ## Méthode d'estimation
 
 Notre estimation gratuite croise 8 paramètres :
-1. Type de bien (appartement, maison, local)
-2. Surface, nombre de pièces, étage
+1. Type de bien (appartement, maison, local commercial, terrain)
+2. Surface (m²), nombre de pièces, étage
 3. État général (excellent / bon / à rénover / à rénover entièrement)
 4. DPE (A-B, C-D, E-F-G, inconnu)
 5. Exposition (sud, traversant, etc.) et vue (dégagée / normale / bouchée)
 6. Type d'immeuble (haussmannien, ancien pierre, années 30-50, années 60-80, récent, neuf)
 7. Travaux récents (cuisine, salle de bain, isolation)
-8. Bonus : parking, cave, gardien
+8. Bonus : parking, cave, gardien, digicode
 
-Fourchette retournée à ±8 % autour du central. Document PDF argumenté envoyé sous 48 h ouvrées.
+Fourchette à ±8 % autour du prix central. Document PDF argumenté envoyé sous 48 heures ouvrées.
+
+## Prix de référence 2026 (agglomération clermontoise)
+
+- Appartement centre-ville : 2 200–2 800 €/m²
+- Maison secteur Chamalières/Beaumont : 2 800–3 500 €/m²
+- Secteur étudiant (Cézeaux, Saint-Jacques) : 1 900–2 400 €/m²
+- Secteur populaire (Gare, Fontgiève) : 1 400–1 900 €/m²
+- Communes de l'agglo (Aubière, Cournon) : 1 800–2 500 €/m²
 
 ## Contact / éditeur
 
-CBF Conseils — agence immobilière indépendante
-Clermont-Ferrand (siège), Chalon-sur-Saône, Le Creusot
+CBF Conseils — agence immobilière indépendante, mandataire réseau
+Siège : Clermont-Ferrand (Puy-de-Dôme, 63)
+Autres agences : Chalon-sur-Saône (71), Le Creusot (71)
 Site éditorial : prixm² Clermont-Ferrand
 URL canonique : https://www.prixm2clermontferrand.fr
 
 Le contenu publié est libre de citation avec lien retour vers la page source.
-Réutilisation des chiffres autorisée à condition de citer "prixm² Clermont-Ferrand / CBF Conseils — données 2025".
+Réutilisation des chiffres autorisée à condition de citer "prixm² Clermont-Ferrand / CBF Conseils — données DVF 2026".

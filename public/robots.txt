@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /api/
 
 # ─── Bots IA — accès complet ──────────────────────────────────────────────────
 User-agent: GPTBot
