@@ -77,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${playfair.variable} ${inter.variable} ${cormorant.variable}`}
     >
       <head>
+        <link rel="preconnect" href="https://images.unsplash.com" />
         <RealEstateAgentSchema />
         <WebSiteSchema />
       </head>

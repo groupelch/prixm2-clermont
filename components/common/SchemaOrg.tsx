@@ -23,6 +23,12 @@ export function RealEstateAgentSchema() {
       latitude: 45.7797,
       longitude: 3.0863,
     },
+    foundingDate: "2014",
+    openingHours: [
+      "Mo-Fr 09:00-12:30",
+      "Mo-Fr 14:00-18:30",
+      "Sa 09:30-12:00",
+    ],
     areaServed: ["Clermont-Ferrand", "Chamalières", "Beaumont", "Aubière", "Riom", "Cournon-d'Auvergne", "Royat"],
     priceRange: "€€",
     sameAs: [

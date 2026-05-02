@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { TrendingUp, GraduationCap, Briefcase, Home as HomeIcon, ArrowRight, MapPin, BarChart3 } from "lucide-react";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
-import { BreadcrumbSchema, FaqPageSchema } from "@/components/common/SchemaOrg";
+import { BreadcrumbSchema, FaqPageSchema, ArticleSchema } from "@/components/common/SchemaOrg";
 import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
@@ -167,6 +167,15 @@ export default function InvestirPage() {
           { name: "Accueil", url: SITE_URL },
           { name: "Investir à Clermont-Ferrand", url: `${SITE_URL}/investir-clermont-ferrand` },
         ]}
+      />
+      <ArticleSchema
+        title="Investir à Clermont-Ferrand 2026 — Rendements, quartiers & stratégies"
+        description="Guide complet investissement immobilier à Clermont-Ferrand : rendements 4 à 6,5 %, quartiers cibles (Cézeaux, La Gare, Centre-Ville), prix m² réels. Marché porté par 39 000 étudiants et le CHU."
+        datePublished="2024-01-15"
+        dateModified="2025-06-01"
+        url={`${SITE_URL}/investir-clermont-ferrand`}
+        authorName="Louis Combret, Directeur CBF Conseils"
+        authorType="Person"
       />
       <FaqPageSchema items={faqInvestir} />
 

@@ -13,7 +13,7 @@ import {
 import { SimulateurLoyer } from "@/components/location/SimulateurLoyer";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
-import { BreadcrumbSchema, FaqPageSchema } from "@/components/common/SchemaOrg";
+import { BreadcrumbSchema, FaqPageSchema, ArticleSchema } from "@/components/common/SchemaOrg";
 import { buildMetadata } from "@/lib/seo";
 import { SITE_URL } from "@/lib/utils";
 
@@ -69,6 +69,15 @@ export default function LouerClermontFerrandPage() {
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <ArticleSchema
+        title="Combien louer son appartement à Clermont-Ferrand ? Simulateur 2026"
+        description="Estimez le loyer de votre bien à Clermont-Ferrand en moins de 2 minutes. Données marché 2026 par quartier, meublé vs nu, DPE, rendement brut. Rapport gratuit par un expert."
+        datePublished="2024-01-15"
+        dateModified="2025-06-01"
+        url={`${SITE_URL}/louer-clermont-ferrand`}
+        authorName="Louis Combret, Directeur CBF Conseils"
+        authorType="Person"
+      />
       <FaqPageSchema items={FAQ_LOYER} />
 
       {/* Hero */}

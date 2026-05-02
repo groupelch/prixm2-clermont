@@ -36,6 +36,7 @@ import {
   BreadcrumbSchema,
   PlaceSchema,
   AggregateRatingSchema,
+  ArticleSchema,
 } from "@/components/common/SchemaOrg";
 import { buildMetadata } from "@/lib/seo";
 import { formatPricePerM2, SITE_URL } from "@/lib/utils";
@@ -109,6 +110,15 @@ export default function QuartierPage({ params }: { params: Params }) {
   return (
     <>
       <BreadcrumbSchema items={breadcrumb} />
+      <ArticleSchema
+        title={`Prix m² ${q.nom} — ${formatPricePerM2(q.prixAppartement ?? q.prixMaison)} en 2026`}
+        description={`Prix immobiliers à ${q.nom} : ${formatPricePerM2(q.prixAppartement)} pour un appartement, évolution ${q.evolution}, délai de vente ${q.delaiVente} jours. Analyse complète et estimation gratuite par CBF Conseils.`}
+        datePublished="2024-01-15"
+        dateModified={new Date().toISOString().split("T")[0]}
+        url={`${SITE_URL}/prix-m2/${q.slug}`}
+        authorName="Louis Combret, Directeur CBF Conseils"
+        authorType="Person"
+      />
       <FaqPageSchema items={q.faq} />
       <PlaceSchema
         name={q.nom}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2, FileText, Camera, Target, Megaphone, Handshake, Users, MapPin } from "lucide-react";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
-import { BreadcrumbSchema } from "@/components/common/SchemaOrg";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/common/SchemaOrg";
 import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
@@ -81,6 +81,15 @@ export default function VendrePage() {
           { name: "Accueil", url: SITE_URL },
           { name: "Vendre à Clermont-Ferrand", url: `${SITE_URL}/vendre-clermont-ferrand` },
         ]}
+      />
+      <ArticleSchema
+        title="Vendre son bien à Clermont-Ferrand — Guide stratégique 2026"
+        description="Méthode complète pour vendre vite et au bon prix à Clermont-Ferrand : estimation, mise en valeur, diagnostics, stratégie de prix, choix de l'agence."
+        datePublished="2024-01-15"
+        dateModified="2025-06-01"
+        url={`${SITE_URL}/vendre-clermont-ferrand`}
+        authorName="Louis Combret, Directeur CBF Conseils"
+        authorType="Person"
       />
 
       <section className="bg-cbf-ivory pt-10 pb-12 md:pt-14 md:pb-16">

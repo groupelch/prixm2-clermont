@@ -75,6 +75,8 @@ export function Footer() {
               <li><Link href="/calculateur-frais-notaire" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Calculateur frais notaire</Link></li>
               <li><Link href="/comparateur-quartiers" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Comparateur quartiers</Link></li>
               <li><Link href="/glossaire" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Glossaire immobilier</Link></li>
+              <li><Link href="/methodologie" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Méthodologie</Link></li>
+              <li><Link href="/a-propos" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">À propos</Link></li>
             </ul>
           </div>
 
@@ -139,6 +141,12 @@ export function Footer() {
             </Link>
             <Link href="/contact" className="hover:text-cbf-gold transition-colors">
               Contact
+            </Link>
+            <Link href="/a-propos" className="hover:text-cbf-gold transition-colors">
+              À propos
+            </Link>
+            <Link href="/methodologie" className="hover:text-cbf-gold transition-colors">
+              Méthodologie
             </Link>
           </div>
         </div>
