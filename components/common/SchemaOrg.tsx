@@ -258,6 +258,24 @@ export function ArticleSchema({
   );
 }
 
+export function SpeakableSchema({ url, cssSelectors }: { url: string; cssSelectors?: string[] }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: cssSelectors ?? [".speakable-intro", ".faq-accordion", "h1", "h2"],
+    },
+    url,
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
 export function DatasetSchema() {
   const schema = {
     "@context": "https://schema.org",

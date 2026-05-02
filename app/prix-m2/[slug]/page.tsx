@@ -37,6 +37,7 @@ import {
   PlaceSchema,
   AggregateRatingSchema,
   ArticleSchema,
+  SpeakableSchema,
 } from "@/components/common/SchemaOrg";
 import { buildMetadata } from "@/lib/seo";
 import { formatPricePerM2, SITE_URL } from "@/lib/utils";
@@ -131,6 +132,10 @@ export default function QuartierPage({ params }: { params: Params }) {
         nom={q.nom}
         slug={q.slug}
         prixM2={q.prixAppartement ?? q.prixMaison ?? 2500}
+      />
+      <SpeakableSchema
+        url={`${SITE_URL}/prix-m2/${q.slug}`}
+        cssSelectors={["h1", ".speakable-intro", ".faq-accordion"]}
       />
 
       <div className="container pt-6">
