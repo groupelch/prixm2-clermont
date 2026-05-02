@@ -1,9 +1,9 @@
 /**
  * Mapping IRIS INSEE → slug quartier CBF Conseils
- * 42 zones IRIS de Clermont-Ferrand (code commune 63113)
+ * 94 zones IRIS : 42 Clermont-Ferrand (63113) + 52 communes limitrophes
  */
 export const IRIS_TO_QUARTIER: Record<string, string> = {
-  // Identités directes
+  // ── Clermont-Ferrand — Identités directes ────────────────────────────────
   "631132401": "clermont-ferrand-brezet",
   "631132201": "clermont-ferrand-champratel",
   "631132501": "clermont-ferrand-la-pardieu",
@@ -58,4 +58,84 @@ export const IRIS_TO_QUARTIER: Record<string, string> = {
   "631131201": "clermont-ferrand-cote-blatin",
   "631131501": "clermont-ferrand-vallieres",
   "631131502": "clermont-ferrand-saint-jacques",
+
+  // ── Communes limitrophes ─────────────────────────────────────────────────
+
+  // Chamalières (63075) — 8 zones
+  "630750101": "chamalieres",
+  "630750102": "chamalieres",
+  "630750103": "chamalieres",
+  "630750104": "chamalieres",
+  "630750105": "chamalieres",
+  "630750106": "chamalieres",
+  "630750107": "chamalieres",
+  "630750108": "chamalieres",
+
+  // Aubière (63014) — 5 zones
+  "630140101": "aubiere",
+  "630140102": "aubiere",
+  "630140103": "aubiere",
+  "630140104": "aubiere",
+  "630140105": "aubiere",
+
+  // Beaumont (63032) — 5 zones
+  "630320101": "beaumont",
+  "630320102": "beaumont",
+  "630320103": "beaumont",
+  "630320104": "beaumont",
+  "630320105": "beaumont",
+
+  // Ceyrat (63070) — 2 zones
+  "630700101": "ceyrat",
+  "630700102": "ceyrat",
+
+  // Cébazat (63063) — 4 zones
+  "630630101": "cebazat",
+  "630630102": "cebazat",
+  "630630103": "cebazat",
+  "630630104": "cebazat",
+
+  // Durtol (63141) — 1 zone
+  "631410000": "durtol",
+
+  // Lempdes (63193) — 5 zones
+  "631930101": "lempdes",
+  "631930102": "lempdes",
+  "631930103": "lempdes",
+  "631930104": "lempdes",
+  "631930105": "lempdes",
+
+  // Romagnat (63307) — 3 zones
+  "633070101": "romagnat",
+  "633070102": "romagnat",
+  "633070103": "romagnat",
+
+  // Pérignat-lès-Sarliève (63272) — 1 zone
+  "632720000": "perignat-les-sarlieves",
+
+  // Royat (63308) — 1 zone
+  "633080000": "royat",
+
+  // Riom (63300) — 11 zones
+  "633000101": "riom",
+  "633000102": "riom",
+  "633000103": "riom",
+  "633000104": "riom",
+  "633000105": "riom",
+  "633000106": "riom",
+  "633000107": "riom",
+  "633000108": "riom",
+  "633000109": "riom",
+  "633000110": "riom",
+  "633000111": "riom",
+
+  // Châtel-Guyon (63103) — 2 zones
+  "631030101": "chatel-guyon",
+  "631030102": "chatel-guyon",
+
+  // Pont-du-Château (63284) — 4 zones
+  "632840101": "pont-du-chateau",
+  "632840102": "pont-du-chateau",
+  "632840103": "pont-du-chateau",
+  "632840104": "pont-du-chateau",
 };

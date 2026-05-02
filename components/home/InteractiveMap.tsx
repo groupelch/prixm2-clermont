@@ -33,8 +33,10 @@ interface IrisFeature extends GeoJSON.Feature {
 const BREAKS = [1800, 2000, 2150, 2300, 2450, 2600, Infinity];
 const COLORS = ["#4ade80", "#86efac", "#fde68a", "#fbbf24", "#f97316", "#ef4444", "#b91c1c"];
 const LABELS = ["< 1 800 €", "1 800–2 000 €", "2 000–2 150 €", "2 150–2 300 €", "2 300–2 450 €", "2 450–2 600 €", "> 2 600 €"];
+const NO_DATA_COLOR = "#d1d5db"; // gris clair pour zones sans données DVF
 
 function priceToColor(prix: number): string {
+  if (!prix || prix === 0) return NO_DATA_COLOR;
   const i = BREAKS.findIndex((b) => prix < b);
   return COLORS[i >= 0 ? i : COLORS.length - 1];
 }
@@ -91,8 +93,12 @@ function Legend() {
             <span className="text-[10px] text-gray-600 font-medium">{LABELS[i]}</span>
           </div>
         ))}
+        <div className="flex items-center gap-2">
+          <div className="w-3.5 h-3.5 rounded-sm flex-shrink-0 border border-gray-300" style={{ background: NO_DATA_COLOR }} />
+          <span className="text-[10px] text-gray-400 font-medium">Communes limitrophes</span>
+        </div>
       </div>
-      <p className="text-[9px] text-gray-300 mt-2">9 778 transactions · DGFiP</p>
+      <p className="text-[9px] text-gray-300 mt-2">9 778 transactions · DGFiP — CLF 2021-2024</p>
     </div>
   );
 }
@@ -147,17 +153,30 @@ function QuartierPanel({
 
       {/* Prix DVF réels */}
       <div className="px-4 py-3 border-b border-gray-100 bg-gray-50">
-        <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1 flex items-center gap-1">
-          <Database className="h-2.5 w-2.5" /> Données DVF réelles
-        </p>
-        <p className="font-playfair text-2xl font-bold text-cbf-black">
-          {irisProps.prix_median.toLocaleString("fr-FR")} <span className="text-base font-normal text-gray-400">€/m²</span>
-        </p>
-        <div className="flex gap-3 mt-1.5 text-[11px] text-gray-500">
-          <span>P25 : <b className="text-gray-700">{irisProps.prix_p25.toLocaleString("fr-FR")} €</b></span>
-          <span>P75 : <b className="text-gray-700">{irisProps.prix_p75.toLocaleString("fr-FR")} €</b></span>
-        </div>
-        <p className="text-[10px] text-gray-400 mt-1">{irisProps.nb_ventes} transactions 2021-2024</p>
+        {irisProps.prix_median > 0 ? (
+          <>
+            <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1 flex items-center gap-1">
+              <Database className="h-2.5 w-2.5" /> Données DVF réelles
+            </p>
+            <p className="font-playfair text-2xl font-bold text-cbf-black">
+              {irisProps.prix_median.toLocaleString("fr-FR")} <span className="text-base font-normal text-gray-400">€/m²</span>
+            </p>
+            <div className="flex gap-3 mt-1.5 text-[11px] text-gray-500">
+              <span>P25 : <b className="text-gray-700">{irisProps.prix_p25.toLocaleString("fr-FR")} €</b></span>
+              <span>P75 : <b className="text-gray-700">{irisProps.prix_p75.toLocaleString("fr-FR")} €</b></span>
+            </div>
+            <p className="text-[10px] text-gray-400 mt-1">{irisProps.nb_ventes} transactions 2021-2024</p>
+          </>
+        ) : (
+          <>
+            <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1.5 flex items-center gap-1">
+              <MapPin className="h-2.5 w-2.5" /> Commune limitrophe
+            </p>
+            <p className="text-xs text-gray-500 leading-relaxed">
+              Données DVF disponibles uniquement pour Clermont-Ferrand. Estimez votre bien avec nos experts.
+            </p>
+          </>
+        )}
       </div>
 
       {/* Données quartier CBF si disponibles */}
@@ -305,7 +324,7 @@ export default function InteractiveMap() {
           maxZoom={19}
         />
 
-        {/* Choroplèthe IRIS × DVF — 42 zones, 100% couverture */}
+        {/* Choroplèthe IRIS × DVF — 94 zones : CLF + communes limitrophes */}
         {geoData && (
           <GeoJSON
             key={`${selected?.iris_code}-${hovered}`}
