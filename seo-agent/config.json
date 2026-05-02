@@ -1,0 +1,43 @@
+{
+  "agentName": "Boucle SEO / Audit",
+  "version": "1.0.0",
+  "targetProject": "prixm2-clermont",
+  "stack": "nextjs",
+  "durationHours": 10,
+  "maxSimilarityPercent": 30,
+  "minUniquenessPercent": 70,
+  "autoDeploy": true,
+  "requireBackup": true,
+  "maxPagesPerCycle": 20,
+  "allowContentRewrite": true,
+  "allowMetaRewrite": true,
+  "allowInternalLinking": true,
+  "allowFaqRewrite": true,
+  "allowSitemapEdit": true,
+  "allowRobotsEdit": true,
+  "allowLegalPageEdit": false,
+  "allowPriceEdit": false,
+  "allowFullPageDeletion": false,
+  "allowFakeReviews": false,
+  "allowContactEdit": false,
+  "scoreThresholds": {
+    "weak": 60,
+    "medium": 75,
+    "good": 85
+  },
+  "localContext": {
+    "primaryCity": "Clermont-Ferrand",
+    "region": "Auvergne",
+    "department": "Puy-de-Dôme",
+    "targetServices": [
+      "prix m2 Clermont-Ferrand",
+      "estimation immobilière",
+      "prix appartement Clermont-Ferrand",
+      "prix maison Clermont-Ferrand",
+      "investir Clermont-Ferrand",
+      "vendre bien immobilier Clermont"
+    ]
+  },
+  "gitBranch": "seo-agent/boucle-audit",
+  "commitPrefix": "SEO Agent - Cycle"
+}

@@ -6,9 +6,9 @@ interface BreadcrumbItem {
   href?: string;
 }
 
-export function BreadcrumbNav({ items }: { items: BreadcrumbItem[] }) {
+export function BreadcrumbNav({ items, dark = false }: { items: BreadcrumbItem[]; dark?: boolean }) {
   return (
-    <nav aria-label="Fil d'Ariane" className="text-xs text-cbf-gray-light">
+    <nav aria-label="Fil d'Ariane" className={`text-xs ${dark ? "text-white/40" : "text-cbf-gray-light"}`}>
       <ol className="flex items-center flex-wrap gap-1">
         {items.map((it, i) => (
           <li key={i} className="flex items-center gap-1">
@@ -16,12 +16,12 @@ export function BreadcrumbNav({ items }: { items: BreadcrumbItem[] }) {
             {it.href ? (
               <Link
                 href={it.href}
-                className="hover:text-cbf-gold transition-colors"
+                className={`transition-colors ${dark ? "hover:text-cbf-gold" : "hover:text-cbf-gold"}`}
               >
                 {it.name}
               </Link>
             ) : (
-              <span className="text-cbf-gray font-medium">{it.name}</span>
+              <span className={`font-medium ${dark ? "text-white/70" : "text-cbf-gray"}`}>{it.name}</span>
             )}
           </li>
         ))}

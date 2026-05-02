@@ -1,0 +1,17 @@
+date,cycle,page,score_global,seo_technique,contenu,seo_local,seo_ia,ux,unicite,actions_effectuees
+2026-04-29,1,/estimation,62,14,12,10,8,8,10,score_avant
+2026-04-29,1,/investir-clermont-ferrand,72,16,18,14,10,8,6,score_avant
+2026-04-29,1,/prix-immobilier-clermont-ferrand,68,16,14,12,8,10,8,score_avant
+2026-04-29,1,/meilleurs-agents-immobiliers-clermont-ferrand,65,15,13,11,8,10,8,score_avant
+2026-04-29,1,/meilleurs-architectes-interieur-clermont-ferrand,65,15,13,10,8,10,9,score_avant
+2026-04-29,1,/meilleurs-demenageurs-clermont-ferrand,65,15,13,10,8,10,9,score_avant
+2026-04-29,1,/meilleurs-diagnostiqueurs-dpe-clermont-ferrand,65,15,13,10,8,10,9,score_avant
+2026-04-29,1,/meilleurs-plombiers-clermont-ferrand,65,15,13,10,8,10,9,score_avant
+2026-04-29,1,/estimation,84,17,22,18,13,8,6,score_apres|metadata_enrichi|faq_ajoutee_5q|section_marche_locale|section_methode_3etapes|FaqPageSchema
+2026-04-29,1,/investir-clermont-ferrand,80,17,20,16,12,8,7,score_apres|title_optimise|description_enrichie|intro_locale_CHU_Michelin|FAQ_+2q_PEM2027
+2026-04-29,1,/prix-immobilier-clermont-ferrand,82,17,20,18,13,8,6,score_apres|title_optimise|description_prix_concrets|intro_prix_directs|FAQ_5q_ajoutee|FaqPageSchema
+2026-04-29,1,/meilleurs-agents-immobiliers-clermont-ferrand,78,16,18,16,11,9,8,score_apres|title_optimise|description_enrichie|intro_marche_local|FAQ_5q_enrichie|description_CBF_locale
+2026-04-29,1,/meilleurs-architectes-interieur-clermont-ferrand,78,16,17,16,10,10,9,score_apres|title_optimise|description_pierre_volcanique|intro_bati_local|FAQ_+1q_ABF
+2026-04-29,1,/meilleurs-demenageurs-clermont-ferrand,77,16,16,16,10,10,9,score_apres|title_optimise|description_acces_clermont|intro_flux_etudiants|FAQ_+1q_specifique
+2026-04-29,1,/meilleurs-diagnostiqueurs-dpe-clermont-ferrand,79,16,17,17,10,10,9,score_apres|title_optimise|description_bati_volcanique|intro_specificites_locales|FAQ_+1q_pierre_volcanique
+2026-04-29,1,/meilleurs-plombiers-clermont-ferrand,78,16,17,16,10,10,9,score_apres|title_optimise|description_reseaux_anciens|intro_bati_clermontois|FAQ_+1q_problemes_locaux

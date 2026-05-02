@@ -1,0 +1,43 @@
+{
+  "startTime": "2026-04-29T00:00:00.000Z",
+  "lastCycle": 1,
+  "lastUpdate": "2026-04-29T00:00:00.000Z",
+  "totalActionsApplied": 38,
+  "totalDuplicationsFixed": 0,
+  "pagesAudited": {
+    "/estimation": { "cycle": 1, "scoreBefore": 62, "scoreAfter": 84, "status": "optimized" },
+    "/investir-clermont-ferrand": { "cycle": 1, "scoreBefore": 72, "scoreAfter": 80, "status": "optimized" },
+    "/prix-immobilier-clermont-ferrand": { "cycle": 1, "scoreBefore": 68, "scoreAfter": 82, "status": "optimized" },
+    "/meilleurs-agents-immobiliers-clermont-ferrand": { "cycle": 1, "scoreBefore": 65, "scoreAfter": 78, "status": "optimized" },
+    "/meilleurs-architectes-interieur-clermont-ferrand": { "cycle": 1, "scoreBefore": 65, "scoreAfter": 78, "status": "optimized" },
+    "/meilleurs-demenageurs-clermont-ferrand": { "cycle": 1, "scoreBefore": 65, "scoreAfter": 77, "status": "optimized" },
+    "/meilleurs-diagnostiqueurs-dpe-clermont-ferrand": { "cycle": 1, "scoreBefore": 65, "scoreAfter": 79, "status": "optimized" },
+    "/meilleurs-plombiers-clermont-ferrand": { "cycle": 1, "scoreBefore": 65, "scoreAfter": 78, "status": "optimized" }
+  },
+  "pagesModified": [
+    "/estimation",
+    "/investir-clermont-ferrand",
+    "/prix-immobilier-clermont-ferrand",
+    "/meilleurs-agents-immobiliers-clermont-ferrand",
+    "/meilleurs-architectes-interieur-clermont-ferrand",
+    "/meilleurs-demenageurs-clermont-ferrand",
+    "/meilleurs-diagnostiqueurs-dpe-clermont-ferrand",
+    "/meilleurs-plombiers-clermont-ferrand"
+  ],
+  "recurringIssues": [
+    "intro_generique_sans_contexte_local",
+    "faq_absente_ou_insuffisante",
+    "description_meta_sans_chiffres_concrets",
+    "title_trop_long"
+  ],
+  "status": "cycle_1_complete",
+  "nextPriorities": [
+    "/vendre-clermont-ferrand",
+    "/louer-clermont-ferrand",
+    "/calculateur-frais-notaire",
+    "/comparateur-quartiers",
+    "/guide",
+    "/glossaire",
+    "/faq"
+  ]
+}

@@ -8,7 +8,13 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "postbuild": "next-sitemap --config next-sitemap.config.js"
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "seo-agent:start": "node seo-agent/agent.mjs",
+    "seo-agent:start:dry": "node seo-agent/agent.mjs --dry-run",
+    "seo-agent:audit": "node seo-agent/audit.mjs",
+    "seo-agent:report": "node seo-agent/audit.mjs --output=md",
+    "seo-agent:stop": "node seo-agent/stop.mjs",
+    "seo-agent:rollback": "node seo-agent/rollback.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
