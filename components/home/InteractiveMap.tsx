@@ -1,207 +1,218 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef } from "react";
-import {
-  MapContainer,
-  TileLayer,
-  GeoJSON,
-  CircleMarker,
-  Tooltip,
-  useMap,
-} from "react-leaflet";
-import type { PathOptions, LeafletMouseEvent } from "leaflet";
+import { useEffect, useState, useCallback } from "react";
+import { MapContainer, TileLayer, GeoJSON, useMap } from "react-leaflet";
+import type { PathOptions } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Link from "next/link";
-import { quartiers, getPriceTier } from "@/data/quartiers";
+import { quartiers } from "@/data/quartiers";
 import type { Quartier } from "@/data/quartiers";
 import { formatPricePerM2 } from "@/lib/utils";
-import { TrendingUp, TrendingDown, X, ArrowRight, MapPin } from "lucide-react";
+import { TrendingUp, TrendingDown, X, ArrowRight, MapPin, Database } from "lucide-react";
 
-// ─── Palette prix (CBF brand : or → rouge) ──────────────────────────────────
-const PRICE_MIN = 1700;
-const PRICE_MAX = 2800;
+// ─── Types ────────────────────────────────────────────────────────────────────
+interface IrisProps {
+  iris_code: string;
+  iris_name: string;
+  iris_type: string;
+  prix_median: number;
+  nb_ventes: number;
+  prix_p25: number;
+  prix_p75: number;
+  prix_min: number;
+  prix_max: number;
+}
 
-const TIERS = [
-  { max: 1900, bg: "#22c55e", label: "< 1 900 €" },
-  { max: 2100, bg: "#86efac", label: "1 900–2 100 €" },
-  { max: 2300, bg: "#fbbf24", label: "2 100–2 300 €" },
-  { max: 2500, bg: "#f97316", label: "2 300–2 500 €" },
-  { max: Infinity, bg: "#dc2626", label: "> 2 500 €" },
-];
+interface IrisFeature extends GeoJSON.Feature {
+  properties: IrisProps;
+}
+
+// ─── Palette prix ─────────────────────────────────────────────────────────────
+// Gradient sur 7 niveaux, de vert (pas cher) → rouge (premium)
+const BREAKS = [1800, 2000, 2150, 2300, 2450, 2600, Infinity];
+const COLORS = ["#4ade80", "#86efac", "#fde68a", "#fbbf24", "#f97316", "#ef4444", "#b91c1c"];
+const LABELS = ["< 1 800 €", "1 800–2 000 €", "2 000–2 150 €", "2 150–2 300 €", "2 300–2 450 €", "2 450–2 600 €", "> 2 600 €"];
 
 function priceToColor(prix: number): string {
-  const tier = TIERS.find((t) => prix < t.max);
-  return tier?.bg ?? "#dc2626";
+  const i = BREAKS.findIndex((b) => prix < b);
+  return COLORS[i >= 0 ? i : COLORS.length - 1];
 }
 
-// ─── Centroïde d'un polygone ─────────────────────────────────────────────────
-function polygonCentroid(coords: number[][][]): [number, number] {
-  const ring = coords[0];
-  let latSum = 0, lngSum = 0;
-  for (const [lng, lat] of ring) {
-    latSum += lat;
-    lngSum += lng;
-  }
-  return [latSum / ring.length, lngSum / ring.length];
+// ─── Centroïde d'un polygone ──────────────────────────────────────────────────
+function featureCentroid(feat: IrisFeature): [number, number] {
+  const geom = feat.geometry;
+  const ring = geom.type === "Polygon"
+    ? geom.coordinates[0]
+    : geom.type === "MultiPolygon"
+    ? geom.coordinates[0][0]
+    : null;
+  if (!ring) return [45.774, 3.09];
+  const lats = ring.map((c) => c[1]);
+  const lngs = ring.map((c) => c[0]);
+  return [
+    (Math.min(...lats) + Math.max(...lats)) / 2,
+    (Math.min(...lngs) + Math.max(...lngs)) / 2,
+  ];
 }
 
-function geometryCentroid(geom: GeoJSON.Geometry): [number, number] | null {
-  if (geom.type === "Polygon") return polygonCentroid(geom.coordinates);
-  if (geom.type === "MultiPolygon") return polygonCentroid(geom.coordinates[0]);
-  if (geom.type === "Point") return [geom.coordinates[1], geom.coordinates[0]];
-  return null;
-}
-
-// ─── Auto-resize ─────────────────────────────────────────────────────────────
+// ─── Auto-resize ──────────────────────────────────────────────────────────────
 function MapResize() {
   const map = useMap();
   useEffect(() => { setTimeout(() => map.invalidateSize(), 150); }, [map]);
   return null;
 }
 
-// ─── Label prix SVG sur la carte ─────────────────────────────────────────────
-function PriceLabel({ quartier, geom, selected, onClick }: {
-  quartier: Quartier;
-  geom: GeoJSON.Geometry;
-  selected: boolean;
-  onClick: () => void;
-}) {
-  const L = (typeof window !== "undefined") ? require("leaflet") : null;
-  if (!L) return null;
-
-  const center = geometryCentroid(geom);
-  if (!center) return null;
-
-  const prix = quartier.prixAppartement ?? quartier.prixMaison ?? 0;
-  if (!prix) return null;
-
-  const label = `${(prix / 1000).toFixed(1).replace(".", ",")} k€`;
-
-  const icon = L.divIcon({
-    className: "",
-    html: `<div style="
-      background: ${selected ? "#0A0A0A" : "rgba(255,255,255,0.92)"};
-      color: ${selected ? "#B8860B" : "#0A0A0A"};
-      border: 1.5px solid ${selected ? "#B8860B" : "rgba(0,0,0,0.15)"};
-      border-radius: 4px;
-      padding: 2px 7px;
-      font-size: 11px;
-      font-weight: 700;
-      font-family: Inter, sans-serif;
-      white-space: nowrap;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.15);
-      cursor: pointer;
-      transform: translate(-50%, -50%);
-    ">${label}</div>`,
-    iconSize: [0, 0],
-    iconAnchor: [0, 0],
-  });
-
-  const { Marker } = require("react-leaflet");
-
-  return (
-    <Marker
-      position={center}
-      icon={icon}
-      zIndexOffset={selected ? 1000 : 100}
-      eventHandlers={{ click: onClick }}
-    />
-  );
+// ─── Trouver le quartier CBF le plus proche d'un centroïde IRIS ──────────────
+function findClosestQuartier(lat: number, lng: number): Quartier | null {
+  let best: Quartier | null = null;
+  let bestDist = Infinity;
+  for (const q of quartiers) {
+    const geom = (q as Quartier & { _center?: [number, number] });
+    // Simple approximation basée sur le nom
+    const dist = Math.abs(lat - 45.774) + Math.abs(lng - 3.09);
+    if (dist < bestDist) { bestDist = dist; best = q; }
+  }
+  return best;
 }
 
 // ─── Légende ─────────────────────────────────────────────────────────────────
 function Legend() {
   return (
-    <div className="absolute bottom-4 left-4 z-[400] bg-white/95 backdrop-blur-sm border border-gray-200 rounded-lg p-3 shadow-lg">
-      <p className="text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-2">Prix / m²</p>
+    <div className="absolute bottom-4 left-4 z-[400] bg-white/97 backdrop-blur-sm border border-gray-200 rounded-xl p-3.5 shadow-lg">
+      <div className="flex items-center gap-1.5 mb-2.5">
+        <Database className="h-3 w-3 text-cbf-gold" />
+        <p className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Prix m² — DVF 2021-2024</p>
+      </div>
       <div className="space-y-1">
-        {TIERS.map((t) => (
-          <div key={t.label} className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-sm flex-shrink-0" style={{ background: t.bg }} />
-            <span className="text-[10px] text-gray-600">{t.label}</span>
+        {COLORS.map((color, i) => (
+          <div key={i} className="flex items-center gap-2">
+            <div className="w-3.5 h-3.5 rounded-sm flex-shrink-0 border border-white/50" style={{ background: color }} />
+            <span className="text-[10px] text-gray-600 font-medium">{LABELS[i]}</span>
           </div>
         ))}
       </div>
+      <p className="text-[9px] text-gray-300 mt-2">9 778 transactions · DGFiP</p>
     </div>
   );
 }
 
-// ─── Panel latéral quartier ───────────────────────────────────────────────────
-function QuartierPanel({ quartier, onClose }: { quartier: Quartier; onClose: () => void }) {
-  const prix = quartier.prixAppartement ?? quartier.prixMaison ?? 0;
-  const isUp = quartier.evolution12m?.startsWith("+");
+// ─── Tooltip IRIS ─────────────────────────────────────────────────────────────
+function IrisTooltip({ props }: { props: IrisProps }) {
+  return (
+    <div className="font-inter text-xs min-w-[170px]">
+      <p className="font-bold text-gray-900 mb-1">{props.iris_name}</p>
+      {props.prix_median > 0 ? (
+        <>
+          <p className="text-cbf-gold font-bold text-sm">{props.prix_median.toLocaleString("fr-FR")} €/m²</p>
+          <div className="flex gap-3 mt-1 text-gray-500">
+            <span>P25 : {props.prix_p25.toLocaleString("fr-FR")} €</span>
+            <span>P75 : {props.prix_p75.toLocaleString("fr-FR")} €</span>
+          </div>
+          <p className="text-gray-400 mt-0.5">{props.nb_ventes} ventes</p>
+        </>
+      ) : (
+        <p className="text-gray-400">Pas de données</p>
+      )}
+    </div>
+  );
+}
+
+// ─── Panel quartier ───────────────────────────────────────────────────────────
+function QuartierPanel({
+  irisProps,
+  quartier,
+  onClose,
+}: {
+  irisProps: IrisProps;
+  quartier: Quartier | null;
+  onClose: () => void;
+}) {
+  const isUp = quartier?.evolution12m?.startsWith("+");
 
   return (
-    <div className="absolute top-3 right-3 z-[500] w-[220px] bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden animate-in slide-in-from-right-2 duration-200">
+    <div className="absolute top-3 right-3 z-[500] w-[230px] bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden">
       {/* Header */}
       <div className="bg-cbf-black px-4 py-3 flex items-start justify-between gap-2">
-        <div>
-          <p className="text-[10px] text-cbf-gold uppercase tracking-widest font-bold">
-            {quartier.type === "quartier" ? "Quartier" : "Commune"}
-          </p>
-          <p className="font-playfair text-base font-bold text-white leading-tight mt-0.5">
-            {quartier.nom}
+        <div className="min-w-0">
+          <p className="text-[10px] text-cbf-gold/80 uppercase tracking-widest font-bold">Zone INSEE</p>
+          <p className="font-playfair text-base font-bold text-white leading-tight mt-0.5 truncate">
+            {irisProps.iris_name}
           </p>
         </div>
-        <button
-          onClick={onClose}
-          className="text-white/40 hover:text-white transition-colors flex-shrink-0 mt-0.5"
-        >
+        <button onClick={onClose} className="text-white/40 hover:text-white transition-colors flex-shrink-0 mt-0.5">
           <X className="h-4 w-4" />
         </button>
       </div>
 
-      {/* Prix */}
-      <div className="px-4 py-3 border-b border-gray-100">
-        <div className="flex items-end justify-between">
-          <div>
-            <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-0.5">
-              {quartier.prixAppartement ? "Appartement" : "Maison"}
-            </p>
-            <p className="font-playfair text-xl font-bold text-cbf-black">
-              {formatPricePerM2(prix)}
-            </p>
-          </div>
-          {quartier.evolution12m && (
-            <div className={`flex items-center gap-1 text-sm font-bold ${isUp ? "text-green-600" : "text-red-500"}`}>
-              {isUp
-                ? <TrendingUp className="h-3.5 w-3.5" />
-                : <TrendingDown className="h-3.5 w-3.5" />
-              }
-              {quartier.evolution12m}
+      {/* Prix DVF réels */}
+      <div className="px-4 py-3 border-b border-gray-100 bg-gray-50">
+        <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1 flex items-center gap-1">
+          <Database className="h-2.5 w-2.5" /> Données DVF réelles
+        </p>
+        <p className="font-playfair text-2xl font-bold text-cbf-black">
+          {irisProps.prix_median.toLocaleString("fr-FR")} <span className="text-base font-normal text-gray-400">€/m²</span>
+        </p>
+        <div className="flex gap-3 mt-1.5 text-[11px] text-gray-500">
+          <span>P25 : <b className="text-gray-700">{irisProps.prix_p25.toLocaleString("fr-FR")} €</b></span>
+          <span>P75 : <b className="text-gray-700">{irisProps.prix_p75.toLocaleString("fr-FR")} €</b></span>
+        </div>
+        <p className="text-[10px] text-gray-400 mt-1">{irisProps.nb_ventes} transactions 2021-2024</p>
+      </div>
+
+      {/* Données quartier CBF si disponibles */}
+      {quartier && (
+        <div className="px-4 py-3 border-b border-gray-100">
+          <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-2">Quartier : {quartier.nom}</p>
+          {(quartier.prixAppartement || quartier.prixMaison) && (
+            <div className="flex items-center justify-between">
+              <div>
+                {quartier.prixAppartement && (
+                  <p className="text-sm font-bold text-cbf-black">
+                    Appt : {formatPricePerM2(quartier.prixAppartement)}
+                  </p>
+                )}
+                {quartier.prixMaison && (
+                  <p className="text-xs text-gray-500">
+                    Maison : {formatPricePerM2(quartier.prixMaison)}
+                  </p>
+                )}
+              </div>
+              {quartier.evolution12m && (
+                <div className={`flex items-center gap-1 text-sm font-bold ${isUp ? "text-green-600" : "text-red-500"}`}>
+                  {isUp ? <TrendingUp className="h-3.5 w-3.5" /> : <TrendingDown className="h-3.5 w-3.5" />}
+                  {quartier.evolution12m}
+                </div>
+              )}
             </div>
           )}
         </div>
-        {quartier.prixAppartement && quartier.prixMaison && (
-          <p className="text-[10px] text-gray-400 mt-1">
-            Maison : {formatPricePerM2(quartier.prixMaison)}
-          </p>
-        )}
-      </div>
-
-      {/* Description courte */}
-      {quartier.description && (
-        <div className="px-4 py-3 border-b border-gray-100">
-          <p className="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
-            {quartier.description}
-          </p>
-        </div>
       )}
 
-      {/* CTA */}
+      {/* CTAs */}
       <div className="px-4 py-3 flex flex-col gap-2">
-        <Link
-          href={`/prix-m2/${quartier.slug}`}
-          className="flex items-center justify-center gap-1.5 w-full py-2 bg-cbf-black text-white text-xs font-semibold rounded-lg hover:bg-cbf-gold/90 transition-colors"
-        >
-          Voir les données <ArrowRight className="h-3 w-3" />
-        </Link>
-        <Link
-          href={`/estimation-quartier/${quartier.slug}`}
-          className="flex items-center justify-center gap-1.5 w-full py-2 border border-cbf-gold text-cbf-gold text-xs font-semibold rounded-lg hover:bg-cbf-gold/10 transition-colors"
-        >
-          Estimer mon bien
-        </Link>
+        {quartier ? (
+          <>
+            <Link
+              href={`/prix-m2/${quartier.slug}`}
+              className="flex items-center justify-center gap-1.5 w-full py-2.5 bg-cbf-black text-white text-xs font-semibold rounded-lg hover:bg-cbf-gold/90 hover:text-cbf-black transition-colors"
+            >
+              Voir les données <ArrowRight className="h-3 w-3" />
+            </Link>
+            <Link
+              href={`/estimation-quartier/${quartier.slug}`}
+              className="flex items-center justify-center gap-1.5 w-full py-2.5 border border-cbf-gold text-cbf-gold text-xs font-semibold rounded-lg hover:bg-cbf-gold/10 transition-colors"
+            >
+              Estimer mon bien
+            </Link>
+          </>
+        ) : (
+          <Link
+            href="/estimation"
+            className="flex items-center justify-center gap-1.5 w-full py-2.5 bg-cbf-black text-white text-xs font-semibold rounded-lg hover:bg-cbf-gold/90 hover:text-cbf-black transition-colors"
+          >
+            Obtenir une estimation <ArrowRight className="h-3 w-3" />
+          </Link>
+        )}
       </div>
     </div>
   );
@@ -209,44 +220,94 @@ function QuartierPanel({ quartier, onClose }: { quartier: Quartier; onClose: () 
 
 // ─── Composant principal ──────────────────────────────────────────────────────
 export default function InteractiveMap() {
-  const [boundaries, setBoundaries] = useState<Record<string, GeoJSON.Geometry | null>>({});
-  const [selected, setSelected] = useState<string | null>(null);
+  const [geoData, setGeoData] = useState<GeoJSON.FeatureCollection | null>(null);
+  const [selected, setSelected] = useState<IrisProps | null>(null);
+  const [selectedCenter, setSelectedCenter] = useState<[number, number] | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/data/boundaries.json")
+    fetch("/data/iris-dvf-map.json")
       .then((r) => r.json())
-      .then((data: Record<string, GeoJSON.Geometry>) => setBoundaries(data))
-      .catch(() => setBoundaries({}));
+      .then(setGeoData)
+      .catch(console.error);
   }, []);
 
-  const selectedQuartier = selected ? quartiers.find((q) => q.slug === selected) : null;
+  // Trouver le quartier CBF le plus proche du centre de la zone sélectionnée
+  const selectedQuartier = selectedCenter
+    ? (() => {
+        let best: Quartier | null = null;
+        let bestDist = Infinity;
+        for (const q of quartiers) {
+          // On cherche dans les données de quartier s'il y a un match par nom IRIS
+          const irisName = selected?.iris_name?.toLowerCase() ?? "";
+          const qNom = q.nom.toLowerCase();
+          if (irisName.includes(qNom.split(" ")[0]) || qNom.includes(irisName.split(" ")[0])) {
+            return q;
+          }
+        }
+        return best;
+      })()
+    : null;
 
-  const getStyle = useCallback((slug: string, prix: number): PathOptions => {
-    const color = priceToColor(prix);
-    const isSelected = selected === slug;
-    const isHovered = hovered === slug;
+  const getStyle = useCallback((feature: GeoJSON.Feature | undefined): PathOptions => {
+    if (!feature) return {};
+    const props = feature.properties as IrisProps;
+    const isSelected = selected?.iris_code === props.iris_code;
+    const isHovered = hovered === props.iris_code;
+    const color = priceToColor(props.prix_median);
     return {
-      color: isSelected ? "#0A0A0A" : isHovered ? "#B8860B" : "rgba(255,255,255,0.7)",
       fillColor: color,
-      fillOpacity: isSelected ? 0.75 : isHovered ? 0.7 : 0.55,
-      weight: isSelected ? 2.5 : isHovered ? 2 : 1,
+      fillOpacity: isSelected ? 0.85 : isHovered ? 0.75 : 0.60,
+      color: isSelected ? "#0A0A0A" : isHovered ? "#B8860B" : "rgba(255,255,255,0.6)",
+      weight: isSelected ? 2.5 : isHovered ? 1.5 : 0.8,
     };
   }, [selected, hovered]);
 
+  const onEachFeature = useCallback((feature: GeoJSON.Feature, layer: L.Layer) => {
+    const props = feature.properties as IrisProps;
+    const l = layer as L.Path;
+
+    // Tooltip au hover
+    const tooltipContent = `
+      <div style="font-family:Inter,sans-serif;font-size:12px;min-width:160px;">
+        <p style="font-weight:700;color:#0A0A0A;margin:0 0 4px">${props.iris_name}</p>
+        ${props.prix_median > 0
+          ? `<p style="color:#B8860B;font-weight:700;font-size:15px;margin:0 0 2px">${props.prix_median.toLocaleString("fr-FR")} €/m²</p>
+             <p style="color:#9CA3AF;font-size:11px;margin:0">${props.nb_ventes} ventes · P25 ${props.prix_p25.toLocaleString("fr-FR")}€ / P75 ${props.prix_p75.toLocaleString("fr-FR")}€</p>`
+          : `<p style="color:#9CA3AF;font-size:11px">Données insuffisantes</p>`
+        }
+      </div>
+    `;
+
+    (layer as L.Layer & { bindTooltip: (c: string, o: object) => void }).bindTooltip(tooltipContent, {
+      sticky: true,
+      offset: [12, 0],
+      className: "!bg-white !border-0 !shadow-xl !rounded-xl !p-3 leaflet-tooltip-custom",
+    });
+
+    l.on("click", (e: L.LeafletMouseEvent) => {
+      const center = featureCentroid(feature as IrisFeature);
+      setSelected(props);
+      setSelectedCenter(center);
+    });
+
+    l.on("mouseover", () => setHovered(props.iris_code));
+    l.on("mouseout", () => setHovered(null));
+  }, []);
+
   return (
-    <div className="relative w-full h-[420px] md:h-[560px] rounded-xl overflow-hidden shadow-xl border border-gray-200">
+    <div className="relative w-full h-[420px] md:h-[580px] rounded-xl overflow-hidden shadow-xl border border-gray-200">
       <MapContainer
         center={[45.774, 3.090]}
         zoom={13}
         scrollWheelZoom={false}
         zoomControl={false}
         className="w-full h-full"
-        style={{ background: "#f5f5f0" }}
+        style={{ background: "#f0f0ec" }}
       >
         <MapResize />
 
-        {/* Tuiles Carto Positron — fond épuré gris clair */}
+        {/* Carto Positron — fond épuré */}
         <TileLayer
           attribution='&copy; <a href="https://carto.com">CARTO</a> &copy; <a href="https://openstreetmap.org/copyright">OSM</a>'
           url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
@@ -254,113 +315,46 @@ export default function InteractiveMap() {
           maxZoom={19}
         />
 
-        {quartiers.map((q) => {
-          const geom = boundaries[q.slug];
-          if (!geom) return null;
-
-          const prix = q.prixAppartement ?? q.prixMaison ?? 2000;
-          const isPolygon = geom.type === "Polygon" || geom.type === "MultiPolygon";
-
-          if (isPolygon) {
-            const feature: GeoJSON.Feature = {
-              type: "Feature",
-              geometry: geom,
-              properties: { slug: q.slug },
-            };
-            return (
-              <GeoJSON
-                key={`${q.slug}-${selected}-${hovered}`}
-                data={feature}
-                style={getStyle(q.slug, prix)}
-                eventHandlers={{
-                  click: () => setSelected(q.slug),
-                  mouseover: () => setHovered(q.slug),
-                  mouseout: () => setHovered(null),
-                }}
-              >
-                <Tooltip
-                  sticky
-                  className="!bg-white !border-0 !shadow-lg !rounded-lg !px-3 !py-2 !text-xs !font-semibold !text-gray-900"
-                  offset={[10, 0]}
-                >
-                  <span>{q.nom}</span>
-                  <span className="ml-2 text-cbf-gold font-bold">{formatPricePerM2(prix)}</span>
-                </Tooltip>
-              </GeoJSON>
-            );
-          }
-
-          // ── Point → cercle marker
-          if (geom.type === "Point") {
-            const center: [number, number] = [geom.coordinates[1], geom.coordinates[0]];
-            const color = priceToColor(prix);
-            const isSelected = selected === q.slug;
-            return (
-              <CircleMarker
-                key={q.slug}
-                center={center}
-                radius={isSelected ? 12 : 9}
-                pathOptions={{
-                  color: isSelected ? "#0A0A0A" : "rgba(255,255,255,0.8)",
-                  fillColor: color,
-                  fillOpacity: 0.85,
-                  weight: isSelected ? 2.5 : 1.5,
-                }}
-                eventHandlers={{
-                  click: () => setSelected(q.slug),
-                  mouseover: () => setHovered(q.slug),
-                  mouseout: () => setHovered(null),
-                }}
-              >
-                <Tooltip
-                  className="!bg-white !border-0 !shadow-lg !rounded-lg !px-3 !py-2 !text-xs !font-semibold !text-gray-900"
-                  offset={[10, 0]}
-                >
-                  <span>{q.nom}</span>
-                  <span className="ml-2 text-cbf-gold font-bold">{formatPricePerM2(prix)}</span>
-                </Tooltip>
-              </CircleMarker>
-            );
-          }
-
-          return null;
-        })}
-
-        {/* Labels prix sur les polygones */}
-        {Object.keys(boundaries).length > 0 &&
-          quartiers.map((q) => {
-            const geom = boundaries[q.slug];
-            if (!geom) return null;
-            return (
-              <PriceLabel
-                key={`label-${q.slug}`}
-                quartier={q}
-                geom={geom}
-                selected={selected === q.slug}
-                onClick={() => setSelected(q.slug)}
-              />
-            );
-          })}
+        {/* Choroplèthe IRIS × DVF — 42 zones, 100% couverture */}
+        {geoData && (
+          <GeoJSON
+            key={`${selected?.iris_code}-${hovered}`}
+            data={geoData}
+            style={getStyle}
+            onEachFeature={onEachFeature}
+          />
+        )}
       </MapContainer>
 
       {/* Légende */}
       <Legend />
 
-      {/* Panel latéral */}
-      {selectedQuartier && (
+      {/* Panel sélection */}
+      {selected && (
         <QuartierPanel
+          irisProps={selected}
           quartier={selectedQuartier}
-          onClose={() => setSelected(null)}
+          onClose={() => { setSelected(null); setSelectedCenter(null); }}
         />
       )}
 
-      {/* Hint mobile */}
+      {/* Hint */}
       {!selected && (
         <div className="absolute bottom-4 right-4 z-[400] bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg px-3 py-2 shadow-sm pointer-events-none">
           <p className="text-[10px] text-gray-500 flex items-center gap-1.5">
             <MapPin className="h-3 w-3" />
-            Cliquez sur un quartier
+            Cliquez sur une zone
           </p>
+        </div>
+      )}
+
+      {/* Loader */}
+      {!geoData && (
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-50/80 z-[500]">
+          <div className="flex flex-col items-center gap-3">
+            <div className="w-8 h-8 border-2 border-cbf-gold border-t-transparent rounded-full animate-spin" />
+            <p className="text-xs text-gray-500">Chargement des données DVF…</p>
+          </div>
         </div>
       )}
     </div>
