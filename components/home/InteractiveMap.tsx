@@ -93,12 +93,8 @@ function Legend() {
             <span className="text-[10px] text-gray-600 font-medium">{LABELS[i]}</span>
           </div>
         ))}
-        <div className="flex items-center gap-2">
-          <div className="w-3.5 h-3.5 rounded-sm flex-shrink-0 border border-gray-300" style={{ background: NO_DATA_COLOR }} />
-          <span className="text-[10px] text-gray-400 font-medium">Communes limitrophes</span>
-        </div>
       </div>
-      <p className="text-[9px] text-gray-300 mt-2">9 778 transactions · DGFiP — CLF 2021-2024</p>
+      <p className="text-[9px] text-gray-300 mt-2">16 882 transactions · DGFiP 2021-2024</p>
     </div>
   );
 }
@@ -308,7 +304,7 @@ export default function InteractiveMap() {
     <div className="relative w-full h-[420px] md:h-[580px] rounded-xl overflow-hidden shadow-xl border border-gray-200">
       <MapContainer
         center={[45.774, 3.090]}
-        zoom={13}
+        zoom={12}
         scrollWheelZoom={true}
         zoomControl={true}
         className="w-full h-full"
