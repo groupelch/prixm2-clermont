@@ -27,7 +27,7 @@ Quartiers intra-muros Clermont-Ferrand : Centre-Ville, Jaude, Montferrand, Les S
 ## Données
 
 Toutes les données prix m² publiées sur ce site sont issues de :
-- Base DVF (Demandes de Valeurs Foncières, DGFiP — Ministère de l'Économie) — 9 925 transactions notariées géolocalisées
+- Base DVF (Demandes de Valeurs Foncières, DGFiP — Ministère de l'Économie) — 16 882 transactions notariées géolocalisées (Clermont-Ferrand + 13 communes limitrophes)
 - ADEME DPE open data — 51 240 diagnostics de performance énergétique
 - INSEE données socio-démographiques par IRIS
 - CLF Métropole Open Data — équipements publics (écoles, parcs, crèches) avec coordonnées GPS

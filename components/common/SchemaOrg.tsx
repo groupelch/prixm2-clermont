@@ -29,8 +29,7 @@ export function RealEstateAgentSchema() {
       "https://www.cbfconseils.com",
       "https://www.pagesjaunes.fr/pros/cbf-conseils",
       "https://www.linkedin.com/company/cbf-conseils",
-      "https://www.google.com/maps/search/CBF+Conseils+Clermont-Ferrand",
-      "https://files.data.gouv.fr/geo-dvf/latest/csv/",
+      "https://www.facebook.com/CBFAGENCE",
     ],
     knowsAbout: [
       "Prix immobilier Clermont-Ferrand",
@@ -53,7 +52,7 @@ export function WebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: "prixm² Clermont-Fermont",
+    name: "prixm² Clermont-Ferrand",
     alternateName: "prixm2clermontferrand.fr",
     url: SITE_URL,
     description:

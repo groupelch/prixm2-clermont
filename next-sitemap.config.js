@@ -5,7 +5,7 @@ module.exports = {
   changefreq: "weekly",
   priority: 0.7,
   sitemapSize: 5000,
-  exclude: ["/api/*", "/admin/*"],
+  exclude: ["/api/*", "/admin/*", "*/opengraph-image", "*/opengraph-image/*"],
   transform: async (config, path) => {
     let priority = 0.7;
     if (path === "/") priority = 1.0;
