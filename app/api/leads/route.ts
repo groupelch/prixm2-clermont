@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { sendNotification, buildLeadEmailHtml } from "@/lib/resend";
+import { sendTelegramLead } from "@/lib/telegram";
 import { storeLead, type LeadRecord } from "@/lib/supabase";
 import { getQuartierBySlug } from "@/data/quartiers";
 
@@ -71,37 +72,46 @@ export async function POST(req: NextRequest) {
     payload: { dpe: data.dpe ?? null, raw: data },
   };
 
-  const [emailRes, dbRes] = await Promise.all([
+  const notifPayload = {
+    Type: data.type,
+    Page: data.source_page,
+    Quartier: quartierLabel,
+    Prénom: data.prenom,
+    Nom: data.nom ?? "",
+    Email: data.email ?? "",
+    Téléphone: data.telephone,
+    "Type bien": data.type_bien ?? "",
+    Surface: data.surface ?? "",
+    Pièces: data.nb_pieces ?? "",
+    Adresse: data.adresse ?? "",
+    État: data.etat ?? "",
+    DPE: data.dpe ?? "",
+    Délai: data.delai_vente ?? "",
+    Objectif: data.objectif ?? "",
+    Message: data.message ?? "",
+    Budget: (data.message ?? "").match(/Budget : ([^|]+)/)?.[1]?.trim() ?? "",
+    UTM: [data.utm_source, data.utm_medium, data.utm_campaign].filter(Boolean).join(" / "),
+  };
+
+  const isOffMarket = data.source_page.includes("off-market");
+  const subject = isOffMarket
+    ? `🔑 Off-market — ${data.prenom} ${data.nom ?? ""} — ${notifPayload.Budget || data.type_bien || "—"}`
+    : `Nouveau lead prixm² — ${quartierLabel} — ${data.prenom}`;
+
+  const [emailRes, tgRes, dbRes] = await Promise.all([
     sendNotification({
-      subject: `Nouvelle demande estimation — ${quartierLabel} — ${data.prenom}`,
-      html: buildLeadEmailHtml({
-        Type: data.type,
-        Page: data.source_page,
-        Quartier: quartierLabel,
-        Prénom: data.prenom,
-        Nom: data.nom ?? "",
-        Email: data.email ?? "",
-        Téléphone: data.telephone,
-        "Type bien": data.type_bien ?? "",
-        Surface: data.surface ?? "",
-        Pièces: data.nb_pieces ?? "",
-        Adresse: data.adresse ?? "",
-        État: data.etat ?? "",
-        DPE: data.dpe ?? "",
-        Délai: data.delai_vente ?? "",
-        Objectif: data.objectif ?? "",
-        Message: data.message ?? "",
-        UTM: [data.utm_source, data.utm_medium, data.utm_campaign].filter(Boolean).join(" / "),
-      }),
+      subject,
+      html: buildLeadEmailHtml(notifPayload),
       replyTo: data.email && data.email !== "" ? data.email : undefined,
     }),
+    sendTelegramLead(notifPayload),
     storeLead(lead),
   ]);
 
   return NextResponse.json({
     ok: true,
     message: "Demande reçue",
-    delivery: { email: emailRes.ok, db: dbRes.ok },
+    delivery: { email: emailRes.ok, telegram: tgRes.ok, db: dbRes.ok },
   });
 }
 
