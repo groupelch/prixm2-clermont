@@ -7,9 +7,9 @@ import {
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Architectes d'intérieur Clermont-Ferrand : 5 professionnels recommandés 2026",
+  title: "Architectes d'intérieur Clermont-Ferrand — 5 recommandés 2026",
   description:
-    "Top 5 architectes d'intérieur à Clermont-Ferrand : rénovation, optimisation d'espace, décoration, suivi de chantier. Comparatif honoraires et spécialités 2026.",
+    "Top 5 architectes d'intérieur à Clermont-Ferrand : rénovation pierre volcanique, optimisation studios étudiants, home staging avant vente. Honoraires 300-12 000 €. Comparatif 2026.",
   path: "/meilleurs-architectes-interieur-clermont-ferrand",
 });
 
@@ -78,6 +78,11 @@ const FAQ: FaqEntry[] = [
     reponse:
       "Une mission de conseil simple : 2 à 4 semaines. Un projet d'aménagement complet (plans, choix matériaux, suivi entreprises) : 3 à 6 mois pour un appartement, 6 à 12 mois pour une maison avec extension. Prévoyez de signer le contrat 6 mois avant le début souhaité des travaux.",
   },
+  {
+    question: "Y a-t-il des contraintes spécifiques pour rénover à Clermont-Ferrand ?",
+    reponse:
+      "Oui. Le centre historique clermontois est partiellement sous protection ABF (Architectes des Bâtiments de France) : toute modification de façade ou de menuiseries extérieures nécessite une déclaration préalable. Les biens en pierre volcanique locale (arkoze noire) ont des contraintes acoustiques et hygrométriques particulières. Un architecte d'intérieur local connaît ces contraintes et évite des retards coûteux.",
+  },
 ];
 
 export default function Page() {
@@ -88,7 +93,7 @@ export default function Page() {
       badge="Architecture intérieure"
       breadcrumbLabel="Meilleurs architectes d'intérieur"
       schemaType="ProfessionalService"
-      intro="Bien rénover un appartement ou une maison à Clermont-Ferrand exige une vision globale et un suivi rigoureux. Nous avons sélectionné 5 architectes d'intérieur locaux reconnus, du studio haut de gamme au conseil home staging avant vente."
+      intro="Clermont-Ferrand concentre un parc immobilier ancien exigeant : immeubles haussmanniens du Rectangle d'or, bâtisses en pierre volcanique (arkoze et andésite) du centre historique, studios étudiants à optimiser autour de Cézeaux. Bien rénover nécessite une connaissance des contraintes locales — ABF secteur sauvegardé, humidité des sous-sols volcaniques, acoustique des planchers anciens. Nous avons sélectionné 5 architectes d'intérieur clermontois reconnus pour leur maîtrise de ces spécificités."
       prestataires={PRESTATAIRES}
       faq={FAQ}
       ctaTitle="Vendre, acheter ou rénover à Clermont-Ferrand ?"

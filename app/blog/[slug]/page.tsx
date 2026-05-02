@@ -11,6 +11,7 @@ import {
   getArticleAuteur,
   ARTICLE_THEMES,
 } from "@/data/articles";
+import { getQuartierBySlug } from "@/data/quartiers";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import {
   ArticleSchema,
@@ -55,6 +56,11 @@ export default function ArticlePage({ params }: { params: Params }) {
   const themeLabel = ARTICLE_THEMES.find((t) => t.id === article.theme)?.label ?? article.theme;
   const related = getRelatedArticles(article.slug, 3);
   const auteur = getArticleAuteur(article);
+
+  // Quartiers liés à cet article (via le champ article.quartiers)
+  const quartiersLies = (article.quartiers ?? [])
+    .map((slug) => getQuartierBySlug(slug))
+    .filter(Boolean) as NonNullable<ReturnType<typeof getQuartierBySlug>>[];
 
   const breadcrumb = [
     { name: "Accueil", url: SITE_URL },
@@ -156,6 +162,43 @@ export default function ArticlePage({ params }: { params: Params }) {
               </Button>
             </Link>
           </div>
+
+          {/* Quartiers liés — maillage interne vers /prix-m2/[slug] */}
+          {quartiersLies.length > 0 && (
+            <section className="mt-12 pt-8 border-t border-cbf-gray-soft">
+              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-4">
+                Prix m² par quartier
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {quartiersLies.map((q) => (
+                  <Link
+                    key={q.slug}
+                    href={`/prix-m2/${q.slug}`}
+                    className="group flex items-center justify-between gap-4 bg-white border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm p-4"
+                  >
+                    <div>
+                      <p className="font-playfair text-base font-bold text-cbf-black group-hover:text-cbf-gold transition-colors">
+                        {q.nom}
+                      </p>
+                      <p className="text-xs text-cbf-gray-light mt-0.5">
+                        {q.prixAppartement
+                          ? `${q.prixAppartement.toLocaleString("fr-FR")} €/m² · appart.`
+                          : q.prixMaison
+                          ? `${q.prixMaison.toLocaleString("fr-FR")} €/m² · maison`
+                          : "Voir les données"}
+                      </p>
+                    </div>
+                    <div className="text-right flex-shrink-0">
+                      <p className={`text-sm font-bold ${q.evolution12m?.startsWith("+") ? "text-cbf-success" : "text-red-500"}`}>
+                        {q.evolution12m}
+                      </p>
+                      <p className="text-[0.6rem] text-cbf-gray-light">12 mois</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Articles liés */}
           {related.length > 0 && (

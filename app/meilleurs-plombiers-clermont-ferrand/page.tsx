@@ -7,9 +7,9 @@ import {
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Meilleurs plombiers Clermont-Ferrand 2026 — Comparatif & avis",
+  title: "Meilleurs plombiers Clermont-Ferrand 2026 — Urgences, devis & tarifs",
   description:
-    "Top 5 plombiers à Clermont-Ferrand en 2026 : interventions urgentes, dépannage, chauffage, sanitaire. Comparatif tarifs, délais et zones d'intervention. Partenaire CBF Conseils.",
+    "Top 5 plombiers à Clermont-Ferrand : urgences 24/7, tarif horaire 50-75 € HT, dépannage fuite, chauffage, rénovation salle de bains. Réseau de bâti ancien, pompes à chaleur, RGE. Comparatif 2026.",
   path: "/meilleurs-plombiers-clermont-ferrand",
 });
 
@@ -79,6 +79,11 @@ const FAQ: FaqEntry[] = [
     reponse:
       "Quatre critères : ancienneté de l'entreprise (5 ans minimum), assurance décennale valide, devis détaillé écrit, et avis clients vérifiables. Méfiez-vous des prix anormalement bas et des entreprises qui demandent un acompte supérieur à 30%. Une recommandation par un agent immobilier ou un syndic est souvent un bon signal.",
   },
+  {
+    question: "Quels problèmes de plomberie sont fréquents à Clermont-Ferrand ?",
+    reponse:
+      "Trois problèmes récurrents dans le parc immobilier clermontois : 1/ Les canalisations en plomb ou en fonte dans les immeubles d'avant 1970 du Centre-Ville, à remplacer progressivement. 2/ Les chaudières collectives au fioul à convertir (prime MaPrimeRénov' disponible). 3/ Les fuites de toiture et infiltrations liées aux fortes pluies du massif auvergnate — identifiables via caméra inspection. Un plombier connaissant le bâti local diagnostique plus vite et propose des solutions adaptées.",
+  },
 ];
 
 export default function Page() {
@@ -89,7 +94,7 @@ export default function Page() {
       badge="Sélection 2026"
       breadcrumbLabel="Meilleurs plombiers"
       schemaType="Plumber"
-      intro="Trouver un plombier fiable à Clermont-Ferrand reste un défi : urgences, devis flous, délais. Nous avons sélectionné 5 entreprises locales reconnues pour leur sérieux, dont notre partenaire PCR Plomberie Chauffage que nous recommandons pour tous nos clients vendeurs et investisseurs."
+      intro="Le parc immobilier clermontois présente des problèmes récurrents en plomberie : réseaux d'eau vétustes dans les immeubles anciens du Centre-Ville, chauffages collectifs au fioul à convertir, risques de gel sur les propriétés exposées des hauteurs (Montjuzet, Royat). Sans compter la forte densité locative autour des campus (Cézeaux, Aubière) qui génère des interventions fréquentes. Nous avons sélectionné 5 plombiers-chauffagistes locaux reconnus pour leur réactivité et leur expertise du bâti clermontois."
       prestataires={PRESTATAIRES}
       faq={FAQ}
       ctaTitle="Vous vendez ou rénovez à Clermont-Ferrand ?"

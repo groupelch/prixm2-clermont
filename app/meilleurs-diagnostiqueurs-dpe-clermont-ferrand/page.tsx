@@ -7,9 +7,9 @@ import {
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Diagnostiqueurs DPE Clermont-Ferrand — trouver un expert certifié 2026",
+  title: "Diagnostiqueurs DPE Clermont-Ferrand — Expert certifié 2026",
   description:
-    "Top 5 diagnostiqueurs immobiliers à Clermont-Ferrand : DPE, amiante, plomb, électricité, gaz. Tarifs, délais, certifications. Indispensable avant toute vente ou location.",
+    "Top 5 diagnostiqueurs immobiliers certifiés à Clermont-Ferrand : DPE 110-180 €, pack vente 350-600 €. Bâti ancien pierre volcanique, amiante, plomb. Rapport sous 48h-7j. Comparatif 2026.",
   path: "/meilleurs-diagnostiqueurs-dpe-clermont-ferrand",
 });
 
@@ -76,7 +76,12 @@ const FAQ: FaqEntry[] = [
   {
     question: "Mon bien est classé G : que faire avant de vendre ?",
     reponse:
-      "Trois options. 1/ Vendre tel quel en assumant la décote (10 à 15% à Clermont-Ferrand). 2/ Réaliser des travaux ciblés (toiture, fenêtres, chauffage) pour passer à F ou E avant la mise en marché. 3/ Vendre à un investisseur travaux qui valorisera le bien après rénovation. Demandez un audit énergétique pour chiffrer chaque scénario.",
+      "Trois options. 1/ Vendre tel quel en assumant la décote (10 à 15 % à Clermont-Ferrand). 2/ Réaliser des travaux ciblés (toiture, fenêtres, chauffage) pour passer à F ou E avant la mise en marché. 3/ Vendre à un investisseur travaux qui valorisera le bien après rénovation. Demandez un audit énergétique pour chiffrer chaque scénario.",
+  },
+  {
+    question: "Le bâti clermontois en pierre volcanique pose-t-il des problèmes particuliers au DPE ?",
+    reponse:
+      "Oui. Les murs en pierre volcanique (arkoze noire) ont une inertie thermique importante mais une isolation souvent absente ou insuffisante dans les bâtiments d'avant 1970. Ces biens sont fréquemment classés E, F ou G. Un diagnostiqueur connaissant ce type de construction peut suggérer les améliorations les plus rentables : isolation par l'intérieur, changement du système de chauffage, ventilation. Un classement E plutôt que G peut faire gagner 5 à 10 % sur le prix de vente.",
   },
 ];
 
@@ -88,7 +93,7 @@ export default function Page() {
       badge="Diagnostic immobilier"
       breadcrumbLabel="Meilleurs diagnostiqueurs DPE"
       schemaType="ProfessionalService"
-      intro="Avant toute vente ou location à Clermont-Ferrand, les diagnostics immobiliers sont obligatoires : DPE, amiante, plomb, électricité, gaz, ERP. Nous avons sélectionné 5 cabinets locaux certifiés, du généraliste au spécialiste de la pathologie du bâtiment."
+      intro="Le parc immobilier de Clermont-Ferrand présente des spécificités qui rendent les diagnostics particulièrement importants : bâti en pierre volcanique (arkoze, andésite) avec des risques d'humidité propres à la géologie locale, nombreux immeubles d'avant-guerre nécessitant une recherche d'amiante et de plomb, et part significative de logements énergivores (F/G) dans le parc ancien du Centre-Ville. Nous avons sélectionné 5 diagnostiqueurs certifiés COFRAC, reconnus pour leur réactivité et leur connaissance du bâti clermontois."
       prestataires={PRESTATAIRES}
       faq={FAQ}
       ctaTitle="Préparez votre vente sereinement"

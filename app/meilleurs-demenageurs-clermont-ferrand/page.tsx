@@ -7,9 +7,9 @@ import {
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Meilleurs déménageurs Clermont-Ferrand : comparatif tarifs 2026",
+  title: "Meilleurs déménageurs Clermont-Ferrand 2026 — Devis & comparatif tarifs",
   description:
-    "Top 5 déménageurs à Clermont-Ferrand : devis, prestations, garde-meuble, longue distance. Comparatif 2026 pour bien préparer votre déménagement local ou national.",
+    "Top 5 déménageurs à Clermont-Ferrand en 2026 : tarifs 600-3 500 € selon volume, spécialistes centre-ville (accès difficile), garde-meuble, longue distance. Comparez et choisissez le bon prestataire.",
   path: "/meilleurs-demenageurs-clermont-ferrand",
 });
 
@@ -78,6 +78,11 @@ const FAQ: FaqEntry[] = [
     reponse:
       "Vérifiez quatre points : inscription au registre des transporteurs (numéro Lota), assurance professionnelle valide, devis détaillé (m³, prestations, assurance), absence d'acompte excessif (max 30%). Les avis Google datés de moins de 6 mois sont un bon indicateur de la qualité actuelle.",
   },
+  {
+    question: "Quelles sont les difficultés spécifiques pour déménager à Clermont-Ferrand ?",
+    reponse:
+      "Trois points d'attention : 1/ Le stationnement en centre-ville est compliqué, certaines rues nécessitent une demande d'arrêté de voirie en mairie (gratuit, à demander 15 jours avant). 2/ Les immeubles anciens du Rectangle d'or ont souvent des cages d'escalier étroites — vérifiez les dimensions avec le déménageur. 3/ Septembre est la période la plus chargée à cause du retour des 39 000 étudiants : réservez en juillet pour un déménagement de septembre.",
+  },
 ];
 
 export default function Page() {
@@ -88,7 +93,7 @@ export default function Page() {
       badge="Déménagement"
       breadcrumbLabel="Meilleurs déménageurs"
       schemaType="MovingCompany"
-      intro="Bien choisir son déménageur à Clermont-Ferrand évite stress et mauvaises surprises. Nous avons sélectionné 5 entreprises locales reconnues, du spécialiste centre-ville au transporteur national, pour tous les budgets et toutes les distances."
+      intro="Déménager à Clermont-Ferrand a ses spécificités : le centre-ville compact et ses rues étroites (secteur Jaude, rue du Port, vieux Montferrand), les immeubles sans ascenseur du bâti ancien, les accès difficiles sur les hauteurs de Montjuzet. Sans compter les flux étudiants massifs chaque septembre (39 000 étudiants UCA) qui surchargent les plannings de juin-juillet et début septembre. Nous avons sélectionné 5 déménageurs locaux pour leur fiabilité, leur maîtrise des contraintes clermontoise et la transparence de leurs tarifs."
       prestataires={PRESTATAIRES}
       faq={FAQ}
       ctaTitle="Vous changez de logement à Clermont-Ferrand ?"

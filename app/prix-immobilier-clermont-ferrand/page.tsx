@@ -3,19 +3,49 @@ import Link from "next/link";
 import { quartiers, getQuartiersByType, getPrixMoyenAppartement, getPrixMoyenMaison } from "@/data/quartiers";
 import { QuartierCard } from "@/components/common/QuartierCard";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
-import { BreadcrumbSchema } from "@/components/common/SchemaOrg";
+import { BreadcrumbSchema, FaqPageSchema } from "@/components/common/SchemaOrg";
 import { MapWrapper } from "@/components/home/MapWrapper";
 import { ChiffresCles } from "@/components/home/ChiffresCles";
 import { WhyPricesVary } from "@/components/home/WhyPricesVary";
+import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
 import { buildMetadata } from "@/lib/seo";
 import { SITE_URL, formatPricePerM2 } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Prix immobilier à Clermont-Ferrand 2026 — Guide complet par quartier",
-  description: `Tous les prix immobiliers à Clermont-Ferrand 2026 : prix moyen ${formatPricePerM2(getPrixMoyenAppartement())} pour un appartement, analyse par quartier, communes de l'agglo. Données CBF Conseils.`,
+  title: "Prix immobilier Clermont-Ferrand 2026 — Tous les quartiers & communes",
+  description:
+    "Prix immobilier à Clermont-Ferrand 2026 par quartier : Jaude 3 200 €/m², Delille 3 000 €/m², Montjuzet 2 800 €/m², maison 3 400 €/m². Carte interactive, tendances et estimation gratuite.",
   path: "/prix-immobilier-clermont-ferrand",
 });
+
+const faqPrix = [
+  {
+    question: "Quel est le prix moyen au m² à Clermont-Ferrand en 2026 ?",
+    reponse:
+      "Le prix moyen d'un appartement à Clermont-Ferrand est d'environ 2 400 €/m² en 2026. Il varie fortement selon les quartiers : de 1 800 €/m² dans les secteurs périphériques (Croix-de-Neyrat, La Gauthière) à 3 200 €/m² dans le Rectangle d'or (Jaude, Gaillard). Pour les maisons, le prix moyen est de 2 800 à 3 400 €/m² en intra-muros, davantage dans les communes premium comme Chamalières ou Beaumont.",
+  },
+  {
+    question: "Les prix immobiliers à Clermont-Ferrand ont-ils augmenté en 2026 ?",
+    reponse:
+      "Après une légère correction de −3 à −5 % en 2023-2024, les prix ont retrouvé une trajectoire haussière modérée (+2 à 3 % annualisé en 2026). Le marché est soutenu par la demande structurelle liée au CHU, à l'université Clermont Auvergne (39 000 étudiants) et à Michelin. Aucune tension spéculative : Clermont-Ferrand offre un marché stable et lisible.",
+  },
+  {
+    question: "Quels sont les quartiers les plus chers de Clermont-Ferrand ?",
+    reponse:
+      "Le Rectangle d'or (Jaude, Gaillard, Delille) concentre les biens les plus chers : 2 800 à 3 200 €/m² pour les appartements. Chamalières, commune voisine du centre, atteint 2 500 à 2 900 €/m² pour un environnement résidentiel calme prisé des familles et des médecins du CHU. Beaumont et Ceyrat se distinguent pour les maisons (3 000 à 3 800 €/m² selon superficie et terrain).",
+  },
+  {
+    question: "Quels quartiers offrent les meilleurs rendements locatifs ?",
+    reponse:
+      "Cézeaux et Aubière (proche campus UCA) offrent les meilleurs rendements bruts : 5,5 à 6,5 % pour des studios et T2 loués à des étudiants. La Gare présente un rapport qualité/prix intéressant pour les investisseurs en anticipant la revalorisation liée au PEM 2027. Le Centre-Ville offre 4,5 à 5,5 % avec des locataires plus stables (jeunes actifs, cadres).",
+  },
+  {
+    question: "Comment évolueront les prix à Clermont-Ferrand dans les prochaines années ?",
+    reponse:
+      "Les fondamentaux restent solides : démographie stable grâce aux grandes entreprises (Michelin, Limagrain), flux estudiantins constants, marché pas surcoté. Le projet PEM 2027 et la rénovation du centre-ville devraient soutenir une hausse de 2 à 4 % par an. Les biens classés F/G risquent en revanche une décote croissante avec les nouvelles obligations énergétiques.",
+  },
+];
 
 export default function PrixImmoPilierPage() {
   const qClermont = getQuartiersByType("quartier");
@@ -31,6 +61,7 @@ export default function PrixImmoPilierPage() {
           { name: "Prix immobilier Clermont-Ferrand", url: `${SITE_URL}/prix-immobilier-clermont-ferrand` },
         ]}
       />
+      <FaqPageSchema items={faqPrix} />
 
       <section className="bg-cbf-ivory pt-10 pb-12 md:pt-14 md:pb-16">
         <div className="container max-w-5xl">
@@ -47,9 +78,8 @@ export default function PrixImmoPilierPage() {
               <span className="text-cbf-gold">Guide complet par quartier</span>
             </h1>
             <p className="text-lg text-cbf-gray leading-relaxed">
-              Tout pour comprendre le marché immobilier de Clermont-Ferrand en 2026 :
-              prix moyen au m² par quartier, communes de l'agglomération,
-              tendances et facteurs de variation.
+              Prix moyen appartement : <strong className="text-cbf-black">~2 400 €/m²</strong> — Jaude : <strong className="text-cbf-black">3 200 €/m²</strong> — Maison intra-muros : <strong className="text-cbf-black">~3 400 €/m²</strong>.
+              Tout pour comprendre le marché clermontois en 2026 : prix par quartier, communes de l'agglomération, tendances et facteurs de variation. Données croisées DVF + terrain CBF Conseils.
             </p>
           </div>
 
@@ -162,6 +192,7 @@ export default function PrixImmoPilierPage() {
         </div>
       </section>
 
+      <FaqAccordion items={faqPrix} title="Questions fréquentes sur les prix à Clermont-Ferrand" />
       <FinalCta />
     </>
   );

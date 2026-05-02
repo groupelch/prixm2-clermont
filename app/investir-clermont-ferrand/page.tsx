@@ -12,9 +12,9 @@ import { buildMetadata } from "@/lib/seo";
 import { SITE_URL } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Investir dans l'immobilier à Clermont-Ferrand 2026 — Stratégies & rendements",
+  title: "Investir à Clermont-Ferrand 2026 — Rendements, quartiers & stratégies",
   description:
-    "Guide complet pour investir dans l'immobilier locatif à Clermont-Ferrand : quartiers cibles, rendements 4,5-6,5 %, stratégies étudiant / jeune actif / patrimoine.",
+    "Guide complet investissement immobilier à Clermont-Ferrand : rendements 4 à 6,5 %, quartiers cibles (Cézeaux, Jaude, La Gare), 3 stratégies (étudiant, jeune actif, patrimoine). Marché porté par 39 000 étudiants et le CHU.",
   path: "/investir-clermont-ferrand",
 });
 
@@ -69,6 +69,16 @@ const faqInvestir = [
     reponse:
       "Sur Clermont-Ferrand, la valorisation tourne autour de +2 à 3 % par an. Comptez 7-8 ans minimum pour neutraliser frais notaire et coûts de portage avant plus-value nette.",
   },
+  {
+    question: "Quel impact a le futur Pôle d'Échanges Multimodal (PEM) sur les prix ?",
+    reponse:
+      "Le PEM prévu en 2027 va connecter la gare SNCF, le tramway et les bus en un hub unique. Le quartier Gare (actuellement 1 800-2 100 €/m²) est le seul secteur clermontois encore sous-valorisé par rapport à son potentiel. Les investisseurs anticipent une revalorisation de 15 à 25 % sur les appartements bien situés autour de la gare d'ici 2028-2030.",
+  },
+  {
+    question: "L'immobilier clermontois est-il plus accessible qu'en 2024 ?",
+    reponse:
+      "Oui. La légère correction de 2023-2024 (−3 à −5 %) a ramené les prix à des niveaux plus sains. En 2026, le marché se stabilise avec un léger rebond (+2 à 3 % annualisé). C'est une bonne fenêtre d'entrée avant la revalorisation liée au PEM et aux projets urbains du centre-ville.",
+  },
 ];
 
 export default function InvestirPage() {
@@ -95,9 +105,11 @@ export default function InvestirPage() {
                 <span className="text-cbf-gold">Stratégies & rendements 2026</span>
               </h1>
               <p className="text-lg text-cbf-gray leading-relaxed mb-8">
-                Bassin universitaire de 39 000 étudiants, demande locative
-                soutenue, prix d'entrée raisonnables : Clermont-Ferrand reste un
-                terrain solide pour l'investissement locatif.
+                Avec 39 000 étudiants (UCA, école de médecine, écoles d'ingénieurs),
+                le CHU Estaing — l'un des plus grands de province — et le siège
+                mondial de Michelin, Clermont-Ferrand génère une demande locative
+                structurelle rarement perturbée. Les prix d'entrée restent
+                25 à 40 % inférieurs à Lyon pour des rendements équivalents.
               </p>
               <Link href="/estimation">
                 <Button variant="primary" size="lg">
