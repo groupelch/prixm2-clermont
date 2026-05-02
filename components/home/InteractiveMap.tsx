@@ -8,6 +8,7 @@ import Link from "next/link";
 import { quartiers } from "@/data/quartiers";
 import type { Quartier } from "@/data/quartiers";
 import { formatPricePerM2 } from "@/lib/utils";
+import { IRIS_TO_QUARTIER } from "@/lib/iris-quartier-map";
 import { TrendingUp, TrendingDown, X, ArrowRight, MapPin, Database } from "lucide-react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -222,7 +223,6 @@ function QuartierPanel({
 export default function InteractiveMap() {
   const [geoData, setGeoData] = useState<GeoJSON.FeatureCollection | null>(null);
   const [selected, setSelected] = useState<IrisProps | null>(null);
-  const [selectedCenter, setSelectedCenter] = useState<[number, number] | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
 
   useEffect(() => {
@@ -232,20 +232,12 @@ export default function InteractiveMap() {
       .catch(console.error);
   }, []);
 
-  // Trouver le quartier CBF le plus proche du centre de la zone sélectionnée
-  const selectedQuartier = selectedCenter
+  // Trouver le quartier CBF via le mapping IRIS → slug
+  const selectedQuartier = selected
     ? (() => {
-        let best: Quartier | null = null;
-        let bestDist = Infinity;
-        for (const q of quartiers) {
-          // On cherche dans les données de quartier s'il y a un match par nom IRIS
-          const irisName = selected?.iris_name?.toLowerCase() ?? "";
-          const qNom = q.nom.toLowerCase();
-          if (irisName.includes(qNom.split(" ")[0]) || qNom.includes(irisName.split(" ")[0])) {
-            return q;
-          }
-        }
-        return best;
+        const slug = IRIS_TO_QUARTIER[selected.iris_code];
+        if (!slug) return null;
+        return quartiers.find((q) => q.slug === slug) ?? null;
       })()
     : null;
 
@@ -285,10 +277,8 @@ export default function InteractiveMap() {
       className: "!bg-white !border-0 !shadow-xl !rounded-xl !p-3 leaflet-tooltip-custom",
     });
 
-    l.on("click", (e: L.LeafletMouseEvent) => {
-      const center = featureCentroid(feature as IrisFeature);
+    l.on("click", () => {
       setSelected(props);
-      setSelectedCenter(center);
     });
 
     l.on("mouseover", () => setHovered(props.iris_code));
@@ -334,7 +324,7 @@ export default function InteractiveMap() {
         <QuartierPanel
           irisProps={selected}
           quartier={selectedQuartier}
-          onClose={() => { setSelected(null); setSelectedCenter(null); }}
+          onClose={() => setSelected(null)}
         />
       )}
 
