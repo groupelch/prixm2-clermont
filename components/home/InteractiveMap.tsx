@@ -300,8 +300,8 @@ export default function InteractiveMap() {
       <MapContainer
         center={[45.774, 3.090]}
         zoom={13}
-        scrollWheelZoom={false}
-        zoomControl={false}
+        scrollWheelZoom={true}
+        zoomControl={true}
         className="w-full h-full"
         style={{ background: "#f0f0ec" }}
       >
