@@ -190,6 +190,7 @@ ${CTA("à Clermont-Ferrand")}
     datePublished: "2025-04-04",
     readTime: 6,
     featured: false,
+    quartiers: ["clermont-ferrand-jaude", "clermont-ferrand-delille"],
     content: `
 <p>Pour beaucoup, Jaude et Delille forment un seul "centre haut de gamme" clermontois. À l'analyse, ce sont pourtant deux marchés bien distincts, avec des dynamiques de prix, des typologies d'acheteurs et des durées de vente différentes. Si vous vendez l'un de vos biens dans cette zone en 2025, voici ce qu'il faut savoir.</p>
 
@@ -446,6 +447,7 @@ ${CTA("dans le bon cadre")}
     datePublished: "2025-03-12",
     readTime: 6,
     featured: false,
+    quartiers: ["clermont-ferrand-montferrand", "clermont-ferrand-jaude"],
     content: `
 <p>Quand on visite des immeubles médiévaux entièrement restaurés à Montferrand, et qu'on compare avec des appartements haussmanniens à Jaude, on s'étonne souvent : pourquoi le m² de Montferrand est-il 15 % moins cher ? Décryptage.</p>
 
@@ -565,6 +567,7 @@ ${CTA("dans le bon quartier")}
     datePublished: "2025-04-06",
     readTime: 7,
     featured: true,
+    quartiers: ["clermont-ferrand-la-pardieu", "clermont-ferrand-montferrand", "clermont-ferrand-gare", "chamalieres", "aubiere"],
     content: `
 <p>Acheter, c'est aussi parier sur la valeur future. À Clermont-Ferrand, certains quartiers gagnent 2-3 % par an depuis 5 ans, d'autres stagnent. Voici nos 5 secteurs à dynamique forte et 3 à surveiller, fin avril 2025.</p>
 
@@ -672,6 +675,7 @@ ${CTA("neuf ou ancien")}
     datePublished: "2025-03-25",
     readTime: 6,
     featured: false,
+    quartiers: ["chamalieres", "clermont-ferrand-jaude", "beaumont"],
     content: `
 <p>Chamalières et Clermont sont géographiquement collées, mais sociologiquement différentes. Pour les familles aisées de l'agglomération, le choix entre les deux n'est pas anodin. Voici les éléments factuels pour décider.</p>
 
@@ -791,6 +795,7 @@ ${CTA("pour un investissement locatif")}
     datePublished: "2025-04-01",
     readTime: 6,
     featured: false,
+    quartiers: ["clermont-ferrand-saint-jacques", "clermont-ferrand-cezeaux", "clermont-ferrand-blaise-pascal"],
     content: `
 <p>Le CHU Estaing et l'Hôpital Gabriel Montpied, couplés à la fac de médecine, génèrent à Clermont-Ferrand une demande locative parmi les plus stables et solvables de France. Voici pourquoi le secteur est un placement durable.</p>
 
@@ -848,6 +853,7 @@ ${CTA("près du CHU")}
     datePublished: "2025-03-26",
     readTime: 6,
     featured: false,
+    quartiers: ["clermont-ferrand-cezeaux", "clermont-ferrand-saint-jacques", "clermont-ferrand-gare"],
     content: `
 <p>Pour un premier investissement locatif à Clermont-Ferrand, deux options dominent : le studio et le T2. Voici les chiffres réels pour décider.</p>
 
@@ -914,6 +920,7 @@ ${CTA("studio ou T2")}
     datePublished: "2025-03-20",
     readTime: 6,
     featured: false,
+    quartiers: ["clermont-ferrand-la-pardieu"],
     content: `
 <p>La Pardieu fascine et inquiète à la fois les investisseurs clermontois. Tertiaire en croissance (Michelin, Limagrain, école d'ingénieurs SIGMA), tram, programmes neufs récents… mais aussi quelques poches résidentielles plus difficiles. Décryptage.</p>
 
@@ -1297,6 +1304,399 @@ ${CTA("bail adapté")}
 <p>Le débat national sur l'extension de l'encadrement des loyers existe. Si Clermont devait basculer un jour, l'INSEE publierait des loyers de référence par typologie. Aucun signal politique en ce sens en 2025.</p>
 
 ${CTA("dans le cadre légal 2025")}
+`,
+  },
+
+  // ---------------------------------------------------------------------------
+  // 22. Vichy — marché immobilier 2026
+  // ---------------------------------------------------------------------------
+  {
+    slug: "prix-m2-vichy-2026-marche-immobilier",
+    title: "Prix m² Vichy 2026 : marché immobilier, spa, investissement",
+    description:
+      "Vichy 2026 : prix m² 700-1400 € appart, 900-1600 € maisons, thermalisme, clientèle parisienne, rendement 5-7%. Analyse complète du marché.",
+    theme: "marche",
+    datePublished: "2025-04-22",
+    readTime: 7,
+    featured: false,
+    quartiers: ["vichy"],
+    content: `
+<p>Vichy intrigue. À 1h15 de Clermont-Ferrand par l'A719, la cité thermale de l'Allier affiche en 2026 des prix m² qui restent bien en dessous de la moyenne auvergnate, tout en proposant un patrimoine architectural Belle Époque unique en France. Pour un acheteur clermontois ou un investisseur parisien, le marché vichyssois mérite un regard attentif.</p>
+
+<h2>Les prix m² à Vichy en 2026</h2>
+<p>Le marché vichyssois se situe sur une fourchette large : <strong>700 à 1 400 €/m²</strong> pour un appartement selon l'emplacement et l'état, et <strong>900 à 1 600 €/m²</strong> pour les maisons. La médiane appartement tourne autour de <strong>1 050 €/m²</strong>, soit moins de la moitié du prix médian clermontois (~2 280 €/m²).</p>
+<ul>
+  <li><strong>Quartier thermal et Parc des Sources</strong> : 1 200 à 1 400 €/m², les biens Belle Époque rénovés peuvent atteindre 1 600 €/m².</li>
+  <li><strong>Centre-ville (rue Clemenceau, place de l'Hôtel de Ville)</strong> : 950 à 1 200 €/m².</li>
+  <li><strong>Bords d'Allier et quartier Russie</strong> : 1 100 à 1 350 €/m².</li>
+  <li><strong>Quartiers périphériques (Les Garets, Vernet)</strong> : 700 à 950 €/m².</li>
+</ul>
+
+<h2>Le patrimoine Belle Époque, un marché à part</h2>
+<p>Vichy, ville thermale impériale, classée au patrimoine mondial de l'UNESCO depuis 2021 (au titre des Grandes villes thermales d'Europe), conserve un parc immobilier exceptionnel : immeubles haussmanniens, villas Belle Époque, opéra, galeries couvertes. Les biens d'exception (appartements de 100 m²+ avec moulures, parquets d'origine, vue sur le parc) trouvent une clientèle internationale : Parisiens, Lyonnais, retraités du Nord, voire investisseurs anglo-saxons attirés par le rapport prix/cachet.</p>
+
+<h2>Pourquoi les prix sont si bas</h2>
+<p>Trois raisons structurelles expliquent la décote vichyssoise par rapport à Clermont :</p>
+<ul>
+  <li><strong>Démographie en stagnation</strong> : ~24 800 habitants, population vieillissante, pas de bassin d'emploi tertiaire dynamique.</li>
+  <li><strong>Saisonnalité</strong> : l'économie repose largement sur le thermalisme et le tourisme. Hors saison, la ville s'endort.</li>
+  <li><strong>Liquidité plus faible</strong> : <strong>délai moyen de vente ~120 jours</strong> contre 90 jours à Clermont, avec des pointes à 180-200 jours sur les biens mal positionnés.</li>
+</ul>
+
+<h2>Le profil acheteur 2026</h2>
+<p>Trois grandes typologies se partagent le marché vichyssois :</p>
+<ol>
+  <li><strong>Retraités résidentiels</strong> : recherchent un T3-T4 en centre-ville, ascenseur, services à proximité. Budget 130-200 k€.</li>
+  <li><strong>Résidence secondaire</strong> : Parisiens, Lyonnais, voire dirigeants clermontois cherchant un pied-à-terre Belle Époque. Budget 150-300 k€ pour un T3 de caractère.</li>
+  <li><strong>Investisseurs locatifs</strong> : T2 à 80-110 k€ avec rendement brut 5 à 7 %.</li>
+</ol>
+
+<h2>Investir à Vichy : la mécanique du rendement</h2>
+<p>Les loyers vichyssois sont faibles en valeur absolue mais cohérents avec les prix d'achat. Un T2 de 45 m² acheté <strong>85 k€</strong> se loue entre <strong>380 et 480 €/mois</strong> hors charges (350-450 € sur les meublés courte durée saisonnière). Le rendement brut s'établit donc autour de <strong>5,5 à 6,8 %</strong>, mieux que dans la plupart des quartiers clermontois.</p>
+<p>Attention cependant : la vacance locative est plus marquée qu'à Clermont. Hors centre thermal, certains biens restent vides 6-8 semaines entre deux locataires. La cible la plus sûre reste l'étudiant (école d'ingénieurs Sigma Clermont a une antenne, plus IUT) ou le curiste de moyenne durée.</p>
+
+<h2>Comparaison Vichy / Clermont-Ferrand 2026</h2>
+<ul>
+  <li><strong>Prix d'entrée</strong> : Vichy ~1 050 €/m² vs Clermont ~2 280 €/m² → effet ×2,2.</li>
+  <li><strong>Rendement brut moyen T2</strong> : Vichy 6 % vs Clermont 4,5 %.</li>
+  <li><strong>Liquidité</strong> : Clermont nettement plus liquide (délai 90 j vs 120 j).</li>
+  <li><strong>Plus-value 5 ans</strong> : Clermont +12 % vs Vichy +4 %.</li>
+</ul>
+
+<h2>Notre conseil pour 2026</h2>
+<p>Vichy convient à deux profils précis : l'investisseur qui privilégie le rendement courant et qui assume une revente plus longue, et l'acheteur résidentiel qui cherche un cachet Belle Époque introuvable ailleurs à ce prix. Pour un projet patrimonial pur (plus-value à 10 ans), Clermont reste plus sûr.</p>
+
+${CTA("à Vichy et dans le bassin thermal")}
+`,
+  },
+
+  // ---------------------------------------------------------------------------
+  // 23. Acheter Riom vs Clermont — comparatif 2026
+  // ---------------------------------------------------------------------------
+  {
+    slug: "acheter-riom-vs-clermont-ferrand-comparatif-2026",
+    title: "Acheter à Riom ou Clermont-Ferrand : comparatif 2026",
+    description:
+      "Riom 1700-2200 €/m² vs Clermont 2280 €/m² : qui choisit quoi en 2026 ? TER, écoles, jardin, vie nocturne. Comparatif complet pour décider.",
+    theme: "acheteur",
+    datePublished: "2025-04-18",
+    readTime: 6,
+    featured: false,
+    quartiers: ["riom"],
+    content: `
+<p>15 km au nord de Clermont-Ferrand, Riom est devenue en cinq ans une alternative crédible pour les acheteurs qui ne trouvent plus leur compte dans la métropole. Vieille ville médiévale classée, gare TER à 12 minutes de Clermont, prix moyens 20 à 25 % en dessous : l'équation séduit, mais elle n'est pas sans contreparties. Comparatif honnête pour 2026.</p>
+
+<h2>Les prix m² 2026</h2>
+<p>Riom affiche un prix moyen de <strong>1 700 à 2 200 €/m²</strong> pour un appartement, contre <strong>2 280 €/m²</strong> à Clermont (médiane toutes catégories). Pour les maisons, l'écart est encore plus net :</p>
+<ul>
+  <li>Riom : maison T4-T5 avec jardin de 300-500 m² = <strong>180 à 250 k€</strong> selon état.</li>
+  <li>Clermont équivalent (Beaumont, Chamalières, Aubière) : <strong>320 à 480 k€</strong>.</li>
+</ul>
+<p>L'écart est tel que beaucoup de primo-accédants familiaux qui visaient Beaumont ou Aubière finissent par acheter à Riom — souvent un bien plus grand, plus récent, ou avec plus de terrain.</p>
+
+<h2>La vieille ville : le cachet introuvable à Clermont</h2>
+<p>Riom conserve un centre historique médiéval classé : hôtels particuliers du XVe-XVIe, beffroi, Sainte-Chapelle, ruelles pavées. Les T3-T4 dans la pierre rénovée se vendent autour de <strong>1 900 à 2 300 €/m²</strong>, soit le prix d'un bien moyen à Clermont mais avec un cachet patrimonial bien supérieur. C'est le segment qui plaît aux Clermontois en quête d'authenticité.</p>
+
+<h2>Le TER : l'argument qui change tout</h2>
+<p>La gare de Riom-Châtel-Guyon est à <strong>12 minutes</strong> en TER de Clermont (départs toutes les 30 min en heure de pointe). En voiture, comptez 25-40 minutes selon le trafic et la sortie périphérique visée. Pour un actif travaillant à Clermont, le trajet quotidien reste réaliste, à condition d'habiter à 5 minutes maxi de la gare.</p>
+<p>Important : <strong>l'abonnement TER mensuel</strong> Riom-Clermont coûte autour de 80-90 €/mois en 2026, à intégrer dans le budget total. Pour deux actifs, on parle vite de 2 000 €/an supplémentaires.</p>
+
+<h2>Qui choisit Riom en 2026</h2>
+<ul>
+  <li><strong>Familles primo-accédantes budget serré</strong> : viser une maison avec jardin sous 250 k€ est possible à Riom, impossible à Clermont sauf en grande périphérie.</li>
+  <li><strong>Retraités</strong> : services médicaux complets (hôpital, cliniques), commerces de centre-ville, calme.</li>
+  <li><strong>Familles cherchant écoles et cadre de vie</strong> : les écoles riomoises sont bien notées, les enfants peuvent aller au collège à pied.</li>
+  <li><strong>Investisseurs longue durée</strong> : T2 à 90-120 k€, loyer 480-560 €/mois, rendement brut autour de 5 %.</li>
+</ul>
+
+<h2>Les inconvénients à connaître</h2>
+<ul>
+  <li><strong>Vie nocturne quasi nulle</strong> : 1-2 bars ouverts après 22h, pas de salle de concert, pas de cinéma indépendant.</li>
+  <li><strong>Bassin d'emploi limité</strong> : fonction publique, hôpital, quelques PME industrielles. La majorité des actifs travaillent à Clermont.</li>
+  <li><strong>Offres culturelles plus limitées</strong> : beaucoup de festivals et expositions sont à Clermont — il faut se déplacer.</li>
+  <li><strong>Marché des biens haut de gamme limité</strong> : peu de transactions au-dessus de 400 k€, ce qui peut compliquer une revente future si vous montez en gamme.</li>
+</ul>
+
+<h2>Le calcul pratique : trajet domicile-travail</h2>
+<p>Pour un couple où les deux conjoints travaillent à Clermont, le surcoût trajet (TER ou carburant) est compensé en moins de deux ans par l'écart de prix d'achat. Pour un seul conjoint actif, l'arbitrage est encore plus net. Pour un foyer où un conjoint travaille au sud de Clermont (Cournon, Aubière), la balance penche en revanche pour rester côté clermontois.</p>
+
+<h2>Notre verdict</h2>
+<p>Riom est le bon choix si vous valorisez l'espace, le calme, le cachet historique, et si votre vie ne dépend pas de l'animation nocturne clermontoise. Clermont reste le bon choix si vous voulez tout à pied et un marché immobilier liquide pour la revente. Entre les deux : essayez d'abord la location 6-12 mois pour valider le mode de vie.</p>
+
+${CTA("entre Clermont-Ferrand et Riom")}
+`,
+  },
+
+  // ---------------------------------------------------------------------------
+  // 24. Investir Cournon-d'Auvergne — rendement 2026
+  // ---------------------------------------------------------------------------
+  {
+    slug: "investir-appartement-cournon-dauvergne-rendement",
+    title: "Investir à Cournon-d'Auvergne : rendement locatif 2026",
+    description:
+      "Cournon 2026 : T2 à 120 k€, loyer 500-550 €/mois, rendement brut 5,5 %. Michelin, Limagrain, faible vacance. Analyse complète pour investisseurs.",
+    theme: "investissement",
+    datePublished: "2025-04-15",
+    readTime: 6,
+    featured: false,
+    quartiers: ["cournon-dauvergne"],
+    content: `
+<p>Cournon-d'Auvergne, deuxième commune du Puy-de-Dôme avec ~20 000 habitants, est un terrain d'investissement souvent sous-estimé. Située à 8 km au sud-est de Clermont-Ferrand, à proximité immédiate des employeurs majeurs (Michelin, Limagrain, zone tertiaire de la Pardieu), Cournon offre un couple rendement / vacance locative qui mérite l'attention de l'investisseur méthodique.</p>
+
+<h2>Les prix m² à Cournon en 2026</h2>
+<p>Le marché cournonnais s'établit autour de <strong>1 900 à 2 100 €/m²</strong> en moyenne pour un appartement, soit légèrement en dessous de la médiane clermontoise (~2 280 €/m²). Les T2 (45-50 m²) se négocient typiquement entre <strong>110 et 130 k€</strong>, frais de notaire inclus pour un bien des années 1990-2010 en bon état.</p>
+<ul>
+  <li><strong>Centre Cournon</strong> : 2 000 à 2 200 €/m².</li>
+  <li><strong>Quartier de la Mairie / République</strong> : 1 950 à 2 100 €/m².</li>
+  <li><strong>Sarliève / Plaine</strong> : 1 800 à 2 000 €/m².</li>
+</ul>
+
+<h2>Le moteur du marché : Michelin, Limagrain, Pardieu</h2>
+<p>Cournon est positionnée à 5 minutes en voiture de la zone industrielle de la Pardieu et de Michelin, et à 10 minutes du siège de Limagrain à Saint-Beauzire. Cette proximité génère une demande locative continue de la part de jeunes actifs (techniciens, ingénieurs débutants, cadres en mobilité) qui ne souhaitent pas habiter en centre-ville clermontois.</p>
+<p>La ligne de bus B (réseau T2C) relie Cournon au centre de Clermont en 25-30 minutes, un atout pour les locataires sans véhicule.</p>
+
+<h2>Le calcul de rendement type</h2>
+<p>Exemple concret 2026 : T2 de 47 m² acheté <strong>120 000 €</strong> (frais de notaire inclus), travaux 5 000 €, soit revient à 125 k€.</p>
+<ul>
+  <li>Loyer pratiqué : <strong>520 €/mois hors charges</strong> = 6 240 €/an.</li>
+  <li>Charges non récupérables + taxe foncière : ~900 €/an.</li>
+  <li>Loyer net avant impôt : ~5 340 €.</li>
+  <li><strong>Rendement brut : 5,2 %</strong> / Rendement net : 4,3 %.</li>
+</ul>
+<p>Sur des T1-studios bien placés, le rendement brut peut monter à <strong>5,8 - 6 %</strong>.</p>
+
+<h2>La vacance locative</h2>
+<p>C'est l'argument fort de Cournon : la vacance moyenne tourne autour de <strong>2 à 4 semaines/an</strong>, contre 4 à 8 semaines dans les quartiers étudiants clermontois saturés en été. Le profil locataire (jeunes actifs CDI) reste plus stable, avec une durée moyenne de bail de 18-24 mois.</p>
+
+<h2>Cournon vs Cézeaux : le match investisseur</h2>
+<ul>
+  <li><strong>Prix d'entrée</strong> : Cournon ~120 k€ pour un T2 vs Cézeaux ~115-130 k€ → similaire.</li>
+  <li><strong>Loyer</strong> : Cournon 500-550 € vs Cézeaux 480-530 € (étudiant) → léger avantage Cournon.</li>
+  <li><strong>Vacance</strong> : Cournon faible et stable vs Cézeaux pic estival juin-septembre.</li>
+  <li><strong>Profil locataire</strong> : Cournon = jeune actif CDI vs Cézeaux = étudiant rotatif.</li>
+  <li><strong>Plus-value future</strong> : Cézeaux légèrement supérieur (effet métropolitain).</li>
+</ul>
+<p>Notre recommandation : Cournon pour l'investisseur qui privilégie le rendement régulier et la sérénité de gestion. Cézeaux si vous acceptez la rotation et visez la plus-value.</p>
+
+<h2>Les points de vigilance</h2>
+<ul>
+  <li><strong>Copropriétés années 70</strong> : nombreuses à Cournon. Vérifier impérativement l'état des façades, ascenseur, fonds travaux et DPE collectif. Les rénovations énergétiques peuvent atteindre 8 000-15 000 € par lot dans les années à venir.</li>
+  <li><strong>Stationnement</strong> : un T2 sans place de parking en sous-sol perd 5 à 8 % de valeur — beaucoup de locataires viennent en voiture pour Michelin / Limagrain.</li>
+  <li><strong>DPE</strong> : éviter les biens classés F-G, la décote de revente atteint 10-15 % et la location sera interdite progressivement.</li>
+</ul>
+
+<h2>Qui doit investir à Cournon</h2>
+<p>Profil idéal : investisseur avec un budget 100-150 k€, qui cherche un premier ou deuxième investissement locatif sécurisé, sans complexité (pas de meublé saisonnier, pas de colocation à monter), avec un rendement régulier de 5-5,5 %. La proximité immédiate de Clermont permet aussi de gérer en direct sans agence.</p>
+
+${CTA("à Cournon-d'Auvergne et dans la métropole clermontoise")}
+`,
+  },
+
+  // ---------------------------------------------------------------------------
+  // 25. Vendre DPE F-G Clermont — stratégie 2026
+  // ---------------------------------------------------------------------------
+  {
+    slug: "vendre-bien-dpe-f-g-clermont-strategie-2026",
+    title: "Vendre un bien DPE F ou G à Clermont : stratégie et prix réels 2026",
+    description:
+      "DPE F ou G à Clermont : décote 10-20%, acheteurs cibles, devis travaux préparés, timing avant interdiction location. Stratégie de vente 2026.",
+    theme: "vendeur",
+    datePublished: "2025-04-10",
+    readTime: 7,
+    featured: false,
+    content: `
+<p>Vendre un bien classé F ou G à Clermont-Ferrand en 2026 n'est pas mission impossible — mais c'est un autre métier que vendre un bien classé C ou D. Les acheteurs sont moins nombreux, plus exigeants, mieux informés, et la fenêtre réglementaire se referme. Voici la stratégie de mise en vente que nous appliquons chez CBF Conseils sur ce type de bien.</p>
+
+<h2>La décote réelle observée à Clermont en 2026</h2>
+<p>Sur les ventes que nous avons accompagnées et les données DVF récentes, la décote moyenne d'un bien F-G par rapport à un bien équivalent classé C-D s'établit à :</p>
+<ul>
+  <li><strong>Quartiers tendus (Jaude, Delille, Chamalières)</strong> : -8 à -12 %. La rareté absorbe une partie du handicap énergétique.</li>
+  <li><strong>Quartiers résidentiels moyens (Beaumont, Aubière, Montferrand hors hyper-centre)</strong> : -12 à -16 %.</li>
+  <li><strong>Quartiers tendance baissière (Croix-de-Neyrat, Brézet, Champratel)</strong> : -15 à -20 %, jusqu'à -25 % sur les biens grande surface impossibles à rénover sans gros budget.</li>
+</ul>
+<p>Exemple concret 2026 : un T2 de 48 m² près de la Gare, prix médian classique 110 k€, classé G → vendu <strong>92 000 €</strong>, soit -16 %, soit -18 k€ de moins-value sur le prix de marché.</p>
+
+<h2>Qui sont les acheteurs qui restent sur ce segment</h2>
+<p>Trois profils d'acheteurs ne fuient pas un DPE F ou G :</p>
+<ol>
+  <li><strong>Investisseurs spécialistes "passoires"</strong> : ils savent chiffrer la rénovation, intègrent les aides MaPrimeRénov' et les CEE, et achètent à prix décoté pour récupérer la valeur après travaux.</li>
+  <li><strong>SCI rénovation</strong> : structures qui achètent en lot, rénovent, et revendent ou louent. Très actives à Clermont sur les T2-T3 entre 80 et 130 k€.</li>
+  <li><strong>Acheteurs résidentiels avec capacité travaux</strong> : couples qui veulent un bien dans un quartier convoité (Jaude, Montferrand) et acceptent d'engager 25-50 k€ de rénovation pour passer en classe C-D.</li>
+</ol>
+
+<h2>La stratégie : tout préparer à l'avance</h2>
+<p>Le réflexe perdant : mettre le bien en vente brut, "tel quel", sans information complémentaire. Le réflexe gagnant : <strong>fournir d'avance les devis et le scénario de rénovation</strong>.</p>
+<p>Concrètement, avant la mise en vente, faire intervenir :</p>
+<ul>
+  <li>Un <strong>audit énergétique</strong> (obligatoire pour F-G en monopropriété depuis 2023) qui chiffre les travaux pour passer en classe C ou D.</li>
+  <li><strong>2-3 devis d'entreprises locales</strong> (isolation combles, murs, fenêtres, chauffage). Demander des entreprises RGE pour que l'acheteur puisse prétendre aux aides.</li>
+  <li>Un <strong>simulateur MaPrimeRénov'</strong> rempli pour le profil acheteur médian.</li>
+</ul>
+<p>Ce dossier transforme le bien : l'acheteur ne voit plus une "passoire à fuir" mais un projet chiffré, finançable, et négociable au juste prix.</p>
+
+<h2>Le timing : la fenêtre réglementaire 2025</h2>
+<p>Calendrier en vigueur :</p>
+<ul>
+  <li><strong>1er janvier 2025</strong> : interdiction de location pour les G les plus énergivores (>450 kWh/m²/an).</li>
+  <li><strong>1er janvier 2028</strong> : interdiction de location pour tous les F.</li>
+  <li><strong>1er janvier 2034</strong> : interdiction de location pour les E.</li>
+</ul>
+<p>Pour un bien G investisseur destiné à la location, vendre <strong>avant 2025</strong> permettait d'éviter la décote "interdiction". En 2026, le marché a déjà intégré cette donnée : un G locatif a perdu sa valeur "rendement" et n'a plus que sa valeur "résidentiel après travaux". D'où une décote plus marquée mais désormais stabilisée.</p>
+
+<h2>Le prix d'affichage : ne pas surévaluer</h2>
+<p>L'erreur classique consiste à afficher le prix marché plein en pensant "négocier ensuite". Sur un F-G, le bien ne génère aucune visite, perd sa fraîcheur d'annonce, et finira vendu encore plus bas après 4-6 mois. La méthode CBF :</p>
+<ul>
+  <li>Estimation du prix marché classe C-D (référence DVF).</li>
+  <li>Décote 10-18 % selon quartier et travaux.</li>
+  <li>Prix d'affichage = prix net visé +3 à 5 % de marge négo, pas plus.</li>
+</ul>
+
+<h2>Le rôle de CBF Conseils sur ce type de mandat</h2>
+<p>Sur les biens F-G, notre rôle dépasse la simple commercialisation. Nous orchestrons l'audit énergétique, mobilisons notre réseau d'entreprises locales pour les devis, et qualifions les acheteurs en amont (capacité travaux, projet réel). Cela permet de signer plus vite (60-90 jours médian sur nos mandats F-G en 2026) et au bon prix.</p>
+
+${CTA("sur votre bien DPE F ou G à Clermont")}
+`,
+  },
+
+  // ---------------------------------------------------------------------------
+  // 26. Prix m² Puy-de-Dôme hors Clermont — Issoire, Thiers, Brioude
+  // ---------------------------------------------------------------------------
+  {
+    slug: "prix-m2-issoire-thiers-brioude-puy-de-dome",
+    title: "Prix m² dans le Puy-de-Dôme hors Clermont : Issoire, Thiers, Brioude",
+    description:
+      "Issoire 1200-1700 €/m², Thiers 800-1300 €/m², Brioude 900-1400 €/m² : comparatif rendement, liquidité et prix d'entrée pour investir en 2026.",
+    theme: "marche",
+    datePublished: "2025-04-06",
+    readTime: 7,
+    featured: false,
+    quartiers: ["issoire", "thiers", "brioude"],
+    content: `
+<p>Au-delà de Clermont-Ferrand et de sa première couronne, le Puy-de-Dôme et la Haute-Loire voisine offrent des marchés immobiliers dont la mécanique diffère radicalement du marché métropolitain. Issoire, Thiers, et Brioude (Haute-Loire mais bassin de vie cohérent avec le sud Puy-de-Dôme) attirent investisseurs et néo-ruraux, mais chacune avec ses propres règles. Tour d'horizon 2026.</p>
+
+<h2>Issoire : la dynamique sud A75</h2>
+<p><strong>Prix m² 2026 : 1 200 à 1 700 €/m²</strong> selon emplacement et état.</p>
+<p>Issoire (~14 000 habitants) bénéficie d'une position géographique privilégiée : sortie A75, à 30 minutes au sud de Clermont, bassin d'emploi industriel (Constellium, sous-traitants aéronautiques, agroalimentaire), clinique régionale, lycées. Le marché est porté par :</p>
+<ul>
+  <li>Des familles primo-accédantes qui visent une <strong>maison avec jardin sous 250 k€</strong>.</li>
+  <li>Des cadres clermontois travaillant à mi-distance (Issoire ↔ Clermont en 25 min).</li>
+  <li>Quelques investisseurs locatifs (T2-T3 autour de 90-130 k€, loyers 480-600 €).</li>
+</ul>
+<p>La liquidité y est correcte, avec un délai de vente médian autour de <strong>110 jours</strong>. Le centre ancien (place de la République, abbatiale Saint-Austremoine) offre des biens de cachet à des prix très accessibles, mais demande un audit énergétique attentif (DPE souvent E-F).</p>
+
+<h2>Thiers : le grand écart entre rendement et liquidité</h2>
+<p><strong>Prix m² 2026 : 800 à 1 300 €/m²</strong>.</p>
+<p>Thiers (~10 700 habitants), capitale française de la coutellerie, est un cas particulier. La ville haute, accrochée à la Durolle, offre un patrimoine industriel et urbain unique mais souffre d'une démographie déclinante depuis 30 ans. Conséquence sur le marché immobilier :</p>
+<ul>
+  <li><strong>Rendements bruts spectaculaires</strong> : T2 acheté 50-70 k€, loyer 380-450 € → rendement brut 6,8 à 8,5 %.</li>
+  <li><strong>Mais vacance locative très élevée</strong> : 10 à 20 semaines/an dans certains secteurs.</li>
+  <li><strong>Liquidité dégradée à la revente</strong> : délai médian 180-220 jours, certains biens restent 2 ans en vente.</li>
+</ul>
+<p>Thiers attire deux profils : l'investisseur expérimenté qui sait analyser rue par rue et accepte une vacance importante en échange d'un rendement courant élevé ; et l'acheteur résidentiel séduit par le coutelier patrimoine et le coût de la vie. Pour un primo-investisseur, c'est un marché à éviter sans accompagnement local.</p>
+
+<h2>Brioude : le calme absolu de la Haute-Loire</h2>
+<p><strong>Prix m² 2026 : 900 à 1 400 €/m²</strong>.</p>
+<p>Brioude (~6 700 habitants), au sud du bassin clermontois mais administrativement en Haute-Loire, est dominée par sa basilique Saint-Julien (l'une des plus grandes églises romanes d'Europe). Le marché y est calme, peu spéculatif :</p>
+<ul>
+  <li>Maisons de centre-ville en pierre : 80-160 k€ pour 90-120 m².</li>
+  <li>Appartements : rares, 100-150 k€ pour un T3.</li>
+  <li>Terrains constructibles : 20-40 €/m² selon zone.</li>
+</ul>
+<p>Brioude convient aux retraités, aux télétravailleurs (fibre déployée, gare TER vers Clermont en 1h30) et aux acheteurs de résidence secondaire. Pas un marché d'investisseur : la liquidité à la revente est faible, les loyers très bas (350-450 € pour un T3), et la demande locative quasi inexistante hors saisonnier.</p>
+
+<h2>Comparatif sur 3 critères clés</h2>
+<h3>Prix d'entrée</h3>
+<ul>
+  <li><strong>Plus accessible</strong> : Thiers (T2 dès 50 k€).</li>
+  <li><strong>Médian</strong> : Brioude (~100 k€ T3) et Issoire (~120 k€ T2).</li>
+</ul>
+<h3>Rendement locatif brut</h3>
+<ul>
+  <li><strong>Le plus haut</strong> : Thiers (6,8 - 8,5 %).</li>
+  <li><strong>Médian</strong> : Issoire (5 - 6 %).</li>
+  <li><strong>Faible et risqué</strong> : Brioude (4 - 5 %, vacance forte).</li>
+</ul>
+<h3>Liquidité à la revente</h3>
+<ul>
+  <li><strong>Bonne</strong> : Issoire (~110 j).</li>
+  <li><strong>Moyenne</strong> : Brioude (~140 j sur biens calibrés).</li>
+  <li><strong>Mauvaise</strong> : Thiers (180-220 j, parfois plus).</li>
+</ul>
+
+<h2>Notre conseil pour 2026</h2>
+<p>Issoire est le bon arbitrage prix/rendement/liquidité pour un investisseur méthodique. Thiers est un terrain de spécialistes — gros rendement, mais ne pas y mettre tout son patrimoine. Brioude est avant tout un projet de vie, pas un projet d'investissement. Pour Clermontois en quête de plus grand, Issoire reste l'option la plus crédible avec une vraie revente possible.</p>
+
+${CTA("à Issoire, Thiers, Brioude et dans le Puy-de-Dôme")}
+`,
+  },
+
+  // ---------------------------------------------------------------------------
+  // 27. Défiscalisation Clermont 2026 — Pinel, Denormandie, nu-propriété
+  // ---------------------------------------------------------------------------
+  {
+    slug: "defiscalisation-immobilier-clermont-ferrand-2026-pinel-denormandie",
+    title: "Défiscalisation immobilière à Clermont en 2026 : Pinel, Denormandie, nu-propriété",
+    description:
+      "Pinel fin de vie, Denormandie Montferrand, nu-propriété : quelle défisc immobilière à Clermont en 2026 ? Exemple chiffré T2 et alertes.",
+    theme: "investissement",
+    datePublished: "2025-04-02",
+    readTime: 8,
+    featured: false,
+    content: `
+<p>Clermont-Ferrand est classée <strong>zone B1</strong> au zonage A/B/C de l'investissement locatif. Cette classification ouvre l'accès à plusieurs dispositifs de défiscalisation immobilière, mais 2026 marque une bascule importante : la fin programmée du Pinel et la montée en puissance des dispositifs alternatifs (Denormandie, nu-propriété, déficit foncier). Tour d'horizon de ce qui marche encore et de ce qu'il faut éviter.</p>
+
+<h2>Pinel : la fin annoncée</h2>
+<p>Le dispositif Pinel s'éteint définitivement le <strong>31 décembre 2024</strong> (les acquisitions doivent être engagées avant cette date pour bénéficier des taux 2024). En 2026, on ne peut plus acquérir neuf un bien avec engagement Pinel. Restent les programmes signés en 2024 dont les actes notariés sont en cours.</p>
+<p>Pour mémoire, les taux Pinel 2024 sur Clermont (zone B1) étaient :</p>
+<ul>
+  <li>9 % du prix sur 6 ans.</li>
+  <li>12 % sur 9 ans.</li>
+  <li>14 % sur 12 ans.</li>
+</ul>
+<p>Les opérations Pinel signées avant fin 2024 et qui se livrent en 2026-2027 continuent de produire leurs effets fiscaux. Pour les nouveaux investissements en 2026, c'est terminé.</p>
+
+<h2>Denormandie : le dispositif phare 2026 à Clermont</h2>
+<p>Le <strong>dispositif Denormandie</strong> est l'équivalent Pinel pour l'<strong>ancien à rénover</strong>. Il est applicable à Clermont-Ferrand qui figure parmi les villes éligibles (programme "Action cœur de ville" et zones similaires).</p>
+<p>Conditions principales :</p>
+<ul>
+  <li>Acheter un bien ancien dans le périmètre éligible de Clermont (cœur historique, Montferrand, Gare, Fontgiève notamment).</li>
+  <li>Réaliser des <strong>travaux représentant au moins 25 %</strong> du coût total de l'opération.</li>
+  <li>Atteindre une performance énergétique post-travaux (DPE D minimum, deux classes de progrès).</li>
+  <li>Louer nu, à titre de résidence principale, pendant 6, 9 ou 12 ans, avec plafonds de loyer et de ressources locataire.</li>
+</ul>
+<p>Réduction d'impôt identique au Pinel : <strong>9 % / 12 % / 14 %</strong> selon durée, calculée sur le coût total (achat + travaux), plafonné à 300 000 €.</p>
+
+<h3>Exemple chiffré : T2 Montferrand</h3>
+<ul>
+  <li>Achat : T2 de 45 m² rue de la Rodade, <strong>120 000 €</strong> frais inclus.</li>
+  <li>Travaux : isolation, fenêtres, chaudière, salle de bains = <strong>40 000 €</strong> (33 % de l'opération, OK).</li>
+  <li>Coût total : 160 000 €.</li>
+  <li>Engagement 9 ans → <strong>réduction d'impôt : 19 200 €</strong>, soit ~2 130 €/an pendant 9 ans.</li>
+  <li>Loyer plafonné Denormandie zone B1 : ~10,50 €/m² → 470 €/mois.</li>
+  <li>Rendement brut sur opération totale : ~3,5 % + économie d'impôt 2 130 €/an.</li>
+</ul>
+<p>Le Denormandie est intéressant pour un contribuable qui paie 4 000 €+ d'impôt sur le revenu et qui achète un bien dont le projet de rénovation tient debout indépendamment de la fiscalité.</p>
+
+<h2>Nu-propriété : la défisc indirecte</h2>
+<p>L'achat en <strong>nu-propriété</strong> consiste à acheter un bien dont l'usufruit (droit de louer / habiter) est cédé à un bailleur institutionnel pour 15-20 ans. L'acheteur paie le bien <strong>30 à 40 % moins cher</strong> que le prix marché. Pendant la durée du démembrement, il ne perçoit rien — mais il ne paie ni IFI sur le bien, ni impôt sur le loyer (puisqu'il n'y en a pas).</p>
+<p>Au terme du démembrement, l'investisseur récupère la pleine propriété, sans frais, et le bien est généralement remis en bon état par l'usufruitier. C'est un placement patrimonial pur, particulièrement adapté aux contribuables fortement imposés ou aux investisseurs en recherche de patrimoine sans gestion.</p>
+<p>À Clermont, quelques programmes nu-propriété sortent dans les quartiers Cézeaux, Pardieu, Beaumont. Décote moyenne observée 2026 : <strong>32 à 38 %</strong> selon durée.</p>
+
+<h2>Comparaison rendement nu vs Denormandie</h2>
+<ul>
+  <li><strong>Locatif nu classique (sans dispositif)</strong> à Clermont : rendement brut 4 à 5 %, fiscalité IR + prélèvements sociaux pleine.</li>
+  <li><strong>Denormandie</strong> : rendement brut ~3,5 % + 1,3-1,5 % d'économie d'impôt sur la durée.</li>
+  <li><strong>Nu-propriété 15 ans</strong> : 0 % de rendement courant mais +30 % de plus-value mécanique au terme.</li>
+</ul>
+<p>Pour un investisseur jeune en phase de constitution patrimoniale et avec une fiscalité moyenne, le locatif nu classique reste souvent le plus simple et le plus performant. Denormandie et nu-propriété ne deviennent vraiment pertinents qu'au-delà de 5 000 € d'IR annuel.</p>
+
+<h2>L'avertissement essentiel</h2>
+<p><strong>Ne jamais acheter un mauvais bien pour la réduction fiscale.</strong> C'est l'erreur que nous corrigeons régulièrement chez CBF Conseils. Un T2 mal placé, dans une copropriété fragile ou un quartier sans demande locative, ne sera pas sauvé par 2 000 € d'économie d'impôt. À l'inverse, un bon bien sans dispositif fiscal vaudra toujours mieux qu'un mauvais bien avec Pinel ou Denormandie.</p>
+
+<h2>La méthode CBF Conseils</h2>
+<p>Sur ce type d'investissement, notre approche est fixe : nous sélectionnons d'abord le bien sur ses fondamentaux (emplacement, copropriété, marché locatif réel, état technique), <strong>puis seulement</strong> nous regardons si le dispositif fiscal s'y applique avantageusement. Jamais l'inverse. Cela élimine 80 % des programmes Denormandie qui nous sont présentés et permet à nos clients d'investir sereinement.</p>
+
+${CTA("sur un projet de défiscalisation à Clermont-Ferrand")}
 `,
   },
 ];
