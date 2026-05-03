@@ -10,6 +10,7 @@ import {
   CheckCircle2,
   AlertCircle,
   Sparkles,
+  Lock,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -240,16 +241,25 @@ export function SimulateurEstimation() {
 
   if (submitStatus === "success") {
     return (
-      <div className="bg-white border border-cbf-gray-soft rounded-sm p-10 text-center">
-        <CheckCircle2 className="h-14 w-14 text-cbf-success mx-auto mb-4" />
-        <h3 className="font-playfair text-2xl font-bold text-cbf-black mb-3">
-          Demande confirmée
-        </h3>
-        <p className="text-cbf-gray max-w-md mx-auto">
-          Un expert CBF Conseils analyse votre bien et vous recontacte sous
-          48 h. Vous recevrez par email l'estimation détaillée et des
-          comparables locaux récents.
-        </p>
+      <div className="bg-white border border-cbf-gray-soft rounded-sm shadow-lg overflow-hidden">
+        <div className="p-6 md:p-10">
+          {/* Estimation débloquée */}
+          {result && <ResultPreview result={result} />}
+          {/* Confirmation */}
+          <div className="flex items-start gap-4 p-5 bg-cbf-success/10 border border-cbf-success/30 rounded-sm">
+            <CheckCircle2 className="h-6 w-6 text-cbf-success flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="font-playfair text-lg font-bold text-cbf-success">
+                Demande confirmée
+              </p>
+              <p className="text-sm text-cbf-gray mt-1 leading-relaxed">
+                Un expert CBF Conseils analyse votre bien et vous recontacte
+                sous 48 h avec une estimation précise et des comparables locaux
+                récents.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
@@ -350,7 +360,7 @@ export function SimulateurEstimation() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
               >
-                {result && <ResultPreview result={result} />}
+                <EstimationLocked />
                 <Step5 />
               </motion.div>
             )}
@@ -746,6 +756,49 @@ function Step5() {
         </p>
       )}
     </div>
+  );
+}
+
+function EstimationLocked() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35 }}
+      className="mb-8 rounded-sm overflow-hidden border border-cbf-gold/30"
+    >
+      {/* Fond flouté — les valeurs sont fictives, aucune info réelle exposée */}
+      <div className="relative bg-gradient-to-br from-cbf-black to-cbf-anthracite p-6 md:p-8 select-none">
+        <div className="blur-sm pointer-events-none" aria-hidden="true">
+          <div className="flex items-center gap-2 mb-3">
+            <Sparkles className="h-4 w-4 text-cbf-gold" />
+            <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
+              Estimation indicative
+            </span>
+          </div>
+          <p className="font-playfair text-3xl md:text-4xl font-bold text-white mb-2">
+            Entre 210 000 € et 246 000 €
+          </p>
+          <p className="text-cbf-gray-light text-sm">
+            Soit environ 2 650 €/m² · fourchette à ±8 %
+          </p>
+        </div>
+        {/* Overlay verrouillé */}
+        <div className="absolute inset-0 flex items-center justify-center bg-cbf-black/55 backdrop-blur-[3px]">
+          <div className="text-center px-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cbf-gold mx-auto mb-3">
+              <Lock className="h-5 w-5 text-cbf-black" />
+            </div>
+            <p className="text-white font-playfair text-lg font-bold mb-1">
+              Votre estimation est prête
+            </p>
+            <p className="text-white/70 text-xs leading-relaxed max-w-xs">
+              Renseignez vos coordonnées ci-dessous pour la débloquer et recevoir l'analyse experte.
+            </p>
+          </div>
+        </div>
+      </div>
+    </motion.div>
   );
 }
 
