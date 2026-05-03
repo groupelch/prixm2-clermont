@@ -1,4 +1,7 @@
-import { Baby, GraduationCap, Trees } from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import { Baby, GraduationCap, Trees, ChevronDown, ChevronUp } from "lucide-react";
 import type { AmenityItem, QuartierAmenities } from "@/lib/amenities";
 
 interface ColumnProps {
@@ -8,9 +11,11 @@ interface ColumnProps {
 }
 
 function Column({ icon, label, items }: ColumnProps) {
+  const [expanded, setExpanded] = useState(false);
   if (!items.length) return null;
-  const visible = items.slice(0, 3);
-  const remaining = items.length - visible.length;
+
+  const visible = expanded ? items : items.slice(0, 3);
+  const remaining = items.length - 3;
 
   return (
     <div className="bg-white border border-cbf-gray-soft rounded-sm p-6">
@@ -54,9 +59,22 @@ function Column({ icon, label, items }: ColumnProps) {
         ))}
       </ul>
       {remaining > 0 && (
-        <p className="mt-4 pt-3 border-t border-cbf-gray-soft text-xs text-cbf-gray-light">
-          + {remaining} autre{remaining > 1 ? "s" : ""}
-        </p>
+        <button
+          onClick={() => setExpanded((v) => !v)}
+          className="mt-4 pt-3 border-t border-cbf-gray-soft w-full flex items-center gap-1.5 text-xs font-semibold text-cbf-gold hover:text-cbf-black transition-colors"
+        >
+          {expanded ? (
+            <>
+              <ChevronUp className="h-3.5 w-3.5" />
+              Voir moins
+            </>
+          ) : (
+            <>
+              <ChevronDown className="h-3.5 w-3.5" />
+              + {remaining} autre{remaining > 1 ? "s" : ""}
+            </>
+          )}
+        </button>
       )}
     </div>
   );
