@@ -16,6 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
+import { AddressAutocomplete } from "@/components/forms/AddressAutocomplete";
 import { estimationSchema, type EstimationFormData } from "@/lib/schema";
 import { quartiers, getQuartierBySlug } from "@/data/quartiers";
 import { formatPrice } from "@/lib/utils";
@@ -526,15 +527,7 @@ function Step2() {
         </div>
         <div className="sm:col-span-2">
           <Label>Adresse du bien</Label>
-          <Input
-            placeholder="12 rue Pascal, Clermont-Ferrand"
-            {...register("adresse")}
-          />
-          {errors.adresse && (
-            <p className="text-xs text-cbf-danger mt-1">
-              {errors.adresse.message}
-            </p>
-          )}
+          <AddressAutocomplete />
         </div>
         <div className="sm:col-span-2">
           <Label>Quartier ou commune</Label>
