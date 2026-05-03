@@ -365,7 +365,7 @@ ${CTA("dans votre quartier")}
 
 <h2>La méthode pour bien fixer le prix</h2>
 <ol>
-  <li>Faire estimer par <strong>2 experts indépendants</strong> avec accès aux ventes réelles DVF.</li>
+  <li>Faire estimer par <strong>un expert local qui maîtrise les ventes réelles DVF</strong> de votre quartier.</li>
   <li>Croiser avec les ventes réelles dans le micro-secteur (rue, immeuble, ascenseur, étage équivalents).</li>
   <li>Intégrer les particularités du bien (DPE, exposition, copropriété) avec un coefficient honnête.</li>
   <li>Définir un prix "marché" et un prix "plancher" (le prix en dessous duquel vous refusez l'offre).</li>

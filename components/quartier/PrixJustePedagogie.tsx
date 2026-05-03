@@ -45,7 +45,7 @@ const erreurs = [
 ];
 
 const bonnesPratiques = [
-  "Faire estimer son bien par 2 experts locaux indépendants — pas une seule agence",
+  "Faire estimer son bien par un expert local qui connaît réellement le quartier et les ventes récentes",
   "Comparer les ventes réelles récentes dans le quartier (données DVF consultables)",
   "Tenir compte du DPE : un bien F ou G subit une décote obligatoire de 5 à 15 %",
   "Intégrer l'état réel du bien — les travaux visibles sont une raison pour baisser, pas pour augmenter",
