@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, Cormorant_Garamond } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { StickyCtaBar } from "@/components/layout/StickyCtaBar";
@@ -87,6 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <StickyCtaBar />
       </body>
+      <GoogleAnalytics gaId="G-V32NWHV3YM" />
     </html>
   );
 }
