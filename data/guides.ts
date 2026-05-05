@@ -1375,9 +1375,9 @@ Acheter "près d'une place" à Clermont-Ferrand reste une valeur sûre. Le surco
   },
   {
     slug: "quartiers-rentables-clermont-ferrand",
-    titre: "Les 5 quartiers les plus rentables de Clermont-Ferrand pour investir en 2026",
+    titre: "Investir à Clermont-Ferrand : les 5 quartiers à meilleur rendement locatif en 2026",
     description:
-      "Rendement locatif, vacance, profil locataires : les 5 quartiers où investir à Clermont-Ferrand pour maximiser sa rentabilité en 2026.",
+      "Quels quartiers de Clermont-Ferrand offrent le meilleur rendement locatif en 2026 ? Gare, La Pradelle, Montjuzet : comparatif rendement brut, vacance et ticket d'entrée.",
     categorie: "investisseur",
     tempsLecture: "7 min",
     datePublication: "2026-03-20",

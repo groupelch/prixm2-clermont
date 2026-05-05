@@ -30,11 +30,11 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Prix m² par quartier et estimation immobilière`,
-    template: `%s · ${SITE_NAME}`,
+    default: "Prix m² Clermont-Ferrand 2026 — Estimation & Prix par Quartier",
+    template: `%s | prixm² Clermont-Ferrand`,
   },
   description:
-    "Le référentiel des prix immobiliers à Clermont-Ferrand. Données par quartier, estimation gratuite, conseils d'experts CBF Conseils.",
+    "Prix au m² à Clermont-Ferrand par quartier en 2026 : Jaude 3 200 €/m², Centre-Ville 2 800 €/m², Delille 3 000 €/m². Données DVF officielles, 16 882 transactions. Estimation gratuite sous 48h.",
   alternates: {
     canonical: "/",
   },
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: SITE_NAME,
     locale: "fr_FR",
-    title: `${SITE_NAME} — Prix immobiliers par quartier`,
+    title: "Prix m² Clermont-Ferrand 2026 — Données DVF par Quartier",
     description:
-      "Estimez votre bien et explorez les prix m² par quartier à Clermont-Ferrand.",
+      "Carte interactive des prix immobiliers à Clermont-Ferrand. 16 882 transactions DVF analysées. Estimation gratuite CBF Conseils.",
   },
   twitter: {
     card: "summary_large_image",

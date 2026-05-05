@@ -15,7 +15,7 @@ import { SITE_URL, formatPricePerM2 } from "@/lib/utils";
 export const metadata: Metadata = buildMetadata({
   title: "Prix immobilier Clermont-Ferrand 2026 — Tous les quartiers & communes",
   description:
-    "Prix immobilier à Clermont-Ferrand 2026 par quartier : Jaude 3 200 €/m², Delille 3 000 €/m², Montjuzet 2 800 €/m², maison 3 400 €/m². Carte interactive, tendances et estimation gratuite.",
+    "Prix immobilier Clermont-Ferrand 2026 par quartier : de 1 800 €/m² à Croix-de-Neyrat à 3 200 €/m² à Jaude. 39 quartiers analysés, 16 882 transactions DVF. Carte interactive + estimation gratuite CBF Conseils.",
   path: "/prix-immobilier-clermont-ferrand",
 });
 
