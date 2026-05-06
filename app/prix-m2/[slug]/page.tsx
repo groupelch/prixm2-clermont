@@ -35,7 +35,6 @@ import {
   FaqPageSchema,
   BreadcrumbSchema,
   PlaceSchema,
-  AggregateRatingSchema,
   ArticleSchema,
   SpeakableSchema,
 } from "@/components/common/SchemaOrg";
@@ -127,11 +126,6 @@ export default function QuartierPage({ params }: { params: Params }) {
         lng={q.coordinates.lng}
         description={q.description}
         slug={q.slug}
-      />
-      <AggregateRatingSchema
-        nom={q.nom}
-        slug={q.slug}
-        prixM2={q.prixAppartement ?? q.prixMaison ?? 2500}
       />
       <SpeakableSchema
         url={`${SITE_URL}/prix-m2/${q.slug}`}
