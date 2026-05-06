@@ -75,6 +75,8 @@ const nextConfig = {
       { source: "/prix-m2-ennezat",                 destination: "/prix-immobilier-clermont-ferrand",         permanent: true },
       { source: "/prix-m2-vic-le-comte",            destination: "/prix-immobilier-clermont-ferrand",         permanent: true },
       { source: "/prix-m2-les-martres-de-veyre",    destination: "/prix-immobilier-clermont-ferrand",         permanent: true },
+      { source: "/prix-m2-billom",                  destination: "/prix-immobilier-clermont-ferrand",         permanent: true },
+      { source: "/prix-m2-aydat",                   destination: "/prix-immobilier-clermont-ferrand",         permanent: true },
     ];
   },
 
