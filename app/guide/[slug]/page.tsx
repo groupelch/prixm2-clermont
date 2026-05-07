@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Clock, ArrowRight } from "lucide-react";
 import { guides, getGuideBySlug, getLatestGuides } from "@/data/guides";
+import { articles } from "@/data/articles";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import {
   ArticleSchema,
@@ -98,11 +99,52 @@ export default function GuidePage({ params }: { params: Params }) {
 
   const breadcrumbItems = [
     { name: "Accueil", url: SITE_URL },
-    { name: "Guides", url: `${SITE_URL}/guide/${g.slug}` },
+    { name: "Guides", url: `${SITE_URL}/guide` },
     { name: g.titre, url: `${SITE_URL}/guide/${g.slug}` },
   ];
 
   const others = getLatestGuides(4).filter((x) => x.slug !== g.slug).slice(0, 3);
+
+  // Articles liés au thème du guide
+  const themeToArticleTheme: Record<string, string[]> = {
+    vendeur: ["vendeur"],
+    acheteur: ["acheteur"],
+    investisseur: ["investissement", "location"],
+    marche: ["marche"],
+  };
+  const articleThemes = themeToArticleTheme[g.categorie] ?? ["marche"];
+  const articlesLies = articles
+    .filter((a) => articleThemes.includes(a.theme))
+    .slice(0, 3);
+
+  // Liens contextuels par catégorie de guide
+  const contextLinks: Record<string, { href: string; label: string; desc: string }[]> = {
+    vendeur: [
+      { href: "/vendre-clermont-ferrand", label: "Méthode de vente CBF", desc: "5 étapes pour vendre vite et au bon prix" },
+      { href: "/vendre", label: "Vendre par quartier", desc: "Prix, délais et stratégie dans votre secteur" },
+      { href: "/estimation", label: "Estimation gratuite", desc: "Fourchette précise sous 48h, sans engagement" },
+      { href: "/meilleurs-agents-immobiliers-clermont-ferrand", label: "Meilleurs agents immo", desc: "Choisir la bonne agence à Clermont-Ferrand" },
+    ],
+    acheteur: [
+      { href: "/comparateur-quartiers", label: "Comparer les quartiers", desc: "Prix, délais, rendement côte à côte" },
+      { href: "/prix-immobilier-clermont-ferrand", label: "Carte des prix", desc: "39 quartiers et communes analysés" },
+      { href: "/calculateur-frais-notaire", label: "Calculer les frais de notaire", desc: "Estimation rapide selon le prix d'achat" },
+      { href: "/glossaire", label: "Glossaire immobilier", desc: "Tous les termes expliqués clairement" },
+    ],
+    investisseur: [
+      { href: "/investir-clermont-ferrand", label: "Investir à Clermont", desc: "Stratégie et quartiers à meilleur rendement" },
+      { href: "/biens-off-market-clermont-ferrand", label: "Biens off-market", desc: "Accéder aux opportunités avant tout le monde" },
+      { href: "/louer-clermont-ferrand", label: "Louer à Clermont", desc: "Loyers de référence par quartier et type de bien" },
+      { href: "/comparateur-quartiers", label: "Comparer les rendements", desc: "Rentabilité par secteur en un coup d'œil" },
+    ],
+    marche: [
+      { href: "/prix-immobilier-clermont-ferrand", label: "Tous les prix par quartier", desc: "Carte interactive + tableaux complets" },
+      { href: "/methodologie", label: "Notre méthodologie", desc: "Comment nos prix sont calculés et sourcés" },
+      { href: "/comparateur-quartiers", label: "Comparateur de quartiers", desc: "Comparer les indicateurs clés facilement" },
+      { href: "/estimation-quartier", label: "Estimer par quartier", desc: "Valeur précise selon la localisation exacte" },
+    ],
+  };
+  const ctxLinks = contextLinks[g.categorie] ?? contextLinks.marche;
 
   return (
     <>
@@ -120,7 +162,7 @@ export default function GuidePage({ params }: { params: Params }) {
           <BreadcrumbNav
             items={[
               { name: "Accueil", href: "/" },
-              { name: "Guides", href: "/" },
+              { name: "Guides", href: "/guide" },
               { name: g.titre },
             ]}
           />
@@ -191,6 +233,53 @@ export default function GuidePage({ params }: { params: Params }) {
           </div>
         </section>
       )}
+
+      {/* Liens contextuels selon la catégorie du guide */}
+      <section className="py-14 md:py-16 bg-cbf-ivory border-t border-cbf-gray-soft">
+        <div className="container max-w-5xl">
+          <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-6">
+            Ressources liées
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            {ctxLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="group block bg-white border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm p-5"
+              >
+                <p className="font-playfair font-bold text-cbf-black text-sm mb-1 group-hover:text-cbf-gold transition-colors leading-snug">
+                  {l.label}
+                </p>
+                <p className="text-xs text-cbf-gray-light">{l.desc}</p>
+              </Link>
+            ))}
+          </div>
+
+          {articlesLies.length > 0 && (
+            <>
+              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-4">
+                Articles à lire
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                {articlesLies.map((a) => (
+                  <Link
+                    key={a.slug}
+                    href={`/blog/${a.slug}`}
+                    className="group block bg-white border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm p-5"
+                  >
+                    <h4 className="font-playfair text-sm font-bold text-cbf-black group-hover:text-cbf-gold transition-colors leading-snug mb-2">
+                      {a.title}
+                    </h4>
+                    <span className="inline-flex items-center gap-1 text-xs text-cbf-gold font-semibold mt-auto">
+                      Lire <ArrowRight className="h-3 w-3" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      </section>
 
       {g.faq && g.faq.length > 0 && (
         <FaqAccordion items={g.faq} title="Questions fréquentes" />

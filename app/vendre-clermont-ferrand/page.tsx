@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle2, FileText, Camera, Target, Megaphone, Handshake, Users, MapPin } from "lucide-react";
+import { ArrowRight, CheckCircle2, FileText, Camera, Target, Megaphone, Handshake, Users, MapPin } from "lucide-react";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/common/SchemaOrg";
 import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
@@ -8,6 +8,8 @@ import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
 import { Button } from "@/components/ui/button";
 import { buildMetadata } from "@/lib/seo";
+import { articles } from "@/data/articles";
+import { guides } from "@/data/guides";
 import { SITE_URL } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
@@ -74,6 +76,9 @@ const faqVente = [
 ];
 
 export default function VendrePage() {
+  const articlesVendeur = articles.filter((a) => a.theme === "vendeur").slice(0, 4);
+  const guidesVendeur = guides.filter((g) => g.categorie === "vendeur").slice(0, 3);
+
   return (
     <>
       <BreadcrumbSchema
@@ -280,6 +285,102 @@ export default function VendrePage() {
       </section>
 
       <FaqAccordion items={faqVente} title="Vos questions sur la vente" />
+
+      {/* CLUSTER ARTICLES VENDEUR */}
+      {articlesVendeur.length > 0 && (
+        <section className="py-14 md:py-20 bg-white">
+          <div className="container max-w-5xl">
+            <div className="mb-8">
+              <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
+                Articles
+              </span>
+              <h2 className="font-playfair text-display-md text-cbf-black font-bold mt-2 mb-3">
+                Conseils pour vendre à Clermont-Ferrand
+              </h2>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+              {articlesVendeur.map((a) => (
+                <Link
+                  key={a.slug}
+                  href={`/blog/${a.slug}`}
+                  className="group block bg-cbf-ivory border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm p-5"
+                >
+                  <h3 className="font-playfair text-sm font-bold text-cbf-black group-hover:text-cbf-gold transition-colors leading-snug mb-3">
+                    {a.title}
+                  </h3>
+                  <span className="inline-flex items-center gap-1 text-xs text-cbf-gold font-semibold">
+                    Lire <ArrowRight className="h-3 w-3" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* CLUSTER GUIDES VENDEUR + OUTILS */}
+      <section className="py-14 md:py-16 bg-cbf-ivory">
+        <div className="container max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Guides vendeurs */}
+            <div>
+              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-4">
+                Guides complets
+              </p>
+              <div className="space-y-3">
+                {guidesVendeur.map((g) => (
+                  <Link
+                    key={g.slug}
+                    href={`/guide/${g.slug}`}
+                    className="group flex items-center justify-between gap-3 bg-white border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm px-5 py-4"
+                  >
+                    <p className="font-playfair text-sm font-bold text-cbf-black group-hover:text-cbf-gold transition-colors leading-snug">
+                      {g.titre}
+                    </p>
+                    <ArrowRight className="h-4 w-4 text-cbf-gold shrink-0" />
+                  </Link>
+                ))}
+                <Link
+                  href="/guide"
+                  className="inline-flex items-center gap-1 text-sm text-cbf-gold font-semibold hover:underline mt-2"
+                >
+                  Tous les guides <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Outils pratiques */}
+            <div>
+              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-4">
+                Outils utiles
+              </p>
+              <div className="space-y-3">
+                {[
+                  { href: "/vendre", label: "Vendre par quartier", desc: "Prix et délais dans votre secteur exact" },
+                  { href: "/meilleurs-agents-immobiliers-clermont-ferrand", label: "Meilleurs agents immo", desc: "Choisir la bonne agence à Clermont-Ferrand" },
+                  { href: "/meilleurs-diagnostiqueurs-dpe-clermont-ferrand", label: "Diagnostiqueurs DPE certifiés", desc: "Trouver un diagnostiqueur fiable et rapide" },
+                  { href: "/calculateur-frais-notaire", label: "Calculateur frais de notaire", desc: "Estimez les frais pour l'acheteur" },
+                ].map((t) => (
+                  <Link
+                    key={t.href}
+                    href={t.href}
+                    className="group flex items-center justify-between gap-3 bg-white border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm px-5 py-4"
+                  >
+                    <div>
+                      <p className="font-playfair text-sm font-bold text-cbf-black group-hover:text-cbf-gold transition-colors">
+                        {t.label}
+                      </p>
+                      <p className="text-xs text-cbf-gray-light mt-0.5">{t.desc}</p>
+                    </div>
+                    <ArrowRight className="h-4 w-4 text-cbf-gold shrink-0" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <FinalCta />
     </>
   );

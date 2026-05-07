@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { quartiers, getQuartiersByType, getPrixMoyenAppartement, getPrixMoyenMaison } from "@/data/quartiers";
+import { articles } from "@/data/articles";
+import { guides } from "@/data/guides";
 import { QuartierCard } from "@/components/common/QuartierCard";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import { BreadcrumbSchema, FaqPageSchema } from "@/components/common/SchemaOrg";
@@ -52,6 +55,17 @@ export default function PrixImmoPilierPage() {
   const communes = getQuartiersByType("commune");
   const prixApp = getPrixMoyenAppartement();
   const prixMaison = getPrixMoyenMaison();
+
+  // Cluster articles marché (4 plus récents)
+  const articlesMarche = articles.filter((a) => a.theme === "marche").slice(0, 4);
+
+  // 1 guide par catégorie
+  const guidesCluster = [
+    guides.find((g) => g.categorie === "vendeur"),
+    guides.find((g) => g.categorie === "acheteur"),
+    guides.find((g) => g.categorie === "investisseur"),
+    guides.find((g) => g.categorie === "marche"),
+  ].filter(Boolean) as typeof guides;
 
   return (
     <>
@@ -155,6 +169,108 @@ export default function PrixImmoPilierPage() {
 
       <ChiffresCles />
       <WhyPricesVary />
+
+      {/* CLUSTER ARTICLES MARCHÉ */}
+      <section className="py-14 md:py-20 bg-white">
+        <div className="container max-w-5xl">
+          <div className="mb-8">
+            <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
+              Analyses
+            </span>
+            <h2 className="font-playfair text-display-md text-cbf-black font-bold mt-2 mb-3">
+              Articles sur le marché clermontois
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            {articlesMarche.map((a) => (
+              <Link
+                key={a.slug}
+                href={`/blog/${a.slug}`}
+                className="group block bg-cbf-ivory border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm p-5"
+              >
+                <h3 className="font-playfair text-sm font-bold text-cbf-black group-hover:text-cbf-gold transition-colors leading-snug mb-3">
+                  {a.title}
+                </h3>
+                <span className="inline-flex items-center gap-1 text-xs text-cbf-gold font-semibold">
+                  Lire <ArrowRight className="h-3 w-3" />
+                </span>
+              </Link>
+            ))}
+          </div>
+          <Link href="/blog" className="inline-flex items-center gap-1 text-sm text-cbf-gold font-semibold hover:underline">
+            Voir tous les articles <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+      </section>
+
+      {/* CLUSTER GUIDES */}
+      <section className="py-14 md:py-20 bg-cbf-ivory">
+        <div className="container max-w-5xl">
+          <div className="mb-8">
+            <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
+              Guides pratiques
+            </span>
+            <h2 className="font-playfair text-display-md text-cbf-black font-bold mt-2 mb-3">
+              Vendeur, acheteur, investisseur — vos guides complets
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            {guidesCluster.map((g) => (
+              <Link
+                key={g.slug}
+                href={`/guide/${g.slug}`}
+                className="group block bg-white border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm p-5"
+              >
+                <span className="text-[0.6rem] uppercase tracking-wider text-cbf-gold font-bold block mb-2">
+                  {g.categorie}
+                </span>
+                <h3 className="font-playfair text-sm font-bold text-cbf-black group-hover:text-cbf-gold transition-colors leading-snug mb-3">
+                  {g.titre}
+                </h3>
+                <span className="inline-flex items-center gap-1 text-xs text-cbf-gold font-semibold">
+                  Lire le guide <ArrowRight className="h-3 w-3" />
+                </span>
+              </Link>
+            ))}
+          </div>
+          <Link href="/guide" className="inline-flex items-center gap-1 text-sm text-cbf-gold font-semibold hover:underline">
+            Voir tous les guides <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+      </section>
+
+      {/* OUTILS CONVERSION */}
+      <section className="py-14 md:py-16 bg-cbf-black text-white">
+        <div className="container max-w-5xl">
+          <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-8">
+            Vos outils gratuits
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { href: "/estimation", label: "Estimation gratuite", desc: "Valeur réelle de votre bien sous 48h par un expert" },
+              { href: "/vendre-clermont-ferrand", label: "Vendre à Clermont", desc: "Guide stratégique + méthode CBF Conseils en 5 étapes" },
+              { href: "/comparateur-quartiers", label: "Comparer les quartiers", desc: "Prix, rendement, délais côte à côte" },
+              { href: "/calculateur-frais-notaire", label: "Calcul frais de notaire", desc: "Simulateur pour achat ancien ou neuf" },
+              { href: "/estimation-quartier", label: "Estimer par quartier", desc: "Précision maximale selon la localisation exacte" },
+              { href: "/biens-off-market-clermont-ferrand", label: "Biens off-market", desc: "Opportunités exclusives avant mise sur le marché" },
+            ].map((t) => (
+              <Link
+                key={t.href}
+                href={t.href}
+                className="group flex items-start gap-3 bg-white/5 border border-white/10 hover:border-cbf-gold transition-all rounded-sm p-5"
+              >
+                <div>
+                  <p className="font-playfair font-bold text-white text-sm group-hover:text-cbf-gold transition-colors mb-1">
+                    {t.label}
+                  </p>
+                  <p className="text-xs text-white/60">{t.desc}</p>
+                </div>
+                <ArrowRight className="h-4 w-4 text-cbf-gold shrink-0 mt-0.5 ml-auto" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="py-14 md:py-20 bg-cbf-ivory">
         <div className="container">
