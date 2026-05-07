@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { quartiers, getQuartierBySlug } from "@/data/quartiers";
 import { getArticlesForQuartier } from "@/data/articles";
+import { guides } from "@/data/guides";
 import { QuartierHero } from "@/components/quartier/QuartierHero";
 import { QuartierTOC } from "@/components/quartier/QuartierTOC";
 import { ChiffresQuartier } from "@/components/quartier/ChiffresQuartier";
@@ -92,6 +93,12 @@ export default function QuartierPage({ params }: { params: Params }) {
   const q = getQuartierBySlug(params.slug);
   if (!q) notFound();
   const articles = getArticlesForQuartier(q.slug).slice(0, 3);
+  // 3 guides toujours utiles sur une page quartier (1 vendeur, 1 marche, 1 acheteur)
+  const guidesQuartier = [
+    guides.find((g) => g.categorie === "vendeur"),
+    guides.find((g) => g.categorie === "marche"),
+    guides.find((g) => g.categorie === "acheteur"),
+  ].filter(Boolean) as typeof guides;
   const amenities = getAmenitiesForQuartier(q.coordinates.lat, q.coordinates.lng);
   const dpeStats = getDpeStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
   const dvfStats = getDvfStatsForQuartier(q.coordinates.lat, q.coordinates.lng);
@@ -262,6 +269,29 @@ export default function QuartierPage({ params }: { params: Params }) {
                 Préparer ma vente <ArrowRight className="h-4 w-4" />
               </span>
             </Link>
+          </div>
+
+          {/* Guides liés */}
+          <div className="pt-12 border-t border-cbf-gray-soft mb-12">
+            <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-4">
+              Guides pratiques
+            </p>
+            <div className="grid md:grid-cols-3 gap-4">
+              {guidesQuartier.map((g) => (
+                <Link
+                  key={g.slug}
+                  href={`/guide/${g.slug}`}
+                  className="group block bg-white p-5 border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm"
+                >
+                  <h3 className="font-playfair text-sm font-bold text-cbf-black mb-2 leading-snug group-hover:text-cbf-gold transition-colors">
+                    {g.titre}
+                  </h3>
+                  <span className="inline-flex items-center gap-1 text-xs text-cbf-gold font-semibold">
+                    Lire <ArrowRight className="h-3 w-3" />
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
 
           {articles.length > 0 && (

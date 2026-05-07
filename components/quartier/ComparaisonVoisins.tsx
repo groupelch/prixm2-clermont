@@ -52,7 +52,11 @@ export function ComparaisonVoisins({ quartier }: { quartier: Quartier }) {
                   key={v.slug}
                   className="border-t border-cbf-gray-soft hover:bg-cbf-ivory transition-colors"
                 >
-                  <td className="px-6 py-4 font-medium text-cbf-black">{v.nom}</td>
+                  <td className="px-6 py-4 font-medium">
+                    <Link href={`/prix-m2/${v.slug}`} className="text-cbf-black hover:text-cbf-gold transition-colors font-semibold">
+                      {v.nom}
+                    </Link>
+                  </td>
                   <td className="px-6 py-4 text-cbf-black">
                     {formatPricePerM2(v.prixAppartement ?? v.prixMaison)}
                   </td>

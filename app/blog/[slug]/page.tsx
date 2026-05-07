@@ -12,6 +12,7 @@ import {
   ARTICLE_THEMES,
 } from "@/data/articles";
 import { getQuartierBySlug } from "@/data/quartiers";
+import { getGuidesByCategory } from "@/data/guides";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import {
   ArticleSchema,
@@ -61,6 +62,52 @@ export default function ArticlePage({ params }: { params: Params }) {
   const quartiersLies = (article.quartiers ?? [])
     .map((slug) => getQuartierBySlug(slug))
     .filter(Boolean) as NonNullable<ReturnType<typeof getQuartierBySlug>>[];
+
+  // Guides liés — mapping thème article → catégorie guide
+  const themeToCat: Record<string, "vendeur" | "acheteur" | "investisseur" | "marche"> = {
+    vendeur: "vendeur",
+    acheteur: "acheteur",
+    investissement: "investisseur",
+    location: "investisseur",
+    marche: "marche",
+  };
+  const guideCat = themeToCat[article.theme] ?? "marche";
+  const guidesLies = getGuidesByCategory(guideCat).slice(0, 3);
+
+  // Ressources contextuelles par thème
+  const ressourcesParTheme: Record<string, { href: string; label: string }[]> = {
+    vendeur: [
+      { href: "/meilleurs-agents-immobiliers-clermont-ferrand", label: "Meilleurs agents immobiliers" },
+      { href: "/meilleurs-diagnostiqueurs-dpe-clermont-ferrand", label: "Diagnostiqueurs DPE certifiés" },
+      { href: "/calculateur-frais-notaire", label: "Calculateur frais de notaire" },
+      { href: "/vendre", label: "Stratégie de vente par quartier" },
+    ],
+    acheteur: [
+      { href: "/comparateur-quartiers", label: "Comparateur de quartiers" },
+      { href: "/calculateur-frais-notaire", label: "Calculateur frais de notaire" },
+      { href: "/glossaire", label: "Glossaire immobilier" },
+      { href: "/prix-immobilier-clermont-ferrand", label: "Prix par quartier" },
+    ],
+    investissement: [
+      { href: "/biens-off-market-clermont-ferrand", label: "Biens off-market" },
+      { href: "/comparateur-quartiers", label: "Comparer les rendements" },
+      { href: "/louer-clermont-ferrand", label: "Louer à Clermont-Ferrand" },
+      { href: "/estimation-quartier", label: "Estimation par quartier" },
+    ],
+    location: [
+      { href: "/louer-clermont-ferrand", label: "Louer à Clermont-Ferrand" },
+      { href: "/glossaire", label: "Glossaire immobilier" },
+      { href: "/biens-off-market-clermont-ferrand", label: "Biens off-market" },
+      { href: "/meilleurs-architectes-interieur-clermont-ferrand", label: "Architectes d'intérieur" },
+    ],
+    marche: [
+      { href: "/prix-immobilier-clermont-ferrand", label: "Prix par quartier" },
+      { href: "/methodologie", label: "Notre méthodologie" },
+      { href: "/comparateur-quartiers", label: "Comparateur de quartiers" },
+      { href: "/estimation-quartier", label: "Estimer son bien" },
+    ],
+  };
+  const ressources = ressourcesParTheme[article.theme] ?? ressourcesParTheme.marche;
 
   const breadcrumb = [
     { name: "Accueil", url: SITE_URL },
@@ -199,6 +246,49 @@ export default function ArticlePage({ params }: { params: Params }) {
               </div>
             </section>
           )}
+
+          {/* Guides approfondis */}
+          {guidesLies.length > 0 && (
+            <section className="mt-12 pt-8 border-t border-cbf-gray-soft">
+              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-4">
+                Guides complets
+              </p>
+              <div className="grid sm:grid-cols-3 gap-3">
+                {guidesLies.map((g) => (
+                  <Link
+                    key={g.slug}
+                    href={`/guide/${g.slug}`}
+                    className="group flex flex-col bg-white border border-cbf-gray-soft hover:border-cbf-gold transition-all rounded-sm p-4"
+                  >
+                    <h4 className="font-playfair text-sm font-bold text-cbf-black group-hover:text-cbf-gold transition-colors leading-snug mb-2">
+                      {g.titre}
+                    </h4>
+                    <span className="inline-flex items-center gap-1 text-xs text-cbf-gold font-semibold mt-auto">
+                      Lire le guide <ArrowRight className="h-3 w-3" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Ressources utiles */}
+          <section className="mt-10 pt-8 border-t border-cbf-gray-soft">
+            <p className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-4">
+              Ressources utiles
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {ressources.map((r) => (
+                <Link
+                  key={r.href}
+                  href={r.href}
+                  className="inline-flex items-center gap-1.5 px-3 py-2 bg-white border border-cbf-gray-soft hover:border-cbf-gold hover:text-cbf-gold text-sm text-cbf-black rounded-sm transition-all"
+                >
+                  {r.label} <ArrowRight className="h-3 w-3 text-cbf-gold" />
+                </Link>
+              ))}
+            </div>
+          </section>
 
           {/* Articles liés */}
           {related.length > 0 && (
