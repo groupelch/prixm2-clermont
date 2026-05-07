@@ -7,6 +7,7 @@ import { TopQuartiers } from "@/components/home/TopQuartiers";
 import { WhyPricesVary } from "@/components/home/WhyPricesVary";
 import { EstimationCta } from "@/components/home/EstimationCta";
 import { TestimonialsBlock } from "@/components/home/TestimonialsBlock";
+import { RecentArticles } from "@/components/home/RecentArticles";
 import { GuideCards } from "@/components/home/GuideCards";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { FinalCta } from "@/components/home/FinalCta";
@@ -44,6 +45,7 @@ export default function HomePage() {
       <WhyPricesVary />
       <EstimationCta />
       <TestimonialsBlock />
+      <RecentArticles />
       <GuideCards />
       <FaqAccordion />
       <FinalCta />

@@ -76,11 +76,22 @@ export function Footer() {
               <li><Link href="/comparateur-quartiers" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Comparateur quartiers</Link></li>
               <li><Link href="/glossaire" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Glossaire immobilier</Link></li>
               <li><Link href="/methodologie" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Méthodologie</Link></li>
+              <li><Link href="/biens-off-market-clermont-ferrand" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Biens off-market</Link></li>
               <li><Link href="/a-propos" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">À propos</Link></li>
             </ul>
           </div>
 
           <div className="md:col-span-3">
+            <h4 className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-4">
+              Ressources
+            </h4>
+            <ul className="space-y-2 text-sm mb-6">
+              <li><Link href="/meilleurs-agents-immobiliers-clermont-ferrand" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Meilleurs agents immobiliers</Link></li>
+              <li><Link href="/meilleurs-architectes-interieur-clermont-ferrand" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Architectes d'intérieur</Link></li>
+              <li><Link href="/meilleurs-diagnostiqueurs-dpe-clermont-ferrand" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Diagnostiqueurs DPE</Link></li>
+              <li><Link href="/meilleurs-demenageurs-clermont-ferrand" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Déménageurs Clermont</Link></li>
+              <li><Link href="/meilleurs-plombiers-clermont-ferrand" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Plombiers Clermont</Link></li>
+            </ul>
             <h4 className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold mb-4">
               Quartiers populaires
             </h4>
