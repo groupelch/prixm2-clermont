@@ -31,6 +31,7 @@ import { FormEstimationCourt } from "@/components/forms/FormEstimationCourt";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
 import { StickyCtaBar } from "@/components/common/StickyCtaBar";
 import { AlertePrixForm } from "@/components/quartier/AlertePrixForm";
+import { TousQuartiersFooter } from "@/components/quartier/TousQuartiersFooter";
 import {
   FaqPageSchema,
   BreadcrumbSchema,
@@ -301,6 +302,7 @@ export default function QuartierPage({ params }: { params: Params }) {
         </div>
       </section>
 
+      <TousQuartiersFooter quartierActuelSlug={q.slug} />
       <StickyCtaBar />
       <FinalCta />
     </>

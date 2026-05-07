@@ -15,6 +15,7 @@ const NAV_ITEMS = [
   { label: "Investir", href: "/investir-clermont-ferrand" },
   { label: "Prix immo", href: "/prix-immobilier-clermont-ferrand" },
   { label: "Blog", href: "/blog" },
+  { label: "Guides", href: "/guide" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];

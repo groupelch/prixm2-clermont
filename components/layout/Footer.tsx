@@ -71,6 +71,9 @@ export function Footer() {
               <li><Link href="/investir-clermont-ferrand" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Investir</Link></li>
               <li><Link href="/prix-immobilier-clermont-ferrand" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Prix immobilier</Link></li>
               <li><Link href="/blog" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Blog</Link></li>
+              <li><Link href="/guide" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Guides immobiliers</Link></li>
+              <li><Link href="/vendre" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Vendre par quartier</Link></li>
+              <li><Link href="/estimation-quartier" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Estimation par quartier</Link></li>
               <li><Link href="/faq" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">FAQ</Link></li>
               <li><Link href="/calculateur-frais-notaire" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Calculateur frais notaire</Link></li>
               <li><Link href="/comparateur-quartiers" className="text-cbf-gray-light hover:text-cbf-gold transition-colors">Comparateur quartiers</Link></li>
