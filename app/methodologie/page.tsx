@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Database, Filter, BarChart3, RefreshCw, AlertCircle } from "lucide-react";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
-import { BreadcrumbSchema, ArticleSchema } from "@/components/common/SchemaOrg";
+import { BreadcrumbSchema, ArticleSchema, DatasetSchema, DataCatalogSchema } from "@/components/common/SchemaOrg";
 import { FinalCta } from "@/components/home/FinalCta";
 import { buildMetadata } from "@/lib/seo";
 import { SITE_URL } from "@/lib/utils";
@@ -81,11 +81,13 @@ export default function MethodologiePage() {
         title="Méthodologie — Comment sont calculés les prix m² à Clermont-Ferrand"
         description="Comment prixm²clermontferrand.fr calcule ses prix au m² : source DVF (16 882 transactions), filtres appliqués, calcul de la médiane, enrichissement DPE, fréquence de mise à jour."
         datePublished="2024-01-15"
-        dateModified="2025-01-01"
+        dateModified="2025-04-01"
         url={`${SITE_URL}/methodologie`}
-        authorName="Équipe Data CBF Conseils"
-        authorType="Organization"
+        authorName="Louis Combret, Directeur CBF Conseils"
+        authorType="Person"
       />
+      <DatasetSchema />
+      <DataCatalogSchema />
 
       {/* HERO */}
       <section className="bg-cbf-ivory pt-10 pb-12 md:pt-14 md:pb-16">

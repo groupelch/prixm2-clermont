@@ -4,7 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { StickyCtaBar } from "@/components/layout/StickyCtaBar";
-import { RealEstateAgentSchema, WebSiteSchema } from "@/components/common/SchemaOrg";
+import { RealEstateAgentSchema, WebSiteSchema, PersonSchema, DataCatalogSchema } from "@/components/common/SchemaOrg";
 import { SITE_NAME, SITE_URL } from "@/lib/utils";
 import "./globals.css";
 
@@ -81,6 +81,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://images.unsplash.com" />
         <RealEstateAgentSchema />
         <WebSiteSchema />
+        <PersonSchema />
+        <DataCatalogSchema />
       </head>
       <body className="min-h-screen flex flex-col antialiased">
         <Header />

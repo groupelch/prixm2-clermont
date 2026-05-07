@@ -6,7 +6,7 @@ import { articles } from "@/data/articles";
 import { guides } from "@/data/guides";
 import { QuartierCard } from "@/components/common/QuartierCard";
 import { BreadcrumbNav } from "@/components/common/BreadcrumbNav";
-import { BreadcrumbSchema, FaqPageSchema } from "@/components/common/SchemaOrg";
+import { BreadcrumbSchema, FaqPageSchema, DatasetSchema, DataCatalogSchema } from "@/components/common/SchemaOrg";
 import { MapWrapper } from "@/components/home/MapWrapper";
 import { ChiffresCles } from "@/components/home/ChiffresCles";
 import { WhyPricesVary } from "@/components/home/WhyPricesVary";
@@ -76,6 +76,8 @@ export default function PrixImmoPilierPage() {
         ]}
       />
       <FaqPageSchema items={faqPrix} />
+      <DatasetSchema />
+      <DataCatalogSchema />
 
       <section className="bg-cbf-ivory pt-10 pb-12 md:pt-14 md:pb-16">
         <div className="container max-w-5xl">
@@ -164,6 +166,102 @@ export default function PrixImmoPilierPage() {
               <QuartierCard key={q.slug} quartier={q} index={i} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* TABLE STATIQUE — crawlable par Google AIO / ChatGPT / Perplexity */}
+      <section id="tableau-prix" className="py-14 md:py-20 bg-white scroll-mt-24">
+        <div className="container max-w-5xl">
+          <div className="mb-8">
+            <span className="text-[0.65rem] uppercase tracking-[0.2em] text-cbf-gold font-bold">
+              Référentiel 2026
+            </span>
+            <h2 className="font-playfair text-display-md text-cbf-black font-bold mt-2 mb-3">
+              Tableau complet des prix m² — tous les quartiers
+            </h2>
+            <p className="text-sm text-cbf-gray">
+              Source : base DVF (Demandes de Valeurs Foncières, DGFiP) — 16 882 transactions 2021-2024 · mise à jour avril 2026.
+            </p>
+          </div>
+          <div className="overflow-x-auto border border-cbf-gray-soft rounded-sm">
+            <table className="min-w-full text-sm">
+              <caption className="sr-only">
+                Prix immobilier au m² à Clermont-Ferrand par quartier en 2026 — appartements et maisons, source DVF
+              </caption>
+              <thead className="bg-cbf-black text-white">
+                <tr>
+                  <th scope="col" className="text-left px-5 py-3 font-semibold">Quartier / Commune</th>
+                  <th scope="col" className="text-right px-5 py-3 font-semibold">Appart. €/m²</th>
+                  <th scope="col" className="text-right px-5 py-3 font-semibold">Maison €/m²</th>
+                  <th scope="col" className="text-right px-5 py-3 font-semibold hidden sm:table-cell">Détails</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  // Intra-muros
+                  { nom: "Jaude", app: 2600, maison: null, slug: "clermont-ferrand-jaude" },
+                  { nom: "Centre-Ville", app: 2400, maison: 3200, slug: "clermont-ferrand-centre-ville" },
+                  { nom: "Delille", app: 2350, maison: 3000, slug: "clermont-ferrand-delille" },
+                  { nom: "Oradou", app: 2500, maison: 3100, slug: "clermont-ferrand-oradou" },
+                  { nom: "Beaumont (quartier sud)", app: 2450, maison: 3050, slug: "clermont-ferrand-beaumont" },
+                  { nom: "Carmes", app: 2300, maison: 2900, slug: "clermont-ferrand-carmes" },
+                  { nom: "Salins", app: 2200, maison: 2800, slug: "clermont-ferrand-salins" },
+                  { nom: "Trudaine", app: 2200, maison: 2800, slug: "clermont-ferrand-trudaine" },
+                  { nom: "Blaise-Pascal", app: 2150, maison: 2700, slug: "clermont-ferrand-blaise-pascal" },
+                  { nom: "Saint-Jacques", app: 2100, maison: 2600, slug: "clermont-ferrand-saint-jacques" },
+                  { nom: "La Pardieu", app: 2100, maison: null, slug: "clermont-ferrand-la-pardieu" },
+                  { nom: "Champratel", app: 2100, maison: 2650, slug: "clermont-ferrand-champratel" },
+                  { nom: "Fontgieve", app: 2050, maison: 2550, slug: "clermont-ferrand-fontgieve" },
+                  { nom: "Les Cézeaux", app: 2000, maison: null, slug: "clermont-ferrand-les-cezeaux" },
+                  { nom: "Côte-Blatin", app: 2000, maison: 2500, slug: "clermont-ferrand-cote-blatin" },
+                  { nom: "Montferrand", app: 1950, maison: 2400, slug: "clermont-ferrand-montferrand" },
+                  { nom: "Brézet", app: 1950, maison: 2350, slug: "clermont-ferrand-brezet" },
+                  { nom: "La Glacière", app: 1900, maison: 2200, slug: "clermont-ferrand-la-glaciere" },
+                  { nom: "La Plaine", app: 1900, maison: 2300, slug: "clermont-ferrand-la-plaine" },
+                  { nom: "Vallières", app: 1900, maison: 2300, slug: "clermont-ferrand-vallieres" },
+                  { nom: "La Gare", app: 1850, maison: null, slug: "clermont-ferrand-la-gare" },
+                  { nom: "La Pradelle", app: 1850, maison: 2200, slug: "clermont-ferrand-la-pradelle" },
+                  { nom: "Chanturgue", app: 1800, maison: 2100, slug: "clermont-ferrand-chanturgue" },
+                  { nom: "Croix-de-Neyrat", app: 1750, maison: 2100, slug: "clermont-ferrand-croix-de-neyrat" },
+                  // Communes
+                  { nom: "Chamalières", app: 2700, maison: 3500, slug: "chamalieres" },
+                  { nom: "Royat", app: 2400, maison: 3100, slug: "royat" },
+                  { nom: "Beaumont", app: 2500, maison: 3200, slug: "beaumont" },
+                  { nom: "Ceyrat", app: 2300, maison: 3000, slug: "ceyrat" },
+                  { nom: "Aubière", app: 2200, maison: 2900, slug: "aubiere" },
+                  { nom: "Romagnat", app: 2100, maison: 2750, slug: "romagnat" },
+                  { nom: "Lempdes", app: 2000, maison: 2600, slug: "lempdes" },
+                  { nom: "Cébazat", app: 1950, maison: 2500, slug: "cebazat" },
+                  { nom: "Gerzat", app: 1850, maison: 2400, slug: "gerzat" },
+                  { nom: "Riom", app: 1700, maison: 2200, slug: "riom" },
+                  { nom: "Pont-du-Château", app: 1700, maison: 2200, slug: "pont-du-chateau" },
+                ].map((row, i) => (
+                  <tr key={row.slug} className={`border-t border-cbf-gray-soft ${i % 2 === 0 ? "bg-white" : "bg-cbf-ivory/40"} hover:bg-cbf-ivory transition-colors`}>
+                    <td className="px-5 py-3 font-medium text-cbf-black">
+                      <Link href={`/prix-m2/${row.slug}`} className="hover:text-cbf-gold transition-colors">
+                        {row.nom}
+                      </Link>
+                    </td>
+                    <td className="px-5 py-3 text-right font-semibold text-cbf-black">
+                      {row.app ? `${row.app.toLocaleString("fr-FR")} €/m²` : "—"}
+                    </td>
+                    <td className="px-5 py-3 text-right text-cbf-gray">
+                      {row.maison ? `${row.maison.toLocaleString("fr-FR")} €/m²` : "—"}
+                    </td>
+                    <td className="px-5 py-3 text-right hidden sm:table-cell">
+                      <Link href={`/prix-m2/${row.slug}`} className="text-xs text-cbf-gold font-semibold hover:underline">
+                        Analyse →
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-cbf-gray-light mt-3">
+            Données : DVF DGFiP · ADEME DPE · Observatoire CBF Conseils — mise à jour avril 2026.
+            <Link href="/methodologie" className="ml-2 text-cbf-gold hover:underline">Voir notre méthodologie →</Link>
+          </p>
         </div>
       </section>
 
